@@ -1,4 +1,1552 @@
+<style>
 
+	.email {
+    /* background-image: url(svg/email.svg); */
+    /* padding: 8px 8px 8px 8px; */
+    width: 20px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.telephone {
+    /* background-image: url(svg/telephone.svg); */
+    /* padding: 8px 8px 8px 8px; */
+    width: 20px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+#dnn_CarouselPane {
+    POSITION: ABSOLUTE;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.container1280header {
+    max-width: 1280px !important;
+    /* padding-top: 119px; */
+    padding: 0px 15px;
+}
+
+.nice-select {
+    border: none !important;
+}
+
+.earth {
+    /* background-image: url(svg/earthblue.svg); */
+    /* padding: 8px 8px 8px 8px; */
+    width: 20px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.select {
+    /*background: url("svg/arrowdown.svg");
+        background-position: right;
+        background-repeat: no-repeat;*/
+    background-size: 13px 7px;
+    border: 1px;
+    padding-right: 19px;
+    -webkit-appearance: none;
+    font-family: Proxima Nova !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    color: #24263D;
+    color: rgb(36, 38, 61);
+}
+
+.language {
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+}
+
+body {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 15px !important;
+    color: rgb(138, 138, 138) !important;
+}
+
+.hrb2c {
+    width: 69%;
+    text-align: left;
+    margin-left: 284px;
+    margin-top: 43px;
+}
+
+.b2cheader {
+    text-align: right;
+    padding-right: 25px;
+}
+
+.profil {
+    background-image: url(svg/profil.svg);
+    padding: 20px 10px 20px 10px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+}
+
+.cartimg {
+    background-image: url(svg/cart.svg);
+    padding: 30px 10px 30px 10px;
+    background-size: 20px 40px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+}
+
+ 
+.container {
+    width: 100%;
+}
+
+.lblb2c {
+    text-decoration: none;
+    color: rgb(138, 138, 138) !important;
+    margin-left: 10px;
+    display: none !important;
+}
+
+
+.home-button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.languagebox {
+    background-color: rgb(255, 255, 255);
+}
+
+/*.form-control {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}*/
+
+.top-header, .bottom-header {
+    display: block;
+}
+
+.top-header {
+    top: 0px;
+    font-weight: 500;
+}
+
+.bottom-header {
+    color: #708090;
+    margin-bottom: 800px;
+}
+
+.bottom-header {
+    margin-top: 12px;
+}
+
+.navbar {
+    display: none;
+}
+
+.logoimg {
+    margin-left: 288px;
+}
+
+.moveleft {
+    margin-left: 20px !important;
+}
+
+#lblCopyright {
+    display: none;
+}
+
+.headerone {
+    height: 60px;
+}
+
+.headeroneb2b {
+    margin-bottom: 120px;
+    margin-top: -45px;
+    height: 60px;
+}
+
+.SkinObject {
+    display: none;
+}
+
+
+
+.logo {
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu {
+    float: none !important;
+}
+
+.header {
+    background-color: #fff;
+    /* width: 100%; */
+    z-index: 3;
+    height: 15px;
+    float: none !important;
+    max-width: 505px;
+}
+
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .header li a {
+        display: block;
+        padding: 10px 7px;
+        border-right: 0px solid #f4f4f4;
+        text-decoration: none;
+    }
+
+        .header li a:hover,
+        .header .menu-btn:hover {
+            background-color: #f4f4f4;
+        }
+
+    .header .logo {
+        display: block;
+        float: left;
+        font-size: 2em;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+/* menu */
+.menu1 {
+    float: right;
+    padding-right: 16% !important;
+    padding-top: 10px !important;
+    display: inline-block;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+    .header .menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+
+        .header .menu-icon .navicon:before,
+        .header .menu-icon .navicon:after {
+            background: #333;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+
+        .header .menu-icon .navicon:before {
+            top: 5px;
+        }
+
+        .header .menu-icon .navicon:after {
+            top: -5px;
+        }
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+    .header .menu-btn:checked ~ .menu {
+        max-height: 371px;
+        width: 100%;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+
+        .header .menu-btn:checked ~ .menu-icon .navicon:before {
+            transform: rotate(-45deg);
+        }
+
+        .header .menu-btn:checked ~ .menu-icon .navicon:after {
+            transform: rotate(45deg);
+        }
+
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+/* 48em = 768px */
+.moveleft {
+    margin-left: 0px;
+}
+
+.icontoremove {
+    display: none;
+}
+
+
+.menu a {
+    color: rgb(255, 255, 255);
+    background: none;
+}
+
+.menu {
+    background: rgba(36, 38, 61, 1) !important;
+    opacity: 0.95 !important;
+    padding-left: 50% !important;
+}
+
+.my-button {
+    color: black !important;
+    background-color: rgb(255, 255, 255) !important;
+    border: 0px !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.header li a:hover {
+    background: none !important;
+    color: rgb(10, 191, 242);
+}
+
+
+.logob2c {
+    width: 200px !important;
+}
+
+.imgburgerdisp {
+    display: none !important;
+}
+
+@media (min-width: 992px) and (max-width: 1049px) {
+    .top-header {
+        padding-right: 7%;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1099px) {
+    .top-header {
+        padding-right: 8%;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+    .top-header {
+        padding-right: 10%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .top-header {
+        padding-right: 12%;
+    }
+}
+
+@media (min-width: 1399px) and (max-width: 1584px) {
+    .top-header {
+        padding-right: 14%;
+    }
+}
+
+@media (min-width: 1585px) and (max-width: 1799px) {
+    .top-header {
+        padding-right: 16%;
+    }
+}
+
+@media (min-width: 1799px) {
+    .top-header {
+        padding-right: 16.5%;
+    }
+}
+
+.cartdiv {
+    display: inline-block !important;
+    text-align: center;
+    width: 10px !important;
+    height: 26px !important;
+}
+
+.hrb2c {
+    margin-left: 52px;
+}
+
+.moveright {
+    margin-right: 10px;
+}
+
+.contactmailphone {
+    margin-top: 10px;
+    margin-left: 3%;
+    display: inline-block;
+}
+
+@media (min-width: 992px) {
+    .contactmailphone {
+        margin-top: 10px;
+        margin-left: 10%;
+        display: inline-block;
+    }
+
+    .b2cheader {
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 10% !important;
+        padding-right: 90px;
+    }
+
+    .hrb2c {
+        margin-left: 240px;
+    }
+
+    .cartimg {
+        background-size: 20px 40px;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .profil {
+        background-size: 20px 40px;
+    }
+
+    .cartdiv {
+        display: inline-block !important;
+        text-align: center;
+        width: 78px !important;
+        height: 26px !important;
+    }
+
+    .header {
+        padding-left: 80px !important;
+    }
+
+    .imgburgerdisp {
+        display: inline-block !important;
+    }
+
+    .logo {
+        width: 300px !important;
+        /*padding-top: 37px !important;*/
+    }
+
+    .logob2c {
+        width: 300px !important;
+    }
+
+
+    .lblb2c {
+        display: inline-block !important;
+    }
+
+    .menu a {
+        color: rgb(138, 138, 138) !important;
+    }
+
+    .menu {
+        background: rgb(255, 255, 255) !important;
+        padding-left: 0px !important;
+    }
+
+    .cartb2b:hover {
+        background: #0ABFF2 !important;
+        background: rgba(10, 191, 242, 1) !important;
+        color: #FFFFFF;
+        color: rgb(255, 255, 255) !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        width: 70px !important;
+        height: 26px !important;
+        text-align: center;
+    }
+
+    .my-button {
+        color: rgb(255, 255, 255) !important;
+        background-color: #0ac0f2 !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    .icontoremove {
+        display: inline-block;
+    }
+
+    .moveleft {
+        margin-left: 20px !important;
+    }
+
+    .header {
+        padding-left: 300px;
+    }
+
+    .menu {
+        /*padding-top: 17px !important;*/
+        /*padding-right: 300px !important;*/
+        margin-right: 17%;
+    }
+
+    .header li {
+        float: left;
+    }
+
+        .header li a {
+            padding: 10px 30px;
+        }
+
+            .header li a:hover {
+                background: none !important;
+            }
+
+    .header .menu {
+        /* clear: none; */
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1585px) {
+    .contactmailphone {
+        margin-top: 10px;
+        margin-left: 0;
+        display: inline-block;
+    }
+
+    .b2cheader {
+        text-align: center;
+        padding-top: 0px;
+        padding-left: 0% !important;
+        padding-right: 0px;
+        text-align: right;
+    }
+
+    .cartimg {
+        background-size: 20px 40px;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .profil {
+        background-size: 20px 40px;
+    }
+
+    .hrb2c {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 19px;
+    }
+
+    .cartdiv {
+        display: inline-block !important;
+        text-align: center;
+        width: fit-content !important;
+        height: 26px !important;
+        margin-right: 22px;
+    }
+
+    .imgburgerdisp {
+        display: inline-block !important;
+    }
+
+    .logo {
+        width: 300px !important;
+        /*padding-top: 37px !important;*/
+    }
+
+    .logob2c {
+        width: 300px !important;
+    }
+
+
+    .lblb2c {
+        display: inline-block !important;
+    }
+
+    .menu a {
+        color: rgb(138, 138, 138) !important;
+    }
+
+    .menu {
+        background: rgb(255, 255, 255) !important;
+        padding-left: 0px !important;
+    }
+
+
+    .cartb2b:hover {
+        background: #0ABFF2 !important;
+        background: rgba(10, 191, 242, 1) !important;
+        color: #FFFFFF;
+        color: rgb(255, 255, 255) !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        width: 92px !important;
+        height: 26px !important;
+        text-align: center;
+    }
+
+    .my-button {
+        color: rgb(255, 255, 255) !important;
+        background-color: #0ac0f2 !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    .icontoremove {
+        display: inline-block;
+    }
+
+    .moveleft {
+        margin-left: 20px !important;
+    }
+
+    .header {
+        padding-left: 300px;
+    }
+
+
+        .header li {
+            float: right;
+        }
+
+            .header li a {
+                padding: 10px 30px;
+            }
+
+                .header li a:hover {
+                    background: none !important;
+                }
+
+        .header .menu {
+            clear: none;
+            float: right;
+            max-height: none;
+            text-align: right;
+        }
+
+        .header .menu-icon {
+            display: none;
+        }
+}
+
+.header {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    text-align: right;
+    padding: 0px !important;
+    max-width: none;
+    display: block;
+}
+
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .header li a {
+        display: block;
+        padding: 10px 7px;
+        border-right: 0px solid #f4f4f4;
+        text-decoration: none;
+        color: #24263D !important;
+        font-weight: 400;
+    }
+
+        .header li a:hover,
+        .header .menu-btn:hover {
+            background-color: #f4f4f4;
+        }
+
+    .header .logo {
+        display: block;
+        float: left;
+        font-size: 2em;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+.toplogo {
+    text-align: left;
+    padding: 0;
+}
+
+.row.top {
+    margin: 0px 0px 0px 0px !important;
+    padding-top: 4px;
+}
+
+.topcontact {
+    padding: 0px;
+    text-align: left;
+    color: #24263D;
+    font-weight: 400;
+    font-family: 'proxima-nova' !important;
+}
+
+.topmenu {
+    text-align: right;
+    width: 100%;
+    /* float: right; */
+}
+
+ul.menu {
+    /* width: 100%; */
+}
+
+.lang {
+    top: 8px;
+    text-align: right;
+}
+
+a.button {
+    /*background: #0abff2;*/
+    padding: 5px;
+    border-radius: 5px;
+    /*color: #fff !important;*/
+}
+
+label.lblb2c.cartb2b.topbar {
+    /*color: #fff !important;*/
+}
+
+.language {
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+}
+.select {
+    background: url("svg/arrowdown.svg");
+        background-position: right;
+        background-repeat: no-repeat; 
+    background-size: 13px 7px;
+    border: 1px;
+    padding-right: 19px;
+    -webkit-appearance: none;
+    font-family: Proxima Nova !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    color: #24263D;
+    color: rgb(36, 38, 61);
+}
+    .select:after {
+     display:none!important;
+    }
+	input#dnn_ctr440_ExcursionSearch_exc_search {
+    color: red;
+}
+
+.dots.dots2 {
+    margin-right: -43px;
+}
+#basic-addon2 {
+    background-color: transparent !important;
+    border: none;
+    display: inline-block;
+    color: rgb(255, 255, 255, 1);
+    margin-top: 8px;
+    padding-right: 20px;
+    font-weight: 700;
+}
+    
+body {
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.container1280 {
+    max-width: 1280px !important;
+    padding-top: 119px;
+}
+
+@media (min-width: 1200px) {
+    .privateexcursionsdiv {
+        
+    }
+
+  
+}
+
+@media (min-width: 1199px) and (max-width: 1249px) {
+    .privateexcursionsdiv {
+        padding-right: 380px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 380px;
+    }
+}
+
+@media (min-width: 1150px) and (max-width: 1199px) {
+    .privateexcursionsdiv {
+        padding-right: 360px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 360px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1149px) {
+    .privateexcursionsdiv {
+        padding-right: 335px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 335px;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1099px) {
+    .privateexcursionsdiv {
+        padding-right: 330px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 330px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1049px) {
+    .privateexcursionsdiv {
+        padding-right: 290px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 290px;
+    }
+}
+
+.privateexcursionslbl {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 15px !important;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    width: 93px;
+    word-break: normal;
+    font-weight: 900 !important;
+    margin-right: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+
+.fakos {
+    /* background-image: url(svg/fakos.svg); */
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    display:inline-block;
+}
+
+.privateexcursions {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    /* width: 245px; */
+    /* height: 106px; */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 0px;
+    padding: 21px;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    /* margin-bottom: 120px; */
+    /* padding-right: 52px !important; */
+    max-width: 350px;
+}
+
+.toursexcursions {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    /* width: 245px; */
+    /* height: 106px; */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 0px;
+    padding: 21px;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    /* margin-bottom: 120px; */
+    max-width: 350px;
+    right: 10px;
+}
+
+.dots {
+    /*background-image: url(svg/dots.svg);*/
+    background-repeat: no-repeat;
+    /* padding: 6px 9px 6px 9px; */
+    white-space: nowrap;
+    /* margin-left: 192px; */
+    width: 34px;
+    /* height: 100%; */
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.bluearrow {
+    background-image: url(svg/bluearrow.svg);
+    background-repeat: no-repeat;
+    padding: 6px 9px 6px 9px;
+    white-space: nowrap;
+}
+
+.rightarrow {
+    background-image: url(svg/rightarrow.svg);
+    background-repeat: no-repeat;
+    padding: 6px 9px 6px 9px;
+    white-space: nowrap;
+}
+
+.points {
+    background-image: url(svg/points.svg);
+    background-repeat: no-repeat;
+    padding: 20px 25px 20px 25px;
+    vertical-align: top;
+}
+
+.ship {
+    background-image: url(svg/ship.svg);
+    background-repeat: no-repeat;
+    padding: 20px 20px 20px 20px;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+.openlock {
+    background-image: url(svg/openlock.svg);
+    background-repeat: no-repeat;
+    padding: 20px 25px 20px 25px;
+    vertical-align: top;
+    /*margin-right: 95px;
+    margin-bottom: 120px*/
+}
+
+.middle-enginediv {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.middle-engine {
+    background-image: url(jpeg/frontpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#TopContent {
+    margin-top: 0px !important
+}
+
+.language {
+    display: inline-block;
+}
+
+
+.searchengine {
+    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.5);
+    width: 819px; 
+    border-radius: 39px;
+    padding-top: 16px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 1px;
+}
+
+.search-engine-input {
+    width: 626px;
+    height: 54px;
+    outline: none;
+    border-radius: 35px;
+    border: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 16px;
+}
+
+.searchbtn:hover {
+    text-decoration: none;
+}
+
+.viewallbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    padding: 2px 10px 2px 10px;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none !important;
+    display: block;
+    width: fit-content;
+    margin-left: 8px;
+}
+
+.searchbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    border-radius: 41px;
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.searchinpdiv {
+    padding-top: 11px;
+    padding-left: 27px;
+    border-radius: 16px;
+}
+
+.searchbtndiv {
+    padding-top: 27px;
+}
+
+.search-input {
+    background: #FFFFFF;
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 558px;
+    border-radius: 16px;
+    top: 250px;
+    width: 799px;
+    height: 55px;
+    white-space: nowrap;
+}
+
+
+.fontsize {
+    margin-top: 90px;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0 !important;
+}
+
+
+
+@media (max-width: 575px) {
+    .privateexcursionsdiv {
+        padding-right: 0px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 0px;
+    }
+
+    .viewallbtn {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+
+    .toursexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+    }
+
+    .privateexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+        padding-right: 0px !important;
+        margin-right: 30px;
+    }
+
+    .points {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .openlock {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursionslbl {
+        font-size: 12px !important;
+        width: 86px;
+        word-break: normal;
+    }
+
+    .ship {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .searchengine {
+        /*height: 115px;*/
+        width: 340px;
+    }
+
+    .search-engine-input {
+        width: 320px;
+        height: 39px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        margin-left: -10px;
+    }
+
+    /*.searchbtn {
+        margin-left: 3px;
+        padding: 9px 126px 9px 126px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }*/
+
+
+
+    .fontsize {
+        font-size: 20px;
+    }
+
+    .secondfontsize {
+        font-size: 12px;
+    }
+
+    .search-engine-input {
+        width: 320px;
+        height: 39px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
+    /*.searchbtn {
+        padding: 9px 126px 9px 126px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }*/
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .privateexcursionsdiv {
+        padding-right: 0px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 0px;
+    }
+
+    .viewallbtn {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+    }
+
+    .privateexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+        padding-right: 0px !important;
+        margin-right: 30px;
+    }
+
+    .toursexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+    }
+
+    .points {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .openlock {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursionslbl {
+        font-size: 12px !important;
+        width: 86px;
+        word-break: normal;
+    }
+
+    .ship {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .searchengine {
+        /*height: 115px;*/
+        width: 340px;
+    }
+
+    .search-engine-input {
+        width: 320px;
+        height: 39px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        margin-left: -10px;
+    }
+
+    /*.searchbtn {
+        margin-left: 3px;
+        padding: 9px 126px 9px 126px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }*/
+    
+    fontsize {
+        font-size: 40px;
+    }
+
+    .secondfontsize {
+        font-size: 15px;
+    }
+}
+
+.secondfontsize {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+
+.fontbold {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-weight: 900;
+}
+
+.body {
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.center {
+}
+
+/*.form-control {
+    width: 810px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+
+.form-outer {
+    border: 10px solid #ccc !important;
+    height: 74px;
+    border-radius: 16px;
+}*/
+        .viewall {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 24px;
+    border: 1px;
+    border-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.viewalltours {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 27px;
+    width: 100px;
+    white-space: nowrap;
+    /*margin-bottom: 10px;*/
+}
+
+.viewalldiv {
+    border: 1px solid #ccc;
+}
+
+
+input#dnn_ctr440_ExcursionSearch_exc_search {
+    color: #24263d;
+}
+.input-group-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.375rem 0.3rem;
+    margin-bottom: 0;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+}
+
+.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    min-width: 0;
+    margin-bottom: 0;
+    height: 50px;
+    border-radius: 50px 0px 0px 50px;
+}
+
+
+.row.banners {
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    display: inline-flex;
+}
+
+.toursexcursionsdiv {
+    max-width: 350px;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    .toursexcursionsdiv {
+        /* padding-left: 425px; */
+    }
+}
+.privateexcursionsdiv {
+    max-width: 350px;
+    display: block;
+}
+
+
+.svgclass { 
+	    url('/newsite/portals/0/css/svg/footer/point.svg');
+		padding: 8px 8px 8px 8px;
+		background-repeat: no-repeat; 
+	    width: 30px;
+		background-size: cover;
+		height: 30px;
+ 
+	}
+    @media (max-width: 1199px) {
+        .followus {
+            margin-left:50px;
+        }
+    }
+    .footerdiv {
+        background-color:#24263d;height:100%;padding-top:55px;
+    }
+    .footerfonts {
+        font-family: 'proxima-nova', sans-serif;
+        font-size : 13px;
+        color: #FFFFFF;
+    }
+    .contact {
+    display:inline-block;margin-right:80px;margin-bottom:10px;margin-left:50px;
+    }
+    .displayinline {
+        display:inline-block;
+    }
+    .usefullinks {
+        font-family: 'proxima-nova', sans-serif;
+        font-size : 13px;
+        color:#FFFFFF;display:block;
+    }
+    .usefullinksdiv {
+    display:inline-block;margin-right:80px;vertical-align: top;
+    }
+    .followusdiv {
+        display:inline-block;vertical-align: top;margin-right: 80px;
+    }
+    .cpr {
+        width: 69%; text-align: left; margin-left: 284px; margin-top: 30px;margin-bottom: 30px;
+    }
+    .cprspan {
+        color:white;display: flex;align-items:center;justify-content:center;
+    }
+	.footer1280{
+	max-width:1280px;}
+</style>
+
+<center>
+<div style="max-width:1280px;">
+    <div class="row top">
+<div class=" col-4 col-sm-4 col-xl-4 col-lg-4 topcontact">
+    <div class="contactmailphone" style="position:relative; "><img class="telephone" src="/newsite/portals/0/css/svg/telephone.svg"><span class="moveright">+302101010101</span><img src="/newsite/portals/0/css/svg/mail.svg" class="email"><span>info@dolphins.gr<span> </span></span></div> 
+</div> 
+<div class=" col-6 col-sm-6 col-xl-6 col-lg-6 topmenu">
+<header class="header  "> 
+     
+     
+      <input class="menu-btn" type="checkbox" id="menu-btnb2c">
+      <label class="menu-icon" for="menu-btnb2c"><span class="navicon"></span></label>
+ 
+      <ul style="" class="menu">
+         <li> <a id="li_home" class="li_home" runat="server"> HOME </a> </li>
+          <li> <a id="A1" class="li_home" runat="server"> SPECIAL </a> </li>
+          <li> <a id="A2" class="li_home" runat="server"> ABOUT US </a> </li>
+          <li> <a id="A3" class="li_home" runat="server"> NEWS </a> </li>
+          <li> <a id="A4" class="li_home" runat="server"> CONTACT </a> </li>
+          <li> <a id="A5" class="li_home" runat="server"> HELP </a> </li>
+	  
+         <li></li>
+      </ul> 
+         
+    </header> 
+ </div>
+     <div class=" col-2 col-sm-2 col-xl-2 col-lg-2 lang">
+     
+      <div>
+         <img class="earth" src="/newsite/portals/0/css/svg/earthblue.svg"><span><div class="language">
+     
+    
+                  <select  class="select"    id="cmblanguages">
+    <option value="0">English</option>
+    <option value="1">Ελληνικά</option> 
+  </select>       
+    </div></span>
+            
+    </div></div>
+        <hr class="hrb2c">
+  </div>
+</div> 
+</center>	<center>
+<div style="max-width:1280px;">
+    <div class="row top">
+<div class=" col-4 col-sm-4 col-xl-4 col-lg-4 topcontact">
+    <div class="contactmailphone" style="position:relative; "><img class="telephone" src="/newsite/portals/0/css/svg/telephone.svg"><span class="moveright">+302101010101</span><img src="/newsite/portals/0/css/svg/mail.svg" class="email"><span>info@dolphins.gr<span> </span></span></div> 
+</div> 
+<div class=" col-6 col-sm-6 col-xl-6 col-lg-6 topmenu">
+<header class="header  "> 
+     
+     
+      <input class="menu-btn" type="checkbox" id="menu-btnb2c">
+      <label class="menu-icon" for="menu-btnb2c"><span class="navicon"></span></label>
+ 
+      <ul style="" class="menu">
+         <li> <a id="li_home" class="li_home" runat="server"> HOME </a> </li>
+          <li> <a id="A1" class="li_home" runat="server"> SPECIAL </a> </li>
+          <li> <a id="A2" class="li_home" runat="server"> ABOUT US </a> </li>
+          <li> <a id="A3" class="li_home" runat="server"> NEWS </a> </li>
+          <li> <a id="A4" class="li_home" runat="server"> CONTACT </a> </li>
+          <li> <a id="A5" class="li_home" runat="server"> HELP </a> </li>
+	  
+         <li></li>
+      </ul> 
+         
+    </header> 
+ </div>
+     <div class=" col-2 col-sm-2 col-xl-2 col-lg-2 lang">
+     
+      <div>
+         <img class="earth" src="/newsite/portals/0/css/svg/earthblue.svg"><span><div class="language">
+     
+    
+                  <select  class="select"    id="cmblanguages">
+    <option value="0">English</option>
+    <option value="1">Ελληνικά</option> 
+  </select>       
+    </div></span>
+            
+    </div></div>
+        <hr class="hrb2c">
+  </div>
+</div> 
+</center>
 <div id="dnn_ctr439_HeaderOne_ho" class="headerone">
 		
 <div id="dnn_ctr439_HeaderOne_b2c">
@@ -26,14 +1574,130 @@
   </center>
 
   </div>
- 
+</div>
+<div class="middle-enginediv">
+<div class="middle-engine">
+    <center>
+        <div class="middle-enginediv">
+    <div class="container1280">
+         <div class="row">  
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+                    <div> <label class="fontsize fontbold"> PLAN </label> <label class="fontsize"> YOUR </label> <label class="fontsize fontbold"> PERFECT </label> <label class="fontsize"> TRIP </label></div>
+                </div>
+        </div>
+       
+        <div class="row">  
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12  " align="center">
+                    <label class="secondfontsize"> Find great tours around the planet </label>
+                </div>
+        </div>
+       
+        <div class="row">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12  " align="center">
+       
+            <div class=" searchengine  ">
+             <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Where you want to go ?" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                  <a href="" class="searchbtn"> <img src="/newsite/portals/0/css/svg/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">Search</span></a>
+                  </div>
+                </div>
+                </div>
 
+        </div>
+        </div>
+        <div> 
+        <div class="row">  
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">
+                    <label class="secondfontsize viewalltours fontbold"><img src="" class="bluearrow"> View all tours</label>
+                </div>
+        </div>
+
+   <div class="row banners">  
+                <div class="col-12 col-sm-12 col-xl-6 col-lg-6 toursexcursionsdiv" align="center">
+                  <div class="toursexcursions"> 
+                        <div class="row">
+                            <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
+                                 <img style="display:inline-block" src="" class="points">
+                            </div>
+                            <div class="col-4 col-sm-4 col-xl-6 col-lg-6">
+                                 <label style="display:inline-block" class="privateexcursionslbl"> Tours &amp; Excursions </label>  
+                            </div>
+                             <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
+                                 <img style="display:inline-block" src="" class="ship">
+                            </div>
+                             <div class="col-2 col-sm-2 col-xl-12 col-lg-12" align="center">
+                                 <a href="" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
+                            </div>
+                              <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
+                                 <img src="/newsite/portals/0/css/svg/dots.svg" class="dots">
+                               </div> 
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-xl-6 col-lg-6 privateexcursionsdiv" align="center">
+                    <div class="privateexcursions"> 
+                        <div class="row">
+                            <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
+                                    <img style="display:inline-block" src="" class="openlock">
+                            </div>
+                            <div class="col-4 col-sm-4 col-xl-6 col-lg-6">
+                                <label style="display:inline-block" class="privateexcursionslbl"> PRIVATE EXCURSIONS </label>   
+                            </div>
+                             <div class="col-2 col-sm-2 col-xl-12 col-lg-12" align="center">
+                                <a href="" style="margin-left: 43px;" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
+                            </div>
+                             <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
+                                <img src="/newsite/portals/0/css/svg/dots.svg" class="dots">
+                             </div>
+                         
+                         </div>
+                    </div>
+                </div>
+        </div>
      
- 
-      
+      </div>
+    </div>
+    </div>
+    </center>
+</div>
+</div>   
+<div class="footerdiv"  >
+<center>
+<div class="footer1280" >
+<div class="row">    
+      <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+
+<div class="contact"><span class="footerfonts" >NetSemantics</span><br />
+<img alt="bank" src="/newsite/portals/0/css/svg/footer/point.svg" class="displayinline svgclass" /><span class="footerfonts">357 Thivon str, 122 44 Egaleo Athens, Greece</span><br />
+<img src="/newsite/portals/0/css/svg/footer/telephone.svg" class="displayinline svgclass" /><span class="footerfonts">+30 211 1139420-1, +30 210 8256440</span><br />
+<img src="/newsite/portals/0/css/svg/footer/fax.svg" class="displayinline svgclass" /><span class="footerfonts">+30 210 8256441</span><br />
+<img src="/newsite/portals/0/css/svg/footer/mail.svg" class="displayinline svgclass" /><span class="footerfonts">info@netsemantics.gr</span></div>
+</div> 
+          <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+<div class="usefullinksdiv"><span class="usefullinks">USEFUL LINKS</span> <span class="usefullinks">About us</span> <span class="usefullinks">Terms of</span> <span class="usefullinks">Privacy Statement</span></div>
+</div>
+           <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+<div class="followus"  ><span class="usefullinks">Follow Us</span> <img class="svgclass" src="/newsite/portals/0/css/svg/footer/facebook.svg" /><img class="svgclass" src="/newsite/portals/0/css/svg/footer/twitter.svg" /><img class="svgclass" src="/newsite/portals/0/css/svg/footer/instagram.svg" />
+<p><span class="footerfonts">#dolphinsstravel</span></p>
+</div></div>
+       <div class="col-6 col-sm-6 col-lg-6 col-xl-3">   
+<div style="display:inline-block;vertical-align: top;">
+<p><a href="" id="a_bankmaster_left" rel="noopener noreferrer" target="_blank"><img alt="mastercard" id="img_ftr_bankmaster_left" src="/newsite/portals/0/customerIcons/bankicons/mastercardlogos_left.png" /></a><img alt="mastercard" id="img_ftr_bankmaster_right" src="/newsite/portals/0/customerIcons/bankicons/mastercardlogos_right.png" /> <img alt="visa" id="img_ftr_bankvisa_left" src="/newsite/portals/0/customerIcons/bankicons/visaslogos_left.png" /> <a href="" id="a_bankvisa_right" rel="noopener noreferrer" target="_blank"> <img alt="visa" id="img_ftr_bankvisa_right" src="/newsite/portals/0/customerIcons/bankicons/visaslogos_right.png" /></a><img alt="bank" id="img_ftr_bankprovider" src="/newsite/portals/0/customerIcons/bankicons/piraeuslogos.png" style="display:inline-block" /></p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+<hr class="cpr">
+<span class="cprspan">DOLPHINS © All Rights reserved </span>
+</div>
+</div>
+</div>
+</center>
+</div>
 
 
-	</div>
 <script type="text/javascript">
     $(document).ready(function () {
     $('select').niceSelect();
