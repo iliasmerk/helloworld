@@ -2676,8 +2676,7 @@ body {
             cmbPriceSorting.commitChanges();
         }
        
-  
-        getExcursionResults();
+   
     };
 
     function getPosition(element) {
@@ -2701,60 +2700,15 @@ body {
         var jsonExcSearchResultsSorting = JSON.stringify({ "Exc_PriceSorting": cmbPriceSorting.get_value() });
         localStorage.setItem("ExcSearchResultsSorting", jsonExcSearchResultsSorting);
         pageIndex = 1;     
-        $("#<%= Excursions.ClientID %>").empty();
-        getExcursionResults();
+        $("#<%= Excursions.ClientID %>").empty(); 
         return false;
     }
 
     function loadMoreExcursionSearchResults() {
-     //   alert("loadMoreExcursionSearchResults");
-        getExcursionResults();
+     //   alert("loadMoreExcursionSearchResults"); 
         return false;
     }
-
-    function getExcursionResults() {
-   //     alert("getExcursionResults"); 
-    
-        if (pageIndex == 2 || pageIndex <= pageCount) {
-          
-            $("#loader").show();
-
-            var jsonExcFilters = $('#hf_excFilters').val();
-            var jsonExcSearchCriteria = localStorage.getItem("ExcSearchCriteria");
-
-            var data = {  p_pageIndex: 1, p_pageSize: 9 };
-           
-            //    console.log(data);
-            //   alert(data);
-
-            $.ajax({
-                type: "GET",
-                url: '<%= ResolveUrl("~/DesktopModules/Custom/AutoCompleteService.svc/GetTourResults")%>',
-                data: data,
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (response) {
-                   
-                    $('.btn_LoadMoreExcursionSearchResults').remove();
-                    $("#<%= Excursions.ClientID %>").append(response);
-                    $("#loader").hide();
-                    $("#btn_UpdateExcursionFilters").click(); 
-                    document.getElementsByClassName('Excursionsfound')[0].innerHTML = <%= Session.Item("ExcursionCount") %>;
-
-                },
-                failure: function (response) {
-                    alert("failure");
-                    alert(response.d);
-                },
-                error: function (response) {
-                    alert("error");
-                    alert(response.d);
-                }
-            });
-        }
-        pageIndex++;
-    }
-
+ 
     function btn_UpdateExcursionSearchResults_click() {
      //   alert("btn_UpdateExcursionSearchResults_click()");
         pageIndex = 1; 
