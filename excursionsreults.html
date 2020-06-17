@@ -2697,7 +2697,7 @@ body {
     function excResultsSortingChanged() {
   //      alert("excResultsSortingChanged");
         // displayLoadingDiv();
-       <%-- __doPostBack('<%=ddl_ESR_cmbOrderType.ClientID %>', '');--%>
+    
         var cmbPriceSorting = $find("<%= ddl_ESR_cmbOrderType.ClientID %>");  
         var jsonExcSearchResultsSorting = JSON.stringify({ "Exc_PriceSorting": cmbPriceSorting.get_value() });
         localStorage.setItem("ExcSearchResultsSorting", jsonExcSearchResultsSorting);
@@ -2714,20 +2714,13 @@ body {
     }
 
     function getExcursionResults() {
-   //     alert("getExcursionResults");
-       
-      <%--var cmbPriceSorting = $find("<%= ddl_ESR_cmbOrderType.ClientID %>"); 
-    
-      var jsonExcSearchResultsSorting = JSON.stringify({ "Exc_PriceSorting": cmbPriceSorting.get_value() });--%>
+   //     alert("getExcursionResults"); 
     
         if (pageIndex == 2 || pageIndex <= pageCount) {
           
             $("#loader").show();
 
             var jsonExcFilters = $('#hf_excFilters').val();
-    //        alert(jsonExcFilters);
-               <%-- '<%= Session("ExcursionResultsSelectedFilters") %>';--%>
-          
             var jsonExcSearchCriteria = localStorage.getItem("ExcSearchCriteria");
 
             var data = {  p_pageIndex: 1, p_pageSize: 9 };
