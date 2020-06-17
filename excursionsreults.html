@@ -2637,47 +2637,7 @@ body {
 
 
     //added by akoukouri 31/08/2015
-    window.onload = function () {
-      //  alert("window.onload");
-        var inputs, index;
-        var findSR_Panel, myElement, position;
-        inputs = document.getElementsByTagName('input');
-        var getHotelID = $("#<%= hf_ESRRes_ExcursionIDSelbyDetails.ClientID%>").val();
-
-        for (index = 0; index < inputs.length; ++index) {
-
-            if (inputs[index].type == "hidden") {//if 
-
-                var elemID = inputs[index].id;
-                var text = $('#' + inputs[index].id).val();
-                text = $.trim(text);
-
-                if ((elemID.indexOf("hf_ESingRes_ExcursionID") != -1) && (text == getHotelID)) {
-                    findSR_Panel = $('#' + elemID).parent().parent().parent().find(".div_ExcursionID_" + text).attr("id");
-                    myElement = document.getElementById(findSR_Panel);
-                    position = getPosition(myElement);
-                    window.scroll(0, position.y);
-
-                }
-
-            } //end if type== "hidden"
-
-        } //end for
-
-
-        var jsonExcSearchResultsSorting = localStorage.getItem("ExcSearchResultsSorting");
-        
-        if (jsonExcSearchResultsSorting != null) {
-            var priceSorting = jQuery.parseJSON(jsonExcSearchResultsSorting).Exc_PriceSorting;
-            var cmbPriceSorting = $find("<%= ddl_ESR_cmbOrderType.ClientID %>"); 
-            cmbPriceSorting.trackChanges();
-            cmbPriceSorting.get_items().getItem(priceSorting).select();
-            cmbPriceSorting.updateClientState();
-            cmbPriceSorting.commitChanges();
-        }
-       
-   
-    };
+  
 
     function getPosition(element) {
         var xPosition = 0;
