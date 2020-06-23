@@ -1,0 +1,2779 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"  ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+ 
+<link rel="stylesheet" href="css/nice-select.css" >
+   <script src="js/jquery.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+<style>
+
+	.email {
+    /* background-image: url(images/email.svg); */
+    /* padding: 8px 8px 8px 8px; */
+    width: 20px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.telephone {
+    /* background-image: url(images/telephone.svg); */
+    /* padding: 8px 8px 8px 8px; */
+    width: 20px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+#dnn_CarouselPane {
+    POSITION: ABSOLUTE;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.container1281 {
+    max-width: 1280px !important;
+   
+}
+.container1280header {
+    max-width: 1280px !important;
+    /* padding-top: 119px; */
+    padding: 0px 15px;
+}
+
+.nice-select {
+    border: none !important;
+}
+
+.earth {
+    /* background-image: url(images/earthblue.svg); */
+    /* padding: 8px 8px 8px 8px; */
+    width: 20px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.select {
+    /*background: url("images/arrowdown.svg");
+        background-position: right;
+        background-repeat: no-repeat;*/
+    background-size: 13px 7px;
+    border: 1px;
+    padding-right: 19px;
+    -webkit-appearance: none;
+    font-family: Proxima Nova !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    color: #24263D;
+    color: rgb(36, 38, 61);
+}
+
+.language {
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+}
+
+body {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 15px !important;
+    color: rgb(138, 138, 138) !important;
+}
+
+.hrb2c {
+    width: 69%;
+    text-align: left;
+    margin-left: 284px;
+    margin-top: 43px;
+}
+
+.b2cheader {
+    text-align: right;
+    padding-right: 25px;
+}
+
+.profil {
+    background-image: url(images/profil.svg);
+    padding: 20px 10px 20px 10px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+}
+
+.cartimg {
+    background-image: url(images/cart.svg);
+    padding: 30px 10px 30px 10px;
+    background-size: 20px 40px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+}
+
+ 
+.container {
+    width: 100%;
+}
+
+.lblb2c {
+    text-decoration: none;
+    color: rgb(138, 138, 138) !important;
+    margin-left: 10px;
+    display: none !important;
+}
+
+
+.home-button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.languagebox {
+    background-color: rgb(255, 255, 255);
+}
+
+/*.form-control {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}*/
+
+.top-header, .bottom-header {
+    display: block;
+}
+
+.top-header {
+    top: 0px;
+    font-weight: 500;
+}
+
+.bottom-header {
+    color: #708090;
+    margin-bottom: 800px;
+}
+
+.bottom-header {
+    margin-top: 12px;
+}
+
+.navbar {
+    display: none;
+}
+
+.logoimg {
+    margin-left: 288px;
+}
+
+.moveleft {
+    margin-left: 20px !important;
+}
+
+#lblCopyright {
+    display: none;
+}
+
+.headerone {
+    height: 60px;
+}
+
+.headeroneb2b {
+    margin-bottom: 120px;
+    margin-top: -45px;
+    height: 60px;
+}
+
+.SkinObject {
+    display: none;
+}
+
+
+
+.logo {
+    background-repeat: no-repeat;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu {
+    float: none !important;
+}
+
+.header {
+    background-color: #fff;
+    /* width: 100%; */
+    z-index: 3;
+    height: 15px;
+    float: none !important;
+    max-width: 505px;
+}
+
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .header li a {
+        display: block;
+        padding: 10px 7px;
+        border-right: 0px solid #f4f4f4;
+        text-decoration: none;
+    }
+
+        .header li a:hover,
+        .header .menu-btn:hover {
+            background-color: #f4f4f4;
+        }
+
+    .header .logo {
+        display: block;
+        float: left;
+        font-size: 2em;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+/* menu */
+.menu1 {
+    float: right;
+    padding-right: 16% !important;
+    padding-top: 10px !important;
+    display: inline-block;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+    .header .menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+
+        .header .menu-icon .navicon:before,
+        .header .menu-icon .navicon:after {
+            background: #333;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+
+        .header .menu-icon .navicon:before {
+            top: 5px;
+        }
+
+        .header .menu-icon .navicon:after {
+            top: -5px;
+        }
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+    .header .menu-btn:checked ~ .menu {
+        max-height: 371px;
+        width: 100%;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+
+        .header .menu-btn:checked ~ .menu-icon .navicon:before {
+            transform: rotate(-45deg);
+        }
+
+        .header .menu-btn:checked ~ .menu-icon .navicon:after {
+            transform: rotate(45deg);
+        }
+
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+/* 48em = 768px */
+.moveleft {
+    margin-left: 0px;
+}
+
+.icontoremove {
+    display: none;
+}
+
+
+.menu a {
+    color: rgb(255, 255, 255);
+    background: none;
+}
+
+.menu {
+    background: rgba(36, 38, 61, 1) !important;
+    opacity: 0.95 !important;
+    padding-left: 50% !important;
+}
+
+.my-button {
+    color: black !important;
+    background-color: rgb(255, 255, 255) !important;
+    border: 0px !important;
+    border-radius: 0px !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.header li a:hover {
+    background: none !important;
+    color: rgb(10, 191, 242);
+}
+
+
+.logob2c {
+    width: 200px !important;
+}
+
+.imgburgerdisp {
+    display: none !important;
+}
+
+@media (min-width: 992px) and (max-width: 1049px) {
+    .top-header {
+        padding-right: 7%;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1099px) {
+    .top-header {
+        padding-right: 8%;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+    .top-header {
+        padding-right: 10%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .top-header {
+        padding-right: 12%;
+    }
+}
+
+@media (min-width: 1399px) and (max-width: 1584px) {
+    .top-header {
+        padding-right: 14%;
+    }
+}
+
+@media (min-width: 1585px) and (max-width: 1799px) {
+    .top-header {
+        padding-right: 16%;
+    }
+}
+
+@media (min-width: 1799px) {
+    .top-header {
+        padding-right: 16.5%;
+    }
+}
+
+.cartdiv {
+    display: inline-block !important;
+    text-align: center;
+    width: 10px !important;
+    height: 26px !important;
+}
+
+.hrb2c {
+    margin-left: 52px;
+}
+
+.moveright {
+    margin-right: 10px;
+}
+
+.contactmailphone {
+    margin-top: 10px;
+    margin-left: 3%;
+    display: inline-block;
+}
+
+@media (min-width: 992px) {
+    .contactmailphone {
+        margin-top: 10px;
+        margin-left: 10%;
+        display: inline-block;
+    }
+
+    .b2cheader {
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 10% !important;
+        padding-right: 90px;
+    }
+
+    .hrb2c {
+        margin-left: 240px;
+    }
+
+    .cartimg {
+        background-size: 20px 40px;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .profil {
+        background-size: 20px 40px;
+    }
+
+    .cartdiv {
+        display: inline-block !important;
+        text-align: center;
+        width: 78px !important;
+        height: 26px !important;
+    }
+
+    .header {
+        padding-left: 80px !important;
+    }
+
+    .imgburgerdisp {
+        display: inline-block !important;
+    }
+
+    .logo {
+        width: 300px !important;
+        /*padding-top: 37px !important;*/
+    }
+
+    .logob2c {
+        width: 300px !important;
+    }
+
+
+    .lblb2c {
+        display: inline-block !important;
+    }
+
+    .menu a {
+        color: rgb(138, 138, 138) !important;
+    }
+
+    .menu {
+        background: rgb(255, 255, 255) !important;
+        padding-left: 0px !important;
+    }
+
+    .cartb2b:hover {
+        background: #0ABFF2 !important;
+        background: rgba(10, 191, 242, 1) !important;
+        color: #FFFFFF;
+        color: rgb(255, 255, 255) !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        width: 70px !important;
+        height: 26px !important;
+        text-align: center;
+    }
+
+    .my-button {
+        color: rgb(255, 255, 255) !important;
+        background-color: #0ac0f2 !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    .icontoremove {
+        display: inline-block;
+    }
+
+    .moveleft {
+        margin-left: 20px !important;
+    }
+
+    .header {
+        padding-left: 300px;
+    }
+
+    .menu {
+        /*padding-top: 17px !important;*/
+        /*padding-right: 300px !important;*/
+        margin-right: 17%;
+    }
+
+    .header li {
+        float: left;
+    }
+
+        .header li a {
+            padding: 10px 30px;
+        }
+
+            .header li a:hover {
+                background: none !important;
+            }
+
+    .header .menu {
+        /* clear: none; */
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1585px) {
+    .contactmailphone {
+        margin-top: 10px;
+        margin-left: 0;
+        display: inline-block;
+    }
+
+    .b2cheader {
+        text-align: center;
+        padding-top: 0px;
+        padding-left: 0% !important;
+        padding-right: 0px;
+        text-align: right;
+    }
+
+    .cartimg {
+        background-size: 20px 40px;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .profil {
+        background-size: 20px 40px;
+    }
+
+    .hrb2c {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 19px;
+    }
+
+    .cartdiv {
+        display: inline-block !important;
+        text-align: center;
+        width: fit-content !important;
+        height: 26px !important;
+        margin-right: 22px;
+    }
+
+    .imgburgerdisp {
+        display: inline-block !important;
+    }
+
+    .logo {
+        width: 300px !important;
+        /*padding-top: 37px !important;*/
+    }
+
+    .logob2c {
+        width: 300px !important;
+    }
+
+
+    .lblb2c {
+        display: inline-block !important;
+    }
+
+    .menu a {
+        color: rgb(138, 138, 138) !important;
+    }
+
+    .menu {
+        background: rgb(255, 255, 255) !important;
+        padding-left: 0px !important;
+    }
+
+
+    .cartb2b:hover {
+        background: #0ABFF2 !important;
+        background: rgba(10, 191, 242, 1) !important;
+        color: #FFFFFF;
+        color: rgb(255, 255, 255) !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        width: 92px !important;
+        height: 26px !important;
+        text-align: center;
+    }
+
+    .my-button {
+        color: rgb(255, 255, 255) !important;
+        background-color: #0ac0f2 !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+    .icontoremove {
+        display: inline-block;
+    }
+
+    .moveleft {
+        margin-left: 20px !important;
+    }
+
+    .header {
+        padding-left: 300px;
+    }
+
+
+        .header li {
+            float: right;
+        }
+
+            .header li a {
+                padding: 10px 30px;
+            }
+
+                .header li a:hover {
+                    background: none !important;
+                }
+
+        .header .menu {
+            clear: none;
+            float: right;
+            max-height: none;
+            text-align: right;
+        }
+
+        .header .menu-icon {
+            display: none;
+        }
+}
+
+.header {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    text-align: right;
+    padding: 0px !important;
+    max-width: none;
+    display: block;
+}
+
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .header li a {
+        display: block;
+        padding: 10px 7px;
+        border-right: 0px solid #f4f4f4;
+        text-decoration: none;
+        color: #24263D !important;
+        font-weight: 400;
+    }
+
+        .header li a:hover,
+        .header .menu-btn:hover {
+            background-color: #f4f4f4;
+        }
+
+    .header .logo {
+        display: block;
+        float: left;
+        font-size: 2em;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+.toplogo {
+    text-align: left;
+    padding: 0;
+}
+
+.row.top {
+    margin: 0px 0px 0px 0px !important;
+    padding-top: 4px;
+}
+
+.topcontact {
+    padding: 0px;
+    text-align: left;
+    color: #24263D;
+    font-weight: 400;
+    font-family: 'proxima-nova' !important;
+}
+
+.topmenu {
+    text-align: right;
+    width: 100%;
+    /* float: right; */
+}
+
+ul.menu {
+    /* width: 100%; */
+}
+
+.lang {
+    top: 8px;
+    text-align: right;
+}
+
+a.button {
+    /*background: #0abff2;*/
+    padding: 5px;
+    border-radius: 5px;
+    /*color: #fff !important;*/
+}
+
+label.lblb2c.cartb2b.topbar {
+    /*color: #fff !important;*/
+}
+
+.language {
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+}
+.select {
+    background: url("images/arrowdown.svg");
+        background-position: right;
+        background-repeat: no-repeat; 
+    background-size: 13px 7px;
+    border: 1px;
+    padding-right: 19px;
+    -webkit-appearance: none;
+    font-family: Proxima Nova !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    color: #24263D;
+    color: rgb(36, 38, 61);
+}
+    .select:after {
+     display:none!important;
+    }
+	input#dnn_ctr440_ExcursionSearch_exc_search {
+    color: red;
+}
+
+.dots.dots2 {
+    margin-right: -43px;
+}
+#basic-addon2 {
+    background-color: transparent !important;
+    border: none;
+    display: inline-block;
+    color: rgb(255, 255, 255, 1);
+    margin-top: 8px;
+    padding-right: 20px;
+    font-weight: 700;
+}
+    
+body {
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.container1280 {
+    max-width: 1280px !important; 
+}
+
+@media (min-width: 1200px) {
+    .privateexcursionsdiv {
+        
+    }
+
+  
+}
+
+@media (min-width: 1199px) and (max-width: 1249px) {
+    .privateexcursionsdiv {
+        padding-right: 380px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 380px;
+    }
+}
+
+@media (min-width: 1150px) and (max-width: 1199px) {
+    .privateexcursionsdiv {
+        padding-right: 360px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 360px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1149px) {
+    .privateexcursionsdiv {
+        padding-right: 335px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 335px;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1099px) {
+    .privateexcursionsdiv {
+        padding-right: 330px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 330px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1049px) {
+    .privateexcursionsdiv {
+        padding-right: 290px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 290px;
+    }
+}
+
+.privateexcursionslbl {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 15px !important;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    width: 93px;
+    word-break: normal;
+    font-weight: 900 !important;
+    margin-right: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+
+.fakos {
+    /* background-image: url(images/fakos.svg); */
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    display:inline-block;
+}
+
+.privateexcursions {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    /* width: 245px; */
+    /* height: 106px; */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 0px;
+    padding: 21px;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    /* margin-bottom: 120px; */
+    /* padding-right: 52px !important; */
+    max-width: 350px;
+}
+
+.toursexcursions {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    /* width: 245px; */
+    /* height: 106px; */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 0px;
+    padding: 21px;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    /* margin-bottom: 120px; */
+    max-width: 350px;
+    right: 10px;
+}
+
+.dots {
+    /*background-image: url(images/dots.svg);*/
+    background-repeat: no-repeat;
+    /* padding: 6px 9px 6px 9px; */
+    white-space: nowrap;
+    /* margin-left: 192px; */
+    width: 34px;
+    /* height: 100%; */
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.bluearrow {
+    background-image: url(images/bluearrow.svg);
+    background-repeat: no-repeat;
+    padding: 6px 9px 6px 9px;
+    white-space: nowrap;
+}
+
+.rightarrow {
+    background-image: url(images/rightarrow.svg);
+    background-repeat: no-repeat;
+    padding: 6px 9px 6px 9px;
+    white-space: nowrap;
+}
+
+.points {
+    background-image: url(images/points.svg);
+    background-repeat: no-repeat;
+    padding: 20px 25px 20px 25px;
+    vertical-align: top;
+}
+
+.ship {
+    background-image: url(images/ship.svg);
+    background-repeat: no-repeat;
+    padding: 20px 20px 20px 20px;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+.openlock {
+    background-image: url(images/openlock.svg);
+    background-repeat: no-repeat;
+    padding: 20px 25px 20px 25px;
+    vertical-align: top;
+    /*margin-right: 95px;
+    margin-bottom: 120px*/
+}
+
+.middle-enginediv {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw; 
+}
+
+
+.middle-engine {
+    background-image: url(images/frontpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#TopContent {
+    margin-top: 0px !important
+}
+
+.language {
+    display: inline-block;
+}
+
+
+.searchengine {
+    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.5);
+    width: 819px; 
+    border-radius: 39px;
+    padding-top: 16px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 1px;
+}
+
+.search-engine-input {
+    width: 626px;
+    height: 54px;
+    outline: none;
+    border-radius: 35px;
+    border: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 16px;
+}
+
+.searchbtn:hover {
+    text-decoration: none;
+}
+
+.viewallbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    padding: 2px 10px 2px 10px;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none !important;
+    display: block;
+    width: fit-content;
+    margin-left: 8px;
+}
+
+.searchbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    border-radius: 41px;
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    font-weight: 700;
+	margin-top: -27px;
+}
+
+.searchinpdiv {
+    padding-top: 11px;
+    padding-left: 27px;
+    border-radius: 16px;
+}
+
+.searchbtndiv {
+    padding-top: 27px;
+}
+
+.search-input {
+    background: #FFFFFF;
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 558px;
+    border-radius: 16px;
+    top: 250px;
+    width: 799px;
+    height: 55px;
+    white-space: nowrap;
+}
+
+
+.fontsize {
+    margin-top: 90px;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0 !important;
+}
+
+
+
+@media (max-width: 575px) {
+    .privateexcursionsdiv {
+        padding-right: 0px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 0px;
+    }
+
+    .viewallbtn {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+
+    .toursexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+    }
+
+    .privateexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+        padding-right: 0px !important;
+        margin-right: 30px;
+    }
+
+    .points {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .openlock {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursionslbl {
+        font-size: 12px !important;
+        width: 86px;
+        word-break: normal;
+    }
+
+    .ship {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .searchengine {
+        /*height: 115px;*/
+        width: 340px;
+    }
+
+    .search-engine-input {
+        width: 320px;
+        height: 39px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        margin-left: -10px;
+    }
+
+    /*.searchbtn {
+        margin-left: 3px;
+        padding: 9px 126px 9px 126px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }*/
+
+
+
+    .fontsize {
+        font-size: 20px;
+    }
+
+    .secondfontsize {
+        font-size: 12px;
+    }
+
+    .search-engine-input {
+        width: 320px;
+        height: 39px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
+    /*.searchbtn {
+        padding: 9px 126px 9px 126px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }*/
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .privateexcursionsdiv {
+        padding-right: 0px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 0px;
+    }
+
+    .viewallbtn {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+    }
+
+    .privateexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+        padding-right: 0px !important;
+        margin-right: 30px;
+    }
+
+    .toursexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+    }
+
+    .points {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .openlock {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursionslbl {
+        font-size: 12px !important;
+        width: 86px;
+        word-break: normal;
+    }
+
+    .ship {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .searchengine {
+        /*height: 115px;*/
+        width: 340px;
+    }
+
+    .search-engine-input {
+        width: 320px;
+        height: 39px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        margin-left: -10px;
+    }
+
+    /*.searchbtn {
+        margin-left: 3px;
+        padding: 9px 126px 9px 126px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }*/
+    
+    fontsize {
+        font-size: 40px;
+    }
+
+    .secondfontsize {
+        font-size: 15px;
+    }
+}
+
+.secondfontsize {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+
+.fontbold {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-weight: 900;
+}
+
+.body {
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.center {
+}
+
+/*.form-control {
+    width: 810px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+.form-outer {
+    border: 10px solid #ccc !important;
+    height: 74px;
+    border-radius: 16px;
+}*/
+ .ysc {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 19px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
+}
+.paddingdown {
+    padding-top:20px;
+}
+.Bookbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    border: none;
+    background-size: 300px 100px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    width: 290px !important;
+    height: 44px;
+    outline: none;
+}
+.editbtn {
+    background: #000736;
+    background: rgba(0, 7, 54, 1);
+    border: none;
+    background-size: 300px 100px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    width: 230px;
+    height: 30px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.newsearchbtn {
+    background: #000736;
+    background: rgba(0, 7, 54, 1);
+    border: none;
+    background-size: 300px 100px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    width: 233px;
+    height: 40px;
+    outline: none;
+}
+
+.termslbl {
+    font-family: Proxima Nova;
+    font-size: 13px;
+    
+}
+.blueterms {
+    color: #00C0F2;
+    color: rgb(0, 192, 242);
+}
+
+
+.fourdetailsspan {
+    font-family: Proxima Nova;
+    font-size: 13px;
+    color: #929497;
+    color: rgb(146, 148, 151);
+}
+
+.contactdetailhead {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 17px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #00C0F2 60%);
+}
+.block {
+    display:block;
+}
+
+.cbx {
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    font-family: Proxima Nova; 
+    margin-top:8px;
+}
+
+input[type='radio'] {
+-webkit-appearance: none;
+width: 20px;
+height: 20px;
+background: url(svg/backcircleresults.svg);
+border-radius: 50%;
+outline: none;
+/*box-shadow: 0 0 5px 0px gray inset;*/
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+input[type='radio']:checked:before {
+    background: url(svg/tick.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 20px;
+}
+
+.travelerdetail {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 17px;
+    color: #00C0F2;
+    color: rgb(0, 192, 242);
+}
+.travelerdetailspan {
+    font-family: Proxima Nova;
+    font-size: 13px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+.or {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.textbox {
+    display: block;
+    width: 100%;
+    height: 100px; 
+    border: 1px solid grey;
+}
+
+    .textbox::selection {
+        border: 1px solid grey;
+    }
+
+    .specialrequire {
+        width: 280px;
+    }
+
+.leftdetails {
+    font-family: Proxima Nova;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+.bluetick {
+    background-repeat: no-repeat;
+    height: 20px;
+    display: inline-block; 
+}
+.leftdetailsbold {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.tourspandiv {
+    background: rgba(236, 22, 81, 1);
+    width: 119px;
+}
+
+.tourspanlbl {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 19px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+i {
+    border: 1px solid #EC1651;
+    border-radius: 20px;
+    font-size: 8px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+.whitearrowdown {
+    background-repeat: no-repeat;
+    height: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.tourextras {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+.singsupplement {
+    font-family: Proxima Nova;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+.cbx {
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    font-family: Proxima Nova;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: url(svg/backcircleresults.svg);
+    border-radius: 50%;
+    outline: none;
+    /*box-shadow: 0 0 5px 0px gray inset;*/
+}
+
+    input[type='radio']:before {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 60%;
+        margin: 20% auto;
+        border-radius: 50%;
+    }
+
+    input[type='radio']:checked:before {
+        background: url(svg/tick.svg);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 20px;
+    }
+
+
+/*
+    passenger area
+*/
+.NoofTr {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    color: #929497;
+    color: rgb(146, 148, 151);
+    background-color: #D0D2D3;
+}
+
+.numbers {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.numbersboarder {
+    border: 1px solid #D0D2D3;
+}
+
+.minusplusdiv {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.minusplusfirst {
+    background-color: #D0D2D3;
+    height: inherit;
+}
+
+.passdescription {
+    font-family: Proxima Nova;
+    font-size: 11px;
+    color: #A6A8AB;
+    color: rgb(166, 168, 171);
+}
+
+
+.minusplus {
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    display: inline-block;
+    padding: 1px 8px 1px 0px;
+}
+/* end*/
+.containersinnewsearch {
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.addextrastour {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 15px;
+    color: #0ABFF2;
+    color: rgb(10, 191, 242);
+}
+
+.addextras {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0ABFF2;
+    color: rgb(10, 191, 242);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #0ABFF2    60%);
+}
+.Bookbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    border: none;
+    background-size: 300px 100px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    width: 354px;
+    height: 44px;
+    outline: none;
+    margin-bottom: 40px;
+}
+
+
+.cartimgdiv {
+    background: rgba(153, 153, 153, 1);
+    width: 139px;
+    height: 113px;
+}
+.cartcurrenttotallbl {
+    font-family: Proxima Nova;
+    font-size: 22px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+    
+}
+.movedown8 {
+    margin-top: 8px;
+}
+.movedown10 {
+    margin-top: 10px;
+}
+.movedown14 {
+    margin-top: 14px;
+}
+.movedown17 {
+    margin-top: 17px;
+}
+.movedown20 {
+    margin-top: 20px;
+}
+.movedown22 {
+    margin-top: 22px;
+    background: rgba(236, 22, 81, 1);
+}
+.cartcurrenttotal {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
+    width: 230px;
+}
+
+.cartimgdiv:before {
+    content: "TOUR 1";
+    display: block;
+    text-align: center;
+    background: rgba(0, 192, 242, 1);
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+} 
+.redprice {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 20px;
+    color: #EC1651;
+    color: rgb(236, 22, 81);
+}
+.bluearrowright {
+    background-repeat: no-repeat;
+    height: 20px;
+    display: inline-block;
+}
+.cartbin {
+    background-repeat: no-repeat;
+    height: 20px;
+    display: inline-block; 
+
+}
+.productsummary {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
+}
+.tournamediv {
+    width: 375px;
+}
+.tourname {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+    display: block;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
+} 
+.tournamediv {
+    text-align:left;
+}
+
+.tourscart {
+    background-repeat: no-repeat;
+    height: 40px;
+    display: inline-block;
+    margin-top: -10px;
+}
+.tourscartblue {
+    background-repeat: no-repeat;
+    height: 20px;
+    display: inline-block; 
+}
+
+.prevcartheader {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%); 
+}
+.cartheader {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    margin-top: 100px;
+}
+.bluecartheader {
+    background: rgba(10, 191, 242, 1);
+}
+.tourslbl {
+    font-family: Proxima Nova;
+    font-size: 40px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+.breadcrumb {
+    display: inline-flex !important;
+    text-align: center !important;
+    background: none !important;
+}
+
+.breadcrumb-item:hover {
+    color: #FFFFFF !important;
+}
+
+.breadcrumb-item {
+    color: #FFFFFF !important;
+}
+
+    .breadcrumb-item::before {
+        content: ">" !important;
+        color: #FFFFFF !important;
+    }
+
+.first::before {
+    content: "" !important;
+}
+
+
+.basketcart {
+    /* background-image: url(svg/fakos.svg); */
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 35px;
+    margin-right: 2px;
+    display: inline-block;
+    width: 50px;
+    height: 80px;
+    margin-top:-20px;
+}
+
+.myclass{ 
+    font-family : Proxima Nova;
+    font-size : 49px;
+    font-weight:900;
+    color : #FFFFFF;
+    color : rgb(255, 255, 255);
+}
+.cartcalss {
+    font-family: Proxima Nova;
+    font-size: 49px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+.container800 {
+ width:800px;
+}
+.container300 {
+width:300px;
+}
+.backgroundgrey {
+    background: rgba(236, 236, 235, 1);
+}
+
+.rightimages {
+    background: #B3B3B3;
+    background: rgba(179, 179, 179, 1);
+    border-style: Solid;
+    border-color: #FFFFFF;
+    border-color: rgba(255, 255, 255, 1);
+    border-width: 0px;
+    width: 169px;
+    height: 80px;
+}
+
+.rightpanelllbl {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.container169 {
+    width: 169px;
+}
+
+.twotraveller {
+    font-family: Proxima Nova;
+    font-size: 13px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.twotravellereuro {
+    font-family: Proxima Nova;
+    font-size: 13px;
+    color: #EC1651;
+    color: rgb(236, 22, 81);
+}
+
+.linepassenger {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width:80%;
+}
+
+.cartdetailrightarrow {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+}
+.carttotallbl {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 13px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.carttotallblprice {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 15px;
+    color: #EC1651;
+    color: rgb(236, 22, 81);
+}
+
+.tourslblright {
+    font-family: Proxima Nova;
+    font-size: 24px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+.tourscartright {
+    background-repeat: no-repeat;
+    height: 27px;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.whitearrowdownright {
+    background-repeat: no-repeat;
+    height: 24px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.container697 {
+    width: 697px;
+}
+
+#options {
+    margin-left: -52px;
+}
+#hotel{
+    margin-left: 52px;
+}
+
+.select-side {
+ 
+    border-left:none;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px; /* or 100px */
+}
+.custom-select {
+    background-image: url(svg/greenarrowdown.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #ffffff;
+    background-size: 10px;
+    background-position-x: 294px;
+}
+
+.customcountry {
+    background-position-x: 362px;
+}
+.customtitle {
+    width: 72px;
+    background-position-x: 47px;
+}
+
+.h {
+    height:150px;
+}
+.hinner {
+    padding-top: 16px;
+    
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: transparent;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    width: 33%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 9px;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.previewcancel {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    height:25px;
+}
+.container640 {
+    width: 640px;
+}
+
+.prevheaderfont {
+    font-size:37px;
+    }
+
+.prevexcheader {
+    text-align:left;
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 19px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.container390 {
+    width: 390px;
+}
+
+.changeline {
+    display:inline-block;
+}
+
+.movedown40 {
+    margin-top:40px;
+}
+
+.movedown28 {
+    margin-top:28px;
+}
+.movedown30 {
+    margin-top: 30px; 
+} 
+
+.movedown32 {
+    padding-top: 32px;
+}
+
+.pretravellerdetails {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 15px;
+    color: #00C0F2;
+    color: rgb(0, 192, 242);
+}
+
+.prevtravellerno {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.prevtravelname {
+    font-family: Proxima Nova;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.prevcontactdetailsheader {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 17px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #00C0F2 60%);
+}
+
+.backgroundwhite {
+    background-color:#FFFFFF;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.prevcontactdetails {
+    font-family: Proxima Nova;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.prevwhitelbl {
+    font-family: Proxima Nova;
+    font-size: 19px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+.container417 {
+    width: 417px;
+    margin-left: -241px;
+}
+
+.svgclass { 
+	    url('images/footer/point.svg');
+		padding: 8px 8px 8px 8px;
+		background-repeat: no-repeat; 
+	    width: 30px;
+		background-size: cover;
+		height: 30px;
+ 
+	}
+    @media (max-width: 1199px) {
+        .followus {
+            margin-left:50px;
+        }
+    }
+    .footerdiv {
+        background-color:#24263d;padding-top:55px;
+    }
+    .footerfonts {
+        font-family: 'proxima-nova', sans-serif;
+        font-size : 13px;
+        color: #FFFFFF;
+    }
+    .contact {
+    display:inline-block;margin-right:80px;margin-bottom:10px;margin-left:50px;
+    }
+    .displayinline {
+        display:inline-block;
+    }
+    .usefullinks {
+        font-family: 'proxima-nova', sans-serif;
+        font-size : 13px;
+        color:#FFFFFF;display:block;
+    }
+    .usefullinksdiv {
+    display:inline-block;margin-right:80px;vertical-align: top;
+    }
+    .followusdiv {
+        display:inline-block;vertical-align: top;margin-right: 80px;
+    }
+    .cpr {
+        width: 69%; text-align: left; margin-left: 284px; margin-top: 30px;margin-bottom: 30px;
+    }
+    .cprspan {
+        color:white;display: flex;align-items:center;justify-content:center;
+    }
+	.footer1280{
+	max-width:1280px;}
+</style>
+
+<center>
+<div style="max-width:1280px;">
+    <div class="row top">
+<div class=" col-4 col-sm-4 col-xl-4 col-lg-4 topcontact">
+    <div class="contactmailphone" style="position:relative; "><img class="telephone" src="images/telephone.svg"><span class="moveright">+302101010101</span><img src="images/mail.svg" class="email"><span>info@dolphins.gr<span> </span></span></div> 
+</div> 
+<div class=" col-6 col-sm-6 col-xl-6 col-lg-6 topmenu">
+<header class="header  "> 
+     
+     
+      <input class="menu-btn" type="checkbox" id="menu-btnb2c">
+      <label class="menu-icon" for="menu-btnb2c"><span class="navicon"></span></label>
+ 
+      <ul style="" class="menu">
+         <li> <a id="li_home" class="li_home" runat="server"> HOME </a> </li>
+          <li> <a id="A1" class="li_home" runat="server"> SPECIAL </a> </li>
+          <li> <a id="A2" class="li_home" runat="server"> ABOUT US </a> </li>
+          <li> <a id="A3" class="li_home" runat="server"> NEWS </a> </li>
+          <li> <a id="A4" class="li_home" runat="server"> CONTACT </a> </li>
+          <li> <a id="A5" class="li_home" runat="server"> HELP </a> </li>
+	  
+         <li></li>
+      </ul> 
+         
+    </header> 
+ </div>
+     <div class=" col-2 col-sm-2 col-xl-2 col-lg-2 lang">
+     
+      <div>
+         <img class="earth" src="images/earthblue.svg"><span><div class="language">
+     
+    
+                  <select  class="select"    id="cmblanguages">
+    <option value="0">English</option>
+    <option value="1">Ελληνικά</option> 
+  </select>       
+    </div></span>
+            
+    </div></div>
+        <hr class="hrb2c">
+  </div>
+</div> 
+</center>
+
+<div id="dnn_ctr439_HeaderOne_ho" class="headerone">
+		
+<div id="dnn_ctr439_HeaderOne_b2c">
+			
+     
+   
+    <center>
+   <div class="container1280header"> 
+    
+    <div class="row">
+        <div class="col-6 col-sm-6 col-xl-6 col-lg-6 toplogo" align="center"> 
+                <img src="images/logo.png" class="logob2c">
+        </div> 
+        <div class="b2cheader col-6 col-sm-6 col-xl-6 col-lg-6 " align="center"> 
+
+            <a href="#" class="accounthover"><img class="profil"><div class="cartdiv"><label class="cartb2b lblb2c">Account</label></div></a>
+            <a href="#" class="button"><img class="cartimg"><div class="cartdiv"><label class="lblb2c cartb2b topbar">My Cart</label></div></a>
+            
+        </div>
+       
+        
+     </div>
+    
+   </div>
+  </center>
+
+  </div>
+</div>
+
+
+
+<div class="cartheader">
+ 
+<center>
+<div class="container800 h ">
+<div class="row">  
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 hinner" align="center">
+     <img src="images/basketcart.svg" class="basketcart"> 
+     <span class="myclass">CART</span>
+     <span class="cartcalss">DETAILS</span>
+    
+</div>
+</div>
+  
+ <div class="row">  
+  <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+             <img src="images/cartwhiteunderline.svg" class="basketcart">
+        </div>
+</div> 
+</div>
+</center>
+</div>
+
+
+
+
+<div class="row">
+ <div class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
+<div class="bluecartheader">
+<center> 
+<div class="row">  
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+          <img src="images/tourscart.svg" class="tourscart">  
+         <span class="tourslbl">TOURS</span>
+         <img src="images/whitearrowdown.svg" class="whitearrowdown rotate">  
+</div>
+</div> 
+    </center>
+</div>
+<div class="mainframe">
+<center>
+<div class="container800 backgroundgrey">
+<div class="row">  
+ <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
+<div class="tourspandiv">
+     <span class="tourspanlbl">TOUR 1</span>
+</div>
+</div>
+</div>
+<div class="row movedown8">
+ <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
+     <div class="tournamediv ">
+     <span class="tourname">SANTORINI HALF DAY WINE ADVENTURE</span>
+     </div>
+</div>
+</div> 
+<div class="row movedown10">
+    
+         <div class="col-12 col-sm-12 col-xl-6 col-lg-6 ">
+             <img src="images/bluetick.svg" class="bluetick">  
+             <span class="leftdetailsbold">Travel Date:</span>
+             <span class="leftdetails">Jan 7,2020</span>
+         </div>
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 ">
+            <div class="specialrequire">
+              <span class="leftdetailsbold">Special Requirements</span>
+              <div class="form-group"> 
+                <textarea class="form-control"  placeholder="Add Some text" rows="3"></textarea>
+              </div>
+            </div>
+         </div>
+    
+</div>
+<div class="row movedown17">
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
+    <div class="row">
+    <div class="col-12 col-sm-12 col-xl-5 col-lg-5 " align="right">
+         <div class="form-group">
+            <select  class="custom-select"  id="hotel">
+              <option>Test</option> 
+            </select>
+         </div>
+    </div>
+    <div class="col-12 col-sm-12 col-xl-2 col-lg-2 "  align="center">
+        <span class="or">OR</span>
+    </div>
+    <div class="col-12 col-sm-12 col-xl-5 col-lg-5 "  align="left">
+        <div class="form-group"> 
+                 <select class="custom-select" id="options">
+                      <option>Test</option> 
+                </select>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="row movedown17">
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
+   <span class="travelerdetail">TRAVELERS DETAILS </span>
+</div>
+</div>
+<div class="container697">
+<div class="row movedown10">
+    <div class="col-12 col-sm-12 col-xl-4 col-lg-4 ">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-xl-4 col-lg-4" align="left">
+                    <span class="travelerdetailspan">TRAVELLERS</span>
+                    <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
+            </div>
+            <div class="col-12 col-sm-12 col-xl-4 col-lg-4" align="center">
+                    <span class="travelerdetailspan">LEAD</span>
+                    <asp:RadioButton  runat="server" class="block cbx"/> 
+            </div>
+            <div class="col-12 col-sm-12 col-xl-4 col-lg-4" align="left">
+                <span class="travelerdetailspan">TITLE</span> 
+                <div class="form-group"> 
+                    <select class="custom-select customtitle" id="title">
+                        <option>Mr.</option> 
+                        <option>Mrs.</option> 
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-xl-6 col-lg-6" align="left">
+                 <span class="travelerdetailspan">NAME</span> 
+                 <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
+            </div>
+            <div class="col-12 col-sm-12 col-xl-6 col-lg-6" align="left">
+                <span class="travelerdetailspan">SURNAME</span> 
+                <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
+            </div>
+        </div>
+    </div>
+     
+</div>
+</div>
+</div>
+
+
+<center>
+<div class="container800">
+    <div class="row movedown20">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " >
+            <span class="contactdetailhead">CONTACT DETAILS</span>
+        </div>
+    </div>
+    <div class="row movedown10">
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
+            <span class="fourdetailsspan">PHONE</span> 
+             <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
+        </div>
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
+            <span class="fourdetailsspan">COUNTRY OF RESIDENCE</span> 
+             <div class="form-group"> 
+                 <select class="custom-select customcountry" id="country">
+                      <option>AUSTRIA</option>  
+                </select>
+        </div>
+        </div>
+    </div>
+    <div class="row  ">
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
+            <span class="fourdetailsspan">E-MAIL</span> 
+            <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
+        </div>
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
+            <span class="fourdetailsspan">VERIFY E-MAIL</span> 
+             <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
+        </div>
+    </div>
+</div>
+</center>
+<center>
+<div class="container800">
+<div class="row movedown20">
+    <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left">
+        <asp:RadioButton  runat="server" class="cbx"/> 
+        <span class="termslbl">I have read and agree to the</span>
+        <span class="termslbl blueterms">Conditions and Cancellation Policy.</span>
+    </div>
+
+</div>
+<div class="row movedown">
+    <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left">
+        <asp:RadioButton  runat="server" class="cbx"/> 
+        <span class="termslbl">In Relation to the requirements of </span>
+        <span class="termslbl blueterms">EU Regulation 2016/679 (GDPR),</span>
+        <span class="termslbl">I Agree to the processing of my personal data according to </span>
+        <span class="termslbl blueterms">Privacy Policy</span>
+    </div>
+
+</div>
+</div>
+</center>
+
+<center>
+<div class="container800">
+<div class="row movedown20">
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
+    <asp:Button runat="server" id="myBtn" Text="PREVIEW YOUR ORDER" class="newsearchbtn" OnClientClick="myFunction(); return false;" />  
+  
+    <div id="myModal" class="modal"> 
+        <div class="modal-content">
+        <span class="close"><img src="images/previewcancel.svg" class="previewcancel"> </span>
+        <div class="container640">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
+                <div class="prevcartheader"> 
+                <center> 
+                <div class="row">  
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 hinner" align="center">
+                     <img src="images/basketcart.svg" class="basketcart"> 
+                     <span class="myclass prevheaderfont">REVIEW</span>
+                     <span class="cartcalss prevheaderfont">YOUR ORDER</span>
+                </div>
+                </div>
+  
+                <div class="row">  
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+                            <img src="images/cartwhiteunderline.svg" class="basketcart">
+                </div>
+                </div>  
+                </center>
+                </div>
+
+
+        <div class="backgroundgrey">
+      
+    
+        <div class="bluecartheader ">
+        <center> 
+        <div class="row">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+                 <img src="images/tourscart.svg" class="tourscartright">  
+                 <span class="tourslblright">TOURS</span>
+                 <img src="images/whitearrowdown.svg" class="whitearrowdownright rotate">  
+        </div>
+        </div> 
+        </center>
+        </div> 
+       
+        <div class="row">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
+        <div class="tourspandiv">
+            <span class="tourspanlbl">TOUR 1</span>
+        </div>
+        </div>
+        </div>
+
+        <center>
+        <div class="container390">
+        
+        <div class="row movedown40">  
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " >
+            <div class="rightimages">
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
+        <div>
+            <span class="prevexcheader"> Santorini Half Day Wine Adventure </span>
+            <div>
+                <img src="images/cartdetailrightarrowblue.svg" class="cartdetailrightarrow"> 
+                <span class="carttotallblprice">35€</span> 
+            </div>
+            <div>
+                <img src="images/bluetick.svg" class="bluetick">  
+                <span class="leftdetailsbold">Travel Date:</span>
+                <span class="leftdetails">Jan 7,2020</span>
+            </div>
+            <div class="movedown28">
+                <span class="pretravellerdetails">TRAVELLER DETAILS</span>
+            </div>
+            <div>
+            <img src="images/bluetick.svg" class="bluetick">  
+            <span class="prevtravellerno">2 Travellers</span></div>
+            <div><span class="prevtravelname">1st/Lead/ Mr. John Papastratos</span></div>
+        </div>
+        </div>
+
+        </div>
+    
+        </div>
+        </center>
+             
+    </div>
+    <div class="backgroundwhite">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
+                 <div class="movedown32">
+                    <span class="prevcontactdetailsheader">CONTACT DETAILS</span> 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
+                 <div class="movedown20">
+                    <span class="prevcontactdetails bold">Phone:</span> 
+                    <span class="prevcontactdetails ">+306933333333:</span> 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
+                    <span class="prevcontactdetails bold">Country:</span> 
+                    <span class="prevcontactdetails ">Greece</span> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
+                    <span class="prevcontactdetails bold">E-mail:</span> 
+                    <span class="prevcontactdetails ">ekdromes@ekdromes.gr</span> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
+                <div class="movedown22">
+                    <span class="prevwhitelbl">TOTAL AMMOUNT</span>
+                    <img src="images/whiterightarrow.svg" class="bluetick">  
+                    <span class="prevwhitelbl">35€</span> 
+                </div>
+                
+            </div>
+        </div>
+        <div class="row movedown20">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left">
+                <asp:RadioButton  runat="server" class="cbx"/> 
+                <span class="termslbl">I have read and agree to the</span>
+                <span class="termslbl blueterms">Conditions and Cancellation Policy.</span>
+            </div>
+
+        </div> 
+        <div class="row movedown container417">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "  >
+                <asp:RadioButton  runat="server" class="cbx"/> 
+                <span class="termslbl">In Relation to the requirements of </span>
+                <span class="termslbl blueterms">EU Regulation 2016/679 (GDPR),</span>
+                <span class="termslbl">I Agree to the processing of my personal data according to </span>
+                <span class="termslbl blueterms">Privacy Policy</span>
+            </div>
+
+        </div>
+        <div class="movedown30 leave30space"> 
+            <div class="row">
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
+                     <asp:Button runat="server" id="Button1" Text="PROCEED TO PAYMENT" class="Bookbtn"  />   
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div> 
+    </div> 
+
+</div>
+</div>
+<div class="row movedown8">
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
+     <asp:Button runat="server" id="btnLogin" Text="PROCEED TO PAYMENT (35,00€)" class="Bookbtn"  />   
+</div>
+</div>
+</div>
+</center>
+</div>
+</div>
+ 
+     
+<div class="col-12 col-sm-12 col-xl-4 col-lg-4 ">
+    <div class="container300 backgroundgrey">
+        <center>
+            <div class="paddingdown">
+                <span class="ysc"> YOUR SHOPPING CART</span>
+            </div>
+        </center>
+    
+        <div class="bluecartheader ">
+        <center> 
+        <div class="row movedown8">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+                 <img src="images/tourscart.svg" class="tourscartright">  
+                 <span class="tourslblright">TOURS</span>
+                 <img src="images/whitearrowdown.svg" class="whitearrowdownright rotate">  
+        </div>
+        </div> 
+        </center>
+        </div> 
+        <div class="row movedown8">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+        <div class="rightimages">
+        </div>
+
+        </div>
+        </div> 
+        <div class="row ">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+          <div class="container169"><span class="rightpanelllbl">SANTORINI HALF DAY WINE ADVENTURE</span></div>
+        </div>
+        </div>
+
+        <div class="row movedown8">  
+            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="center">
+               <span class="twotraveller">2 Travellers</span> 
+            </div>
+            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="center">
+               <span class="twotravellereuro">35E</span> 
+            </div>
+        </div>
+        <div class="row movedown8">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+            <img src="images/linepassenger.svg" class="linepassenger"> 
+        </div>
+        </div>
+
+         <div class="row movedown8">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+        <div class="rightimages">
+        </div>
+
+        </div>
+        </div> 
+        <div class="row ">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+          <div class="container169"><span class="rightpanelllbl">SANTORINI HALF DAY WINE ADVENTURE</span></div>
+        </div>
+        </div>
+
+        <div class="row movedown8">  
+            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="center">
+               <span class="twotraveller">2 Travellers</span> 
+            </div>
+            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="center">
+               <span class="twotravellereuro">35€</span> 
+            </div>
+        </div>
+        <div class="row movedown10">  
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
+           
+               <span class="carttotallbl">CART TOTAL</span> 
+               <img src="images/cartdetailrightarrowblue.svg" class="cartdetailrightarrow"> 
+               <span class="carttotallblprice">35€</span> 
+            </div>
+        </div>
+        <div class="row movedown10">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+            <asp:Button runat="server" id="Button2" Text="EDIT YOUR CART" class="editbtn"  />  
+        </div>
+        </div>
+
+        
+    </div>
+</div>
+</div>
+
+ 
+
+<div class="footerdiv"  >
+<center>
+<div class="footer1280" >
+<div class="row">    
+      <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+
+<div class="contact"><span class="footerfonts" >NetSemantics</span><br />
+<img alt="bank" src="images/point.svg" class="displayinline svgclass" /><span class="footerfonts">357 Thivon str, 122 44 Egaleo Athens, Greece</span><br />
+<img src="images/telephone.svg" class="displayinline svgclass" /><span class="footerfonts">+30 211 1139420-1, +30 210 8256440</span><br />
+<img src="images/fax.svg" class="displayinline svgclass" /><span class="footerfonts">+30 210 8256441</span><br />
+<img src="images/mail.svg" class="displayinline svgclass" /><span class="footerfonts">info@netsemantics.gr</span></div>
+</div> 
+          <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+<div class="usefullinksdiv"><span class="usefullinks">USEFUL LINKS</span> <span class="usefullinks">About us</span> <span class="usefullinks">Terms of</span> <span class="usefullinks">Privacy Statement</span></div>
+</div>
+           <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+<div class="followus"  ><span class="usefullinks">Follow Us</span> <img class="svgclass" src="images/facebook.svg" /><img class="svgclass" src="images/twitter.svg" /><img class="svgclass" src="images/instagram.svg" />
+<p><span class="footerfonts">#dolphinsstravel</span></p>
+</div></div>
+       <div class="col-6 col-sm-6 col-lg-6 col-xl-3">   
+<div style="display:inline-block;vertical-align: top;">
+<p><a href="" id="a_bankmaster_left" rel="noopener noreferrer" target="_blank"><img alt="mastercard" id="img_ftr_bankmaster_left" src="images/mastercardlogos_left.png" /></a><img alt="mastercard" id="img_ftr_bankmaster_right" src="images/mastercardlogos_right.png" /> <img alt="visa" id="img_ftr_bankvisa_left" src="images/visaslogos_left.png" /> <a href="" id="a_bankvisa_right" rel="noopener noreferrer" target="_blank"> <img alt="visa" id="img_ftr_bankvisa_right" src="images/visaslogos_right.png" /></a><img alt="bank" id="img_ftr_bankprovider" src="images/piraeuslogos.png" style="display:inline-block" /></p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12 col-sm-12 col-lg-12 col-xl-12">
+<hr class="cpr">
+<span class="cprspan">DOLPHINS © All Rights reserved </span>
+</div>
+</div>
+</div>
+</center>
+</div>
+
+
+
+<script>
+ 
+function myFunction( ) {
+    modal.style.display = "block";
+}
+     
+var modal = document.getElementById("myModal");  
+var span = document.getElementsByClassName("close")[0];
+     
+span.onclick = function() {
+  modal.style.display = "none";
+} 
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
