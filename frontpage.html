@@ -1,13 +1,23 @@
-<style>	
-  .email {
-    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"  ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+ 
+
+<style>
+.email {
+    /* background-image: url(svg/email.svg); */
+    /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
     margin-right: 5px;
 }
 
 .telephone {
-   
+    /* background-image: url(svg/telephone.svg); */
+    /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
     margin-right: 5px;
@@ -24,7 +34,7 @@
 
 .container1280header {
     max-width: 1280px !important;
-    
+    /* padding-top: 119px; */
     padding: 0px 15px;
 }
 
@@ -33,7 +43,8 @@
 }
 
 .earth {
-  
+    /* background-image: url(svg/earthblue.svg); */
+    /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
     margin-right: 5px;
@@ -52,7 +63,9 @@
 }
 
 .select {
-   
+    /*background: url("svg/arrowdown.svg");
+        background-position: right;
+        background-repeat: no-repeat;*/
     background-size: 13px 7px;
     border: 1px;
     padding-right: 19px;
@@ -89,7 +102,7 @@ body {
 }
 
 .profil {
-    background-image: url(images/profil.svg);
+    background-image: url(svg/profil.svg);
     padding: 20px 10px 20px 10px;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -102,7 +115,7 @@ body {
 }
 
 .cartimg {
-    background-image: url(images/cart.svg);
+    background-image: url(svg/cart.svg);
     padding: 20px 10px 20px 10px;
     background-size: 20px 40px;
     background-repeat: no-repeat;
@@ -137,6 +150,23 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+/*.form-control {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}*/
 
 .top-header, .bottom-header {
     display: block;
@@ -201,7 +231,8 @@ li {
 }
 
 .header {
-    background-color: #fff; 
+    background-color: #fff;
+    /* width: 100%; */
     z-index: 3;
     height: 15px;
     float: none !important;
@@ -234,7 +265,8 @@ li {
         font-size: 2em;
         padding: 10px 20px;
         text-decoration: none;
-    } 
+    }
+/* menu */
 .menu1 {
     float: right;
     padding-right: 16% !important;
@@ -247,7 +279,8 @@ li {
     max-height: 0;
     transition: max-height .2s ease-out;
 }
- 
+
+/* menu icon */
 
 .header .menu-icon {
     cursor: pointer;
@@ -285,7 +318,8 @@ li {
         .header .menu-icon .navicon:after {
             top: -5px;
         }
- 
+
+/* menu btn */
 
 .header .menu-btn {
     display: none;
@@ -312,7 +346,8 @@ li {
     .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
         top: 0;
     }
- 
+
+/* 48em = 768px */
 .moveleft {
     margin-left: 0px;
 }
@@ -465,7 +500,8 @@ li {
     }
 
     .logo {
-        width: 300px !important; 
+        width: 300px !important;
+        /*padding-top: 37px !important;*/
     }
 
     .logob2c {
@@ -522,6 +558,8 @@ li {
     }
 
     .menu {
+        /*padding-top: 17px !important;*/
+        /*padding-right: 300px !important;*/
         margin-right: 17%;
     }
 
@@ -538,6 +576,7 @@ li {
             }
 
     .header .menu {
+        /* clear: none; */
         float: right;
         max-height: none;
     }
@@ -591,7 +630,8 @@ li {
     }
 
     .logo {
-        width: 300px !important; 
+        width: 300px !important;
+        /*padding-top: 37px !important;*/
     }
 
     .logob2c {
@@ -734,10 +774,12 @@ li {
 
 .topmenu {
     text-align: right;
-    width: 100%; 
+    width: 100%;
+    /* float: right; */
 }
 
-ul.menu { 
+ul.menu {
+    /* width: 100%; */
 }
 
 .lang {
@@ -745,12 +787,15 @@ ul.menu {
     text-align: right;
 }
 
-a.button { 
+a.button {
+    /*background: #0abff2;*/
     padding: 5px;
-    border-radius: 5px; 
+    border-radius: 5px;
+    /*color: #fff !important;*/
 }
 
-label.lblb2c.cartb2b.topbar { 
+label.lblb2c.cartb2b.topbar {
+    /*color: #fff !important;*/
 }
 
 .language {
@@ -759,7 +804,7 @@ label.lblb2c.cartb2b.topbar {
     height: 24px;
 }
 .select {
-    background: url("images/arrowdown.svg");
+    background: url("svg/arrowdown.svg");
         background-position: right;
         background-repeat: no-repeat; 
     background-size: 13px 7px;
@@ -786,7 +831,7 @@ label.lblb2c.cartb2b.topbar {
     
 
     .headerprofildiv:hover .profil {
-        background-image: url(images/whiteavatar.svg) !important;
+        background-image: url(svg/whiteavatar.svg) !important;
         padding: 20px 10px 20px 10px;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -819,7 +864,7 @@ margin-left: 10px;
 }
  
     .headercartdiv:hover .cartimg {
-        background-image: url(images/whitecart.svg) !important;
+        background-image: url(svg/whitecart.svg) !important;
         padding: 20px 10px 20px 10px;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -870,929 +915,11 @@ margin-left: 10px;
 .headerprofildiv {
     width: 40px;
 }
-} 
-.custom-select {
-	width: 30%;
-	border-radius: 15px;
-	color: #0ABFF2;
-	background-image: url(images/bluearrowdown.svg);
-	background-repeat: no-repeat;
-	background-position: right;
-	background-color: #ffffff;
-	background-size: 10px;
-	background-position-x: 111px;
 }
-
-
-.careful {
-	
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 2px;
-	display: inline-block;
-}
-.movedown {
-	margin-bottom: 20px;
-}
-.Excursionsfound {
-	color: #0ABFF2;
-	
-}
-.toursfound {
-	color: #0ABFF2; 
-}
-.imagesize {
-	width: 250px;
-	position: relative;
-}
-.topleftimagespan {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	background-color:  #0ABFF2;
-}
-.div_ESR_body {
-	display: block;
-	float: left;
-	width: 707px;  
-	height: auto;
-	font-family: Trebuchet MS;
-	font-family: Roboto, arial; 
-	font-weight: 400;  
-	margin-left: -6px;  
-	margin-top: 28px; 
-}
-
-
-.Excursions
-{
-    position: relative; 
-    float: left;
-    width: 100%; 
-    height: auto;
-    padding-left:12px; 
-    padding-bottom:30px; 
-    margin-bottom: 18px; 
-}
-.div_ex_IMGContainer
-{
-    float:left;
-    width: 250px;
-    margin-bottom: 5px;
-    display:block;
-    position: relative;
-}
-
-.lbl_ex_Currency:before {
-    content: "from";
-    display: block;
-    font-family: Proxima Nova;
-    font-size: 15px;
-    color: #24263D;
-    margin-bottom: -12px;
-}
-.lbl_ex_ExcursionFromPrice:after {
-    content: "per person";
-    display: block;
-    font-family: Proxima Nova;
-    font-size: 15px;
-    color: #24263D;
-    font-weight: normal !important;
-    margin-top: -12px;
-    margin-bottom: 30px;
-}
-.lbl_ex_ExcursionFromlbl, .lbl_ex_ExcursionFromPrice, .lbl_ex_Currency, .lbl_ex_PerPerson {
-    z-index: 3;
-    color: red;
-    font-size: 22px;
-    color: rgb(229, 26, 74);
-    font-weight: 300;  
-}
-
-
-
-.lbl_ex_ExcursionFromPrice {
-    font-family: Proxima Nova !important;
-    font-size: 28px;
-    font-weight: bolder;
-
-}
-
-
-.rightarrow {
-    background-image: url(images/rightarrow.svg);
-    background-repeat: no-repeat;
-    padding: 6px 9px 6px 9px;
-    white-space: nowrap;
-}
-
-
-@media screen and (max-width: 540px) {
-	.select {
-		display: none !important;
-	}
-	.viewallbtn {
-		margin-left:0px!important;
-	}
-
-	.imageseperator {
-		background-image: url(images/horizontalseperator.svg) !important;
-		background-repeat: no-repeat !important;
-		padding: 0px 0px 1px 1px !important;
-		white-space: nowrap !important;
-		width: 80% !important;
-	}
-
-	.imagesize {
-		width: 403px;
-	}
-		
-	.hideprivates {
-		display: block !important;
-	}
-
-	.hidetours {
-		display: block !important;
-	}
-	.leftprivateexcursions {
-		display: none !important;
-	}
-
-	.lefttoursexcursions {
-		display: none !important;
-	}
-}
-@media screen and (min-width: 540px) {
-	.leftprivateexcursions {
-		display: block !important;
-	}
-	.lefttoursexcursions {
-		display: block !important;
-	}
-	.hideprivates {
-		display: none;
-	}
-
-	.hidetours {
-		display: none;
-	}
-	.imageseperator {
-		background-image: url(images/seperator.svg) !important;
-		background-repeat: no-repeat !important;
-		padding: 61px 47px 51px 59px !important;
-		white-space: nowrap;
-		margin-top: 10px !important; 
-		margin-left: 58px !important; 
-	}
-}
-	.imageseperator {
-		background-image: url(images/horizontalseperator.svg);
-		background-repeat: no-repeat;
-		padding: 61px 47px 51px 59px;
-		white-space: nowrap;
-		margin-top: 10px;
-		margin-left: 58px;
-	}
-
-	.rightarrow {
-		background-image: url(images/rightarrow.svg);
-		background-repeat: no-repeat;
-		padding: 6px 9px 6px 9px;
-		white-space: nowrap;
-	}
-
-
-	.bluespan {
-		color: #0ABFF2
-	}
-
-	.rightbluearrow {
-		background-image: url(images/rightbluearrow.svg);
-		background-repeat: no-repeat;
-		padding: 6px 9px 6px 9px;
-		white-space: nowrap;
-	}
-
-	.cbx {
-		background-repeat: no-repeat;
-		width: 16px;
-		height: 16px;
-		font-family: Proxima Nova;
-	}
-
-	input[type='checkbox'] {
-		-webkit-appearance: none;
-		width: 20px;
-		height: 20px;
-		background: url(images/backcircleresults.svg);
-		border-radius: 50%;
-		outline: none;
-		 
-	}
-
-		input[type='checkbox']:before {
-			content: '';
-			display: block;
-			width: 60%;
-			height: 60%;
-			margin: 20% auto;
-			border-radius: 50%;
-		}
-
-		input[type='checkbox']:checked:before {
-			background: url(images/tick.svg);
-			background-repeat: no-repeat;
-			width: 15px;
-			height: 20px;
-		}
-
-	.activitiesfont {
-		font-family: Proxima Nova;
-		font-size: 16px;
-		line-height: 26px;
-		color: #24263D;
-		color: rgb(36, 38, 61);
-	}
-
-	.filterresults {
-		width: 100%;
-		height: 2px;
-		background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
-		margin-bottom:20px;
-	}
-
-	.excursionresults {
-		width: 98%;
-		height: 2px;
-		background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
-		margin-bottom: 40px;
-	}
-
-	.container350 {
-		width: 350px;
-	}
-
-	.breadcrumb {
-		display: inline-flex !important;
-		text-align: center !important;
-		background: none !important;
-	}
-
-	.breadcrumb-item:hover {
-		color: #FFFFFF !important;
-	}
-
-	.breadcrumb-item {
-		color: #FFFFFF !important;
-	}
-
-		.breadcrumb-item::before {
-			content: ">" !important;
-			color: #FFFFFF !important;
-		}
-
-	.first::before {
-		content: "" !important;
-	}
-
-	.searchbtndiv {
-		border: 1px solid #FFFFFF;
-		display: inline-block;
-	}
-
-	.searchbtndnn {
-		display: inline-block;
-	}
-
-	.input-group-text {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: inline-block;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		padding: 0.375rem 0.3rem;
-		margin-bottom: 0;
-		font-size: 0.9375rem;
-		font-weight: 400;
-		line-height: 1.5;
-		color: rgb(255,255,255);
-		text-align: center;
-		white-space: nowrap;
-		border: none;
-		background: none;
-	}
-
-	.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file {
-		position: relative;
-		-webkit-box-flex: 1;
-		-ms-flex: 1 1 0%;
-		flex: 1 1 0%;
-		min-width: 0;
-		margin-bottom: 0;
-		height: 50px;
-		border-radius: 50px 0px 0px 50px;
-	}
-.leftclockspan, .lblBtnLoadMore {
-	color: #FFFFFF;
-}
-.whitearrowdownloadmore {
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 7px;
-	display: inline-block;
-}
-
-.loadmorediv {
-	width: 230px;
-	height: 70px;
-	background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-	border-radius: 25px;
-	padding-top: 23px;
-}
-.leftclock {
- 
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 7px;
-	display: inline-block;
-}
-.topleftimagespan {
-	width: 100px;
-	height: 33px;
-	padding-top: 5px;
-}
-
-.fakos {
-	 
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 2px;
-	display: inline-block;
-}
-
-	.searchbtn {
-		display: inline-block;
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-		padding-left: 10px;
-		background-repeat: no-repeat;
-		border-radius: 41px;
-		border: 0px;
-		border-top-left-radius: 0px;
-		border-bottom-left-radius: 0px;
-		white-space: nowrap;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none;
-		font-weight: 700;
-	}
-
-
-	.engine {
-		background: rgba(240, 240, 240, 1);
-		padding-top: 50px;
-	}
-
-.excursionfilters {
-	background: rgba(36, 38, 61, 1); 
-	height: 51px;
-	margin-bottom: 20px;
-}
-
-	.ExcursionFilterspan {
-		font-family: Proxima Nova;
-		font-weight: bold;
-		font-size: 25px;
-		color: #FFFFFF;
-		color: rgb(255, 255, 255);
-	}
-
-	.div_ESR_body {
-		width: 100px;
-	}
-
-	.dots { 
-		background-repeat: no-repeat; 
-		white-space: nowrap; 
-		width: 34px; 
-		float: right;
-		margin-top: 5px;
-		margin-right: 10px;
-	}
-
-		.dots.dots2 {
-			margin-right: -43px;
-		}
-
-	.points {
-		background-image: url(images/points.svg);
-		background-repeat: no-repeat;
-		padding: 20px 25px 20px 25px;
-		vertical-align: top;
-	}
-
-	.ship {
-		background-image: url(images/ship.svg);
-		background-repeat: no-repeat;
-		padding: 20px 20px 20px 20px;
-		vertical-align: top;
-		margin-top: 2px;
-	}
-
-	.openlock {
-		background-image: url(images/openlock.svg);
-		background-repeat: no-repeat;
-		padding: 20px 25px 20px 25px;
-		vertical-align: top; 
-	}
-
-	.toursexcursions {
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-	 
-		margin-bottom: 10px;
-		background-repeat: no-repeat;
-		border-radius: 10px;
-		border: 0px;
-		padding: 21px;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none;
-	 
-		max-width: 350px;
-		display: block;
-	}
-
-	.privateexcursions {
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-		 
-		background-repeat: no-repeat;
-		border-radius: 10px;
-		border: 0px;
-		padding: 21px;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none; 
-		max-width: 350px;
-	}
-
-	.privateexcursionslbl {
-		font-family: 'proxima-nova', sans-serif;
-		font-size: 15px !important;
-		color: #FFFFFF;
-		color: rgb(255, 255, 255);
-		font-size: 12px;
-		width: 93px;
-		word-break: normal;
-		font-weight: 900 !important;
-		margin-right: 10px;
-		text-align: left;
-		text-transform: uppercase;
-		margin-right: 25px;
-	}
-
-	.whitebackground {
-		background: rgba(255, 255, 255, 1);
-	}
-
-
-	.detailsbtn {
-		padding: 2px 10px 2px 10px;
-		background-repeat: no-repeat;
-		border: 1px solid #0ABFF2;
-		font-family: Proxima Nova;
-		font-size: 14px;
-		white-space: nowrap;
-		color: rgba(10, 191, 242, 1) !important;
-		text-decoration: none !important;
-		display: block;
-		width: fit-content;
-		margin-left: 8px;
-	}
-
-	.viewallbtn {
-		padding: 2px 10px 2px 10px;
-		background-repeat: no-repeat;
-		border: 1px solid white;
-		font-family: Proxima Nova;
-		font-size: 14px;
-		white-space: nowrap;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none !important;
-		display: block;
-		width: fit-content;
-		margin-left: 8px;
-	}
-
-
-	.sendbottom {
-		padding-bottom: 25px;
-	}
-
-	.engine-header {
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-	}
-
-	.wdywtg {
-		display: inline-block !important;
-		width: 506px;
-	}
-
-	.whiteline { 
-		background-repeat: no-repeat;
-		width: 150px;
-		height: 5px;
-		margin-right: 2px;
-		display: inline-block;
-	}
-
-	#div_ESR_HeaderDiv {
-		display: none;
-	}
-
-	.middle-enginediv {
-		width: 100vw;
-	}
-
-	.fontsize {
-		font-family: 'proxima-nova', sans-serif;
-		font-size: 44px;
-		color: rgb(255, 255, 255);
-		margin-bottom: 0 !important;
-	}
-
-	.fontbold {
-		font-family: 'proxima-nova', sans-serif !important;
-		font-weight: 900;
-	}
-
-	.middle-engine {
-		background-image: url(jpeg/frontpage.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.container1280 {
-		max-width: 1280px !important;
-	}
-
-	@media screen and (min-width : 1200px) and (max-width : 4096px) {
-		.FullPane {
-			width: 1048px !important;
-			margin: 0 auto;
-			float: unset !important;
-		}
-
-		.pnl_frRightPane {
-		 
-		}
-
-		i.fa.fa-chevron-down.colorD.Hide {
-			display: none;
-		}
-
-		i.fa.fa-search.colorD, i.fa.fa-sliders.colorD {
-			font-size: 20px;
-		}
-
-
-		.dateDeparture {
-			display: inline-grid;
-		}
-
-		.ep_DateText {
-			width: 100% !important;
-		}
-	}
-
-
-	@media screen and (min-width : 1367px) and (max-width : 4096px) {
-		.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .p_checkboxContainer.normalCheckBox, .lbl_fsCabinClass, .lbl_fsFlightTypeStyle, .checkOptionsDiv, .bookingInfoDiv1 span {
-			padding-left: 0px !important;
-			padding-right: 0px !important;
-		}
-	}
-
-	@media screen and (min-width : 1000px) and (max-width : 1366px) {
-		.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .p_checkboxContainer.normalCheckBox, .lbl_fsCabinClass, .lbl_fsFlightTypeStyle, .checkOptionsDiv, .bookingInfoDiv1 span {
-			padding-left: 0px !important;
-			padding-right: 0px !important;
-		}
-	}
-
-
-
-	@media screen and (min-width : 320px) and (max-width : 1199px) {
-
-
-		.pnl_frRightPane.excFilters {
-			display: inline-flex !important;
-		}
-
-		.div_ESR_HeaderDiv {
-			width: 100% !important;
-		}
-
-		.pnl_frRightPane.excFilters, .pnl_frRightPane.div_ed_Sidebar {
-			position: fixed;
-		 
-			bottom: 0;
-			left: 0;
-			right: 0;
-			overflow: hidden;
-			z-index: 4900;
-			padding: 0;
-			display: block;
-			width: 100%;
-			margin: 0px !important;
-			border-top: 0;
-			cursor: pointer;
-			-webkit-transform: translateY(calc(100% - 40px));
-			transform: translateY(calc(100% - 40px));
-			transition: all .45s ease-out;
-		}
-
-		.pnl_frRightPane_fullscreen_ShowFilters {
-			display: block !important;
-			z-index: 5999 !important;
-			position: fixed !important;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			overflow: auto;
-			overscroll-behavior-y: inherit;
-			background: #fff;
-			transform: translateY(calc(0%)) !important;
-			overflow: scroll !important;
-			transition: all .45s ease-out;
-		}
-
-		.pnl_frRightPane_fullscreen_ShowNewSearch {
-			display: block !important;
-			z-index: 5999 !important;
-			position: fixed !important;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			overflow: auto;
-			overscroll-behavior-y: inherit;
-			background: #fff;
-			transform: translateY(calc(0%)) !important;
-			overflow: scroll !important;
-			transition: all .45s ease-out;
-		}
-
-
-		.HideSearchFlightsFilters {
-			display: none !Important;
-		}
-
-		.HideFiltersForSearch {
-			display: none !Important;
-		}
-
-		.ExcursionFilters {
-			max-height: 40px;
-			transition: all .45s ease-out;
-		}
-
-
-		.Full-width-SearchFlightsFilters, .Full-width-FlightsFilters {
-			width: 100% !important;
-			max-height: 100%;
-		}
-
-
-
-		.ShowFlightMiniSearch {
-			transform: translateY(calc(0%));
-			width: 100% !important;
-		}
-
-		.StopScrollOnMainPage {
-			overflow: hidden;
-		}
-
-		.ExcursionFilters .FiltersContainer {
-			float: unset !important;
-		}
-
-		ul.bl_ed_TabMenu, .img_ed_ExcursionIMG {
-			width: 100%;
-			margin-left: 0px;
-		}
-
-		.div_ed_IMGContainer, .div_Gallery, .div_ed_ExcursionGallery, .ad-gallery, .ad-nav {
-			width: 100% !important;
-		}
-
-		.ad-forward {
-			right: 0px !important;
-		}
-
-		.ad-gallery .ad-nav .ad-thumbs {
-			margin-left: 0px !important;
-		}
-
-		.ad-gallery .ad-image-wrapper .ad-image {
-			padding-left: 0px !important;
-		}
-
-		.fa_rotate {
-			-webkit-transform: rotate(180deg);
-			-moz-transform: rotate(180deg);
-			-ms-transform: rotate(180deg);
-			-o-transform: rotate(180deg);
-			transform: rotate(180deg);
-		}
-
-		i.fa.fa-search.colorD, i.fa.fa-chevron-down.colorD.Hide, i.fa.fa-sliders.colorD {
-			font-size: 18px;
-			background: none !important;
-		}
-
-		.bl_ed_TabMenu {
-			padding-left: 20px !important;
-		}
-
-	 
-		.fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened {
-			left: 0px !important;
-			padding: 0 20px;
-			width: 100% !important;
-		}
-
-		.fancybox-inner, .ep_DateText {
-			width: 100% !important;
-		}
-
-		.ad-image, .ad-image img {
-			height: 400px;
-		}
-
-		.dateDeparture {
-			display: inline-grid;
-		}
-
-
-		 
-		.div_esc_FormContainerDiv .div_esc_rightSelect.pickDateDiv {
-			height: auto !important;
-		}
-
-
-		.ef_excursionSearchControl .dic_esc_leftSelect, .div_esc_rightSelect, .pickDateDiv {
-			width: 100% !important;
-		}
-
-		.ef_excursionSearchControl .priceFilter .PriceFilterBody .ui-slider-horizontal, .FiltersContainer .priceFilter .PriceFilterBody .ui-slider-horizontal, .ExcursionFilters:last-of-type .FiltersContainer .PriceFilterBody, .PriceFilterBody fieldset, .PriceFilterBody, .FiltersContainer .priceFilter {
-			width: 100% !important;
-		}
-
-		.div_esc_rightSelect .priceFilter, .ExcursionFilters:last-of-type .FiltersContainer .PriceFilterBody, .priceFilterTitle i {
-			margin-left: 0px !important;
-		}
-
-		.ExcursionFilters:last-of-type.FiltersContainer.PriceFilterBody, .priceFilter {
-			margin-left: 0px !important;
-			padding: 0 5%;
-		}
-
-		.div_esc_FormContainerDiv .pickDateDiv .ht_pickDateTitle {
-			display: block !important;
-		}
-
-		.esc_DateText.lbl_esc_DepartFrom, .esc_DateText.lbl_esc_DepartTo {
-			display: none;
-		}
-
-		.pickDateDiv, .ef_excursionSearchControl .div_esc_PriceRange .TextBoxLabel {
-			margin-left: 20px;
-		}
-	}
-
-
-	@media screen and (min-width : 320px) and (max-width : 530px) {
-
-		.Excursion {
-			margin-left: 0px !important;
-			width: 300px !important;
-		}
-
-		.ExcursionFilters.NewSearch {
-			width: 175px;
-		}
-
-		.ExcursionFilters {
-			width: 130px;
-		}
-
-		.cmbDeparture {
-			margin-left: 23px;
-		}
- 
-
-		.lbl_AccomodationInfo {
-			width: 100%;
-		}
-
-		.div_AccomodationDiv {
-			display: inline-grid;
-		}
-
-		.cmbLanguage {
-			margin-left: 25px;
-		}
-	}
-
-	@media screen and (min-width : 320px) and (max-width : 470px) {
-
-		#li_spd_tabMenu_2, #li_spd_tabMenu_3 {
-			margin-top: 20px !important;
-		}
-	}
-
-	@media screen and (min-width : 320px) and (max-width : 399px) {
-
-		.cmbDeparture, .rcbInputCell.rcbInputCellLeft {
-			margin-left: 25px;
-		}
-	}
-
-
-	@media screen and (min-width : 768px) and (max-width : 991px) {
-	}
-
-
-	@media screen and (min-width : 482px) and (max-width : 767px) {
-	}
-
-	@media screen and (min-width : 337px) and (max-width : 481px) {
-	}
-
-
-	@media screen and (min-width : 320px) and (max-width : 336px) {
-	}
- 
-.svgclass { 
-	    url('/newsite/portals/0/css/images/footer/point.svg');
-		padding: 8px 8px 8px 8px;
-		background-repeat: no-repeat; 
-	    width: 30px;
-		background-size: cover;
-		height: 30px;
- 
-	}
-    @media (max-width: 1199px) {
-        .followus {
-            margin-left:50px;
-        }
-    }
-    .footerdiv {
-        background-color:#24263d;height:100%;padding-top:55px;
-    }
-    .footerfonts {
-        font-family: 'proxima-nova', sans-serif;
-        font-size : 13px;
-        color: #FFFFFF;
-    }
-    .contact {
-    display:inline-block;margin-right:80px;margin-bottom:10px;margin-left:50px;
-    }
-    .displayinline {
-        display:inline-block;
-    }
-    .usefullinks {
-        font-family: 'proxima-nova', sans-serif;
-        font-size : 13px;
-        color:#FFFFFF;display:block;
-    }
-    .usefullinksdiv {
-    display:inline-block;margin-right:80px;vertical-align: top;
-    }
-    .followusdiv {
-        display:inline-block;vertical-align: top;margin-right: 80px;
-    }
-    .cpr {
-        width: 69%; text-align: left;   margin-top: 30px;margin-bottom: 30px;
-    }
-    .cprspan {
-        color:white;display: flex;align-items:center;justify-content:center;
-    }
-	.footer1280{
-	max-width:1280px;}
-	
-
- 
 </style>
- 
- <center>
+
+
+	<center>
 <div style="max-width:1280px;">
     <div class="row top">
 <div class=" col-4 col-sm-4 col-xl-4 col-lg-4 topcontact">
@@ -1824,7 +951,7 @@ margin-left: 10px;
          <img class="earth" src="images/earthblue.svg"><span><div class="language">
      
     <span class="languageclass">English</select>
-           
+ 
     </div></span>
             
     </div></div>
@@ -1833,12 +960,7 @@ margin-left: 10px;
 </div> 
 </center>
 
-<link rel="stylesheet" href="<%= ResolveUrl("~/Portals/0/css/HeaderOne.css") %>" />
-<link rel="stylesheet" href="<%= ResolveUrl("~/Portals/0/css/nice-select.css") %>" />
-<script src="/localhost_hammer/js/SE/jquery.js"></script>
-<script src="/localhost_hammer/js/SE/jquery.nice-select.min.js"></script>
-
-<div id="dnn_ctr439_HeaderOne_ho" class="headerone">
+ <div id="dnn_ctr439_HeaderOne_ho" class="headerone">
 		
 <div id="dnn_ctr439_HeaderOne_b2c">
 			
@@ -1851,8 +973,7 @@ margin-left: 10px;
     <div class="col-6 col-sm-6 col-xl-6 col-lg-6 toplogo" align="center"> 
         <img src="<%= ResolveUrl("~/Portals/0/customerIcons/companyLogo/logo.png") %>" class="logob2c">
     </div> 
-    <div class="b2cheader col-6 col-sm-6 col-xl-6 col-lg-6 " align="center"> 
-     
+    <div class="b2cheader col-6 col-sm-6 col-xl-6 col-lg-6 " align="center">  
         <div class="headerprofildiv"> <img class="profil" />  <div class="toprightlblsprofil"  >Account</div></div>
         <div class="headercartdiv"> <img class="cartimg" /> <div class="toprightlblsmycart"  >My Cart</div></div>
     </div>
@@ -1865,131 +986,4 @@ margin-left: 10px;
 
 </div>
 </div>
- 
-
-<div class="middle-enginediv">
-<div class="middle-engine">
-    <center>
-    <div class="middle-enginediv">
-    <div class="container1280">
-         <div class="row">  
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                    <div> <label class="fontsize fontbold"> PLAN </label> <label class="fontsize"> YOUR </label> <label class="fontsize fontbold"> PERFECT </label> <label class="fontsize"> TRIP </label></div>
-                </div>
-        </div>
-       
-        <div class="row">  
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12  " align="center">
-                    <label class="secondfontsize"> Find great tours around the planet </label>
-                </div>
-        </div>
-       
-        <div class="row">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12  " align="center">
-       
-            <div class=" searchengine  ">
-            <div class="input-group mb-3">
-               <input id="tourSearch" type="text" class="form-control" placeholder="Where you want to go ?" aria-describedby="basic-addon2">
-               <input id="tourSearchValue"  type="hidden" />   
-                <div class="input-group-append">
-                  <a  id="btnSearchTours" href='<%= ConfigurationManager.AppSettings("URLRoute") & "/excursionresults" %>' class="searchbtn"> <img src="<%= ResolveUrl("~/portals/0/css/images/fakos.svg") %>" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">Search</span></a>
-                </div>
-            </div>
-            </div>
-
-        </div>
-        </div>
-        <div> 
-        <div class="row">  
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">
-                    <label class="secondfontsize viewalltours fontbold"><img src="" class="bluearrow"> View all tours</label>
-                </div>
-        </div>
-
-   <div class="row banners">  
-                <div class="col-12 col-sm-12 col-xl-6 col-lg-6 toursexcursionsdiv" align="center">
-                  <div class="toursexcursions"> 
-                        <div class="row">
-                            <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
-                                 <img style="display:inline-block" src="" class="points">
-                            </div>
-                            <div class="col-4 col-sm-4 col-xl-6 col-lg-6">
-                                 <label style="display:inline-block" class="privateexcursionslbl"> Tours &amp; Excursions </label>  
-                            </div>
-                             <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
-                                 <img style="display:inline-block" src="" class="ship">
-                            </div>
-                             <div class="col-2 col-sm-2 col-xl-12 col-lg-12" align="center">
-                                 <a href="" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
-                            </div>
-                              <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
-                                 <img src="<%= ResolveUrl("~/portals/0/css/images/dots.svg") %>"  class="dots">
-                               </div> 
-                            </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-xl-6 col-lg-6 privateexcursionsdiv" align="center">
-                    <div class="privateexcursions"> 
-                        <div class="row">
-                            <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
-                                    <img style="display:inline-block" src="" class="openlock">
-                            </div>
-                            <div class="col-4 col-sm-4 col-xl-6 col-lg-6">
-                                <label style="display:inline-block" class="privateexcursionslbl"> PRIVATE EXCURSIONS </label>   
-                            </div>
-                             <div class="col-2 col-sm-2 col-xl-12 col-lg-12" align="center">
-                                <a href="" style="margin-left: 43px;" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
-                            </div>
-                             <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
-                                <img src="<%= ResolveUrl("~/portals/0/css/images/dots.svg") %>" class="dots">
-                             </div>
-                         
-                         </div>
-                    </div>
-                </div>
-        </div>
-     
-      </div>
-    </div>
-    </div>
-    </center>
-</div>
-</div>  
- 
-
-<div class="footerdiv"  >
-<center>
-<div class="footer1280" >
-<div class="row">    
-      <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
-
-<div class="contact"><span class="footerfonts" >NetSemantics</span><br />
-<img alt="bank" src="/newsite/portals/0/css/images/footer/point.svg" class="displayinline svgclass" /><span class="footerfonts">357 Thivon str, 122 44 Egaleo Athens, Greece</span><br />
-<img src="/newsite/portals/0/css/images/footer/telephone.svg" class="displayinline svgclass" /><span class="footerfonts">+30 211 1139420-1, +30 210 8256440</span><br />
-<img src="/newsite/portals/0/css/images/footer/fax.svg" class="displayinline svgclass" /><span class="footerfonts">+30 210 8256441</span><br />
-<img src="/newsite/portals/0/css/images/footer/mail.svg" class="displayinline svgclass" /><span class="footerfonts">info@netsemantics.gr</span></div>
-</div> 
-          <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="usefullinksdiv"><span class="usefullinks">USEFUL LINKS</span> <span class="usefullinks">About us</span> <span class="usefullinks">Terms of</span> <span class="usefullinks">Privacy Statement</span></div>
-</div>
-           <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="followus"  ><span class="usefullinks">Follow Us</span> <img class="svgclass" src="/newsite/portals/0/css/images/footer/facebook.svg" /><img class="svgclass" src="/newsite/portals/0/css/images/footer/twitter.svg" /><img class="svgclass" src="/newsite/portals/0/css/images/footer/instagram.svg" />
-<p><span class="footerfonts">#dolphinsstravel</span></p>
-</div></div>
-       <div class="col-6 col-sm-6 col-lg-6 col-xl-3">   
-<div style="display:inline-block;vertical-align: top;">
-<p><a href="" id="a_bankmaster_left" rel="noopener noreferrer" target="_blank"><img alt="mastercard" id="img_ftr_bankmaster_left" src="/newsite/portals/0/customerIcons/bankicons/mastercardlogos_left.png" /></a><img alt="mastercard" id="img_ftr_bankmaster_right" src="/newsite/portals/0/customerIcons/bankicons/mastercardlogos_right.png" /> <img alt="visa" id="img_ftr_bankvisa_left" src="/newsite/portals/0/customerIcons/bankicons/visaslogos_left.png" /> <a href="" id="a_bankvisa_right" rel="noopener noreferrer" target="_blank"> <img alt="visa" id="img_ftr_bankvisa_right" src="/newsite/portals/0/customerIcons/bankicons/visaslogos_right.png" /></a><img alt="bank" id="img_ftr_bankprovider" src="/newsite/portals/0/customerIcons/bankicons/piraeuslogos.png" style="display:inline-block" /></p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-12 col-sm-12 col-lg-12 col-xl-12">
-<hr class="cpr">
-<span class="cprspan">DOLPHINS © All Rights reserved </span>
-</div>
-</div>
-</div>
-</center>
-</div>
-
  
