@@ -918,130 +918,165 @@ margin-left: 10px;
 }
 	
 	/*endheader*/
-/*.imagesize:before {
-	content: "5 Hours";
-	display: block;
-	text-align: center;
-	background: rgba(0, 192, 242, 1);
-	font-family: Proxima Nova;
-	font-weight: bold;
-	font-size: 18px;
-	color: #FFFFFF;
-	color: rgb(255, 255, 255);
-}*/
-
-.custom-select {
-	width: 30%;
-	border-radius: 15px;
-	color: #0ABFF2;
-	background-image: url(images/bluearrowdown.svg);
-	background-repeat: no-repeat;
-	background-position: right;
-	background-color: #ffffff;
-	background-size: 10px;
-	background-position-x: 111px;
-}
-
-
-.careful {
-	/* background-image: url(images/fakos.svg); */
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 2px;
-	display: inline-block;
-}
-.movedown {
-	margin-bottom: 20px;
-}
-.Excursionsfound {
-	color: #0ABFF2;
-	
-}
-.toursfound {
-	color: #0ABFF2; 
-}
-.imagesize {
-	width: 250px;
-	position: relative;
-}
-.topleftimagespan {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	background-color:  #0ABFF2;
-}
-.div_ESR_body {
-	display: block;
-	float: left;
-	width: 707px; /*710px*/ /*updated by akoukouri 23/01/2018*/
-	height: auto;
-	font-family: Trebuchet MS;
-	font-family: Roboto, arial; /*added by akoukouri 23/01/2018*/
-	font-weight: 400; /*added by akoukouri 23/01/2018*/
-	margin-left: -6px; /*added by akoukouri 23/01/2018*/
-	margin-top: 28px; /*added by akoukouri 23/01/2018*/
-}
-
-
-.Excursions
-{
-    position: relative; /*added by akoukouri 23/01/2018*/
-    float: left;
-    width: 100%; /*698px*/ /*updated by akoukouri 23/01/2018*/
-    height: auto;
-    padding-left:12px;
-    /*-moz-box-shadow: 0px 0px 6px #7d797d;
-    -webkit-box-shadow: 0px 0px 6px #7d797d;
-    box-shadow: 0px 0px 6px #7d797d;*//*commented by skanavos 18/04/2018*/
- 
-    padding-bottom:30px; 
-    margin-bottom: 18px; /*added by akoukouri 23/01/2018*/
-}
-.div_ex_IMGContainer
-{
-    float:left;
-    width: 250px;
-    margin-bottom: 5px;
-    display:block;
-    position: relative;
-}
-
-.lbl_ex_Currency:before {
-    content: "from";
-    display: block;
-    font-family: Proxima Nova;
-    font-size: 15px;
-    color: #24263D;
-    margin-bottom: -12px;
-}
-.lbl_ex_ExcursionFromPrice:after {
-    content: "per person";
-    display: block;
-    font-family: Proxima Nova;
-    font-size: 15px;
-    color: #24263D;
-    font-weight: normal !important;
-    margin-top: -12px;
-    margin-bottom: 30px;
-}
-.lbl_ex_ExcursionFromlbl, .lbl_ex_ExcursionFromPrice, .lbl_ex_Currency, .lbl_ex_PerPerson {
-    z-index: 3;
+input#dnn_ctr440_ExcursionSearch_exc_search {
     color: red;
-    font-size: 22px;
-    color: rgb(229, 26, 74);
-    font-weight: 300; /*bold*/ /*updated by akoukouri 23/01/2018*/
 }
 
-
-
-.lbl_ex_ExcursionFromPrice {
-    font-family: Proxima Nova !important;
-    font-size: 28px;
-    font-weight: bolder;
-
+.dots.dots2 {
+    margin-right: -43px;
+}
+#basic-addon2 {
+    background-color: transparent !important;
+    border: none;
+    display: inline-block;
+    color: rgb(255, 255, 255, 1);
+    margin-top: 8px;
+    padding-right: 20px;
+    font-weight: 700;
+}
+    
+body {
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+    padding: 0;
 }
 
+.container1280 {
+    max-width: 1280px !important;
+    padding-top: 119px;
+}
+
+@media (min-width: 1200px) {
+    .privateexcursionsdiv {
+        
+    }
+
+  
+}
+
+@media (min-width: 1199px) and (max-width: 1249px) {
+    .privateexcursionsdiv {
+        padding-right: 380px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 380px;
+    }
+}
+
+@media (min-width: 1150px) and (max-width: 1199px) {
+    .privateexcursionsdiv {
+        padding-right: 360px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 360px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1149px) {
+    .privateexcursionsdiv {
+        padding-right: 335px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 335px;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1099px) {
+    .privateexcursionsdiv {
+        padding-right: 330px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 330px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1049px) {
+    .privateexcursionsdiv {
+        padding-right: 290px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 290px;
+    }
+}
+
+.privateexcursionslbl {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 15px !important;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    width: 93px;
+    word-break: normal;
+    font-weight: 900 !important;
+    margin-right: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+
+.fakos {
+    /* background-image: url(svg/fakos.svg); */
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    display:inline-block;
+}
+
+.privateexcursions {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    /* width: 245px; */
+    /* height: 106px; */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 0px;
+    padding: 21px;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    /* margin-bottom: 120px; */
+    /* padding-right: 52px !important; */
+    max-width: 350px;
+}
+
+.toursexcursions {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    /* width: 245px; */
+    /* height: 106px; */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 0px;
+    padding: 21px;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    /* margin-bottom: 120px; */
+    max-width: 350px;
+    right: 10px;
+}
+
+.dots {
+    /*background-image: url(svg/dots.svg);*/
+    background-repeat: no-repeat;
+    /* padding: 6px 9px 6px 9px; */
+    white-space: nowrap;
+    /* margin-left: 192px; */
+    width: 34px;
+    /* height: 100%; */
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.bluearrow {
+    background-image: url(images/bluearrow.svg);
+    background-repeat: no-repeat;
+    padding: 6px 9px 6px 9px;
+    white-space: nowrap;
+}
 
 .rightarrow {
     background-image: url(images/rightarrow.svg);
@@ -1050,775 +1085,445 @@ margin-left: 10px;
     white-space: nowrap;
 }
 
-
-@media screen and (max-width: 540px) {
-	.select {
-		display: none !important;
-	}
-	.viewallbtn {
-		margin-left:0px!important;
-	}
-
-	.imageseperator {
-		background-image: url(images/horizontalseperator.svg) !important;
-		background-repeat: no-repeat !important;
-		padding: 0px 0px 1px 1px !important;
-		white-space: nowrap !important;
-		width: 80% !important;
-	}
-
-	.imagesize {
-		width: 403px;
-	}
-		
-	.hideprivates {
-		display: block !important;
-	}
-
-	.hidetours {
-		display: block !important;
-	}
-	.leftprivateexcursions {
-		display: none !important;
-	}
-
-	.lefttoursexcursions {
-		display: none !important;
-	}
-}
-@media screen and (min-width: 540px) {
-	.leftprivateexcursions {
-		display: block !important;
-	}
-	.lefttoursexcursions {
-		display: block !important;
-	}
-	.hideprivates {
-		display: none;
-	}
-
-	.hidetours {
-		display: none;
-	}
-	.imageseperator {
-		background-image: url(images/seperator.svg) !important;
-		background-repeat: no-repeat !important;
-		padding: 61px 47px 51px 59px !important;
-		white-space: nowrap;
-		margin-top: 10px !important; 
-		margin-left: 58px !important; 
-	}
-}
-	.imageseperator {
-		background-image: url(images/horizontalseperator.svg);
-		background-repeat: no-repeat;
-		padding: 61px 47px 51px 59px;
-		white-space: nowrap;
-		margin-top: 10px;
-		margin-left: 58px;
-	}
-
-	.rightarrow {
-		background-image: url(images/rightarrow.svg);
-		background-repeat: no-repeat;
-		padding: 6px 9px 6px 9px;
-		white-space: nowrap;
-	}
-
-
-	.bluespan {
-		color: #0ABFF2
-	}
-
-	.rightbluearrow {
-		background-image: url(images/rightbluearrow.svg);
-		background-repeat: no-repeat;
-		padding: 6px 9px 6px 9px;
-		white-space: nowrap;
-	}
-
-	.cbx {
-		background-repeat: no-repeat;
-		width: 16px;
-		height: 16px;
-		font-family: Proxima Nova;
-	}
-
-	input[type='checkbox'] {
-		-webkit-appearance: none;
-		width: 20px;
-		height: 20px;
-		background: url(images/backcircleresults.svg);
-		border-radius: 50%;
-		outline: none;
-		/*box-shadow: 0 0 5px 0px gray inset;*/
-	}
-
-		input[type='checkbox']:before {
-			content: '';
-			display: block;
-			width: 60%;
-			height: 60%;
-			margin: 20% auto;
-			border-radius: 50%;
-		}
-
-		input[type='checkbox']:checked:before {
-			background: url(images/tick.svg);
-			background-repeat: no-repeat;
-			width: 15px;
-			height: 20px;
-		}
-
-	.activitiesfont {
-		font-family: Proxima Nova;
-		font-size: 16px;
-		line-height: 26px;
-		color: #24263D;
-		color: rgb(36, 38, 61);
-	}
-
-	.filterresults {
-		width: 100%;
-		height: 2px;
-		background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
-		margin-bottom:20px;
-	}
-
-	.excursionresults {
-		width: 98%;
-		height: 2px;
-		background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
-		margin-bottom: 40px;
-	}
-
-	.container350 {
-		width: 350px;
-	}
-
-	.breadcrumb {
-		display: inline-flex !important;
-		text-align: center !important;
-		background: none !important;
-	}
-
-	.breadcrumb-item:hover {
-		color: #FFFFFF !important;
-	}
-
-	.breadcrumb-item {
-		color: #FFFFFF !important;
-	}
-
-		.breadcrumb-item::before {
-			content: ">" !important;
-			color: #FFFFFF !important;
-		}
-
-	.first::before {
-		content: "" !important;
-	}
-
-	.searchbtndiv {
-		border: 1px solid #FFFFFF;
-		display: inline-block;
-	}
-
-	.searchbtndnn {
-		display: inline-block;
-	}
-
-	.input-group-text {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: inline-block;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		padding: 0.375rem 0.3rem;
-		margin-bottom: 0;
-		font-size: 0.9375rem;
-		font-weight: 400;
-		line-height: 1.5;
-		color: rgb(255,255,255);
-		text-align: center;
-		white-space: nowrap;
-		border: none;
-		background: none;
-	}
-
-	.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file {
-		position: relative;
-		-webkit-box-flex: 1;
-		-ms-flex: 1 1 0%;
-		flex: 1 1 0%;
-		min-width: 0;
-		margin-bottom: 0;
-		height: 50px;
-		border-radius: 50px 0px 0px 50px;
-	}
-.leftclockspan, .lblBtnLoadMore {
-	color: #FFFFFF;
-}
-.whitearrowdownloadmore {
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 7px;
-	display: inline-block;
+.points {
+    background-image: url(images/points.svg);
+    background-repeat: no-repeat;
+    padding: 20px 25px 20px 25px;
+    vertical-align: top;
 }
 
-.loadmorediv {
-	width: 230px;
-	height: 70px;
-	background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-	border-radius: 25px;
-	padding-top: 23px;
-}
-.leftclock {
-	/*background-image: url(images/leftclock.svg);*/
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 7px;
-	display: inline-block;
-}
-.topleftimagespan {
-	width: 100px;
-	height: 33px;
-	padding-top: 5px;
+.ship {
+    background-image: url(images/ship.svg);
+    background-repeat: no-repeat;
+    padding: 20px 20px 20px 20px;
+    vertical-align: top;
+    margin-top: 2px;
 }
 
-.fakos {
-	/* background-image: url(images/fakos.svg); */
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 2px;
-	display: inline-block;
-}
-
-	.searchbtn {
-		display: inline-block;
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-		padding-left: 10px;
-		background-repeat: no-repeat;
-		border-radius: 41px;
-		border: 0px;
-		border-top-left-radius: 0px;
-		border-bottom-left-radius: 0px;
-		white-space: nowrap;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none;
-		font-weight: 700;
-	}
-
-
-	.engine {
-		background: rgba(240, 240, 240, 1);
-		padding-top: 50px;
-	}
-
-.excursionfilters {
-	background: rgba(36, 38, 61, 1);
-	/*width: 370px;*/
-	height: 51px;
-	margin-bottom: 20px;
-}
-
-	.ExcursionFilterspan {
-		font-family: Proxima Nova;
-		font-weight: bold;
-		font-size: 25px;
-		color: #FFFFFF;
-		color: rgb(255, 255, 255);
-	}
-
-	.div_ESR_body {
-		width: 100px;
-	}
-
-	.dots {
-		/*background-image: url(images/dots.svg);*/
-		background-repeat: no-repeat;
-		/* padding: 6px 9px 6px 9px; */
-		white-space: nowrap;
-		/* margin-left: 192px; */
-		width: 34px;
-		/* height: 100%; */
-		float: right;
-		margin-top: 5px;
-		margin-right: 10px;
-	}
-
-		.dots.dots2 {
-			margin-right: -43px;
-		}
-
-	.points {
-		background-image: url(images/points.svg);
-		background-repeat: no-repeat;
-		padding: 20px 25px 20px 25px;
-		vertical-align: top;
-	}
-
-	.ship {
-		background-image: url(images/ship.svg);
-		background-repeat: no-repeat;
-		padding: 20px 20px 20px 20px;
-		vertical-align: top;
-		margin-top: 2px;
-	}
-
-	.openlock {
-		background-image: url(images/openlock.svg);
-		background-repeat: no-repeat;
-		padding: 20px 25px 20px 25px;
-		vertical-align: top;
-		/*margin-right: 95px;
+.openlock {
+    background-image: url(images/openlock.svg);
+    background-repeat: no-repeat;
+    padding: 20px 25px 20px 25px;
+    vertical-align: top;
+    /*margin-right: 95px;
     margin-bottom: 120px*/
-	}
-
-	.toursexcursions {
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-		/* width: 245px; */
-		/* height: 106px; */
-		margin-bottom: 10px;
-		background-repeat: no-repeat;
-		border-radius: 10px;
-		border: 0px;
-		padding: 21px;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none;
-		/* margin-bottom: 120px; */
-		max-width: 350px;
-		display: block;
-	}
-
-	.privateexcursions {
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-		/* width: 245px; */
-		/* height: 106px; */
-		background-repeat: no-repeat;
-		border-radius: 10px;
-		border: 0px;
-		padding: 21px;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none;
-		/* margin-bottom: 120px; */
-		/* padding-right: 52px !important; */
-		max-width: 350px;
-	}
-
-	.privateexcursionslbl {
-		font-family: 'proxima-nova', sans-serif;
-		font-size: 15px !important;
-		color: #FFFFFF;
-		color: rgb(255, 255, 255);
-		font-size: 12px;
-		width: 93px;
-		word-break: normal;
-		font-weight: 900 !important;
-		margin-right: 10px;
-		text-align: left;
-		text-transform: uppercase;
-		margin-right: 25px;
-	}
-
-	.whitebackground {
-		background: rgba(255, 255, 255, 1);
-	}
-
-
-	.detailsbtn {
-		padding: 2px 10px 2px 10px;
-		background-repeat: no-repeat;
-		border: 1px solid #0ABFF2;
-		font-family: Proxima Nova;
-		font-size: 14px;
-		white-space: nowrap;
-		color: rgba(10, 191, 242, 1) !important;
-		text-decoration: none !important;
-		display: block;
-		width: fit-content;
-		margin-left: 8px;
-	}
-
-	.viewallbtn {
-		padding: 2px 10px 2px 10px;
-		background-repeat: no-repeat;
-		border: 1px solid white;
-		font-family: Proxima Nova;
-		font-size: 14px;
-		white-space: nowrap;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none !important;
-		display: block;
-		width: fit-content;
-		margin-left: 8px;
-	}
-
-
-	.sendbottom {
-		padding-bottom: 25px;
-	}
-
-	.engine-header {
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-	}
-
-	.wdywtg {
-		display: inline-block !important;
-		width: 506px;
-	}
-
-	.whiteline {
-		/* background-image: url(images/fakos.svg); */
-		background-repeat: no-repeat;
-		width: 150px;
-		height: 5px;
-		margin-right: 2px;
-		display: inline-block;
-	}
-
-	#div_ESR_HeaderDiv {
-		display: none;
-	}
-
-	.middle-enginediv {
-		width: 100vw;
-	}
-
-	.fontsize {
-		font-family: 'proxima-nova', sans-serif;
-		font-size: 44px;
-		color: rgb(255, 255, 255);
-		margin-bottom: 0 !important;
-	}
-
-	.fontbold {
-		font-family: 'proxima-nova', sans-serif !important;
-		font-weight: 900;
-	}
-
-	.middle-engine {
-		background-image: url(images/frontpage.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.container1280 {
-		max-width: 1280px !important;
-	}
-
-	@media screen and (min-width : 1200px) and (max-width : 4096px) {
-		.FullPane {
-			width: 1048px !important;
-			margin: 0 auto;
-			float: unset !important;
-		}
-
-		.pnl_frRightPane {
-			/*margin-top:28px!important;*/
-		}
-
-		i.fa.fa-chevron-down.colorD.Hide {
-			display: none;
-		}
-
-		i.fa.fa-search.colorD, i.fa.fa-sliders.colorD {
-			font-size: 20px;
-		}
-
-
-		.dateDeparture {
-			display: inline-grid;
-		}
-
-		.ep_DateText {
-			width: 100% !important;
-		}
-	}
-
-
-	@media screen and (min-width : 1367px) and (max-width : 4096px) {
-		.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .p_checkboxContainer.normalCheckBox, .lbl_fsCabinClass, .lbl_fsFlightTypeStyle, .checkOptionsDiv, .bookingInfoDiv1 span {
-			padding-left: 0px !important;
-			padding-right: 0px !important;
-		}
-	}
-
-	@media screen and (min-width : 1000px) and (max-width : 1366px) {
-		.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .p_checkboxContainer.normalCheckBox, .lbl_fsCabinClass, .lbl_fsFlightTypeStyle, .checkOptionsDiv, .bookingInfoDiv1 span {
-			padding-left: 0px !important;
-			padding-right: 0px !important;
-		}
-	}
-
-
-
-	@media screen and (min-width : 320px) and (max-width : 1199px) {
-
-
-		.pnl_frRightPane.excFilters {
-			display: inline-flex !important;
-		}
-
-		.div_ESR_HeaderDiv {
-			width: 100% !important;
-		}
-
-		.pnl_frRightPane.excFilters, .pnl_frRightPane.div_ed_Sidebar {
-			position: fixed;
-			/* top: 0;  */
-			bottom: 0;
-			left: 0;
-			right: 0;
-			overflow: hidden;
-			z-index: 4900;
-			padding: 0;
-			display: block;
-			width: 100%;
-			margin: 0px !important;
-			border-top: 0;
-			cursor: pointer;
-			-webkit-transform: translateY(calc(100% - 40px));
-			transform: translateY(calc(100% - 40px));
-			transition: all .45s ease-out;
-		}
-
-		.pnl_frRightPane_fullscreen_ShowFilters {
-			display: block !important;
-			z-index: 5999 !important;
-			position: fixed !important;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			overflow: auto;
-			overscroll-behavior-y: inherit;
-			background: #fff;
-			transform: translateY(calc(0%)) !important;
-			overflow: scroll !important;
-			transition: all .45s ease-out;
-		}
-
-		.pnl_frRightPane_fullscreen_ShowNewSearch {
-			display: block !important;
-			z-index: 5999 !important;
-			position: fixed !important;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			overflow: auto;
-			overscroll-behavior-y: inherit;
-			background: #fff;
-			transform: translateY(calc(0%)) !important;
-			overflow: scroll !important;
-			transition: all .45s ease-out;
-		}
-
-
-		.HideSearchFlightsFilters {
-			display: none !Important;
-		}
-
-		.HideFiltersForSearch {
-			display: none !Important;
-		}
-
-		.ExcursionFilters {
-			max-height: 40px;
-			transition: all .45s ease-out;
-		}
-
-
-		.Full-width-SearchFlightsFilters, .Full-width-FlightsFilters {
-			width: 100% !important;
-			max-height: 100%;
-		}
-
-
-
-		.ShowFlightMiniSearch {
-			transform: translateY(calc(0%));
-			width: 100% !important;
-		}
-
-		.StopScrollOnMainPage {
-			overflow: hidden;
-		}
-
-		.ExcursionFilters .FiltersContainer {
-			float: unset !important;
-		}
-
-		ul.bl_ed_TabMenu, .img_ed_ExcursionIMG {
-			width: 100%;
-			margin-left: 0px;
-		}
-
-		.div_ed_IMGContainer, .div_Gallery, .div_ed_ExcursionGallery, .ad-gallery, .ad-nav {
-			width: 100% !important;
-		}
-
-		.ad-forward {
-			right: 0px !important;
-		}
-
-		.ad-gallery .ad-nav .ad-thumbs {
-			margin-left: 0px !important;
-		}
-
-		.ad-gallery .ad-image-wrapper .ad-image {
-			padding-left: 0px !important;
-		}
-
-		.fa_rotate {
-			-webkit-transform: rotate(180deg);
-			-moz-transform: rotate(180deg);
-			-ms-transform: rotate(180deg);
-			-o-transform: rotate(180deg);
-			transform: rotate(180deg);
-		}
-
-		i.fa.fa-search.colorD, i.fa.fa-chevron-down.colorD.Hide, i.fa.fa-sliders.colorD {
-			font-size: 18px;
-			background: none !important;
-		}
-
-		.bl_ed_TabMenu {
-			padding-left: 20px !important;
-		}
-
-		/* photo gallery design */
-		.fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened {
-			left: 0px !important;
-			padding: 0 20px;
-			width: 100% !important;
-		}
-
-		.fancybox-inner, .ep_DateText {
-			width: 100% !important;
-		}
-
-		.ad-image, .ad-image img {
-			height: 400px;
-		}
-
-		.dateDeparture {
-			display: inline-grid;
-		}
-
-
-		/* Search and filters design */
-		.div_esc_FormContainerDiv .div_esc_rightSelect.pickDateDiv {
-			height: auto !important;
-		}
-
-
-		.ef_excursionSearchControl .dic_esc_leftSelect, .div_esc_rightSelect, .pickDateDiv {
-			width: 100% !important;
-		}
-
-		.ef_excursionSearchControl .priceFilter .PriceFilterBody .ui-slider-horizontal, .FiltersContainer .priceFilter .PriceFilterBody .ui-slider-horizontal, .ExcursionFilters:last-of-type .FiltersContainer .PriceFilterBody, .PriceFilterBody fieldset, .PriceFilterBody, .FiltersContainer .priceFilter {
-			width: 100% !important;
-		}
-
-		.div_esc_rightSelect .priceFilter, .ExcursionFilters:last-of-type .FiltersContainer .PriceFilterBody, .priceFilterTitle i {
-			margin-left: 0px !important;
-		}
-
-		.ExcursionFilters:last-of-type.FiltersContainer.PriceFilterBody, .priceFilter {
-			margin-left: 0px !important;
-			padding: 0 5%;
-		}
-
-		.div_esc_FormContainerDiv .pickDateDiv .ht_pickDateTitle {
-			display: block !important;
-		}
-
-		.esc_DateText.lbl_esc_DepartFrom, .esc_DateText.lbl_esc_DepartTo {
-			display: none;
-		}
-
-		.pickDateDiv, .ef_excursionSearchControl .div_esc_PriceRange .TextBoxLabel {
-			margin-left: 20px;
-		}
-	}
-
-
-	@media screen and (min-width : 320px) and (max-width : 530px) {
-
-		.Excursion {
-			margin-left: 0px !important;
-			width: 300px !important;
-		}
-
-		.ExcursionFilters.NewSearch {
-			width: 175px;
-		}
-
-		.ExcursionFilters {
-			width: 130px;
-		}
-
-		.cmbDeparture {
-			margin-left: 23px;
-		}
-
-		/*.lbl_AccomodationInfo,.lbl_AccomodationInfo,.lbl_AccomodationInfo
-	{
-		text-align:left;
-		padding-left:15px!important;
-	}*/
-
-		.lbl_AccomodationInfo {
-			width: 100%;
-		}
-
-		.div_AccomodationDiv {
-			display: inline-grid;
-		}
-
-		.cmbLanguage {
-			margin-left: 25px;
-		}
-	}
-
-	@media screen and (min-width : 320px) and (max-width : 470px) {
-
-		#li_spd_tabMenu_2, #li_spd_tabMenu_3 {
-			margin-top: 20px !important;
-		}
-	}
-
-	@media screen and (min-width : 320px) and (max-width : 399px) {
-
-		.cmbDeparture, .rcbInputCell.rcbInputCellLeft {
-			margin-left: 25px;
-		}
-	}
-
-
-	@media screen and (min-width : 768px) and (max-width : 991px) {
-	}
-
-
-	@media screen and (min-width : 482px) and (max-width : 767px) {
-	}
-
-	@media screen and (min-width : 337px) and (max-width : 481px) {
-	}
-
-
-	@media screen and (min-width : 320px) and (max-width : 336px) {
-	}
+}
+
+.middle-enginediv {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.middle-engine {
+    background-image: url(images/frontpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#TopContent {
+    margin-top: 0px !important
+}
+
+.language {
+    display: inline-block;
+}
+
+
+.searchengine {
+    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.5);
+    width: 819px; 
+    border-radius: 39px;
+    padding-top: 16px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 1px;
+}
+
+.search-engine-input {
+    width: 626px;
+    height: 54px;
+    outline: none;
+    border-radius: 35px;
+    border: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 16px;
+}
+
+.searchbtn:hover {
+    text-decoration: none;
+}
+
+.viewallbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    padding: 2px 10px 2px 10px;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none !important;
+    display: block;
+    width: fit-content;
+    margin-left: 8px;
+}
+
+.searchbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    border-radius: 41px;
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.searchinpdiv {
+    padding-top: 11px;
+    padding-left: 27px;
+    border-radius: 16px;
+}
+
+.searchbtndiv {
+    padding-top: 27px;
+}
+
+.search-input {
+    background: #FFFFFF;
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 558px;
+    border-radius: 16px;
+    top: 250px;
+    width: 799px;
+    height: 55px;
+    white-space: nowrap;
+}
+
+
+.fontsize {
+    margin-top: 90px;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0 !important;
+}
+
+
+
+@media (max-width: 575px) {
+    .privateexcursionsdiv {
+        padding-right: 0px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 0px;
+    }
+
+    .viewallbtn {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+
+    .toursexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+    }
+
+    .privateexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+        padding-right: 0px !important;
+        margin-right: 30px;
+    }
+
+    .points {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .openlock {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursionslbl {
+        font-size: 12px !important;
+        width: 86px;
+        word-break: normal;
+    }
+
+    .ship {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .searchengine {
+        /*height: 115px;*/
+        width: 340px;
+    }
+
+    .search-engine-input {
+        width: 320px;
+        height: 39px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        margin-left: -10px;
+    }
+
+    /*.searchbtn {
+        margin-left: 3px;
+        padding: 9px 126px 9px 126px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }*/
+
+
+
+    .fontsize {
+        font-size: 20px;
+    }
+
+    .secondfontsize {
+        font-size: 12px;
+    }
+
+    .search-engine-input {
+        width: 320px;
+        height: 39px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
+    /*.searchbtn {
+        padding: 9px 126px 9px 126px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }*/
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .privateexcursionsdiv {
+        padding-right: 0px;
+    }
+
+    .toursexcursionsdiv {
+        padding-left: 0px;
+    }
+
+    .viewallbtn {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+    }
+
+    .privateexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+        padding-right: 0px !important;
+        margin-right: 30px;
+    }
+
+    .toursexcursions {
+        width: 280px;
+        margin-bottom: 10px;
+        height: 76px;
+    }
+
+    .points {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .openlock {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursionslbl {
+        font-size: 12px !important;
+        width: 86px;
+        word-break: normal;
+    }
+
+    .ship {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .searchengine {
+        /*height: 115px;*/
+        width: 340px;
+    }
+
+    .search-engine-input {
+        width: 320px;
+        height: 39px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        margin-left: -10px;
+    }
+
+    /*.searchbtn {
+        margin-left: 3px;
+        padding: 9px 126px 9px 126px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }*/
+    
+    fontsize {
+        font-size: 40px;
+    }
+
+    .secondfontsize {
+        font-size: 15px;
+    }
+}
+
+.secondfontsize {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+
+.fontbold {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-weight: 900;
+}
+
+.body {
+    font-family: 'proxima-nova', sans-serif;
+}
+
+.center {
+}
+
+/*.form-control {
+    width: 810px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+
+.form-outer {
+    border: 10px solid #ccc !important;
+    height: 74px;
+    border-radius: 16px;
+}*/
+        .viewall {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 24px;
+    border: 1px;
+    border-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.viewalltours {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 27px;
+    width: 100px;
+    white-space: nowrap;
+    /*margin-bottom: 10px;*/
+}
+
+.viewalldiv {
+    border: 1px solid #ccc;
+}
+
+
+input#dnn_ctr440_ExcursionSearch_exc_search {
+    color: #24263d;
+}
+.input-group-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.375rem 0.3rem;
+    margin-bottom: 0;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+}
+
+.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    min-width: 0;
+    margin-bottom: 0;
+    height: 50px;
+    border-radius: 50px 0px 0px 50px;
+}
+
+
+.row.banners {
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    display: inline-flex;
+}
+
+.toursexcursionsdiv {
+    max-width: 350px;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    .toursexcursionsdiv {
+        /* padding-left: 425px; */
+    }
+}
+.privateexcursionsdiv {
+    max-width: 350px;
+    display: block;
+}
+
 	/*End of main*/
 	
 	
