@@ -7,8 +7,8 @@
   <script src="js/jquery.nice-select.min.js"></script>
 <style>
 
-	.email {
-    /* background-image: url(images/email.svg); */
+.email {
+    /* background-image: url(svg/email.svg); */
     /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 }
 
 .telephone {
-    /* background-image: url(images/telephone.svg); */
+    /* background-image: url(svg/telephone.svg); */
     /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
@@ -31,10 +31,7 @@
     left: 0;
     z-index: 999;
 }
-.container1281 {
-    max-width: 1280px !important;
-   
-}
+
 .container1280header {
     max-width: 1280px !important;
     /* padding-top: 119px; */
@@ -46,16 +43,27 @@
 }
 
 .earth {
-    /* background-image: url(images/earthblue.svg); */
+    /* background-image: url(svg/earthblue.svg); */
     /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
     margin-right: 5px;
     margin-top: -3px;
 }
+.languageclass {
+    background-size: 13px 7px;
+    border: 1px;
+    padding-right: 19px;
+    -webkit-appearance: none;
+    font-family: Proxima Nova !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+    color: #24263D;
+    color: rgb(36, 38, 61);
+}
 
 .select {
-    /*background: url("images/arrowdown.svg");
+    /*background: url("svg/arrowdown.svg");
         background-position: right;
         background-repeat: no-repeat;*/
     background-size: 13px 7px;
@@ -108,7 +116,7 @@ body {
 
 .cartimg {
     background-image: url(images/cart.svg);
-    padding: 30px 10px 30px 10px;
+    padding: 20px 10px 20px 10px;
     background-size: 20px 40px;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -129,10 +137,8 @@ body {
     text-decoration: none;
     color: rgb(138, 138, 138) !important;
     margin-left: 10px;
-    display: none !important;
-}
-
-
+   
+} 
 .home-button {
     background: none;
     border: none;
@@ -505,8 +511,7 @@ li {
 
     .lblb2c {
         display: inline-block !important;
-    }
-
+    } 
     .menu a {
         color: rgb(138, 138, 138) !important;
     }
@@ -636,8 +641,7 @@ li {
 
     .lblb2c {
         display: inline-block !important;
-    }
-
+    } 
     .menu a {
         color: rgb(138, 138, 138) !important;
     }
@@ -816,535 +820,140 @@ label.lblb2c.cartb2b.topbar {
     .select:after {
      display:none!important;
     }
-	input#dnn_ctr440_ExcursionSearch_exc_search {
-    color: red;
-}
 
-.dots.dots2 {
-    margin-right: -43px;
-}
-#basic-addon2 {
-    background-color: transparent !important;
-    border: none;
+
+.headerprofildiv {
     display: inline-block;
-    color: rgb(255, 255, 255, 1);
-    margin-top: 8px;
-    padding-right: 20px;
-    font-weight: 700;
+    width: 125px ;
+    text-align: center;
+    color: rgba(10, 191, 242, 1) !important;
 }
     
+
+    .headerprofildiv:hover .profil {
+        background-image: url(images/whiteavatar.svg) !important;
+        padding: 20px 10px 20px 10px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        border: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 1) !important;
+        text-decoration: none;
+    }
+.headerprofildiv:hover {
+background: rgba(10, 191, 242, 1);
+color: #FFFFFF !important;
+}
+
+.toprightlblsprofil {
+display: inline-block;
+text-decoration: none;
+margin-left: 10px;
+}
+
+
+
+
+.headercartdiv {
+    display: inline-block;
+    width: 125px;
+    text-align: center;
+    color: rgba(10, 191, 242, 1) !important;
+}
+ 
+    .headercartdiv:hover .cartimg {
+        background-image: url(images/whitecart.svg) !important;
+        padding: 20px 10px 20px 10px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        border: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 1) !important;
+        text-decoration: none;
+    }
+
+    .headercartdiv:hover {
+        background: rgba(10, 191, 242, 1);
+        color: #FFFFFF !important; 
+    }
+
+.toprightlblsmycart {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+@media (min-width: 900px) and (max-width: 1000px)
+{
+    .profil {
+        padding: 0px 10px 20px 10px;
+    }
+}
+@media (max-width:707px) {
+    .earth {
+        margin-left: -45px;
+    }
+}
+    
+@media (max-width: 900px) {
+    .toprightlblsmycart, .toprightlblsprofil {
+    display: none;
+}
+
+.profil {
+    padding: 0px 10px 20px 10px;
+}
+
+.headercartdiv {
+    width: 40px;
+}
+
+.headerprofildiv {
+    width: 40px;
+}
+}
+ 
 body {
     /*overflow-y: hidden;*/
     overflow-x: hidden;
     padding: 0;
 }
-
-.container1280 {
-    max-width: 1280px !important;
-    padding-top: 119px;
-}
-
-@media (min-width: 1200px) {
-    .privateexcursionsdiv {
-        
-    }
-
-  
-}
-
-@media (min-width: 1199px) and (max-width: 1249px) {
-    .privateexcursionsdiv {
-        padding-right: 380px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 380px;
-    }
-}
-
-@media (min-width: 1150px) and (max-width: 1199px) {
-    .privateexcursionsdiv {
-        padding-right: 360px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 360px;
-    }
-}
-
-@media (min-width: 1100px) and (max-width: 1149px) {
-    .privateexcursionsdiv {
-        padding-right: 335px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 335px;
-    }
-}
-
-@media (min-width: 1050px) and (max-width: 1099px) {
-    .privateexcursionsdiv {
-        padding-right: 330px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 330px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1049px) {
-    .privateexcursionsdiv {
-        padding-right: 290px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 290px;
-    }
-}
-
-.privateexcursionslbl {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 15px !important;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    width: 93px;
-    word-break: normal;
-    font-weight: 900 !important;
-    margin-right: 10px;
-    text-align: left;
-    text-transform: uppercase;
-    margin-right: 25px;
-}
-
-.fakos {
-    /* background-image: url(images/fakos.svg); */
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    margin-right: 2px;
-    display:inline-block;
-}
-
-.privateexcursions {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    /* width: 245px; */
-    /* height: 106px; */
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    border: 0px;
-    padding: 21px;
-    color: rgba(255, 255, 255, 1) !important;
-    text-decoration: none;
-    /* margin-bottom: 120px; */
-    /* padding-right: 52px !important; */
-    max-width: 350px;
-}
-
-.toursexcursions {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    /* width: 245px; */
-    /* height: 106px; */
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    border: 0px;
-    padding: 21px;
-    color: rgba(255, 255, 255, 1) !important;
-    text-decoration: none;
-    /* margin-bottom: 120px; */
-    max-width: 350px;
-    right: 10px;
-}
-
-.dots {
-    /*background-image: url(images/dots.svg);*/
-    background-repeat: no-repeat;
-    /* padding: 6px 9px 6px 9px; */
-    white-space: nowrap;
-    /* margin-left: 192px; */
-    width: 34px;
-    /* height: 100%; */
-    float: right;
-    margin-top: 5px;
-    margin-right: 10px;
-}
-
-.bluearrow {
-    background-image: url(images/bluearrow.svg);
-    background-repeat: no-repeat;
-    padding: 6px 9px 6px 9px;
-    white-space: nowrap;
-}
-
-.rightarrow {
-    background-image: url(images/rightarrow.svg);
-    background-repeat: no-repeat;
-    padding: 6px 9px 6px 9px;
-    white-space: nowrap;
-}
-
-.points {
-    background-image: url(images/points.svg);
-    background-repeat: no-repeat;
-    padding: 20px 25px 20px 25px;
-    vertical-align: top;
-}
-
-.ship {
-    background-image: url(images/ship.svg);
-    background-repeat: no-repeat;
-    padding: 20px 20px 20px 20px;
-    vertical-align: top;
-    margin-top: 2px;
-}
-
-.openlock {
-    background-image: url(images/openlock.svg);
-    background-repeat: no-repeat;
-    padding: 20px 25px 20px 25px;
-    vertical-align: top;
-    /*margin-right: 95px;
-    margin-bottom: 120px*/
-}
-
-.middle-enginediv {
-    background: rgba(0, 0, 0, 0.5);
-    width: 100vw; 
-}
-
-
-.middle-engine {
-    background-image: url(images/frontpage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#TopContent {
-    margin-top: 0px !important
-}
-
-.language {
-    display: inline-block;
-}
-
-
-.searchengine {
-    background: #FFFFFF;
-    background: rgba(255, 255, 255, 0.5);
-    width: 819px; 
-    border-radius: 39px;
-    padding-top: 16px;
-    padding-left: 19px;
-    padding-right: 19px;
-    padding-bottom: 1px;
-}
-
-.search-engine-input {
-    width: 626px;
-    height: 54px;
-    outline: none;
-    border-radius: 35px;
-    border: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    padding-left: 16px;
-}
-
-.searchbtn:hover {
-    text-decoration: none;
-}
-
-.viewallbtn {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    padding: 2px 10px 2px 10px;
-    background-repeat: no-repeat;
-    border: 1px solid white;
-    font-family: Proxima Nova;
-    font-size: 14px;
-    white-space: nowrap;
-    color: rgba(255, 255, 255, 1) !important;
-    text-decoration: none !important;
-    display: block;
-    width: fit-content;
-    margin-left: 8px;
-}
-
-.searchbtn {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    padding-left: 10px;
-    background-repeat: no-repeat;
-    border-radius: 41px;
-    border: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    white-space: nowrap;
-    color: rgba(255, 255, 255, 1) !important;
-    text-decoration: none;
-    font-weight: 700;
-	margin-top: -27px;
-}
-
-.searchinpdiv {
-    padding-top: 11px;
-    padding-left: 27px;
-    border-radius: 16px;
-}
-
-.searchbtndiv {
-    padding-top: 27px;
-}
-
-.search-input {
-    background: #FFFFFF;
-    background: rgba(255, 255, 255, 1);
-    position: absolute;
-    left: 558px;
-    border-radius: 16px;
-    top: 250px;
-    width: 799px;
-    height: 55px;
-    white-space: nowrap;
-}
-
-
-.fontsize {
-    margin-top: 90px;
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 44px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 0 !important;
-}
-
-
-
-@media (max-width: 575px) {
-    .privateexcursionsdiv {
-        padding-right: 0px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 0px;
-    }
-
-    .viewallbtn {
-        display: inline-block;
-        vertical-align: text-bottom;
-    }
-
-    .toursexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-    }
-
-    .privateexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-        padding-right: 0px !important;
-        margin-right: 30px;
-    }
-
-    .points {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .openlock {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .privateexcursionslbl {
-        font-size: 12px !important;
-        width: 86px;
-        word-break: normal;
-    }
-
-    .ship {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .searchengine {
-        /*height: 115px;*/
-        width: 340px;
-    }
-
-    .search-engine-input {
-        width: 320px;
-        height: 39px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-        margin-left: -10px;
-    }
-
-    /*.searchbtn {
-        margin-left: 3px;
-        padding: 9px 126px 9px 126px;
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-    }*/
-
-
-
-    .fontsize {
-        font-size: 20px;
-    }
-
-    .secondfontsize {
-        font-size: 12px;
-    }
-
-    .search-engine-input {
-        width: 320px;
-        height: 39px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-    }
-
-    /*.searchbtn {
-        padding: 9px 126px 9px 126px;
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-    }*/
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-
-    .privateexcursionsdiv {
-        padding-right: 0px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 0px;
-    }
-
-    .viewallbtn {
-        display: inline-block;
-        vertical-align: text-bottom;
-    }
-
-    .privateexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-    }
-
-    .privateexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-        padding-right: 0px !important;
-        margin-right: 30px;
-    }
-
-    .toursexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-    }
-
-    .points {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .openlock {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .privateexcursionslbl {
-        font-size: 12px !important;
-        width: 86px;
-        word-break: normal;
-    }
-
-    .ship {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .searchengine {
-        /*height: 115px;*/
-        width: 340px;
-    }
-
-    .search-engine-input {
-        width: 320px;
-        height: 39px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-        margin-left: -10px;
-    }
-
-    /*.searchbtn {
-        margin-left: 3px;
-        padding: 9px 126px 9px 126px;
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-    }*/
-    
-    fontsize {
-        font-size: 40px;
-    }
-
-    .secondfontsize {
-        font-size: 15px;
-    }
-}
-
-.secondfontsize {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 19px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 25px;
-}
-
-.fontbold {
-    font-family: 'proxima-nova', sans-serif !important;
-    font-weight: 900;
-}
-
-.body {
-    font-family: 'proxima-nova', sans-serif;
-}
-
-.center {
-}
-
-/*.form-control {
-    width: 810px;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 16px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
-}
-.form-outer {
-    border: 10px solid #ccc !important;
-    height: 74px;
-    border-radius: 16px;
+/*.imagesize:before {
+	content: "5 Hours";
+	display: block;
+	text-align: center;
+	background: rgba(0, 192, 242, 1);
+	font-family: Proxima Nova;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	color: rgb(255, 255, 255);
 }*/
-     
+
+.custom-select {
+	width: 30%;
+	border-radius: 15px;
+	color: #0ABFF2;
+	background-image: url(images/bluearrowdown.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #ffffff;
+	background-size: 10px;
+	background-position-x: 111px;
+}
+
+
 .careful {
-	/* background-image: url(images/fakos.svg); */
+	/* background-image: url(svg/fakos.svg); */
 	background-repeat: no-repeat;
 	width: 20px;
 	height: 20px;
 	margin-right: 2px;
 	display: inline-block;
-	
 }
 .movedown {
 	margin-bottom: 20px;
@@ -1357,18 +966,25 @@ body {
 	color: #0ABFF2; 
 }
 .imagesize {
-    width:250px;
+	width: 250px;
+	position: relative;
+}
+.topleftimagespan {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color:  #0ABFF2;
 }
 .div_ESR_body {
-    display: block;
-    float: left;
-    width: 707px; /*710px*/ /*updated by akoukouri 23/01/2018*/
-    height: auto;
-    font-family: Trebuchet MS;
-    font-family: Roboto, arial; /*added by akoukouri 23/01/2018*/
-    font-weight: 400; /*added by akoukouri 23/01/2018*/
-    margin-left: -6px; /*added by akoukouri 23/01/2018*/
-    margin-top: 28px; /*added by akoukouri 23/01/2018*/
+	display: block;
+	float: left;
+	width: 707px; /*710px*/ /*updated by akoukouri 23/01/2018*/
+	height: auto;
+	font-family: Trebuchet MS;
+	font-family: Roboto, arial; /*added by akoukouri 23/01/2018*/
+	font-weight: 400; /*added by akoukouri 23/01/2018*/
+	margin-left: -6px; /*added by akoukouri 23/01/2018*/
+	margin-top: 28px; /*added by akoukouri 23/01/2018*/
 }
 
 
@@ -1458,7 +1074,7 @@ body {
 	.imagesize {
 		width: 403px;
 	}
-
+		
 	.hideprivates {
 		display: block !important;
 	}
@@ -1498,7 +1114,7 @@ body {
 	}
 }
 	.imageseperator {
-		background-image: url(images/horizontalseperator.svg);
+		background-image: url(svg/horizontalseperator.svg);
 		background-repeat: no-repeat;
 		padding: 61px 47px 51px 59px;
 		white-space: nowrap;
@@ -1507,7 +1123,7 @@ body {
 	}
 
 	.rightarrow {
-		background-image: url(images/rightarrow.svg);
+		background-image: url(svg/rightarrow.svg);
 		background-repeat: no-repeat;
 		padding: 6px 9px 6px 9px;
 		white-space: nowrap;
@@ -1519,7 +1135,7 @@ body {
 	}
 
 	.rightbluearrow {
-		background-image: url(images/rightbluearrow.svg);
+		background-image: url(svg/rightbluearrow.svg);
 		background-repeat: no-repeat;
 		padding: 6px 9px 6px 9px;
 		white-space: nowrap;
@@ -1532,17 +1148,17 @@ body {
 		font-family: Proxima Nova;
 	}
 
-	input[type='radio'] {
+	input[type='checkbox'] {
 		-webkit-appearance: none;
 		width: 20px;
 		height: 20px;
-		background: url(images/backcircleresults.svg);
+		background: url(svg/backcircleresults.svg);
 		border-radius: 50%;
 		outline: none;
 		/*box-shadow: 0 0 5px 0px gray inset;*/
 	}
 
-		input[type='radio']:before {
+		input[type='checkbox']:before {
 			content: '';
 			display: block;
 			width: 60%;
@@ -1551,13 +1167,12 @@ body {
 			border-radius: 50%;
 		}
 
-		input[type='radio']:checked:before {
-			background: url(images/tick.svg);
+		input[type='checkbox']:checked:before {
+			background: url(svg/tick.svg);
 			background-repeat: no-repeat;
 			width: 15px;
 			height: 20px;
 		}
-
 
 	.activitiesfont {
 		font-family: Proxima Nova;
@@ -1646,15 +1261,46 @@ body {
 		height: 50px;
 		border-radius: 50px 0px 0px 50px;
 	}
+.leftclockspan, .lblBtnLoadMore {
+	color: #FFFFFF;
+}
+.whitearrowdownloadmore {
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+	display: inline-block;
+}
 
-	.fakos {
-		/* background-image: url(images/fakos.svg); */
-		background-repeat: no-repeat;
-		width: 20px;
-		height: 20px;
-		margin-right: 2px;
-		display: inline-block;
-	}
+.loadmorediv {
+	width: 230px;
+	height: 70px;
+	background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+	border-radius: 25px;
+	padding-top: 23px;
+}
+.leftclock {
+	/*background-image: url(svg/leftclock.svg);*/
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+	display: inline-block;
+}
+.topleftimagespan {
+	width: 100px;
+	height: 33px;
+	padding-top: 5px;
+}
+
+.fakos {
+	/* background-image: url(svg/fakos.svg); */
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 2px;
+	display: inline-block;
+}
 
 	.searchbtn {
 		display: inline-block;
@@ -1697,7 +1343,7 @@ body {
 	}
 
 	.dots {
-		/*background-image: url(images/dots.svg);*/
+		/*background-image: url(svg/dots.svg);*/
 		background-repeat: no-repeat;
 		/* padding: 6px 9px 6px 9px; */
 		white-space: nowrap;
@@ -1831,7 +1477,7 @@ body {
 	}
 
 	.whiteline {
-		/* background-image: url(images/fakos.svg); */
+		/* background-image: url(svg/fakos.svg); */
 		background-repeat: no-repeat;
 		width: 150px;
 		height: 5px;
@@ -2178,8 +1824,13 @@ body {
 	@media screen and (min-width : 320px) and (max-width : 336px) {
 	}
 
+
+
+
+
+
 .svgclass { 
-	    url('/newsite/portals/0/css/images/footer/point.svg');
+	    url('images/point.svg');
 		padding: 8px 8px 8px 8px;
 		background-repeat: no-repeat; 
 	    width: 30px;
@@ -2258,11 +1909,11 @@ body {
       <div>
          <img class="earth" src="images/earthblue.svg"><span><div class="language">
      
-    
-                  <select  class="select"    id="cmblanguages">
-    <option value="0">English</option>
-    <option value="1">Ελληνικά</option> 
-  </select>       
+    <span class="languageclass">English</select>
+                  <!-- <select  class="select"    id="cmblanguages"> -->
+    <!-- <option value="0">English</option> -->
+    <!-- <option value="1">Ελληνικά</option>  -->
+  <!-- </select>        -->
     </div></span>
             
     </div></div>
@@ -2277,38 +1928,40 @@ body {
 			
      
    
-    <center>
-   <div class="container1280header"> 
+<center>
+<div class="container1280header"> 
     
-    <div class="row">
-        <div class="col-6 col-sm-6 col-xl-6 col-lg-6 toplogo" align="center"> 
-                <img src="images/logo.png" class="logob2c">
-        </div> 
-        <div class="b2cheader col-6 col-sm-6 col-xl-6 col-lg-6 " align="center"> 
-
-            <a href="#" class="accounthover"><img class="profil"><div class="cartdiv"><label class="cartb2b lblb2c">Account</label></div></a>
-            <a href="#" class="button"><img class="cartimg"><div class="cartdiv"><label class="lblb2c cartb2b topbar">My Cart</label></div></a>
-            
-        </div>
+<div class="row">
+    <div class="col-6 col-sm-6 col-xl-6 col-lg-6 toplogo" align="center"> 
+        <img src="images/logo.png" class="logob2c">
+    </div> 
+    <div class="b2cheader col-6 col-sm-6 col-xl-6 col-lg-6 " align="center"> 
+        <%--<div><img class="profil"><label>Account</label></div>
+        <a href="#" class="accounthover"><div class="cartdiv cartb2b"><img class="profil"><label class=" lblb2c">Account</label></div></a>
+        <a href="#" class="button"><div class="cartdiv cartb2b"><img class="cartimg"><label class="lblb2c   topbar">My Cart</label></div></a>
+            --%>
+        <div class="headerprofildiv"> <img class="profil" />  <div class="toprightlblsprofil"  >Account</div></div>
+        <div class="headercartdiv"> <img class="cartimg" /> <div class="toprightlblsmycart"  >My Cart</div></div>
+    </div>
        
         
-     </div>
+    </div>
     
-   </div>
-  </center>
+</div>
+</center>
 
-  </div>
+</div>
 </div>
 
 <div class="middle-enginediv"> 
 <center> 
 
 <div class="engine-header">
-<div   class="container1281">
+<div class="container1280">
 
 <div class="row">  
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-<nav aria-label="breadcrumb" >
+<nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item first"><a href="#">HOME</a></li>
     <li class="breadcrumb-item"><a href="#">TOURS</a></li>
@@ -2320,42 +1973,53 @@ body {
 </div>
 
 <div class="row">  
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " style="margin-top: -110px;" align="center">
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
                 <div> <label class="fontsize"> TOURS </label> <label class="fontsize fontbold"> SEARCH </label>   <label class="fontsize"> RESULTS </label></div>
             </div>
 </div>
 <div class="row">  
         <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-             <img src="images/whiteline.svg" class="whiteline">
+             <img src="/localhost_hammer/portals/0/css/svg/whiteline.svg" class="whiteline">
         </div>
 </div>
 <div class="sendbottom"> 
     
     <input class="form-control mr-sm-2 wdywtg" type="text" placeholder="Where do you want to go ?" aria-label="Search">
+
     <div class="searchbtndiv">
-        <a href="" class="searchbtn"> <img src="images/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">New Search</span></a>
+        <a href="" class="searchbtn"> <img src="/localhost_hammer/portals/0/css/svg/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">New Search</span></a>
     </div>
 </div>
 </div>
 </div>   
     <div class="engine">
-        <div class="container1281">
+        <div class="container1280">
     
 <div class="row">    
-<div   class="col-12 col-sm-12 col-xl-4 col-lg-4 " align="left">
+<div class="col-12 col-sm-12 col-xl-4 col-lg-4 " align="left">
 
 </div>
-<div   class="col-12 col-sm-12 col-xl-8 col-lg-8 movedown" align="left">
-    <img src="images/!.svg" class="careful">
-                  <span class="toursfound">7</span>
+<div class="col-12 col-sm-12 col-xl-8 col-lg-8 movedown" align="left">
+   <div class="row">
+       <div class="col-12 col-sm-12 col-xl-6 col-lg-6 movedown" align="left">
+        <img src="/localhost_hammer/portals/0/css/svg/!.svg" class="careful">
+                  <span id="lblToursFoundNum" class="Excursionsfound">4</span>            
                   <span class="toursfound">TOURS FOUND</span>
+
+        </div>
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 movedown" align="right">
+            <select class="custom-select" id="order">
+              <option>Sort by Price</option> 
+            </select>
+        </div>
+   </div>
 </div>
 </div>
-<div class="container1281">
+<div class="container1280">
     
 <div class="row">
     
-    <div   class="col-12 col-sm-12 col-xl-4 col-lg-4 " align="left">
+    <div class="col-12 col-sm-12 col-xl-4 col-lg-4 " align="left">
         
                 <div class="row">
                     <div class="container350"> 
@@ -2366,83 +2030,105 @@ body {
                 </div>
                 <div class="row    container350"> 
                     <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
-                      <img  id="minusplus" src="images/minus.svg" onclick="hide()" class="fakos btn-hide"> 
+                      <img id="minusplus_4" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
                     </div> 
                     <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
-                    <div ><span class="activitiesfont">ACTIVITIES</span></div>
+                    <div><span class="activitiesfont">DESTINATIONS</span></div>
                     </div> 
                     <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
-                     <img   src="images/remove.svg" class="fakos"> 
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
                     </div>  
                 </div>
-                <div class="collapseExample">
-                <div  class="row   container350"> 
+                <div id="collapseDestinations" class="collapseExample" style="display: block;"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_DestinationSelection_0" type="checkbox" class="cbx cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_DestinationSelection_0','cbx_DestinationSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Athens</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_DestinationSelection_1" type="checkbox" class="cbx cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_DestinationSelection_1','cbx_DestinationSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Meteora</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_DestinationSelection_2" type="checkbox" class="cbx cbx_DestinationSelection" value="1000000003" onclick="handleFilterSelectionClick('cbx_DestinationSelection_2','cbx_DestinationSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Olympia</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_DestinationSelection_3" type="checkbox" class="cbx cbx_DestinationSelection" value="1000000004" onclick="handleFilterSelectionClick('cbx_DestinationSelection_3','cbx_DestinationSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Santorini</span></div></div><div class="filterresults"> </div></div></div>
+                <input type="hidden" id="hf_TourFilters_destinationIds" value="">
+                <div class="row    container350"> 
+                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
+                      <img id="minusplus_1" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseActivities','minusplus_1')" class="fakos btn-hide"> 
+                    </div> 
+                    <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
+                    <div><span class="activitiesfont">ACTIVITIES</span></div>
+                    </div> 
                     <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
-                      <input type="radio" class="cbx"/> 
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
+                    </div>  
+                </div>
+                <div id="collapseActivities" class="collapseExample" style="display: block;"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_ActivitySelection_0" type="checkbox" class="cbx cbx_ActivitySelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_ActivitySelection_0','cbx_ActivitySelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Picnic in the Diomedes Botanical Gardens</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_ActivitySelection_1" type="checkbox" class="cbx cbx_ActivitySelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_ActivitySelection_1','cbx_ActivitySelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Tango in the Streets</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_ActivitySelection_2" type="checkbox" class="cbx cbx_ActivitySelection" value="1000000003" onclick="handleFilterSelectionClick('cbx_ActivitySelection_2','cbx_ActivitySelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Hiking in Meteora</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_ActivitySelection_3" type="checkbox" class="cbx cbx_ActivitySelection" value="1000000004" onclick="handleFilterSelectionClick('cbx_ActivitySelection_3','cbx_ActivitySelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Temple of Apollo</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_ActivitySelection_4" type="checkbox" class="cbx cbx_ActivitySelection" value="1000000005" onclick="handleFilterSelectionClick('cbx_ActivitySelection_4','cbx_ActivitySelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Learn about ancient Olympics</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_ActivitySelection_5" type="checkbox" class="cbx cbx_ActivitySelection" value="1000000007" onclick="handleFilterSelectionClick('cbx_ActivitySelection_5','cbx_ActivitySelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Hike From Fira to Oia</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_ActivitySelection_6" type="checkbox" class="cbx cbx_ActivitySelection" value="1000000006" onclick="handleFilterSelectionClick('cbx_ActivitySelection_6','cbx_ActivitySelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Wine tasting</span></div></div><div class="filterresults"> </div></div></div>
+                <input type="hidden" id="hf_TourFilters_activityIds">
+                <div class="row    container350"> 
+                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
+                      <img id="minusplus_2" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseAttractions','minusplus_2')" class="fakos btn-hide"> 
                     </div> 
+                    <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
+                    <div><span class="activitiesfont">ATTRACTIONS</span></div>
+                    </div> 
+                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
+                    </div>  
+                </div>
+                <div id="collapseAttractions" class="collapseExample"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_AttractionSelection_0" type="checkbox" class="cbx cbx_AttractionSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_AttractionSelection_0','cbx_AttractionSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Acropolis</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_AttractionSelection_1" type="checkbox" class="cbx cbx_AttractionSelection" value="1000000006" onclick="handleFilterSelectionClick('cbx_AttractionSelection_1','cbx_AttractionSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Delphi Archaeological Museum</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_AttractionSelection_2" type="checkbox" class="cbx cbx_AttractionSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_AttractionSelection_2','cbx_AttractionSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Meteora</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_AttractionSelection_3" type="checkbox" class="cbx cbx_AttractionSelection" value="1000000008" onclick="handleFilterSelectionClick('cbx_AttractionSelection_3','cbx_AttractionSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Archaeological Museum of Olympia</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_AttractionSelection_4" type="checkbox" class="cbx cbx_AttractionSelection" value="1000000007" onclick="handleFilterSelectionClick('cbx_AttractionSelection_4','cbx_AttractionSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Archaeological Site of Olympia</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_AttractionSelection_5" type="checkbox" class="cbx cbx_AttractionSelection" value="1000000004" onclick="handleFilterSelectionClick('cbx_AttractionSelection_5','cbx_AttractionSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Santorini Volcano</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_AttractionSelection_6" type="checkbox" class="cbx cbx_AttractionSelection" value="1000000005" onclick="handleFilterSelectionClick('cbx_AttractionSelection_6','cbx_AttractionSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Sunset in Oia</span></div></div><div class="filterresults"> </div></div></div>  
+                <input type="hidden" id="hf_TourFilters_attractionIds">
+                <div class="row    container350"> 
+                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
+                      <img id="minusplus_3" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseLanguages','minusplus_3')" class="fakos btn-hide"> 
+                    </div> 
+                    <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
+                    <div><span class="activitiesfont">TOUR GUIDE</span></div>
+                    </div> 
+                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
+                    </div>  
+                </div>
+                <div id="collapseLanguages" class="collapseExample"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_LanguageSelection_0" type="checkbox" class="cbx cbx_LanguageSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_LanguageSelection_0','cbx_LanguageSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>English</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_LanguageSelection_1" type="checkbox" class="cbx cbx_LanguageSelection" value="1000000007" onclick="handleFilterSelectionClick('cbx_LanguageSelection_1','cbx_LanguageSelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>French</span></div></div><div class="filterresults"> </div></div></div>  
+                <input type="hidden" id="hf_TourFilters_languageIds">
+                <div class="row    container350"> 
+                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
+                      <img id="minusplus_6" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseCategories','minusplus_6')" class="fakos btn-hide"> 
+                    </div> 
+                    <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
+                    <div><span class="activitiesfont">CATEGORIES</span></div>
+                    </div> 
+                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
+                    </div>  
+                </div>
+                <div id="collapseCategories" class="collapseExample"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_CategorySelection_0" type="checkbox" class="cbx cbx_CategorySelection" value="1000000003" onclick="handleFilterSelectionClick('cbx_CategorySelection_0','cbx_CategorySelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Private Tours</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><input id="cbx_CategorySelection_1" type="checkbox" class="cbx cbx_CategorySelection" value="1000000006" onclick="handleFilterSelectionClick('cbx_CategorySelection_1','cbx_CategorySelection');"></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span>Sightseeing Tours</span></div></div><div class="filterresults"> </div></div></div>  
+                <input type="hidden" id="hf_TourFilters_categoryIds">
+                <div class="row    container350"> 
+                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
+                      <img id="minusplus_5" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseDateRange','minusplus_5')" class="fakos btn-hide"> 
+                    </div> 
+                    <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
+                    <div><span class="activitiesfont">DATES</span></div>
+                    </div> 
+                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
+                    </div>  
+                </div>
+                <div id="collapseDateRange" class="collapseExample">                                 
+                    <div class="row   container350">
+                        <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
+                        </div>  
                         <div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left">
-                    <div ><span >Cruises & Sailing Tours</span></div>
-                    </div> 
-                    <div class="filterresults"> </div>
-                </div>
-                </div>
-                <div class="row leftprivateexcursions">
-                <div class="container350">
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 toursexcursionsdiv" align="center">
-                  <div class="toursexcursions"> 
-                        <div class="row">
-                            <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
-                                 <img style="display:inline-block" src="" class="points">
-                            </div>
-                            <div class="col-4 col-sm-4 col-xl-4 col-lg-4">
-                                 <label style="display:inline-block" class="privateexcursionslbl"> Tours &amp; Excursions </label>  
-                            </div>
-                             <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
-                                 <img style="display:inline-block" src="" class="ship">
-                            </div>
-                             <div class="col-4 col-sm-4 col-xl-4 col-lg-4" align="center">
-                                 <a href="" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
-                            </div>
-                              <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
-                                 <img src="images/dots.svg" class="dots">
-                               </div> 
-                            </div>
+                           <input id="filterDateRange" type="text" name="daterange" class="range"> 
+                        </div>                    
+                        <div class="filterresults"> </div>
                     </div>
-                </div>
-                </div>
-                </div>
-                <div class="row leftprivateexcursions">
-                <div class="container350">
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                    <div class="privateexcursions"> 
-                        <div class="row">
-                            <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
-                                    <img style="display:inline-block" src="" class="openlock">
-                            </div>
-                            <div class="col-6 col-sm-6 col-xl-6 col-lg-6">
-                                <label style="display:inline-block" class="privateexcursionslbl"> PRIVATE EXCURSIONS </label>   
-                            </div>
-                             <div class="col-4 col-sm-4 col-xl-4 col-lg-4" align="center">
-                                <a href="" style="" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
-                            </div>
-                             <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
-                                <img src="images/dots.svg" class="dots">
-                             </div>
-                         
-                         </div>
-                    </div>
-                </div>
-                </div>
-                </div> 
-        </div> 
-    <div  class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
-    
-   <div id='div_Excursion_0'  ><input id='hf_ESingRes_ExcursionID_0' type='hidden' value='1000003876' /><div class='row'><div class='col-4 col-sm-4 col-xl-3 col-lg-3'><img class='imagesize' src='http://server3/Images/DemoHub/package/athensbynight.jpg' /></div><div class='col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground'><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span id='lbl_ESingRes_ExcursionTitle_0' class='lbl_ESingRes_ExcursionTitle ColorB'>Athens By Night</span></div></div><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span> TEST SPAN </span></div></div><div class='row'><div  class='col-12 col-sm-12 col-xl-12 col-lg-12'><span class='bluespan'> TEST TIME SPAN </span></div></div></div><div class='col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground' align='right'><img class='imageseperator' src=''  /></div><div class='col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground'><span id='lbl_ex_Currency_0' class='lbl_ex_Currency' >€</span><span id='lbl_ex_ExcursionFromPrice_0' class='lbl_ex_ExcursionFromPrice' >20</span><a href='http://localhost/localhost_hammer/excursioninfo.aspx?ExcursionID=1000003876' id='a_ESingRes_Details_0' class='detailsbtn'><img src='' class='rightbluearrow'>Details</a></div></div> <div class='row'> <div Class='col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults'> </div> </div></div><div id='div_Excursion_1'  ><input id='hf_ESingRes_ExcursionID_1' type='hidden' value='1000003876' /><div class='row'><div class='col-4 col-sm-4 col-xl-3 col-lg-3'><img class='imagesize' src='http://server3/Images/DemoHub/package/athensbynight.jpg' /></div><div class='col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground'><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span id='lbl_ESingRes_ExcursionTitle_1' class='lbl_ESingRes_ExcursionTitle ColorB'>Athens By Night</span></div></div><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span> TEST SPAN </span></div></div><div class='row'><div  class='col-12 col-sm-12 col-xl-12 col-lg-12'><span class='bluespan'> TEST TIME SPAN </span></div></div></div><div class='col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground' align='right'><img class='imageseperator' src=''  /></div><div class='col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground'><span id='lbl_ex_Currency_1' class='lbl_ex_Currency' >€</span><span id='lbl_ex_ExcursionFromPrice_1' class='lbl_ex_ExcursionFromPrice' >20</span><a href='http://localhost/localhost_hammer/excursioninfo.aspx?ExcursionID=1000003876' id='a_ESingRes_Details_1' class='detailsbtn'><img src='' class='rightbluearrow'>Details</a></div></div> <div class='row'> <div Class='col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults'> </div> </div></div><div id='div_Excursion_2'  ><input id='hf_ESingRes_ExcursionID_2' type='hidden' value='1000003876' /><div class='row'><div class='col-4 col-sm-4 col-xl-3 col-lg-3'><img class='imagesize' src='http://server3/Images/DemoHub/package/athensbynight.jpg' /></div><div class='col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground'><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span id='lbl_ESingRes_ExcursionTitle_2' class='lbl_ESingRes_ExcursionTitle ColorB'>Athens By Night</span></div></div><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span> TEST SPAN </span></div></div><div class='row'><div  class='col-12 col-sm-12 col-xl-12 col-lg-12'><span class='bluespan'> TEST TIME SPAN </span></div></div></div><div class='col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground' align='right'><img class='imageseperator' src=''  /></div><div class='col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground'><span id='lbl_ex_Currency_2' class='lbl_ex_Currency' >€</span><span id='lbl_ex_ExcursionFromPrice_2' class='lbl_ex_ExcursionFromPrice' >20</span><a href='http://localhost/localhost_hammer/excursioninfo.aspx?ExcursionID=1000003876' id='a_ESingRes_Details_2' class='detailsbtn'><img src='' class='rightbluearrow'>Details</a></div></div> <div class='row'> <div Class='col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults'> </div> </div></div><div id='div_Excursion_3'  ><input id='hf_ESingRes_ExcursionID_3' type='hidden' value='1000003881' /><div class='row'><div class='col-4 col-sm-4 col-xl-3 col-lg-3'><img class='imagesize' src='http://server3/Images/DemoHub/package/meteoradelphitour.jpg' /></div><div class='col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground'><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span id='lbl_ESingRes_ExcursionTitle_3' class='lbl_ESingRes_ExcursionTitle ColorB'>Meteora & Delphi Tour</span></div></div><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span> TEST SPAN </span></div></div><div class='row'><div  class='col-12 col-sm-12 col-xl-12 col-lg-12'><span class='bluespan'> TEST TIME SPAN </span></div></div></div><div class='col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground' align='right'><img class='imageseperator' src=''  /></div><div class='col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground'><span id='lbl_ex_Currency_3' class='lbl_ex_Currency' >€</span><span id='lbl_ex_ExcursionFromPrice_3' class='lbl_ex_ExcursionFromPrice' >95</span><a href='http://localhost/localhost_hammer/excursioninfo.aspx?ExcursionID=1000003881' id='a_ESingRes_Details_3' class='detailsbtn'><img src='' class='rightbluearrow'>Details</a></div></div> <div class='row'> <div Class='col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults'> </div> </div></div><div id='div_Excursion_4'  ><input id='hf_ESingRes_ExcursionID_4' type='hidden' value='1000003878' /><div class='row'><div class='col-4 col-sm-4 col-xl-3 col-lg-3'><img class='imagesize' src='http://server3/Images/DemoHub/package/olympiatour.jpg' /></div><div class='col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground'><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span id='lbl_ESingRes_ExcursionTitle_4' class='lbl_ESingRes_ExcursionTitle ColorB'>Olympia Tour</span></div></div><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span> TEST SPAN </span></div></div><div class='row'><div  class='col-12 col-sm-12 col-xl-12 col-lg-12'><span class='bluespan'> TEST TIME SPAN </span></div></div></div><div class='col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground' align='right'><img class='imageseperator' src=''  /></div><div class='col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground'><span id='lbl_ex_Currency_4' class='lbl_ex_Currency' >€</span><span id='lbl_ex_ExcursionFromPrice_4' class='lbl_ex_ExcursionFromPrice' >65</span><a href='http://localhost/localhost_hammer/excursioninfo.aspx?ExcursionID=1000003878' id='a_ESingRes_Details_4' class='detailsbtn'><img src='' class='rightbluearrow'>Details</a></div></div> <div class='row'> <div Class='col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults'> </div> </div></div><div id='div_Excursion_5'  ><input id='hf_ESingRes_ExcursionID_5' type='hidden' value='1000003883' /><div class='row'><div class='col-4 col-sm-4 col-xl-3 col-lg-3'><img class='imagesize' src='http://server3/Images/DemoHub/package/santoriniwinetour.jpg' /></div><div class='col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground'><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span id='lbl_ESingRes_ExcursionTitle_5' class='lbl_ESingRes_ExcursionTitle ColorB'>Santorini Half Day Wine Adventure</span></div></div><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span> TEST SPAN </span></div></div><div class='row'><div  class='col-12 col-sm-12 col-xl-12 col-lg-12'><span class='bluespan'> TEST TIME SPAN </span></div></div></div><div class='col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground' align='right'><img class='imageseperator' src=''  /></div><div class='col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground'><span id='lbl_ex_Currency_5' class='lbl_ex_Currency' >€</span><span id='lbl_ex_ExcursionFromPrice_5' class='lbl_ex_ExcursionFromPrice' >85</span><a href='http://localhost/localhost_hammer/excursioninfo.aspx?ExcursionID=1000003883' id='a_ESingRes_Details_5' class='detailsbtn'><img src='' class='rightbluearrow'>Details</a></div></div> <div class='row'> <div Class='col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults'> </div> </div></div><div id='div_Excursion_6'  ><input id='hf_ESingRes_ExcursionID_6' type='hidden' value='1000003883' /><div class='row'><div class='col-4 col-sm-4 col-xl-3 col-lg-3'><img class='imagesize' src='http://server3/Images/DemoHub/package/santoriniwinetour.jpg' /></div><div class='col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground'><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span id='lbl_ESingRes_ExcursionTitle_6' class='lbl_ESingRes_ExcursionTitle ColorB'>Santorini Half Day Wine Adventure</span></div></div><div class='row'><div class='col-12 col-sm-12 col-xl-12 col-lg-12'><span> TEST SPAN </span></div></div><div class='row'><div  class='col-12 col-sm-12 col-xl-12 col-lg-12'><span class='bluespan'> TEST TIME SPAN </span></div></div></div><div class='col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground' align='right'><img class='imageseperator' src=''  /></div><div class='col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground'><span id='lbl_ex_Currency_6' class='lbl_ex_Currency' >€</span><span id='lbl_ex_ExcursionFromPrice_6' class='lbl_ex_ExcursionFromPrice' >85</span><a href='http://localhost/localhost_hammer/excursioninfo.aspx?ExcursionID=1000003883' id='a_ESingRes_Details_6' class='detailsbtn'><img src='' class='rightbluearrow'>Details</a></div></div> <div class='row'> <div Class='col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults'> </div> </div></div>
-            
-    <asp:HiddenField ID="hf_ESRRes_ExcursionIDSelbyDetails" runat="server" />
+                </div>  
+                <input type="hidden" id="hf_TourFilters_DateRange">
+                <input id="hf_tourFilters" type="hidden" value="{&quot;activityIds&quot;:&quot;&quot;,&quot;attractionIds&quot;:&quot;&quot;,&quot;languageIds&quot;:&quot;&quot;,&quot;destinationIds&quot;:&quot;&quot;,&quot;categoryIds&quot;:&quot;&quot;,&quot;dateRange&quot;:&quot;&quot;}">
+                
+    </div> 
+    <div class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
+           
+          <div id="dnn_ctr482_ExcursionSearchResults_Tours" class="Excursions"><div id="div_Excursion_0"><input id="hf_ESingRes_ExcursionID_0" type="hidden" value="1000003876"><div class="row"><div class="col-4 col-sm-4 col-xl-3 col-lg-3"><div class="imagesize"><img class="imagesize" src="http://server3/Images/DemoHub/package/"><div class="topleftimagespan"><img src="/localhost_hammer/portals/0/css/svg/leftclock.svg" class="leftclock"><span class="leftclockspan">5 Hours</span></div></div></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span id="lbl_ESingRes_ExcursionTitle_0" class="lbl_ESingRes_ExcursionTitle ColorB">Athens By Night      </span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span></span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span class="bluespan">In English,French </span></div></div></div><div class="col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground" align="right"><img class="imageseperator" src=""></div><div class="col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground"><span id="lbl_ex_Currency_0" class="lbl_ex_Currency">€</span><span id="lbl_ex_ExcursionFromPrice_0" class="lbl_ex_ExcursionFromPrice">35</span><a href="http://localhost/localhost_hammer/excursioninfo.aspx?TourID=1000003876" id="a_ESingRes_Details_0" class="detailsbtn"><img src="" class="rightbluearrow">Details</a></div></div> <div class="row"> <div class="col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults"> </div> </div></div><div id="div_Excursion_1"><input id="hf_ESingRes_ExcursionID_1" type="hidden" value="1000003881"><div class="row"><div class="col-4 col-sm-4 col-xl-3 col-lg-3"><div class="imagesize"><img class="imagesize" src="http://server3/Images/DemoHub/package/meteoradelphitour.jpg"><div class="topleftimagespan"><img src="/localhost_hammer/portals/0/css/svg/leftclock.svg" class="leftclock"><span class="leftclockspan">5 Hours</span></div></div></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span id="lbl_ESingRes_ExcursionTitle_1" class="lbl_ESingRes_ExcursionTitle ColorB">Meteora &amp; Delphi Tour      </span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span>This is a test description for Meteora &amp; Delphi Tour</span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"></div></div></div><div class="col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground" align="right"><img class="imageseperator" src=""></div><div class="col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground"><span id="lbl_ex_Currency_1" class="lbl_ex_Currency">€</span><span id="lbl_ex_ExcursionFromPrice_1" class="lbl_ex_ExcursionFromPrice">95</span><a href="http://localhost/localhost_hammer/excursioninfo.aspx?TourID=1000003881" id="a_ESingRes_Details_1" class="detailsbtn"><img src="" class="rightbluearrow">Details</a></div></div> <div class="row"> <div class="col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults"> </div> </div></div><div id="div_Excursion_2"><input id="hf_ESingRes_ExcursionID_2" type="hidden" value="1000003878"><div class="row"><div class="col-4 col-sm-4 col-xl-3 col-lg-3"><div class="imagesize"><img class="imagesize" src="http://server3/Images/DemoHub/package/olympiatour.jpg"><div class="topleftimagespan"><img src="/localhost_hammer/portals/0/css/svg/leftclock.svg" class="leftclock"><span class="leftclockspan">5 Hours</span></div></div></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span id="lbl_ESingRes_ExcursionTitle_2" class="lbl_ESingRes_ExcursionTitle ColorB">Olympia Tour      </span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span></span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"></div></div></div><div class="col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground" align="right"><img class="imageseperator" src=""></div><div class="col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground"><span id="lbl_ex_Currency_2" class="lbl_ex_Currency">€</span><span id="lbl_ex_ExcursionFromPrice_2" class="lbl_ex_ExcursionFromPrice">65</span><a href="http://localhost/localhost_hammer/excursioninfo.aspx?TourID=1000003878" id="a_ESingRes_Details_2" class="detailsbtn"><img src="" class="rightbluearrow">Details</a></div></div> <div class="row"> <div class="col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults"> </div> </div></div><div id="div_Excursion_3"><input id="hf_ESingRes_ExcursionID_3" type="hidden" value="1000003883"><div class="row"><div class="col-4 col-sm-4 col-xl-3 col-lg-3"><div class="imagesize"><img class="imagesize" src="http://server3/Images/DemoHub/package/santoriniwinetour.jpg"><div class="topleftimagespan"><img src="/localhost_hammer/portals/0/css/svg/leftclock.svg" class="leftclock"><span class="leftclockspan">5 Hours</span></div></div></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 whitebackground"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span id="lbl_ESingRes_ExcursionTitle_3" class="lbl_ESingRes_ExcursionTitle ColorB">Santorini Half Day Wine Adventu...</span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span></span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span class="bluespan">In English </span></div></div></div><div class="col-12 col-sm-12 col-xl-1 col-lg-1 whitebackground" align="right"><img class="imageseperator" src=""></div><div class="col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground"><span id="lbl_ex_Currency_3" class="lbl_ex_Currency">€</span><span id="lbl_ex_ExcursionFromPrice_3" class="lbl_ex_ExcursionFromPrice">85</span><a href="http://localhost/localhost_hammer/excursioninfo.aspx?TourID=1000003883" id="a_ESingRes_Details_3" class="detailsbtn"><img src="" class="rightbluearrow">Details</a></div></div> <div class="row"> <div class="col-12 col-sm-12 col-xl-12 col-lg-12 excursionresults"> </div> </div></div></div>               
+    <input type="hidden" name="dnn$ctr482$ExcursionSearchResults$hf_ESRRes_ExcursionIDSelbyDetails" id="dnn_ctr482_ExcursionSearchResults_hf_ESRRes_ExcursionIDSelbyDetails">
        
-    <a id="btn_UpdateExcursionSearchResults" style="display:none;" onclick="btn_UpdateExcursionSearchResults_click()"></a>
-  
+    <a id="btn_UpdateTourSearchResults" style="display:none;" onclick="btn_UpdateTourSearchResults_click()"></a>
+    <div class="ButtonGeneralLeftDiv">
+        <div class="ButtonOuterDiv"> 
+           
+        </div>
+    </div>
      
     
     </div>
@@ -2467,7 +2153,7 @@ body {
                                  <a href="" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
                             </div>
                               <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
-                                 <img src="images/dots.svg" class="dots">
+                                 <img src="/localhost_hammer/portals/0/css/svg/dots.svg" class="dots">
                                </div> 
                             </div>
                     </div>
@@ -2489,7 +2175,7 @@ body {
                                 <a href="" style="" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
                             </div>
                              <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
-                                <img src="images/dots.svg" class="dots">
+                                <img src="/localhost_hammer/portals/0/css/svg/dots.svg" class="dots">
                              </div>
                          
                          </div>
@@ -2499,40 +2185,40 @@ body {
             </div>
     </div>
     </div>
-</center>
-<div ID="div_ESR_body" class="div_ESR_body col-xs-12">
+</div></center>
+<div id="div_ESR_body" class="div_ESR_body col-xs-12">
 
-    <div ID="div_ESR_HeaderDiv" class="div_ESR_HeaderDiv"> 
-                <asp:Panel ID="div_ESRRes_ResultInfo" CssClass="div_ESRRes_ResultInfo" runat="server">
-                    <asp:Panel ID="div_ESRRes_ResultHeader" CssClass="div_ESRRes_ResultHeader" runat="server">
-                        <asp:Label ID="lbl_ESR_ExcSearchType" CssClass="lbl_ESR_ExcSearchType" runat="server"></asp:Label>
-                        <asp:Label ID="lbl_ESR_ResultsFound" CssClass="lbl_ESRRes_ResNum" runat="server"></asp:Label>
-                    </asp:Panel>
-                    <asp:Label ID="lbl_ESRRes_ArrDep" CssClass="lbl_ESRRes_ArrDep" runat="server"></asp:Label>
-                </asp:Panel>         
+    <div id="div_ESR_HeaderDiv" class="div_ESR_HeaderDiv" style="position: relative; top: 0px; width: 1048px; margin-top: 0px; z-index: 2;"> 
+                <div id="dnn_ctr482_ExcursionSearchResults_div_ESRRes_ResultInfo" class="div_ESRRes_ResultInfo">
+		
+                    <div id="dnn_ctr482_ExcursionSearchResults_div_ESRRes_ResultHeader" class="div_ESRRes_ResultHeader">
+			
+                        <span id="dnn_ctr482_ExcursionSearchResults_lbl_ESR_ExcSearchType" class="lbl_ESR_ExcSearchType">, </span>
+                        <span id="dnn_ctr482_ExcursionSearchResults_lbl_ESR_ResultsFound" class="lbl_ESRRes_ResNum"></span>
+                    
+		</div>
+                    <span id="dnn_ctr482_ExcursionSearchResults_lbl_ESRRes_ArrDep" class="lbl_ESRRes_ArrDep"></span>
+                
+	</div>         
           
-                    <asp:Panel ID="div_ESR_ddls" CssClass="div_ESR_ddls" runat="server">
-                        <div class="PriceSort silverGradientStyle radiusThreeStyle" >
-                            <img runat="server" id="img_priceArrow" src="~/images/whitelabelIcons/arrow.png" alt="" style="float:left;margin-top:3px;margin-right:2px;display:none;" width="9" height="8" /> <%--update display--%> <%--updated by akoukouri 23/01/2018--%>
-                             <asp:DropDownList id="ddl_ESR_cmbOrderType"
-                                AutoPostBack="True"
-                                 OnClientSelectedIndexChanged="excResultsSortingChanged" 
-                                 EmptyMessage="1"
-                                EnableVirtualScrolling="true" AllowCustomText="false" Width="140" Height="100"
-                                runat="server">
+                    <div id="dnn_ctr482_ExcursionSearchResults_div_ESR_ddls" class="div_ESR_ddls">
+		
+                        <div class="PriceSort silverGradientStyle radiusThreeStyle">
+                            <img src="/localhost_hammer/images/whitelabelIcons/arrow.png" id="dnn_ctr482_ExcursionSearchResults_img_priceArrow" alt="" style="float:left;margin-top:3px;margin-right:2px;display:none;" width="9" height="8">  
+                             <select name="dnn$ctr482$ExcursionSearchResults$ddl_ESR_cmbOrderType" onchange="javascript:setTimeout('__doPostBack(\'dnn$ctr482$ExcursionSearchResults$ddl_ESR_cmbOrderType\',\'\')', 0)" id="dnn_ctr482_ExcursionSearchResults_ddl_ESR_cmbOrderType" onclientselectedindexchanged="excResultsSortingChanged" emptymessage="1" enablevirtualscrolling="true" allowcustomtext="false" style="height:100px;width:140px;">
+			<option value="0">Order by Price Ascending</option>
+			<option value="1">Order by Price Descending</option>
 
-                              <asp:ListItem   Value="0"> White </asp:ListItem>
-                              <asp:ListItem Value="1"> Silver </asp:ListItem>
-                  
-                           </asp:DropDownList> 
-                            <asp:HiddenField ID="hf_isAscending" runat="server" />
+		</select> 
+                            <input type="hidden" name="dnn$ctr482$ExcursionSearchResults$hf_isAscending" id="dnn_ctr482_ExcursionSearchResults_hf_isAscending">
                         </div>
                     
-                    </asp:Panel>         
+                    
+	</div>         
     </div> 
 </div>
-</div>
-
+<a id="btn_UpdateTourFilters" style="display:none;">
+</a></div>
 
 <div class="footerdiv"  >
 <center>
@@ -2600,80 +2286,6 @@ body {
 
     }
 
-    $(document).ready(function () {
-      
-        var HeaderElem = document.getElementsByClassName('div_ESR_HeaderDiv'); 
-        var distanceScrolled = document.body.scrollTop; 
-        var elemRect = HeaderElem[0].getBoundingClientRect(); 
-        var elemViewportOffset = elemRect.top; 
-        var totalHeaderOffset = distanceScrolled + elemViewportOffset;
-         
-
-        $(window).scroll(function () {
-            var scrollPos = $(document).scrollTop();
-            if (scrollPos > totalHeaderOffset) { 
-                $(".div_ESR_HeaderDiv").css({ "position": "fixed", "top": "0", "width": "1048px", "margin-top": "0px" });
-            }
-            else {
-                $(".div_ESR_HeaderDiv").css({ "position": "relative", "z-index": "2", "margin-top": "0px" });
-            }
-
-        });
-
-    });
-
-     
-
-    $(function () {
-      
-        $('.PriceSort').click(function () {
-
-
-        }); 
-    });
-
-
-
-
-    //added by akoukouri 31/08/2015
-  
-
-    function getPosition(element) {
-        var xPosition = 0;
-        var yPosition = 0;
-
-        while (element) {
-            xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
-            yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
-            element = element.offsetParent;
-        }
-        return { x: xPosition, y: yPosition };
-    }
-    //end added 
-
-    function excResultsSortingChanged() {
-  //      alert("excResultsSortingChanged");
-        // displayLoadingDiv();
-    
-        var cmbPriceSorting = $find("<%= ddl_ESR_cmbOrderType.ClientID %>");  
-        var jsonExcSearchResultsSorting = JSON.stringify({ "Exc_PriceSorting": cmbPriceSorting.get_value() });
-        localStorage.setItem("ExcSearchResultsSorting", jsonExcSearchResultsSorting);
-        pageIndex = 1;     
-        $("#<%= Excursions.ClientID %>").empty(); 
-        return false;
-    }
-
-    function loadMoreExcursionSearchResults() {
-     //   alert("loadMoreExcursionSearchResults"); 
-        return false;
-    }
- 
-    function btn_UpdateExcursionSearchResults_click() {
-     //   alert("btn_UpdateExcursionSearchResults_click()");
-        pageIndex = 1; 
-        $("#<%= Excursions.ClientID %>").empty();
-        getExcursionResults();
-        return false;
-    }
+   
    
 </script>
