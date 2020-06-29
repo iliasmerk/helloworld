@@ -1,5 +1,5 @@
 
-<script>
+ 
   
 function myFunction() { 
     modal.style.display = "block";
@@ -48,5 +48,4 @@ window.onclick = function(event) {
         }
         
         $('.hiderightpanel').toggle('hide');
-       }
-</script>
+       } 
