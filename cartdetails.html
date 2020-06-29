@@ -5,13 +5,10 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
  
-<link rel="stylesheet" href="css/nice-select.css" >
-   <script src="js/jquery.js"></script>
-  <script src="js/jquery.nice-select.min.js"></script>
 <style>
 
-	.email {
-    /* background-image: url(images/email.svg); */
+.email {
+    /* background-image: url(svg/email.svg); */
     /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
@@ -19,7 +16,7 @@
 }
 
 .telephone {
-    /* background-image: url(images/telephone.svg); */
+    /* background-image: url(svg/telephone.svg); */
     /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
@@ -34,10 +31,7 @@
     left: 0;
     z-index: 999;
 }
-.container1281 {
-    max-width: 1280px !important;
-   
-}
+
 .container1280header {
     max-width: 1280px !important;
     /* padding-top: 119px; */
@@ -49,16 +43,27 @@
 }
 
 .earth {
-    /* background-image: url(images/earthblue.svg); */
+    /* background-image: url(svg/earthblue.svg); */
     /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
-    margin-right: 5px;
-    margin-top: -3px;
+   margin-right: -10px;
+margin-top: -27px;
+}
+.languageclass {
+    background-size: 13px 7px;
+    border: 1px;
+    padding-right: 19px;
+    -webkit-appearance: none;
+    font-family: Proxima Nova !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+    color: #24263D;
+    color: rgb(36, 38, 61);
 }
 
 .select {
-    /*background: url("images/arrowdown.svg");
+    /*background: url("svg/arrowdown.svg");
         background-position: right;
         background-repeat: no-repeat;*/
     background-size: 13px 7px;
@@ -111,7 +116,7 @@ body {
 
 .cartimg {
     background-image: url(images/cart.svg);
-    padding: 30px 10px 30px 10px;
+    padding: 20px 10px 20px 10px;
     background-size: 20px 40px;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -132,10 +137,8 @@ body {
     text-decoration: none;
     color: rgb(138, 138, 138) !important;
     margin-left: 10px;
-    display: none !important;
-}
-
-
+   
+} 
 .home-button {
     background: none;
     border: none;
@@ -433,912 +436,7 @@ li {
     }
 }
 
-.cartdiv {
-    display: inline-block !important;
-    text-align: center;
-    width: 10px !important;
-    height: 26px !important;
-}
-
-.hrb2c {
-    margin-left: 52px;
-}
-
-.moveright {
-    margin-right: 10px;
-}
-
-.contactmailphone {
-    margin-top: 10px;
-    margin-left: 3%;
-    display: inline-block;
-}
-
-@media (min-width: 992px) {
-    .contactmailphone {
-        margin-top: 10px;
-        margin-left: 10%;
-        display: inline-block;
-    }
-
-    .b2cheader {
-        text-align: center;
-        padding-top: 10px;
-        padding-left: 10% !important;
-        padding-right: 90px;
-    }
-
-    .hrb2c {
-        margin-left: 240px;
-    }
-
-    .cartimg {
-        background-size: 20px 40px;
-        padding: 20px 10px 20px 10px;
-    }
-
-    .profil {
-        background-size: 20px 40px;
-    }
-
-    .cartdiv {
-        display: inline-block !important;
-        text-align: center;
-        width: 78px !important;
-        height: 26px !important;
-    }
-
-    .header {
-        padding-left: 80px !important;
-    }
-
-    .imgburgerdisp {
-        display: inline-block !important;
-    }
-
-    .logo {
-        width: 300px !important;
-        /*padding-top: 37px !important;*/
-    }
-
-    .logob2c {
-        width: 300px !important;
-    }
-
-
-    .lblb2c {
-        display: inline-block !important;
-    }
-
-    .menu a {
-        color: rgb(138, 138, 138) !important;
-    }
-
-    .menu {
-        background: rgb(255, 255, 255) !important;
-        padding-left: 0px !important;
-    }
-
-    .cartb2b:hover {
-        background: #0ABFF2 !important;
-        background: rgba(10, 191, 242, 1) !important;
-        color: #FFFFFF;
-        color: rgb(255, 255, 255) !important;
-        border: 1px solid #ccc !important;
-        border-radius: 4px !important;
-        width: 70px !important;
-        height: 26px !important;
-        text-align: center;
-    }
-
-    .my-button {
-        color: rgb(255, 255, 255) !important;
-        background-color: #0ac0f2 !important;
-        border: 1px solid #ccc !important;
-        border-radius: 4px !important;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    }
-
-    .icontoremove {
-        display: inline-block;
-    }
-
-    .moveleft {
-        margin-left: 20px !important;
-    }
-
-    .header {
-        padding-left: 300px;
-    }
-
-    .menu {
-        /*padding-top: 17px !important;*/
-        /*padding-right: 300px !important;*/
-        margin-right: 17%;
-    }
-
-    .header li {
-        float: left;
-    }
-
-        .header li a {
-            padding: 10px 30px;
-        }
-
-            .header li a:hover {
-                background: none !important;
-            }
-
-    .header .menu {
-        /* clear: none; */
-        float: right;
-        max-height: none;
-    }
-
-    .header .menu-icon {
-        display: none;
-    }
-}
-
-
-@media (min-width: 1585px) {
-    .contactmailphone {
-        margin-top: 10px;
-        margin-left: 0;
-        display: inline-block;
-    }
-
-    .b2cheader {
-        text-align: center;
-        padding-top: 0px;
-        padding-left: 0% !important;
-        padding-right: 0px;
-        text-align: right;
-    }
-
-    .cartimg {
-        background-size: 20px 40px;
-        padding: 20px 10px 20px 10px;
-    }
-
-    .profil {
-        background-size: 20px 40px;
-    }
-
-    .hrb2c {
-        margin-left: 0;
-        width: 100%;
-        margin-top: 19px;
-    }
-
-    .cartdiv {
-        display: inline-block !important;
-        text-align: center;
-        width: fit-content !important;
-        height: 26px !important;
-        margin-right: 22px;
-    }
-
-    .imgburgerdisp {
-        display: inline-block !important;
-    }
-
-    .logo {
-        width: 300px !important;
-        /*padding-top: 37px !important;*/
-    }
-
-    .logob2c {
-        width: 300px !important;
-    }
-
-
-    .lblb2c {
-        display: inline-block !important;
-    }
-
-    .menu a {
-        color: rgb(138, 138, 138) !important;
-    }
-
-    .menu {
-        background: rgb(255, 255, 255) !important;
-        padding-left: 0px !important;
-    }
-
-
-    .cartb2b:hover {
-        background: #0ABFF2 !important;
-        background: rgba(10, 191, 242, 1) !important;
-        color: #FFFFFF;
-        color: rgb(255, 255, 255) !important;
-        border: 1px solid #ccc !important;
-        border-radius: 4px !important;
-        width: 92px !important;
-        height: 26px !important;
-        text-align: center;
-    }
-
-    .my-button {
-        color: rgb(255, 255, 255) !important;
-        background-color: #0ac0f2 !important;
-        border: 1px solid #ccc !important;
-        border-radius: 4px !important;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    }
-
-    .icontoremove {
-        display: inline-block;
-    }
-
-    .moveleft {
-        margin-left: 20px !important;
-    }
-
-    .header {
-        padding-left: 300px;
-    }
-
-
-        .header li {
-            float: right;
-        }
-
-            .header li a {
-                padding: 10px 30px;
-            }
-
-                .header li a:hover {
-                    background: none !important;
-                }
-
-        .header .menu {
-            clear: none;
-            float: right;
-            max-height: none;
-            text-align: right;
-        }
-
-        .header .menu-icon {
-            display: none;
-        }
-}
-
-.header {
-    background-color: #fff;
-    position: relative;
-    width: 100%;
-    z-index: 3;
-    text-align: right;
-    padding: 0px !important;
-    max-width: none;
-    display: block;
-}
-
-    .header ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        overflow: hidden;
-        background-color: #fff;
-    }
-
-    .header li a {
-        display: block;
-        padding: 10px 7px;
-        border-right: 0px solid #f4f4f4;
-        text-decoration: none;
-        color: #24263D !important;
-        font-weight: 400;
-    }
-
-        .header li a:hover,
-        .header .menu-btn:hover {
-            background-color: #f4f4f4;
-        }
-
-    .header .logo {
-        display: block;
-        float: left;
-        font-size: 2em;
-        padding: 10px 20px;
-        text-decoration: none;
-    }
-
-.toplogo {
-    text-align: left;
-    padding: 0;
-}
-
-.row.top {
-    margin: 0px 0px 0px 0px !important;
-    padding-top: 4px;
-}
-
-.topcontact {
-    padding: 0px;
-    text-align: left;
-    color: #24263D;
-    font-weight: 400;
-    font-family: 'proxima-nova' !important;
-}
-
-.topmenu {
-    text-align: right;
-    width: 100%;
-    /* float: right; */
-}
-
-ul.menu {
-    /* width: 100%; */
-}
-
-.lang {
-    top: 8px;
-    text-align: right;
-}
-
-a.button {
-    /*background: #0abff2;*/
-    padding: 5px;
-    border-radius: 5px;
-    /*color: #fff !important;*/
-}
-
-label.lblb2c.cartb2b.topbar {
-    /*color: #fff !important;*/
-}
-
-.language {
-    display: inline-block;
-    width: 60px;
-    height: 24px;
-}
-.select {
-    background: url(images/arrowdown.svg);
-        background-position: right;
-        background-repeat: no-repeat; 
-    background-size: 13px 7px;
-    border: 1px;
-    padding-right: 19px;
-    -webkit-appearance: none;
-    font-family: Proxima Nova !important;
-    font-weight: bold !important;
-    font-size: 16px !important;
-    color: #24263D;
-    color: rgb(36, 38, 61);
-}
-    .select:after {
-     display:none!important;
-    }
-	input#dnn_ctr440_ExcursionSearch_exc_search {
-    color: red;
-}
-
-.dots.dots2 {
-    margin-right: -43px;
-}
-#basic-addon2 {
-    background-color: transparent !important;
-    border: none;
-    display: inline-block;
-    color: rgb(255, 255, 255, 1);
-    margin-top: 8px;
-    padding-right: 20px;
-    font-weight: 700;
-}
-    
-body {
-    /*overflow-y: hidden;*/
-    overflow-x: hidden;
-    padding: 0;
-}
-
-.container1280 {
-    max-width: 1280px !important; 
-}
-
-@media (min-width: 1200px) {
-    .privateexcursionsdiv {
-        
-    }
-
-  
-}
-
-@media (min-width: 1199px) and (max-width: 1249px) {
-    .privateexcursionsdiv {
-        padding-right: 380px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 380px;
-    }
-}
-
-@media (min-width: 1150px) and (max-width: 1199px) {
-    .privateexcursionsdiv {
-        padding-right: 360px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 360px;
-    }
-}
-
-@media (min-width: 1100px) and (max-width: 1149px) {
-    .privateexcursionsdiv {
-        padding-right: 335px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 335px;
-    }
-}
-
-@media (min-width: 1050px) and (max-width: 1099px) {
-    .privateexcursionsdiv {
-        padding-right: 330px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 330px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1049px) {
-    .privateexcursionsdiv {
-        padding-right: 290px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 290px;
-    }
-}
-
-.privateexcursionslbl {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 15px !important;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    width: 93px;
-    word-break: normal;
-    font-weight: 900 !important;
-    margin-right: 10px;
-    text-align: left;
-    text-transform: uppercase;
-    margin-right: 25px;
-}
-
-.fakos {
-    /* background-image: url(images/fakos.svg); */
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    margin-right: 2px;
-    display:inline-block;
-}
-
-.privateexcursions {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    /* width: 245px; */
-    /* height: 106px; */
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    border: 0px;
-    padding: 21px;
-    color: rgba(255, 255, 255, 1) !important;
-    text-decoration: none;
-    /* margin-bottom: 120px; */
-    /* padding-right: 52px !important; */
-    max-width: 350px;
-}
-
-.toursexcursions {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    /* width: 245px; */
-    /* height: 106px; */
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    border: 0px;
-    padding: 21px;
-    color: rgba(255, 255, 255, 1) !important;
-    text-decoration: none;
-    /* margin-bottom: 120px; */
-    max-width: 350px;
-    right: 10px;
-}
-
-.dots {
-    /*background-image: url(images/dots.svg);*/
-    background-repeat: no-repeat;
-    /* padding: 6px 9px 6px 9px; */
-    white-space: nowrap;
-    /* margin-left: 192px; */
-    width: 34px;
-    /* height: 100%; */
-    float: right;
-    margin-top: 5px;
-    margin-right: 10px;
-}
-
-.bluearrow {
-    background-image: url(images/bluearrow.svg);
-    background-repeat: no-repeat;
-    padding: 6px 9px 6px 9px;
-    white-space: nowrap;
-}
-
-.rightarrow {
-    background-image: url(images/rightarrow.svg);
-    background-repeat: no-repeat;
-    padding: 6px 9px 6px 9px;
-    white-space: nowrap;
-}
-
-.points {
-    background-image: url(images/points.svg);
-    background-repeat: no-repeat;
-    padding: 20px 25px 20px 25px;
-    vertical-align: top;
-}
-
-.ship {
-    background-image: url(images/ship.svg);
-    background-repeat: no-repeat;
-    padding: 20px 20px 20px 20px;
-    vertical-align: top;
-    margin-top: 2px;
-}
-
-.openlock {
-    background-image: url(images/openlock.svg);
-    background-repeat: no-repeat;
-    padding: 20px 25px 20px 25px;
-    vertical-align: top;
-    /*margin-right: 95px;
-    margin-bottom: 120px*/
-}
-
-.middle-enginediv {
-    background: rgba(0, 0, 0, 0.5);
-    width: 100vw; 
-}
-
-
-.middle-engine {
-    background-image: url(images/frontpage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#TopContent {
-    margin-top: 0px !important
-}
-
-.language {
-    display: inline-block;
-}
-
-
-.searchengine {
-    background: #FFFFFF;
-    background: rgba(255, 255, 255, 0.5);
-    width: 819px; 
-    border-radius: 39px;
-    padding-top: 16px;
-    padding-left: 19px;
-    padding-right: 19px;
-    padding-bottom: 1px;
-}
-
-.search-engine-input {
-    width: 626px;
-    height: 54px;
-    outline: none;
-    border-radius: 35px;
-    border: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    padding-left: 16px;
-}
-
-.searchbtn:hover {
-    text-decoration: none;
-}
-
-.viewallbtn {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    padding: 2px 10px 2px 10px;
-    background-repeat: no-repeat;
-    border: 1px solid white;
-    font-family: Proxima Nova;
-    font-size: 14px;
-    white-space: nowrap;
-    color: rgba(255, 255, 255, 1) !important;
-    text-decoration: none !important;
-    display: block;
-    width: fit-content;
-    margin-left: 8px;
-}
-
-.searchbtn {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    padding-left: 10px;
-    background-repeat: no-repeat;
-    border-radius: 41px;
-    border: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    white-space: nowrap;
-    color: rgba(255, 255, 255, 1) !important;
-    text-decoration: none;
-    font-weight: 700;
-	margin-top: -27px;
-}
-
-.searchinpdiv {
-    padding-top: 11px;
-    padding-left: 27px;
-    border-radius: 16px;
-}
-
-.searchbtndiv {
-    padding-top: 27px;
-}
-
-.search-input {
-    background: #FFFFFF;
-    background: rgba(255, 255, 255, 1);
-    position: absolute;
-    left: 558px;
-    border-radius: 16px;
-    top: 250px;
-    width: 799px;
-    height: 55px;
-    white-space: nowrap;
-}
-
-
-.fontsize {
-    margin-top: 90px;
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 44px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 0 !important;
-}
-
-
-
-@media (max-width: 575px) {
-    .privateexcursionsdiv {
-        padding-right: 0px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 0px;
-    }
-
-    .viewallbtn {
-        display: inline-block;
-        vertical-align: text-bottom;
-    }
-
-    .toursexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-    }
-
-    .privateexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-        padding-right: 0px !important;
-        margin-right: 30px;
-    }
-
-    .points {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .openlock {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .privateexcursionslbl {
-        font-size: 12px !important;
-        width: 86px;
-        word-break: normal;
-    }
-
-    .ship {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .searchengine {
-        /*height: 115px;*/
-        width: 340px;
-    }
-
-    .search-engine-input {
-        width: 320px;
-        height: 39px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-        margin-left: -10px;
-    }
-
-    /*.searchbtn {
-        margin-left: 3px;
-        padding: 9px 126px 9px 126px;
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-    }*/
-
-
-
-    .fontsize {
-        font-size: 20px;
-    }
-
-    .secondfontsize {
-        font-size: 12px;
-    }
-
-    .search-engine-input {
-        width: 320px;
-        height: 39px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-    }
-
-    /*.searchbtn {
-        padding: 9px 126px 9px 126px;
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-    }*/
-}
-
-@media (min-width: 576px) and (max-width: 992px) {
-
-    .privateexcursionsdiv {
-        padding-right: 0px;
-    }
-
-    .toursexcursionsdiv {
-        padding-left: 0px;
-    }
-
-    .viewallbtn {
-        display: inline-block;
-        vertical-align: text-bottom;
-    }
-
-    .privateexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-    }
-
-    .privateexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-        padding-right: 0px !important;
-        margin-right: 30px;
-    }
-
-    .toursexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
-    }
-
-    .points {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .openlock {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .privateexcursionslbl {
-        font-size: 12px !important;
-        width: 86px;
-        word-break: normal;
-    }
-
-    .ship {
-        padding: 20px 15px 20px 15px;
-        vertical-align: text-bottom;
-    }
-
-    .searchengine {
-        /*height: 115px;*/
-        width: 340px;
-    }
-
-    .search-engine-input {
-        width: 320px;
-        height: 39px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-        margin-left: -10px;
-    }
-
-    /*.searchbtn {
-        margin-left: 3px;
-        padding: 9px 126px 9px 126px;
-        border-top-left-radius: 16px;
-        border-bottom-left-radius: 16px;
-    }*/
-    
-    fontsize {
-        font-size: 40px;
-    }
-
-    .secondfontsize {
-        font-size: 15px;
-    }
-}
-
-.secondfontsize {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 19px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 25px;
-}
-
-.fontbold {
-    font-family: 'proxima-nova', sans-serif !important;
-    font-weight: 900;
-}
-
-.body {
-    font-family: 'proxima-nova', sans-serif;
-}
-
-.center {
-}
-
-/*.form-control {
-    width: 810px;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 16px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
-}
-.form-outer {
-    border: 10px solid #ccc !important;
-    height: 74px;
-    border-radius: 16px;
-}*/
- .ysc {
+.ysc {
     font-family: Proxima Nova;
     font-weight: bold;
     font-size: 19px;
@@ -1424,41 +522,25 @@ body {
 .block {
     display:block;
 }
+ 
+input[type="radio"] {
+    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox; /* Firefox */
+    -ms-appearance: checkbox; /* not currently supported */
 
-.cbx {
-    background-repeat: no-repeat;
-    width: 16px;
-    height: 16px;
-    font-family: Proxima Nova; 
-    margin-top:8px;
 }
-
-input[type='radio'] {
--webkit-appearance: none;
-width: 20px;
-height: 20px;
-background: url(images/backcircleresults.svg);
-border-radius: 50%;
-outline: none;
-/*box-shadow: 0 0 5px 0px gray inset;*/
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid red;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
-
-input[type='radio']:before {
-    content: '';
-    display: block;
-    width: 60%;
-    height: 60%;
-    margin: 20% auto;
-    border-radius: 50%;
-}
-
-input[type='radio']:checked:before {
-    background: url(images/tick.svg);
-    background-repeat: no-repeat;
-    width: 15px;
-    height: 20px;
-}
-
+ 
 .travelerdetail {
     font-family: Proxima Nova;
     font-weight: bold;
@@ -1570,32 +652,7 @@ i {
     height: 16px;
     font-family: Proxima Nova;
 }
-
-input[type='radio'] {
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    background: url(images/backcircleresults.svg);
-    border-radius: 50%;
-    outline: none;
-    /*box-shadow: 0 0 5px 0px gray inset;*/
-}
-
-    input[type='radio']:before {
-        content: '';
-        display: block;
-        width: 60%;
-        height: 60%;
-        margin: 20% auto;
-        border-radius: 50%;
-    }
-
-    input[type='radio']:checked:before {
-        background: url(svg/tick.svg);
-        background-repeat: no-repeat;
-        width: 15px;
-        height: 20px;
-    }
+ 
 
 
 /*
@@ -1794,7 +851,7 @@ input[type='radio'] {
 }
 .cartheader {
     background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    
+    margin-top: 100px;
 }
 .bluecartheader {
     background: rgba(10, 191, 242, 1);
@@ -1971,13 +1028,18 @@ width:300px;
     width: 1px; /* or 100px */
 }
 .custom-select {
-    background-image: url(images/greenarrowdown.svg);
+    background-image: url(svg/greenarrowdown.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-color: #ffffff;
     background-size: 10px;
     background-position-x: 294px;
 }
+
+
+
+
+
 
 .customcountry {
     background-position-x: 362px;
@@ -2000,14 +1062,15 @@ width:300px;
 
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    /* position: fixed;  Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
+    /*left: 0;
+    top: 0;*/
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
+    overflow-x: hidden;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -2016,9 +1079,9 @@ width:300px;
 .modal-content {
     background-color: transparent;
     margin: auto;
-    padding: 20px;
+    /*padding: 20px;*/
     border: none;
-    width: 33%;
+    /*width: 33%;*/
 }
 
 /* The Close Button */
@@ -2041,7 +1104,9 @@ width:300px;
     background-repeat: no-repeat;
     display: inline-block;
     width: 25px;
-    height:25px;
+    height: 25px;
+    margin-right: -19px;
+    margin-top: -50px;
 }
 .container640 {
     width: 640px;
@@ -2142,8 +1207,68 @@ width:300px;
     margin-left: -241px;
 }
 
+
+@media screen and (max-width : 800px) {
+    .container800,.container300 {
+        width:100%;
+        }
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.round {
+position: relative;
+width: 30px;
+display: inline-block;
+}
+
+.round label {
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 50%;
+cursor: pointer;
+height: 21px;
+left: 0;
+position: absolute;
+top: 0;
+width: 21px;
+}
+
+.round label:after {
+border: 2px solid #00d3a7;
+border-top: none;
+border-right: none;
+content: "";
+height: 6px;
+left:4px;
+opacity: 0;
+position: absolute;
+top: 5px;
+transform: rotate(-45deg);
+width: 12px;
+}
+
+.round input[type="checkbox"] {
+visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+            
+border-color: #00d3a7;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+	
 .svgclass { 
-	    url('images/footer/point.svg');
+	    url('images/point.svg');
 		padding: 8px 8px 8px 8px;
 		background-repeat: no-repeat; 
 	    width: 30px;
@@ -2157,7 +1282,7 @@ width:300px;
         }
     }
     .footerdiv {
-        background-color:#24263d;padding-top:55px;
+        background-color:#24263d;padding-top:35px;
     }
     .footerfonts {
         font-family: 'proxima-nova', sans-serif;
@@ -2182,16 +1307,17 @@ width:300px;
         display:inline-block;vertical-align: top;margin-right: 80px;
     }
     .cpr {
-        width: 69%; text-align: left; margin-left: 284px; margin-top: 30px;margin-bottom: 30px;
+        width: 69%; text-align: left;   margin-top: 30px;margin-bottom: 30px;
     }
     .cprspan {
         color:white;display: flex;align-items:center;justify-content:center;
     }
 	.footer1280{
 	max-width:1280px;}
+	/* End of footer*/
+	
 </style>
-
-<center>
+	<center>
 <div style="max-width:1280px;">
     <div class="row top">
 <div class=" col-4 col-sm-4 col-xl-4 col-lg-4 topcontact">
@@ -2222,11 +1348,11 @@ width:300px;
       <div>
          <img class="earth" src="images/earthblue.svg"><span><div class="language">
      
-    
-                  <select  class="select"    id="cmblanguages">
-    <option value="0">English</option>
-    <option value="1">Ελληνικά</option> 
-  </select>       
+    <span class="languageclass">English</select>
+                  <!-- <select  class="select"    id="cmblanguages"> -->
+    <!-- <option value="0">English</option> -->
+    <!-- <option value="1">Ελληνικά</option>  -->
+  <!-- </select>        -->
     </div></span>
             
     </div></div>
@@ -2235,35 +1361,27 @@ width:300px;
 </div> 
 </center>
 
-<div id="dnn_ctr439_HeaderOne_ho" class="headerone">
-		
-<div id="dnn_ctr439_HeaderOne_b2c">
-			
-     
-   
-    <center>
-   <div class="container1280header"> 
+  
+<center>
+<div class="container1280header"> 
     
-    <div class="row">
-        <div class="col-6 col-sm-6 col-xl-6 col-lg-6 toplogo" align="center"> 
-                <img src="images/logo.png" class="logob2c">
-        </div> 
-        <div class="b2cheader col-6 col-sm-6 col-xl-6 col-lg-6 " align="center"> 
-
-            <a href="#" class="accounthover"><img class="profil"><div class="cartdiv"><label class="cartb2b lblb2c">Account</label></div></a>
-            <a href="#" class="button"><img class="cartimg"><div class="cartdiv"><label class="lblb2c cartb2b topbar">My Cart</label></div></a>
-            
-        </div>
+<div class="row">
+    <div class="col-6 col-sm-6 col-xl-6 col-lg-6 toplogo" align="center"> 
+        <img src="images/logo.png"  class="logob2c">
+    </div> 
+    <div class="b2cheader col-6 col-sm-6 col-xl-6 col-lg-6 " align="center"> 
+        <div class="headerprofildiv"> <img class="profil" />  <div class="toprightlblsprofil"  >Account</div></div>
+        <div class="headercartdiv"> <img class="cartimg" /> <div class="toprightlblsmycart"  >My Cart</div></div>
+    </div>
        
         
-     </div>
+    </div>
     
-   </div>
-  </center>
-
-  </div>
 </div>
+</center>
 
+</div>
+</div>
 
 
 <div class="cartheader">
@@ -2272,7 +1390,7 @@ width:300px;
 <div class="container800 h ">
 <div class="row">  
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 hinner" align="center">
-     <img src="images/basketcart.svg" class="basketcart"> 
+     <img src="/localhost_hammer/portals/0/css/svg/basketcart.svg" class="basketcart"> 
      <span class="myclass">CART</span>
      <span class="cartcalss">DETAILS</span>
     
@@ -2281,7 +1399,7 @@ width:300px;
   
  <div class="row">  
   <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-             <img src="images/cartwhiteunderline.svg" class="basketcart">
+             <img src="/localhost_hammer/portals/0/css/svg/cartwhiteunderline.svg" class="basketcart">
         </div>
 </div> 
 </div>
@@ -2293,20 +1411,21 @@ width:300px;
 
 <div class="row">
  <div class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
-<div class="bluecartheader">
 <center> 
+<div class="bluecartheader container800" onclick="showhide()">
 <div class="row">  
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-          <img src="images/tourscart.svg" class="tourscart">  
+
+          <img src="/localhost_hammer/portals/0/css/svg/tourscart.svg" class="tourscart">  
          <span class="tourslbl">TOURS</span>
-         <img src="images/whitearrowdown.svg" class="whitearrowdown rotate">  
+         <img id="toggleleftarrayimg"src="/localhost_hammer/portals/0/css/svg/whitearrowdown.svg" class="whitearrowdown rotate" >  
 </div>
 </div> 
-    </center>
 </div>
+ </center>
 <div class="mainframe">
 <center>
-<div class="container800 backgroundgrey">
+<div id="toggleleftarray" class="container800 backgroundgrey toggleleftarray">
 <div class="row">  
  <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
 <div class="tourspandiv">
@@ -2324,7 +1443,7 @@ width:300px;
 <div class="row movedown10">
     
          <div class="col-12 col-sm-12 col-xl-6 col-lg-6 ">
-             <img src="images/bluetick.svg" class="bluetick">  
+             <img src="/localhost_hammer/portals/0/css/svg/bluetick.svg" class="bluetick">  
              <span class="leftdetailsbold">Travel Date:</span>
              <span class="leftdetails">Jan 7,2020</span>
          </div>
@@ -2376,7 +1495,11 @@ width:300px;
             </div>
             <div class="col-12 col-sm-12 col-xl-4 col-lg-4" align="center">
                     <span class="travelerdetailspan">LEAD</span>
-                    <asp:RadioButton  runat="server" class="block cbx"/> 
+                   <%-- <asp:RadioButton  runat="server" class="block cbx"/> --%>
+                    <div class="round">
+                        <input type="checkbox" id="checkbox3" />
+                        <label for="checkbox3"></label>
+                      </div>
             </div>
             <div class="col-12 col-sm-12 col-xl-4 col-lg-4" align="left">
                 <span class="travelerdetailspan">TITLE</span> 
@@ -2421,11 +1544,13 @@ width:300px;
         </div>
         <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
             <span class="fourdetailsspan">COUNTRY OF RESIDENCE</span> 
-             <div class="form-group"> 
+            <div class="form-group"> 
                  <select class="custom-select customcountry" id="country">
-                      <option>AUSTRIA</option>  
+                      <option>AUSTRIA</option> 
+
+                     <option>AUSTRIA</option> 
                 </select>
-        </div>
+            </div>
         </div>
     </div>
     <div class="row  ">
@@ -2444,7 +1569,13 @@ width:300px;
 <div class="container800">
 <div class="row movedown20">
     <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left">
-        <asp:RadioButton  runat="server" class="cbx"/> 
+        <%--<asp:RadioButton  runat="server" class="cbx"/>--%>
+         
+          <div class="round">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"></label>
+          </div>
+        
         <span class="termslbl">I have read and agree to the</span>
         <span class="termslbl blueterms">Conditions and Cancellation Policy.</span>
     </div>
@@ -2452,7 +1583,11 @@ width:300px;
 </div>
 <div class="row movedown">
     <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left">
-        <asp:RadioButton  runat="server" class="cbx"/> 
+        <%--<asp:RadioButton  runat="server" class="cbx"/> --%>
+         <div class="round">
+            <input type="checkbox" id="checkbox2" />
+            <label for="checkbox2"></label>
+          </div>
         <span class="termslbl">In Relation to the requirements of </span>
         <span class="termslbl blueterms">EU Regulation 2016/679 (GDPR),</span>
         <span class="termslbl">I Agree to the processing of my personal data according to </span>
@@ -2463,7 +1598,7 @@ width:300px;
 </div>
 </center>
 
-<center>
+ 
 <div class="container800">
 <div class="row movedown20">
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
@@ -2471,14 +1606,17 @@ width:300px;
   
     <div id="myModal" class="modal"> 
         <div class="modal-content">
-        <span class="close"><img src="images/previewcancel.svg" class="previewcancel"> </span>
-        <div class="container640">
+        <div class="row">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+         <div class="container640">
+             <span class="close"><img src="/localhost_hammer/portals/0/css/svg/previewcancel.svg" class="previewcancel"> </span>
+       
             <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
                 <div class="prevcartheader"> 
                 <center> 
                 <div class="row">  
                 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 hinner" align="center">
-                     <img src="images/basketcart.svg" class="basketcart"> 
+                     <img src="/localhost_hammer/portals/0/css/svg/basketcart.svg" class="basketcart"> 
                      <span class="myclass prevheaderfont">REVIEW</span>
                      <span class="cartcalss prevheaderfont">YOUR ORDER</span>
                 </div>
@@ -2486,23 +1624,21 @@ width:300px;
   
                 <div class="row">  
                 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                            <img src="images/cartwhiteunderline.svg" class="basketcart">
+                            <img src="/localhost_hammer/portals/0/css/svg/cartwhiteunderline.svg" class="basketcart">
                 </div>
                 </div>  
                 </center>
                 </div>
-
-
-        <div class="backgroundgrey">
-      
-    
+                
         <div class="bluecartheader ">
+        <div class="backgroundgrey" id="backgroundgreyprev">
+      
         <center> 
         <div class="row">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                 <img src="images/tourscart.svg" class="tourscartright">  
-                 <span class="tourslblright">TOURS</span>
-                 <img src="images/whitearrowdown.svg" class="whitearrowdownright rotate">  
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " onclick="showhideprev()" align="center">
+                 <img src="/localhost_hammer/portals/0/css/svg/tourscart.svg" class="tourscartright">  
+                 <span class="tourslblright" ">TOURS</span>
+                 <img id="toggleleftarrayimgprev" src="/localhost_hammer/portals/0/css/svg/whitearrowdown.svg" class="whitearrowdownright rotate">  
         </div>
         </div> 
         </center>
@@ -2528,11 +1664,11 @@ width:300px;
         <div>
             <span class="prevexcheader"> Santorini Half Day Wine Adventure </span>
             <div>
-                <img src="images/cartdetailrightarrowblue.svg" class="cartdetailrightarrow"> 
+                <img src="/localhost_hammer/portals/0/css/svg/cartdetailrightarrowblue.svg" class="cartdetailrightarrow"> 
                 <span class="carttotallblprice">35€</span> 
             </div>
             <div>
-                <img src="images/bluetick.svg" class="bluetick">  
+                <img src="/localhost_hammer/portals/0/css/svg/bluetick.svg" class="bluetick">  
                 <span class="leftdetailsbold">Travel Date:</span>
                 <span class="leftdetails">Jan 7,2020</span>
             </div>
@@ -2540,7 +1676,7 @@ width:300px;
                 <span class="pretravellerdetails">TRAVELLER DETAILS</span>
             </div>
             <div>
-            <img src="images/bluetick.svg" class="bluetick">  
+            <img src="/localhost_hammer/portals/0/css/svg/bluetick.svg" class="bluetick">  
             <span class="prevtravellerno">2 Travellers</span></div>
             <div><span class="prevtravelname">1st/Lead/ Mr. John Papastratos</span></div>
         </div>
@@ -2584,7 +1720,7 @@ width:300px;
             <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
                 <div class="movedown22">
                     <span class="prevwhitelbl">TOTAL AMMOUNT</span>
-                    <img src="images/whiterightarrow.svg" class="bluetick">  
+                    <img src="/localhost_hammer/portals/0/css/svg/whiterightarrow.svg" class="bluetick">  
                     <span class="prevwhitelbl">35€</span> 
                 </div>
                 
@@ -2618,6 +1754,8 @@ width:300px;
     </div>
     </div>
     </div>
+            </div> 
+    </div>
     </div> 
     </div> 
 
@@ -2629,7 +1767,7 @@ width:300px;
 </div>
 </div>
 </div>
-</center>
+ 
 </div>
 </div>
  
@@ -2642,20 +1780,21 @@ width:300px;
             </div>
         </center>
     
-        <div class="bluecartheader ">
+        <div class="bluecartheader "  onclick="showrighthide()">
         <center> 
         <div class="row movedown8">  
         <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                 <img src="images/tourscart.svg" class="tourscartright">  
+                 <img src="/localhost_hammer/portals/0/css/svg/tourscart.svg" class="tourscartright">  
                  <span class="tourslblright">TOURS</span>
-                 <img src="images/whitearrowdown.svg" class="whitearrowdownright rotate">  
+                 <img src="/localhost_hammer/portals/0/css/svg/whitearrowdown.svg" id="rightimagesarrow" class="whitearrowdownright rotate">  
         </div>
         </div> 
         </center>
         </div> 
+        <div id="hiderightpanel" class="hiderightpanel">
         <div class="row movedown8">  
         <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-        <div class="rightimages">
+        <div  class="rightimages">
         </div>
 
         </div>
@@ -2676,7 +1815,7 @@ width:300px;
         </div>
         <div class="row movedown8">  
         <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-            <img src="images/linepassenger.svg" class="linepassenger"> 
+            <img src="/localhost_hammer/portals/0/css/svg/linepassenger.svg" class="linepassenger"> 
         </div>
         </div>
 
@@ -2701,11 +1840,12 @@ width:300px;
                <span class="twotravellereuro">35€</span> 
             </div>
         </div>
+            </div>
         <div class="row movedown10">  
             <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
            
                <span class="carttotallbl">CART TOTAL</span> 
-               <img src="images/cartdetailrightarrowblue.svg" class="cartdetailrightarrow"> 
+               <img src="/localhost_hammer/portals/0/css/svg/cartdetailrightarrowblue.svg" class="cartdetailrightarrow"> 
                <span class="carttotallblprice">35€</span> 
             </div>
         </div>
@@ -2720,7 +1860,6 @@ width:300px;
 </div>
 </div>
 
- 
 
 <div class="footerdiv"  >
 <center>
@@ -2728,17 +1867,17 @@ width:300px;
 <div class="row">    
       <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
 
-<div class="contact"><span class="footerfonts" >NetSemantics</span><br />
+<div class="contact"><span class="masterfooterfonts" >NetSemantics</span>
 <img alt="bank" src="images/point.svg" class="displayinline svgclass" /><span class="footerfonts">357 Thivon str, 122 44 Egaleo Athens, Greece</span><br />
 <img src="images/telephone.svg" class="displayinline svgclass" /><span class="footerfonts">+30 211 1139420-1, +30 210 8256440</span><br />
 <img src="images/fax.svg" class="displayinline svgclass" /><span class="footerfonts">+30 210 8256441</span><br />
 <img src="images/mail.svg" class="displayinline svgclass" /><span class="footerfonts">info@netsemantics.gr</span></div>
 </div> 
           <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="usefullinksdiv"><span class="usefullinks">USEFUL LINKS</span> <span class="usefullinks">About us</span> <span class="usefullinks">Terms of</span> <span class="usefullinks">Privacy Statement</span></div>
+<div class="usefullinksdiv"><span class="masterfooterfonts">USEFUL LINKS</span> <span class="usefullinks">About us</span> <span class="usefullinks">Terms of</span> <span class="usefullinks">Privacy Statement</span></div>
 </div>
            <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
-<div class="followus"  ><span class="usefullinks">Follow Us</span> <img class="svgclass" src="images/facebook.svg" /><img class="svgclass" src="images/twitter.svg" /><img class="svgclass" src="images/instagram.svg" />
+<div class="followus"  ><span class="masterfooterfonts">Follow Us</span> <img class="svgclass" src="images/facebook.svg" /><img class="svgclass" src="images/twitter.svg" /><img class="svgclass" src="images/instagram.svg" />
 <p><span class="footerfonts">#dolphinsstravel</span></p>
 </div></div>
        <div class="col-6 col-sm-6 col-lg-6 col-xl-3">   
@@ -2758,9 +1897,8 @@ width:300px;
 </div>
 
 
-
 <script>
- 
+  
 function myFunction( ) {
     modal.style.display = "block";
 }
@@ -2775,5 +1913,38 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+    }
+
+    function showhideprev() {
+        if (document.getElementById('backgroundgreyprev').style.display == 'none') {
+
+            $("#toggleleftarrayimgprev").addClass("rotate");
+        } else {
+
+            $("#toggleleftarrayimgprev").removeClass("rotate");
+        }
+        $('#backgroundgreyprev').toggle('hide');
+    }
+    
+    function showhide() {
+        if (document.getElementById('toggleleftarray').style.display == 'none') {
+
+            $("#toggleleftarrayimg").addClass("rotate");
+        } else {
+
+            $("#toggleleftarrayimg").removeClass("rotate");
+        } 
+        $('.toggleleftarray').toggle('hide');
+    }
+
+    function showrighthide() { 
+        if (document.getElementById('hiderightpanel').style.display == 'none') {
+     
+            $("#rightimagesarrow").addClass("rotate");
+        } else { 
+            $("#rightimagesarrow").removeClass("rotate");
+        }
+        
+        $('.hiderightpanel').toggle('hide');
+       }
 </script>
