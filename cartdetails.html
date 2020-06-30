@@ -4,25 +4,26 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- 
 <style>
-.roundprev { 
-    width: 20px!important; 
+.move30{
+	margin-top:30px;}
+.move23 {
+	margin-top: 23px;
 }
-	
+
 .email {
- 
+    /* background-image: url(svg/email.svg); */
+    /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
     margin-right: 5px;
 }
 
 .telephone {
- 
+    /* background-image: url(svg/telephone.svg); */
+    /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
     margin-right: 5px;
@@ -39,7 +40,7 @@
 
 .container1280header {
     max-width: 1280px !important;
-    
+    /* padding-top: 119px; */
     padding: 0px 15px;
 }
 
@@ -47,7 +48,9 @@
     border: none !important;
 }
 
-.earth { 
+.earth {
+    /* background-image: url(svg/earthblue.svg); */
+    /* padding: 8px 8px 8px 8px; */
     width: 20px;
     background-repeat: no-repeat;
    margin-right: -10px;
@@ -65,7 +68,10 @@ margin-top: -27px;
     color: rgb(36, 38, 61);
 }
 
-.select { 
+.select {
+    /*background: url("svg/arrowdown.svg");
+        background-position: right;
+        background-repeat: no-repeat;*/
     background-size: 13px 7px;
     border: 1px;
     padding-right: 19px;
@@ -149,7 +155,25 @@ body {
 .languagebox {
     background-color: rgb(255, 255, 255);
 }
- 
+
+/*.form-control {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}*/
+
 .top-header, .bottom-header {
     display: block;
 }
@@ -836,178 +860,70 @@ margin-left: 10px;
 }
 
 
- .ysc {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 19px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
-}
-.paddingdown {
-    padding-top:20px;
-}
-.Bookbtn {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    border: none;
-    background-size: 300px 100px;
-    font-weight: bold;
-    font-size: 18px;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
+
+
+.headercartdiv {
+    display: inline-block;
+    width: 125px;
     text-align: center;
-    width: 290px !important;
-    height: 44px;
-    outline: none;
+    color: rgba(10, 191, 242, 1) !important;
 }
-.editbtn {
-    background: #000736;
-    background: rgba(0, 7, 54, 1);
-    border: none;
-    background-size: 300px 100px;
-    font-weight: bold;
-    font-size: 18px;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
-    text-align: center;
-    width: 230px;
-    height: 30px;
-    outline: none;
-    margin-bottom: 20px;
-}
-.newsearchbtn {
-    background: #000736;
-    background: rgba(0, 7, 54, 1);
-    border: none;
-    background-size: 300px 100px;
-    font-weight: bold;
-    font-size: 18px;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
-    text-align: center;
-    width: 233px;
-    height: 40px;
-    outline: none;
+ 
+    .headercartdiv:hover .cartimg {
+        background-image: url(images/whitecart.svg) !important;
+        padding: 20px 10px 20px 10px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        border: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 1) !important;
+        text-decoration: none;
+    }
+
+    .headercartdiv:hover {
+        background: rgba(10, 191, 242, 1);
+        color: #FFFFFF !important; 
+    }
+
+.toprightlblsmycart {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
 }
 
-.termslbl {
-    font-family: Proxima Nova;
-    font-size: 13px;
+@media (min-width: 900px) and (max-width: 1000px)
+{
+    .profil {
+        padding: 0px 10px 20px 10px;
+    }
+}
+@media (max-width:707px) {
+    .earth {
+        margin-left: -45px;
+    }
+}
     
-}
-.blueterms {
-    color: #00C0F2;
-    color: rgb(0, 192, 242);
-}
-
-
-.fourdetailsspan {
-    font-family: Proxima Nova;
-    font-size: 13px;
-    color: #929497;
-    color: rgb(146, 148, 151);
+@media (max-width: 900px) {
+    .toprightlblsmycart, .toprightlblsprofil {
+    display: none;
 }
 
-.contactdetailhead {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 17px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #00C0F2 60%);
+.profil {
+    padding: 0px 10px 20px 10px;
 }
-.block {
-    display:block;
+
+.headercartdiv {
+    width: 40px;
+}
+
+.headerprofildiv {
+    width: 40px;
+}
 }
  
-input[type="radio"] {
-    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
-    -moz-appearance: checkbox; /* Firefox */
-    -ms-appearance: checkbox; /* not currently supported */
-
-}
-.container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid red;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
  
-.travelerdetail {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 17px;
-    color: #00C0F2;
-    color: rgb(0, 192, 242);
-}
-.travelerdetailspan {
-    font-family: Proxima Nova;
-    font-size: 13px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-.or {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 15px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-
-.textbox {
-    display: block;
-    width: 100%;
-    height: 100px; 
-    border: 1px solid grey;
-}
-
-    .textbox::selection {
-        border: 1px solid grey;
-    }
-
-    .specialrequire {
-        width: 280px;
-    }
-
-.leftdetails {
-    font-family: Proxima Nova;
-    font-size: 15px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-.bluetick {
-    background-repeat: no-repeat;
-    height: 20px;
-    display: inline-block; 
-}
-.leftdetailsbold {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 15px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-
-.tourspandiv {
-    background: rgba(236, 22, 81, 1);
-    width: 119px;
-}
-
-.tourspanlbl {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 19px;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-}
 
 i {
     border: 1px solid #EC1651;
@@ -1052,7 +968,32 @@ i {
     height: 16px;
     font-family: Proxima Nova;
 }
- 
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: url(svg/backcircleresults.svg);
+    border-radius: 50%;
+    outline: none;
+    /*box-shadow: 0 0 5px 0px gray inset;*/
+}
+
+    input[type='radio']:before {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 60%;
+        margin: 20% auto;
+        border-radius: 50%;
+    }
+
+    input[type='radio']:checked:before {
+        background: url(svg/tick.svg);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 20px;
+    }
 
 
 /*
@@ -1072,12 +1013,18 @@ i {
     font-size: 18px;
     color: #000736;
     color: rgb(0, 7, 54);
+    border: 0;
+    text-align: right;
+    width: 21px;
 }
 
 .numbersboarder {
-    border: 1px solid #D0D2D3;
+    border: 1px solid #D0D2D3; 
 }
-
+.NoofTrdiv {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .minusplusdiv {
     margin-left: 0px;
     margin-right: 0px;
@@ -1085,7 +1032,10 @@ i {
 
 .minusplusfirst {
     background-color: #D0D2D3;
-    height: inherit;
+    height: 31px;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .passdescription {
@@ -1093,16 +1043,18 @@ i {
     font-size: 11px;
     color: #A6A8AB;
     color: rgb(166, 168, 171);
+    display:block;
+    text-align:left;
 }
 
 
 .minusplus {
     background-repeat: no-repeat;
-    width: 20px;
+    width: 14px;
     height: 20px;
-    margin-right: 2px;
+    /*margin-right: 2px;*/
     display: inline-block;
-    padding: 1px 8px 1px 0px;
+    /*padding: 1px 8px 1px 0px;*/
 }
 /* end*/
 .containersinnewsearch {
@@ -1138,10 +1090,9 @@ i {
     color: rgb(255, 255, 255);
     border-radius: 15px;
     text-align: center;
-    width: 354px;
+    width: 258px;
     height: 44px;
     outline: none;
-    margin-bottom: 40px;
 }
 
 
@@ -1157,24 +1108,8 @@ i {
     color: rgb(0, 7, 54);
     
 }
-.movedown8 {
-    margin-top: 8px;
-}
-.movedown10 {
-    margin-top: 10px;
-}
-.movedown14 {
-    margin-top: 14px;
-}
-.movedown17 {
-    margin-top: 17px;
-}
-.movedown20 {
-    margin-top: 20px;
-}
-.movedown22 {
-    margin-top: 22px;
-    background: rgba(236, 22, 81, 1);
+.movedown {
+    margin-top: 40px;
 }
 .cartcurrenttotal {
     background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
@@ -1218,18 +1153,17 @@ i {
     color: rgb(0, 7, 54);
     background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
 }
-.tournamediv {
-    width: 375px;
-}
 .tourname {
     font-family: Proxima Nova;
     font-weight: bold;
     font-size: 18px;
     color: #000736;
     color: rgb(0, 7, 54);
-    display: block;
-    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
-} 
+    display:block;
+    padding-left:20px;
+    padding-top: 33px;
+}
+
 .tournamediv {
     text-align:left;
 }
@@ -1246,19 +1180,14 @@ i {
     display: inline-block; 
 }
 
-.prevcartheader {
-    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%); 
-}
+
 .cartheader {
     background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    /*margin-top: 100px;*/
+    margin-top: 20px;
 }
 .bluecartheader {
     background: rgba(10, 191, 242, 1);
 }
-    .bluecartheader:hover {
-        cursor:pointer;
-    }
 .tourslbl {
     font-family: Proxima Nova;
     font-size: 40px;
@@ -1314,418 +1243,93 @@ i {
     color: #FFFFFF;
     color: rgb(255, 255, 255);
 }
-.container800 {
- width:800px;
-}
-.container300 {
-width:300px;
-}
-.backgroundgrey {
-    background: rgba(236, 236, 235, 1);
-}
-
-.rightimages {
-    background: #B3B3B3;
-    background: rgba(179, 179, 179, 1);
-    border-style: Solid;
-    border-color: #FFFFFF;
-    border-color: rgba(255, 255, 255, 1);
-    border-width: 0px;
-    width: 169px;
-    height: 80px;
-}
-
-.rightpanelllbl {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 14px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-
-.container169 {
-    width: 169px;
-}
-
-.twotraveller {
-    font-family: Proxima Nova;
-    font-size: 13px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-
-.twotravellereuro {
-    font-family: Proxima Nova;
-    font-size: 13px;
-    color: #EC1651;
-    color: rgb(236, 22, 81);
-}
-
-.linepassenger {
-    background-repeat: no-repeat;
-    display: inline-block;
-    width:80%;
-}
-
-.cartdetailrightarrow {
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 20px;
-}
-.carttotallbl {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 13px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-
-.carttotallblprice {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 15px;
-    color: #EC1651;
-    color: rgb(236, 22, 81);
-}
-
-.tourslblright {
-    font-family: Proxima Nova;
-    font-size: 24px;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-}
-
-.tourscartright {
-    background-repeat: no-repeat;
-    height: 27px;
-    display: inline-block;
-    margin-top: -10px;
-}
-
-.whitearrowdownright {
-    background-repeat: no-repeat;
-    height: 24px;
-    display: inline-block;
-    margin-left: 10px;
-    margin-top: -10px;
-}
-.container697 {
-    width: 697px;
-}
-
-#options {
-    margin-left: -52px;
-}
-#hotel{
-    margin-left: 52px;
-}
-
-.select-side {
- 
-    border-left:none;
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: 1px; /* or 100px */
-}
-.custom-select {
-    background-image: url(images/greenarrowdown.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: #ffffff;
-    background-size: 10px;
-    background-position-x: 96%;
-} 
-/*.customcountry {
-    background-position-x: 362px;
-}*/
-.customtitle {
-    width: 72px;
-    background-position-x: 47px;
-}
-
-.h {
-    height:150px;
-}
-.hinner {
-    padding-top: 16px;
-    
-}
-
-
-
-
-.modal {
-    display: none; /* Hidden by default */
-    /* position: fixed;  Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    /*left: 0;
-    top: 0;*/
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    overflow-x: hidden;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: transparent;
-    margin: auto;
-    /*padding: 20px;*/
-    border: none;
-    /*width: 33%;*/
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding-right: 9px;
-}
-
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-.previewcancel {
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    margin-right: -19px;
-    margin-top: -50px;
-}
-.container640 {
-    width: 640px;
-}
-
-.prevheaderfont {
-    font-size:37px;
-    }
-
-.prevexcheader {
-    text-align:left;
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 19px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-
-.container390 {
-    width: 390px;
-}
-
-.changeline {
-    display:inline-block;
-}
-
-.movedown40 {
-    margin-top:40px;
-}
-
-.movedown28 {
-    margin-top:28px;
-}
-.movedown30 {
-    margin-top: 30px; 
-} 
-
-.movedown32 {
-    padding-top: 32px;
-}
-
-.pretravellerdetails {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 15px;
-    color: #00C0F2;
-    color: rgb(0, 192, 242);
-}
-
-.prevtravellerno {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 15px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-
-.prevtravelname {
-    font-family: Proxima Nova;
-    font-size: 15px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-
-.prevcontactdetailsheader {
-    font-family: Proxima Nova;
-    font-weight: bold;
-    font-size: 17px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #00C0F2 60%);
-}
-
-.backgroundwhite {
-    background-color:#FFFFFF;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.prevcontactdetails {
-    font-family: Proxima Nova;
-    font-size: 15px;
-    color: #000736;
-    color: rgb(0, 7, 54);
-}
-
-.prevwhitelbl {
-    font-family: Proxima Nova;
-    font-size: 19px;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-}
-
-.container417 {
-    text-align:left;
-}
 .container1280 {
-    width:1280px;
+ width:1280px;
 }
-@media screen and (max-width : 1279px) {
+
+.container68 {
+    /*width: 45px;*/
+    width: 68px;
+}
+
+
+
+@media screen and (max-width : 990px) {
+    .container68 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+    }
+    .pricediv {
+        text-align: center!important;
+
+    }
+    .passdescription {
+        display:none;
+    }
+    .productsummarydiv {
+        text-align: center !important;
+    }
+    .cartimgdiv {
+        width:100%;
+    }
     .container1280 {
-        width: 1140px;
+        width:100%;
     }
 }
-    @media screen and (max-width : 800px) {
-        .container640 {
-            width: 100%;
-        }
 
-        .imaginarycontainer, .container697, .respcontainer {
-            width: 400px !important;
-        }
+.pricediv {
+    text-align:left;
+}
 
-        #options, #hotel {
-            margin-left: 0px;
-        }
-
-        .container800, .container300, .container1280 {
-            width: 100%;
-        }
-
-        .travelerdetailspan {
-            display: block;
-        }
-        .imaginarymove {
-            margin-bottom:10px;
-         }
-    }
-
-    @media screen and (min-width : 801px) and (max-width : 991px) {
-        #options, #hotel {
-            margin-left: 0px;
-        }
-
-        .respcontainer {
-            width: 697px !important;
-        }
-
-        .imaginarycontainer {
-            width: 697px;
-        }
-
-   
-        .container800, .container300, .container1280 {
-            width: 100%;
-        }
-
-        .travelerdetailspan {
-            display: block;
-        }
-        .imaginarymove {
-            margin-bottom: 10px;
-        }
-    }
-  
-    body {
-        overflow-x: hidden;
-    }
+.productsummarydiv {
+    text-align: right;
+}
 
 
-    .roundprev {
-        width: 20px !important;
-    }
+.round {
+position: relative;
+width: 30px;
+display: inline-block;
+}
 
-    .round {
-        position: relative;
-        width: 30px;
-        display: inline-block;
-    }
+.round label {
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 50%;
+cursor: pointer;
+height: 21px;
+left: 0;
+position: absolute;
+top: 0;
+width: 21px;
+}
 
-        .round label {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 50%;
-            cursor: pointer;
-            height: 21px;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 21px;
-        }
+.round label:after {
+border: 2px solid #00d3a7;
+border-top: none;
+border-right: none;
+content: "";
+height: 6px;
+left: 4px;
+opacity: 0;
+position: absolute;
+top: 5px;
+transform: rotate(-45deg);
+width: 12px;
+}
 
-            .round label:after {
-                border: 2px solid #00d3a7;
-                border-top: none;
-                border-right: none;
-                content: "";
-                height: 6px;
-                left: 4px;
-                opacity: 0;
-                position: absolute;
-                top: 5px;
-                transform: rotate(-45deg);
-                width: 12px;
-            }
+.round input[type="checkbox"] {
+visibility: hidden;
+}
 
-        .round input[type="checkbox"] {
-            visibility: hidden;
-        }
+.round input[type="checkbox"]:checked + label {
+border-color: #00d3a7;
+}
 
-            .round input[type="checkbox"]:checked + label {
-                border-color: #00d3a7;
-            }
-
-                .round input[type="checkbox"]:checked + label:after {
-                    opacity: 1;
-                }
-
-
-
-
-
-
-
-
-
-
-
-
- 
+.round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
 	
 .svgclass { 
 	    url('images/point.svg');
@@ -1809,7 +1413,10 @@ width:300px;
          <img class="earth" src="images/earthblue.svg"><span><div class="language">
      
     <span class="languageclass">English</select>
-        
+                  <!-- <select  class="select"    id="cmblanguages"> -->
+    <!-- <option value="0">English</option> -->
+    <!-- <option value="1">Ελληνικά</option>  -->
+  <!-- </select>        -->
     </div></span>
             
     </div></div>
@@ -1841,490 +1448,226 @@ width:300px;
 </div>
 
 
-<div class="cartheader">
  
-<center>
-<div class="container800 h ">
+<div class="cartheader">
 <div class="row">  
-<div class="col-12 col-sm-12 col-xl-12 col-lg-12 hinner" align="center">
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+<div class="container1280">
+<nav aria-label="breadcrumb" >
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item first"><a href="#">HOME</a></li>
+    <li class="breadcrumb-item"><a href="#">TOURS</a></li>
+    <li class="breadcrumb-item "><a href="#">DESTINATION</a></li>
+    <li class="breadcrumb-item active" aria-current="page">ATHENS</li>
+  </ol>
+</nav>
+</div>
+</div>
+</div> 
+<center>
+<div class="container1280">
+<div class="row">  
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
      <img src="images/basketcart.svg" class="basketcart"> 
-     <span class="myclass">CART</span>
-     <span class="cartcalss">DETAILS</span>
+     <span class="myclass">MY</span>
+     <span class="cartcalss">CART</span>
     
 </div>
 </div>
   
- <div class="row">  
+<div class="row">  
   <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
              <img src="images/cartwhiteunderline.svg" class="basketcart">
         </div>
-</div> 
+</div>
 </div>
 </center>
 </div>
 
-<center>
+<div class="bluecartheader">
+    <center>
 <div class="container1280">
-
-<div class="row">
- <div class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
-<center> 
-<div class="bluecartheader container800" onclick="showhide()">
 <div class="row">  
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+            <div onclick="showhide()">                
+                <img src="images/tourscart.svg" class="tourscart">  
+                <span class="tourslbl">TOURS</span>
+                <img src="images/whitearrowdown.svg" id="whitearrowdown" class="whitearrowdown rotate"> 
+          </div>
 
-          <img src="images/tourscart.svg" class="tourscart">  
-         <span class="tourslbl">TOURS</span>
-         <img id="toggleleftarrayimg"src="images/whitearrowdown.svg" class="whitearrowdown rotate" >  
+    
+ 
 </div>
-</div> 
 </div>
- </center>
-<div class="mainframe">
+</div>
+        </center> 
+</div>
+<div id="mainframe" class="mainframe">
 <center>
-<div id="toggleleftarray" class="container800 backgroundgrey toggleleftarray">
+<div class="container1280 move30">
 <div class="row">  
- <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
-<div class="tourspandiv">
-     <span class="tourspanlbl">TOUR 1</span>
-</div>
-</div>
-</div>
-<div class="row movedown8">
- <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
-     <div class="tournamediv ">
-     <span class="tourname">SANTORINI HALF DAY WINE ADVENTURE</span>
-     </div>
-</div>
-</div> 
-<div class="row movedown10">
-    
-         <div class="col-12 col-sm-12 col-xl-6 col-lg-6 ">
-             <img src="images/bluetick.svg" class="bluetick">  
-             <span class="leftdetailsbold">Travel Date:</span>
-             <span class="leftdetails">Jan 7,2020</span>
-         </div>
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 ">
-            <div class="specialrequire">
-              <span class="leftdetailsbold">Special Requirements</span>
-              <div class="form-group"> 
-                <textarea class="form-control"  placeholder="Add Some text" rows="3"></textarea>
-              </div>
-            </div>
-         </div>
-    
-</div>
-<div class="imaginarycontainer">
-<div class="row movedown17">
+<div class="col-12 col-sm-12 col-xl-4 col-lg-4 ">
+    <div class="productsummarydiv">
+    <span class="productsummary ">PRODUCT SUMMARY</span>
+    <div class="row move23">
+    <div class="col-12 col-sm-12 col-xl-4 col-lg-4 "  >
+        <div class="cartimgdiv">
 
-<div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
-    <div class="row">
-    <div class="col-12 col-sm-12 col-xl-5 col-lg-5 " align="right">
-         <div class="form-group">
-            <select  class="custom-select"  id="hotel">
-              <option>Test</option> 
-            </select>
-         </div>
-    </div>
-    <div class="col-12 col-sm-12 col-xl-2 col-lg-2 imaginarymove"  align="center">
-        <span class="or ">OR</span>
-    </div>
-    <div class="col-12 col-sm-12 col-xl-5 col-lg-5 "  align="left">
-        <div class="form-group"> 
-                 <select class="custom-select" id="options">
-                      <option>Test</option> 
-                </select>
         </div>
     </div>
-</div>
-</div>
-</div>
+    <div class="col-12 col-sm-12 col-xl-8 col-lg-8 tournamediv"  >
+            <span class="tourname">SANTORINI HALF DAY WINE ADVENTURE</span>
     </div>
-<div class="row movedown17">
-<div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
-   <span class="travelerdetail">TRAVELERS DETAILS </span>
+    </div>
+
+    </div>
 </div>
-</div>
-<div class="container697">
-<div class="row movedown10">
-    <div class="col-12 col-sm-12 col-xl-4 col-lg-4 ">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-xl-4 col-lg-4 imaginarymove" align="left">
-                    <span class="travelerdetailspan">TRAVELLERS</span>
-                    <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
-            </div>
-            <div class="col-6 col-sm-6 col-xl-4 col-lg-4" align="center">
-                    <span class="travelerdetailspan">LEAD</span>
-                   
-                    <div class="round">
-                        <input type="checkbox" id="checkbox3" />
-                        <label for="checkbox3"></label>
-                      </div>
-            </div>
-            <div class="col-6 col-sm-6 col-xl-4 col-lg-4" align="left">
-                <span class="travelerdetailspan">TITLE</span> 
-                <div class="form-group"> 
-                    <select class="custom-select customtitle" id="title">
-                        <option>Mr.</option> 
-                        <option>Mrs.</option> 
-                    </select>
+<div class="col-12 col-sm-12 col-xl-4 col-lg-4 " align="center">
+    <span class="productsummary ">YOUR OPTIONS</span>
+      <div class="containersinnewsearch move23">
+    <div class="form-group newsearchspaces">   
+        <input class="form-control" id="date" class="date" name="date" placeholder="Select date" type="text"/>
+    </div>
+    </div>
+    <div class="containersinnewsearch">
+      <div class="form-group newsearchspaces">  
+            <input class="form-control" id="time" class="time" name="time" placeholder="Select time" type="text"/>
+       </div>
+   </div>
+    <center>
+    <div style="width:330px;">
+    <div class="row minusplusdiv newsearchspaces">
+        <div  class=" col-12 col-sm-12 col-xl-6 col-lg-6 NoofTrdiv" align="center"> 
+            <div class="minusplusfirst">
+             
+                     <img src="images/passengerminus.svg" class="minusplus"> 
+            
+                    <span class="NoofTr">No of Travellers </span> 
+             
+                    <img src="images/passengerplus.svg" class="minusplus"> 
+            
                 </div>
+              <span class="passdescription" >Age 13+</span> 
+        </div>
+      
+        <div  class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"> 
+            <div class="container68">
+           
+                <div class="numbersboarder"> 
+             
+                    <img src="images/passengerminus.svg"  onclick="removech(0)" class="minusplus"> 
+             
+                    <input type="text"  id="chnumber" class="numbers" value="2"/>  
+            
+                    <img src="images/passengerplus.svg" onclick="addch(10)"  class="minusplus"> 
+             
             </div>
+            </div>
+            <span class="passdescription" >Age 4-12</span>
+        </div>
+        <div  class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"> 
+            <div class="container68">
+  
+                <div class="numbersboarder"  >
+                <center>
+        
+                     <img src="images/passengerminus.svg" onclick="removeinf(0)" class="minusplus"> 
+             
+                    <input type="text"  id="infnumber" class="numbers" value="2"/>  
+               
+                    <img src="images/passengerplus.svg" onclick="addinf(10)"   class="minusplus"> 
+            
+                    </center>
+            </div>
+            </div>
+            <span class="passdescription" >Infants</span>
         </div>
     </div>
-    <div class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 imaginarymove" align="left">
-                 <span class="travelerdetailspan">NAME</span> 
-                 <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
-            </div>
-            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 imaginarymove" align="left">
-                <span class="travelerdetailspan">SURNAME</span> 
-                <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
-            </div>
-        </div>
     </div>
-     
-</div>
-</div>
-</div>
-
-
-<center>
-<div class="container800 respcontainer">
-    <div class="row movedown20">
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " >
-            <span class="contactdetailhead">CONTACT DETAILS</span>
-        </div>
+    </center>
+  
+    <div class="row  ">
+    <div  class="col-12 col-sm-12 col-xl-12 col-lg-12"  >  
+        <span class="tourextras">TOUR EXTRAS:</span>
     </div>
-    <div class="row movedown10">
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 imaginarymove" align="left">
-            <span class="fourdetailsspan">PHONE</span> 
-             <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
-        </div>
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
-            <span class="fourdetailsspan">COUNTRY OF RESIDENCE</span> 
-            <div class="form-group"> 
-                 <select class="custom-select customcountry" id="country">
-                      <option>AUSTRIA</option> 
-
-                     <option>AUSTRIA</option> 
-                </select>
-            </div>
-        </div>
     </div>
     <div class="row  ">
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 imaginarymove" align="left">
-            <span class="fourdetailsspan">E-MAIL</span> 
-            <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
-        </div>
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
-            <span class="fourdetailsspan">VERIFY E-MAIL</span> 
-             <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
-        </div>
-    </div>
-</div>
-</center>
-<center>
-<div class="container800 respcontainer">
-<div class="row movedown20">
-    <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left">
- 
-          <div class="round">
-            <input type="checkbox" id="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-        
-        <span class="termslbl">I have read and agree to the</span>
-        <span class="termslbl blueterms">Conditions and Cancellation Policy.</span>
-    </div>
-
-</div>
-<div class="row movedown">
-    <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left">
-         <div class="round">
+    <div  class="col-12 col-sm-12 col-xl-12 col-lg-12" >  
+     
+        <div class="round">
             <input type="checkbox" id="checkbox2" />
             <label for="checkbox2"></label>
           </div>
-        <span class="termslbl">In Relation to the requirements of </span>
-        <span class="termslbl blueterms">EU Regulation 2016/679 (GDPR),</span>
-        <span class="termslbl">I Agree to the processing of my personal data according to </span>
-        <span class="termslbl blueterms">Privacy Policy</span>
+        <span class="singsupplement">Single Supplement / Tourist Class (Per Person €30)</span>
     </div>
+    </div>
+</div>
 
+<div class="col-12 col-sm-12 col-xl-4 col-lg-4 "  >
+    <div class="pricediv"> 
+    <span class="productsummary ">PRICE</span>
+    <div class="row move23" >
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 "  >
+            <span class="redprice">35</span>
+             <span class="redprice">€</span>
+        </div>
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 "  >
+            
+            <i><img src="images/cartbin.svg" class="cartbin"></i>   
+        </div>
+    </div>
+    </div>
 </div>
 </div>
-</center>
+</div>
+<center>
+</div>
+<center>
+<div class="container1280 movedown">
+<div class="row">
+    <div class="col-12 col-sm-12 col-xl-6 col-lg-6 ">
 
- 
-<div class="container800">
-<div class="row movedown20">
-<div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
-    <asp:Button runat="server" id="myBtn" Text="PREVIEW YOUR ORDER" class="newsearchbtn" OnClientClick="myFunction(); return false;" />  
-  
-    <div id="myModal" class="modal"> 
-        <div class="modal-content">
+
+    </div>
+    <div class="col-12 col-sm-12 col-xl-6 col-lg-6 ">
+        <div class="cartcurrenttotal">
+        <span class="cartcurrenttotallbl">Current Cart Total</span>
+        <img src="images/bluearrowright.svg" class="bluearrowright"> 
+        <span class="redprice">35</span>
+        <span class="redprice">€</span>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container1280 movedown">
+<div class="row">
+    <div class="col-12 col-sm-12 col-xl-6 col-lg-6 ">
         <div class="row">
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-         <div class="container640">
-             <span class="close"><img src="images/previewcancel.svg" class="previewcancel"> </span>
-       
+             <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
+                 <span class="addextras">ADD EXTRA SERVICES</span>
+             </div>
             <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
-                <div class="prevcartheader"> 
-                <center> 
-                <div class="row">  
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 hinner" align="center">
-                     <img src="images/basketcart.svg" class="basketcart"> 
-                     <span class="myclass prevheaderfont">REVIEW</span>
-                     <span class="cartcalss prevheaderfont">YOUR ORDER</span>
-                </div>
-                </div>
-  
-                <div class="row">  
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                            <img src="images/cartwhiteunderline.svg" class="basketcart">
-                </div>
-                </div>  
-                </center>
-                </div>
-                
-        <div class="bluecartheader ">
-      
-      
-        <center> 
-        <div class="row">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " onclick="showhideprev()" align="center">
-                 <img src="images/tourscart.svg" class="tourscartright">  
-                 <span class="tourslblright" ">TOURS</span>
-                 <img id="toggleleftarrayimgprev" src="images/whitearrowdown.svg" class="whitearrowdownright rotate">  
-        </div>
-        </div> 
-        </center>
-        </div> 
-         <div class="backgroundgrey" id="backgroundgreyprev">
-        <div class="row">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
-        <div class="tourspandiv">
-            <span class="tourspanlbl">TOUR 1</span>
-        </div>
-        </div>
+                 <img src="images/tourscartblue.svg" class="tourscartblue">  
+                 <span class="addextrastour">TOURS</span>
+             </div>
         </div>
 
-        <center>
-        <div class="container390">
-        
-        <div class="row movedown40">  
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " >
-            <div class="rightimages">
-            </div>
-        </div>
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
-        <div>
-            <span class="prevexcheader"> Santorini Half Day Wine Adventure </span>
-            <div>
-                <img src="images/cartdetailrightarrowblue.svg" class="cartdetailrightarrow"> 
-                <span class="carttotallblprice">35€</span> 
-            </div>
-            <div>
-                <img src="images/bluetick.svg" class="bluetick">  
-                <span class="leftdetailsbold">Travel Date:</span>
-                <span class="leftdetails">Jan 7,2020</span>
-            </div>
-            <div class="movedown28">
-                <span class="pretravellerdetails">TRAVELLER DETAILS</span>
-            </div>
-            <div>
-            <img src="images/bluetick.svg" class="bluetick">  
-            <span class="prevtravellerno">2 Travellers</span></div>
-            <div><span class="prevtravelname">1st/Lead/ Mr. John Papastratos</span></div>
-        </div>
-        </div>
-
-        </div>
-    
-        </div>
-        </center>
-             
     </div>
-    <div class="backgroundwhite">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
-                 <div class="movedown32">
-                    <span class="prevcontactdetailsheader">CONTACT DETAILS</span> 
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
-                 <div class="movedown20">
-                    <span class="prevcontactdetails bold">Phone:</span> 
-                    <span class="prevcontactdetails ">+306933333333:</span> 
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
-                    <span class="prevcontactdetails bold">Country:</span> 
-                    <span class="prevcontactdetails ">Greece</span> 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
-                    <span class="prevcontactdetails bold">E-mail:</span> 
-                    <span class="prevcontactdetails ">ekdromes@ekdromes.gr</span> 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
-                <div class="movedown22">
-                    <span class="prevwhitelbl">TOTAL AMMOUNT</span>
-                    <img src="images/whiterightarrow.svg" class="bluetick">  
-                    <span class="prevwhitelbl">35€</span> 
-                </div>
-                
-            </div>
-        </div>
-        <div class="row movedown20">
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left">
-                <div class="round roundprev">
-            <input type="checkbox" id="checkboxprev1" />
-            <label for="checkboxprev1"></label>
-          </div>
-                <span class="termslbl">I have read and agree to the</span>
-                <span class="termslbl blueterms">Conditions and Cancellation Policy.</span>
-            </div>
-
-        </div> 
-        <div class="row movedown container417">
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "  >
-                 <div class="round roundprev">
-                    <input type="checkbox" id="checkboxprev2" />
-                    <label for="checkboxprev2"></label>
-                  </div>
-                <span class="termslbl">In Relation to the requirements of </span>
-                <span class="termslbl blueterms">EU Regulation 2016/679 (GDPR),</span>
-                <span class="termslbl">I Agree to the processing of my personal data according to </span>
-                <span class="termslbl blueterms">Privacy Policy</span>
-            </div>
-
-        </div>
-        <div class="movedown30 leave30space"> 
-            <div class="row">
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
-                     <asp:Button runat="server" id="Button1" Text="PROCEED TO PAYMENT" class="Bookbtn"  />   
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-            </div> 
-    </div>
-    </div> 
-    </div> 
-
-</div>
-</div>
-<div class="row movedown8">
-<div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
-     <asp:Button runat="server" id="btnLogin" Text="PROCEED TO PAYMENT (35,00€)" class="Bookbtn"  />   
-</div>
-</div>
-</div>
- 
-</div>
-</div>
- 
-     
-<div class="col-12 col-sm-12 col-xl-4 col-lg-4 ">
-    <div class="container300 backgroundgrey">
-        <center>
-            <div class="paddingdown">
-                <span class="ysc"> YOUR SHOPPING CART</span>
-            </div>
-        </center>
-    
-        <div class="bluecartheader "  onclick="showrighthide()">
-        <center> 
-        <div class="row movedown8">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                 <img src="images/tourscart.svg" class="tourscartright">  
-                 <span class="tourslblright">TOURS</span>
-                 <img src="images/whitearrowdown.svg" id="rightimagesarrow" class="whitearrowdownright rotate">  
-        </div>
-        </div> 
-        </center>
-        </div> 
-        <div id="hiderightpanel" class="hiderightpanel">
-        <div class="row movedown8">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-        <div  class="rightimages">
-        </div>
-
-        </div>
-        </div> 
-        <div class="row ">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-          <div class="container169"><span class="rightpanelllbl">SANTORINI HALF DAY WINE ADVENTURE</span></div>
-        </div>
-        </div>
-
-        <div class="row movedown8">  
-            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="center">
-               <span class="twotraveller">2 Travellers</span> 
-            </div>
-            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="center">
-               <span class="twotravellereuro">35E</span> 
-            </div>
-        </div>
-        <div class="row movedown8">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-            <img src="images/linepassenger.svg" class="linepassenger"> 
-        </div>
-        </div>
-
-         <div class="row movedown8">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-        <div class="rightimages">
-        </div>
-
-        </div>
-        </div> 
-        <div class="row ">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-          <div class="container169"><span class="rightpanelllbl">SANTORINI HALF DAY WINE ADVENTURE</span></div>
-        </div>
-        </div>
-
-        <div class="row movedown8">  
-            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="center">
-               <span class="twotraveller">2 Travellers</span> 
-            </div>
-            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="center">
-               <span class="twotravellereuro">35€</span> 
-            </div>
-        </div>
-            </div>
-        <div class="row movedown10">  
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
-           
-               <span class="carttotallbl">CART TOTAL</span> 
-               <img src="images/cartdetailrightarrowblue.svg" class="cartdetailrightarrow"> 
-               <span class="carttotallblprice">35€</span> 
-            </div>
-        </div>
-        <div class="row movedown10">
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-            <asp:Button runat="server" id="Button2" Text="EDIT YOUR CART" class="editbtn"  />  
-        </div>
-        </div>
-
-        
+    <div class="col-12 col-sm-12 col-xl-6 col-lg-6 "> 
+        <input id="btnLogin" type="button" value="PROCEED TO CHECKOUT" class="Bookbtn" />
     </div>
 </div>
-</div>
-</div>
+</div> 
 </center>
+
+
+<div class="container1280 movedown">
+<div class="row">
+    <div class="col-12 col-sm-12 col-xl-6 col-lg-6 ">
+    </div>
+</div>
+</div>
+
 
 
 <div class="footerdiv"  >
@@ -2361,57 +1704,59 @@ width:300px;
 </div>
 </center>
 </div>
-		     
-		     
-		     <script>
-    
-var modal = document.getElementById('myModal');  
-var span = document.getElementsByClassName('close')[0];
-      function myFunction() {   
-    modal.style.display = "block";
-}
- 
-span.onclick = function() {
-  modal.style.display = "none";
-} 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-    }
 
-    function showhideprev() {
-        if (document.getElementById('backgroundgreyprev').style.display == 'none') {
 
-            $("#toggleleftarrayimgprev").addClass("rotate");
-        } else {
+<script>
+    $(document).ready(function () {
+        var date_input = $('input[name="date"]'); //our date input has the name "date"
+        var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+        var options = {
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        };
+        date_input.datepicker(options);
 
-            $("#toggleleftarrayimgprev").removeClass("rotate");
+      
+    })
+
+    function addinf(max) {
+       
+        document.getElementById("infnumber").value = parseInt(document.getElementById("infnumber").value) + 1;
+        if (document.getElementById("infnumber").value >= parseInt(max)) {
+            document.getElementById("infnumber").value = max;
         }
-        $('#backgroundgreyprev').toggle('hide');
     }
-    
+    function removeinf(min) {
+        document.getElementById("infnumber").value = parseInt(document.getElementById("infnumber").value) - 1;
+        if (document.getElementById("infnumber").value <= parseInt(min)) {
+            document.getElementById("infnumber").value = min;
+        }
+    }
+
+    function addch(max) {
+
+        document.getElementById("chnumber").value = parseInt(document.getElementById("chnumber").value) + 1;
+        if (document.getElementById("chnumber").value >= parseInt(max)) {
+            document.getElementById("chnumber").value = max;
+        }
+    }
+    function removech(min) {
+        document.getElementById("chnumber").value = parseInt(document.getElementById("chnumber").value) - 1;
+        if (document.getElementById("chnumber").value <= parseInt(min)) {
+            document.getElementById("chnumber").value = min;
+        }
+    }
     function showhide() {
-        if (document.getElementById('toggleleftarray').style.display == 'none') {
+        if (document.getElementById('mainframe').style.display == 'none') {
 
-            $("#toggleleftarrayimg").addClass("rotate");
+            $("#whitearrowdown").addClass("rotate");
         } else {
 
-            $("#toggleleftarrayimg").removeClass("rotate");
-        } 
-        $('.toggleleftarray').toggle('hide');
+            $("#whitearrowdown").removeClass("rotate");
+        }
+        $('.mainframe').toggle('hide');
     }
 
-    function showrighthide() { 
-        if (document.getElementById('hiderightpanel').style.display == 'none') {
-     
-            $("#rightimagesarrow").addClass("rotate");
-        } else { 
-            $("#rightimagesarrow").removeClass("rotate");
-        }
-        
-        $('.hiderightpanel').toggle('hide');
-       } 
 </script>
-
- 
