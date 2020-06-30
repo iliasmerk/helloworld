@@ -5,8 +5,11 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/nice-select.css" >
+<script src="js/jquery.nice-select.min.js"></script>
 
 <style>
+
 .move30{
 	margin-top:30px;}
 .move23 {
@@ -2506,4 +2509,13 @@ window.onclick = function(event) {
         
         $('.hiderightpanel').toggle('hide');
        }
+	 $(document).ready(function () {
+    $('select').niceSelect();
+        if (document.getElementsByClassName('select')[0].value = 'En') {
+            document.getElementsByClassName('current')[0].innerHTML = 'En';
+        }
+        else if (document.getElementsByClassName('select')[0].value = 'Gr') {
+            document.getElementsByClassName('current')[0].innerHTML = 'Gr';
+        }
+});					       
 </script>
