@@ -926,7 +926,26 @@ margin-left: 10px;
 }
 }
  
- 
+ .nice-select {
+    height: 36px !important;
+    border-radius: 0px !important;
+    border: solid 1px #ced4da !important;
+    width:100%!important;
+}
+    .nice-select:after {
+        border-bottom: 2px solid #00d3a7 !important;
+        border-right: 2px solid #00d3a7 !important;
+    }
+.mrcontainer {
+    width:70px;
+}
+.testcontainer {
+    width: 212px !important;
+}
+.drop10 {
+    margin-bottom:10px;
+}
+
 .ysc {
     font-family: Proxima Nova;
     font-weight: bold;
@@ -1522,7 +1541,7 @@ width:300px;
     width: 1px; /* or 100px */
 }
 .custom-select {
-    background-image: url(images/greenarrowdown.svg);
+    background-image: url(svg/greenarrowdown.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-color: #ffffff;
@@ -1578,8 +1597,7 @@ width:300px;
     text-align: right;
     font-size: 28px;
     font-weight: bold;
-    padding-right: 11px;
-    padding-top: 27px;
+    padding-right: 9px;
 }
 
     .close:hover,
@@ -1702,110 +1720,109 @@ width:300px;
         width: 1140px;
     }
 }
-    @media screen and (max-width : 800px) {
-        .container640 {
-            width: 100%;
-        }
+@media screen and (max-width : 800px) {
+.container640 {
+    width: 100%;
+}
 
-        .imaginarycontainer, .container697, .respcontainer {
-            width: 400px !important;
-        }
+.imaginarycontainer, .container697, .respcontainer {
+    width: 400px !important;
+}
 
-        #options, #hotel {
-            margin-left: 0px;
-        }
+#options, #hotel {
+    margin-left: 0px;
+}
 
-        .container800, .container300, .container1280 {
-            width: 100%;
-        }
+.container800, .container300, .container1280 {
+    width: 100%;
+}
 
-        .travelerdetailspan {
-            display: block;
-        }
-        .imaginarymove {
-            margin-bottom:10px;
-         }
+.travelerdetailspan {
+    display: block;
+}
+.imaginarymove {
+    margin-bottom:10px;
+ }
+}
+
+@media screen and (min-width : 801px) and (max-width : 991px) {
+#options, #hotel {
+    margin-left: 0px;
+}
+
+.respcontainer {
+    width: 697px !important;
+}
+
+.imaginarycontainer {
+    width: 697px;
+}
+
+
+.container800, .container300, .container1280 {
+    width: 100%;
+}
+
+.travelerdetailspan {
+    display: block;
+}
+.imaginarymove {
+    margin-bottom: 10px;
+}
+}
+
+body {
+overflow-x: hidden;
+}
+
+
+.roundprev {
+width: 20px !important;
+}
+
+.round {
+position: relative;
+width: 30px;
+display: inline-block;
+}
+
+.round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 21px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 21px;
+}
+
+    .round label:after {
+	border: 2px solid #00d3a7;
+	border-top: none;
+	border-right: none;
+	content: "";
+	height: 6px;
+	left: 4px;
+	opacity: 0;
+	position: absolute;
+	top: 5px;
+	transform: rotate(-45deg);
+	width: 12px;
     }
 
-    @media screen and (min-width : 801px) and (max-width : 991px) {
-        #options, #hotel {
-            margin-left: 0px;
-        }
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
 
-        .respcontainer {
-            width: 697px !important;
-        }
-
-        .imaginarycontainer {
-            width: 697px;
-        }
-
-   
-        .container800, .container300, .container1280 {
-            width: 100%;
-        }
-
-        .travelerdetailspan {
-            display: block;
-        }
-        .imaginarymove {
-            margin-bottom: 10px;
-        }
-    }
-  
-    body {
-        overflow-x: hidden;
+    .round input[type="checkbox"]:checked + label {
+	border-color: #00d3a7;
     }
 
-
-    .roundprev {
-        width: 20px !important;
-    }
-
-    .round {
-        position: relative;
-        width: 30px;
-        display: inline-block;
-    }
-
-        .round label {
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 50%;
-            cursor: pointer;
-            height: 21px;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 21px;
-        }
-
-            .round label:after {
-                border: 2px solid #00d3a7;
-                border-top: none;
-                border-right: none;
-                content: "";
-                height: 6px;
-                left: 4px;
-                opacity: 0;
-                position: absolute;
-                top: 5px;
-                transform: rotate(-45deg);
-                width: 12px;
-            }
-
-        .round input[type="checkbox"] {
-            visibility: hidden;
-        }
-
-            .round input[type="checkbox"]:checked + label {
-                border-color: #00d3a7;
-            }
-
-                .round input[type="checkbox"]:checked + label:after {
-                    opacity: 1;
-                }
-
+	.round input[type="checkbox"]:checked + label:after {
+	    opacity: 1;
+	}
 
 
 
@@ -1934,8 +1951,6 @@ width:300px;
 </div>
 </div>
 
-
- 
 <div class="cartheader">
  
 <center>
@@ -1970,7 +1985,7 @@ width:300px;
 
           <img src="images/tourscart.svg" class="tourscart">  
          <span class="tourslbl">TOURS</span>
-         <img id="toggleleftarrayimg" src="images/whitearrowdown.svg" class="whitearrowdown rotate" >  
+         <img id="toggleleftarrayimg"src="images/whitearrowdown.svg" class="whitearrowdown rotate" >  
 </div>
 </div> 
 </div>
@@ -2014,19 +2029,20 @@ width:300px;
 
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
     <div class="row">
-    <div class="col-12 col-sm-12 col-xl-5 col-lg-5 " align="right">
-         <div class="form-group">
-            <select  class="custom-select"  id="hotel">
+    <div class="col-12 col-sm-12 col-xl-5 col-lg-5 " >
+           
+         <div class="testcontainer"  >
+            <select    id="hotel">
               <option>Test</option> 
             </select>
-         </div>
+         </div> 
     </div>
     <div class="col-12 col-sm-12 col-xl-2 col-lg-2 imaginarymove"  align="center">
         <span class="or ">OR</span>
     </div>
-    <div class="col-12 col-sm-12 col-xl-5 col-lg-5 "  align="left">
-        <div class="form-group"> 
-                 <select class="custom-select" id="options">
+    <div class="col-12 col-sm-12 col-xl-5 col-lg-5 "   >
+        <div class="testcontainer"  >
+                 <select   id="options">
                       <option>Test</option> 
                 </select>
         </div>
@@ -2041,14 +2057,14 @@ width:300px;
 </div>
 </div>
 <div class="container697">
-<div class="row movedown10">
+<div class="row movedown10 ">
     <div class="col-12 col-sm-12 col-xl-4 col-lg-4 ">
         <div class="row">
-            <div class="col-12 col-sm-12 col-xl-4 col-lg-4 imaginarymove" align="left">
+            <div class="col-4 col-sm-4 col-xl-4 col-lg-4 drop10" align="left">
                     <span class="travelerdetailspan">TRAVELLERS</span>
                     <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
             </div>
-            <div class="col-6 col-sm-6 col-xl-4 col-lg-4" align="center">
+            <div class="col-4 col-sm-4 col-xl-4 col-lg-4" align="center">
                     <span class="travelerdetailspan">LEAD</span>
                    
                     <div class="round">
@@ -2056,10 +2072,10 @@ width:300px;
                         <label for="checkbox3"></label>
                       </div>
             </div>
-            <div class="col-6 col-sm-6 col-xl-4 col-lg-4" align="left">
+            <div class="col-4 col-sm-4 col-xl-4 col-lg-4" align="left">
                 <span class="travelerdetailspan">TITLE</span> 
-                <div class="form-group"> 
-                    <select class="custom-select customtitle" id="title">
+                <div class="mrcontainer"> 
+                    <select class="  customtitle" id="title">
                         <option>Mr.</option> 
                         <option>Mrs.</option> 
                     </select>
@@ -2100,7 +2116,7 @@ width:300px;
         <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
             <span class="fourdetailsspan">COUNTRY OF RESIDENCE</span> 
             <div class="form-group"> 
-                 <select class="custom-select customcountry" id="country">
+                 <select class="  customcountry" id="country">
                       <option>AUSTRIA</option> 
 
                      <option>AUSTRIA</option> 
@@ -2155,8 +2171,9 @@ width:300px;
 <div class="container800">
 <div class="row movedown20">
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
-    <input type="button" id="myBtn" value="PREVIEW YOUR ORDER" class="newsearchbtn" onclick="myFunction()"/>
-    <div id="myModal" class="modal"> 
+ 
+    <input type="button" id="myBtn" value="PREVIEW YOUR ORDER" class="newsearchbtn" OnClick="myFunction()" class="modal" />	
+    <div id="myModal"  > 
         <div class="modal-content">
         <div class="row">
         <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
@@ -2304,8 +2321,9 @@ width:300px;
         </div>
         <div class="movedown30 leave30space"> 
             <div class="row">
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">  
-		     <input type="button" id="Button1" value="PROCEED TO PAYMENT" class="Bookbtn" />									      
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
+                 
+		     <input  id="Button1" value="PROCEED TO PAYMENT" class="Bookbtn" />										      
                 </div>
             </div>
         </div>
@@ -2321,7 +2339,7 @@ width:300px;
 </div>
 <div class="row movedown8">
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">  
-     <input type="button" id="btnLogin" value="PROCEED TO PAYMENT (35,00€)" class="Bookbtn"  />											
+     <input id="btnLogin" value="PROCEED TO PAYMENT (35,00€)" class="Bookbtn"/>												
 </div>
 </div>
 </div>
@@ -2408,8 +2426,8 @@ width:300px;
             </div>
         </div>
         <div class="row movedown10">
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center"> 
-	    <input type="button" id="Button2" value="EDIT YOUR CART" class="editbtn" />									 
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+            <asp:Button runat="server" id="Button2" Text="EDIT YOUR CART" class="editbtn"  />  
         </div>
         </div>
 
@@ -2419,8 +2437,6 @@ width:300px;
 </div>
 </div>
 </center>
- 
-
  
 
 <div class="footerdiv"  >
