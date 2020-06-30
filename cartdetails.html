@@ -13,16 +13,14 @@
 }
 	
 .email {
-    /* background-image: url(svg/email.svg); */
-    /* padding: 8px 8px 8px 8px; */
+ 
     width: 20px;
     background-repeat: no-repeat;
     margin-right: 5px;
 }
 
 .telephone {
-    /* background-image: url(svg/telephone.svg); */
-    /* padding: 8px 8px 8px 8px; */
+ 
     width: 20px;
     background-repeat: no-repeat;
     margin-right: 5px;
@@ -47,9 +45,7 @@
     border: none !important;
 }
 
-.earth {
-    /* background-image: url(svg/earthblue.svg); */
-    /* padding: 8px 8px 8px 8px; */
+.earth { 
     width: 20px;
     background-repeat: no-repeat;
    margin-right: -10px;
@@ -67,10 +63,7 @@ margin-top: -27px;
     color: rgb(36, 38, 61);
 }
 
-.select {
-    /*background: url("svg/arrowdown.svg");
-        background-position: right;
-        background-repeat: no-repeat;*/
+.select { 
     background-size: 13px 7px;
     border: 1px;
     padding-right: 19px;
@@ -1016,6 +1009,101 @@ input[type="radio"] {
 }
 .container .checkmark:after {
     left: 9px;
+.ysc {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 19px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
+}
+.paddingdown {
+    padding-top:20px;
+}
+.Bookbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    border: none;
+    background-size: 300px 100px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    width: 290px !important;
+    height: 44px;
+    outline: none;
+}
+.editbtn {
+    background: #000736;
+    background: rgba(0, 7, 54, 1);
+    border: none;
+    background-size: 300px 100px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    width: 230px;
+    height: 30px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.newsearchbtn {
+    background: #000736;
+    background: rgba(0, 7, 54, 1);
+    border: none;
+    background-size: 300px 100px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    width: 233px;
+    height: 40px;
+    outline: none;
+}
+
+.termslbl {
+    font-family: Proxima Nova;
+    font-size: 13px;
+    
+}
+.blueterms {
+    color: #00C0F2;
+    color: rgb(0, 192, 242);
+}
+
+
+.fourdetailsspan {
+    font-family: Proxima Nova;
+    font-size: 13px;
+    color: #929497;
+    color: rgb(146, 148, 151);
+}
+
+.contactdetailhead {
+    font-family: Proxima Nova;
+    font-weight: bold;
+    font-size: 17px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #00C0F2 60%);
+}
+.block {
+    display:block;
+}
+ 
+input[type="radio"] {
+    -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox; /* Firefox */
+    -ms-appearance: checkbox; /* not currently supported */
+
+}
+.container .checkmark:after {
+    left: 9px;
     top: 5px;
     width: 5px;
     height: 10px;
@@ -1336,11 +1424,14 @@ i {
 }
 .cartheader {
     background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    margin-top: 20px;
+    /*margin-top: 100px;*/
 }
 .bluecartheader {
     background: rgba(10, 191, 242, 1);
 }
+    .bluecartheader:hover {
+        cursor:pointer;
+    }
 .tourslbl {
     font-family: Proxima Nova;
     font-size: 40px;
@@ -1371,8 +1462,7 @@ i {
 }
 
 
-.basketcart {
-    /* background-image: url(svg/fakos.svg); */
+.basketcart { 
     background-repeat: no-repeat;
     width: 30px;
     height: 35px;
@@ -1513,22 +1603,16 @@ width:300px;
     width: 1px; /* or 100px */
 }
 .custom-select {
-    background-image: url(svg/greenarrowdown.svg);
+    background-image: url(images/greenarrowdown.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-color: #ffffff;
     background-size: 10px;
-    background-position-x: 294px;
-}
-
-
-
-
-
-
-.customcountry {
+    background-position-x: 96%;
+} 
+/*.customcountry {
     background-position-x: 362px;
-}
+}*/
 .customtitle {
     width: 72px;
     background-position-x: 47px;
@@ -1590,8 +1674,8 @@ width:300px;
     display: inline-block;
     width: 25px;
     height: 25px;
-   margin-right: -16px;
-margin-top: -24px;
+    margin-right: -19px;
+    margin-top: -50px;
 }
 .container640 {
     width: 640px;
@@ -1688,68 +1772,120 @@ margin-top: -24px;
 }
 
 .container417 {
-    width: 417px;
-    margin-left: -241px;
+    text-align:left;
 }
-
-
-@media screen and (max-width : 800px) {
-    .container800,.container300 {
-        width:100%;
+.container1280 {
+    width:1280px;
+}
+@media screen and (max-width : 1279px) {
+    .container1280 {
+        width: 1140px;
+    }
+}
+    @media screen and (max-width : 800px) {
+        .container640 {
+            width: 100%;
         }
 
-}
+        .imaginarycontainer, .container697, .respcontainer {
+            width: 400px !important;
+        }
 
-body {
-    overflow-x: hidden;
-}
+        #options, #hotel {
+            margin-left: 0px;
+        }
+
+        .container800, .container300, .container1280 {
+            width: 100%;
+        }
+
+        .travelerdetailspan {
+            display: block;
+        }
+        .imaginarymove {
+            margin-bottom:10px;
+         }
+    }
+
+    @media screen and (min-width : 801px) and (max-width : 991px) {
+        #options, #hotel {
+            margin-left: 0px;
+        }
+
+        .respcontainer {
+            width: 697px !important;
+        }
+
+        .imaginarycontainer {
+            width: 697px;
+        }
+
+   
+        .container800, .container300, .container1280 {
+            width: 100%;
+        }
+
+        .travelerdetailspan {
+            display: block;
+        }
+        .imaginarymove {
+            margin-bottom: 10px;
+        }
+    }
+  
+    body {
+        overflow-x: hidden;
+    }
 
 
+    .roundprev {
+        width: 20px !important;
+    }
 
-.round {
-position: relative;
-width: 30px;
-display: inline-block;
-}
+    .round {
+        position: relative;
+        width: 30px;
+        display: inline-block;
+    }
 
-.round label {
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 50%;
-cursor: pointer;
-height: 21px;
-left: 0;
-position: absolute;
-top: 0;
-width: 21px;
-}
+        .round label {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 21px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 21px;
+        }
 
-.round label:after {
-border: 2px solid #00d3a7;
-border-top: none;
-border-right: none;
-content: "";
-height: 6px;
-left:4px;
-opacity: 0;
-position: absolute;
-top: 5px;
-transform: rotate(-45deg);
-width: 12px;
-}
+            .round label:after {
+                border: 2px solid #00d3a7;
+                border-top: none;
+                border-right: none;
+                content: "";
+                height: 6px;
+                left: 4px;
+                opacity: 0;
+                position: absolute;
+                top: 5px;
+                transform: rotate(-45deg);
+                width: 12px;
+            }
 
-.round input[type="checkbox"] {
-visibility: hidden;
-}
+        .round input[type="checkbox"] {
+            visibility: hidden;
+        }
 
-.round input[type="checkbox"]:checked + label {
-            
-border-color: #00d3a7;
-}
+            .round input[type="checkbox"]:checked + label {
+                border-color: #00d3a7;
+            }
 
-.round input[type="checkbox"]:checked + label:after {
-    opacity: 1;
-}
+                .round input[type="checkbox"]:checked + label:after {
+                    opacity: 1;
+                }
+
 
 	
 .svgclass { 
@@ -1891,8 +2027,8 @@ border-color: #00d3a7;
 </center>
 </div>
 
-
-
+<center>
+<div class="container1280">
 
 <div class="row">
  <div class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
@@ -1942,7 +2078,9 @@ border-color: #00d3a7;
          </div>
     
 </div>
+<div class="imaginarycontainer">
 <div class="row movedown17">
+
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
     <div class="row">
     <div class="col-12 col-sm-12 col-xl-5 col-lg-5 " align="right">
@@ -1952,8 +2090,8 @@ border-color: #00d3a7;
             </select>
          </div>
     </div>
-    <div class="col-12 col-sm-12 col-xl-2 col-lg-2 "  align="center">
-        <span class="or">OR</span>
+    <div class="col-12 col-sm-12 col-xl-2 col-lg-2 imaginarymove"  align="center">
+        <span class="or ">OR</span>
     </div>
     <div class="col-12 col-sm-12 col-xl-5 col-lg-5 "  align="left">
         <div class="form-group"> 
@@ -1965,6 +2103,7 @@ border-color: #00d3a7;
 </div>
 </div>
 </div>
+    </div>
 <div class="row movedown17">
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
    <span class="travelerdetail">TRAVELERS DETAILS </span>
@@ -1974,11 +2113,11 @@ border-color: #00d3a7;
 <div class="row movedown10">
     <div class="col-12 col-sm-12 col-xl-4 col-lg-4 ">
         <div class="row">
-            <div class="col-12 col-sm-12 col-xl-4 col-lg-4" align="left">
+            <div class="col-12 col-sm-12 col-xl-4 col-lg-4 imaginarymove" align="left">
                     <span class="travelerdetailspan">TRAVELLERS</span>
                     <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
             </div>
-            <div class="col-12 col-sm-12 col-xl-4 col-lg-4" align="center">
+            <div class="col-6 col-sm-6 col-xl-4 col-lg-4" align="center">
                     <span class="travelerdetailspan">LEAD</span>
                    
                     <div class="round">
@@ -1986,7 +2125,7 @@ border-color: #00d3a7;
                         <label for="checkbox3"></label>
                       </div>
             </div>
-            <div class="col-12 col-sm-12 col-xl-4 col-lg-4" align="left">
+            <div class="col-6 col-sm-6 col-xl-4 col-lg-4" align="left">
                 <span class="travelerdetailspan">TITLE</span> 
                 <div class="form-group"> 
                     <select class="custom-select customtitle" id="title">
@@ -1999,11 +2138,11 @@ border-color: #00d3a7;
     </div>
     <div class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
         <div class="row">
-            <div class="col-12 col-sm-12 col-xl-6 col-lg-6" align="left">
+            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 imaginarymove" align="left">
                  <span class="travelerdetailspan">NAME</span> 
                  <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
             </div>
-            <div class="col-12 col-sm-12 col-xl-6 col-lg-6" align="left">
+            <div class="col-12 col-sm-12 col-xl-6 col-lg-6 imaginarymove" align="left">
                 <span class="travelerdetailspan">SURNAME</span> 
                 <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
             </div>
@@ -2016,14 +2155,14 @@ border-color: #00d3a7;
 
 
 <center>
-<div class="container800">
+<div class="container800 respcontainer">
     <div class="row movedown20">
         <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " >
             <span class="contactdetailhead">CONTACT DETAILS</span>
         </div>
     </div>
     <div class="row movedown10">
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 imaginarymove" align="left">
             <span class="fourdetailsspan">PHONE</span> 
              <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
         </div>
@@ -2039,7 +2178,7 @@ border-color: #00d3a7;
         </div>
     </div>
     <div class="row  ">
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 " align="left">
+        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 imaginarymove" align="left">
             <span class="fourdetailsspan">E-MAIL</span> 
             <input class="form-control mr-sm-2  " type="text"   aria-label="Search">
         </div>
@@ -2051,7 +2190,7 @@ border-color: #00d3a7;
 </div>
 </center>
 <center>
-<div class="container800">
+<div class="container800 respcontainer">
 <div class="row movedown20">
     <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left">
  
@@ -2085,7 +2224,7 @@ border-color: #00d3a7;
 <div class="container800">
 <div class="row movedown20">
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 ">
-    <input id="myBtn"  type="button" class="newsearchbtn" OnClick="myFunction()" value="PREVIEW YOUR ORDER" />  
+    <asp:Button runat="server" id="myBtn" Text="PREVIEW YOUR ORDER" class="newsearchbtn" OnClientClick="myFunction(); return false;" />  
   
     <div id="myModal" class="modal"> 
         <div class="modal-content">
@@ -2236,7 +2375,7 @@ border-color: #00d3a7;
         <div class="movedown30 leave30space"> 
             <div class="row">
                 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
-                     <input  id="Button1" Text="PROCEED TO PAYMENT" class="Bookbtn"  />   
+                     <asp:Button runat="server" id="Button1" Text="PROCEED TO PAYMENT" class="Bookbtn"  />   
                 </div>
             </div>
         </div>
@@ -2252,7 +2391,7 @@ border-color: #00d3a7;
 </div>
 <div class="row movedown8">
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 "> 
-     <input runat="server" id="btnLogin" Text="PROCEED TO PAYMENT (35,00€)" class="Bookbtn"  />   
+     <asp:Button runat="server" id="btnLogin" Text="PROCEED TO PAYMENT (35,00€)" class="Bookbtn"  />   
 </div>
 </div>
 </div>
@@ -2340,7 +2479,7 @@ border-color: #00d3a7;
         </div>
         <div class="row movedown10">
         <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-            <input id="Button2" Text="EDIT YOUR CART" class="editbtn"  />  
+            <asp:Button runat="server" id="Button2" Text="EDIT YOUR CART" class="editbtn"  />  
         </div>
         </div>
 
@@ -2348,6 +2487,8 @@ border-color: #00d3a7;
     </div>
 </div>
 </div>
+</div>
+</center>
 
 
 <div class="footerdiv"  >
