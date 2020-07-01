@@ -1132,40 +1132,312 @@ input[type='radio'] {
     font-weight: bold;
     font-size: 20px;
     color: #EC1651;
+	}
+	
+.customcountry ul {
+    max-height: 200px;
+    overflow-y: scroll !important;
+}
+.nice-select {
+    height: 36px !important;
+    border-radius: 0px !important;
+    border: solid 1px #ced4da !important;
+    width: 100% !important;
+}
+
+.nice-select:after {
+    border-bottom: 2px solid #00d3a7 !important;
+    border-right: 2px solid #00d3a7 !important;
+}
+
+ 
+body {
+    overflow-x: hidden;
+}
+
+.move23 {
+    margin-top: 23px;
+}
+
+.move30 {
+    margin-top: 30px;
+}
+
+.move20 {
+    margin-top: 20px;
+}
+
+.backgroundgrey {
+    background-color: #ECECEB;
+}
+
+i {
+    border: 1px solid #EC1651;
+    border-radius: 20px;
+    font-size: 8px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.whitearrowdown {
+    background-repeat: no-repeat;
+    height: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+.rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.tourextras {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.singsupplement {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 15px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.cbx {
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    font-family: 'proxima-nova', sans-serif !important;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: url(svg/backcircleresults.svg);
+    border-radius: 50%;
+    outline: none;
+    /*box-shadow: 0 0 5px 0px gray inset;*/
+}
+
+    input[type='radio']:before {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 60%;
+        margin: 20% auto;
+        border-radius: 50%;
+    }
+
+    input[type='radio']:checked:before {
+        background: url(svg/tick.svg);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 20px;
+    }
+
+
+/*
+    passenger area
+*/
+.NoofTr {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 14px;
+    color: #929497;
+    color: rgb(146, 148, 151);
+}
+
+.numbers {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+    border: 0;
+    text-align: right;
+    width: 25px;
+}
+
+.supplementpad {
+    padding-left: 52px;
+    text-align: left;
+}
+
+.numbersboarder {
+    border: 1px solid #D0D2D3;
+    background-color: #FFFFFF;
+}
+
+.NoofTrdiv {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.minusplusdiv {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.minusplusfirst {
+    border: 1px solid #D0D2D3;
+    background-color: #FFFFFF;
+    height: 31px;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.passdescription {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 11px;
+    color: #A6A8AB;
+    color: rgb(166, 168, 171);
+    display: block;
+    text-align: left;
+}
+
+
+.minusplus {
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 20px;
+    /*margin-right: 2px;*/
+    display: inline-block;
+    /*padding: 1px 8px 1px 0px;*/
+}
+/* end*/
+.containersinnewsearch {
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.addextrastour {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-weight: bold;
+    font-size: 15px;
+    color: #0ABFF2;
+    color: rgb(10, 191, 242);
+}
+
+.addextras {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0ABFF2;
+    color: rgb(10, 191, 242);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #0ABFF2 60%);
+}
+
+.Bookbtn {
+    background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+    border: none;
+    background-size: 300px 100px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    width: 258px;
+    height: 44px;
+    outline: none;
+}
+
+
+.cartimgdiv {
+    background: rgba(153, 153, 153, 1);
+    width: 139px;
+    height: 113px;
+}
+
+.cartcurrenttotallbl {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 22px;
+    color: #000736;
+    color: rgb(0, 7, 54);
+}
+
+.movedown {
+    margin-top: 40px;
+}
+
+.cartcurrenttotal {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
+    width: 300px;
+}
+
+.cartimgdiv:before {
+    content: "TOUR 1";
+    display: block;
+    text-align: center;
+    background: rgba(0, 192, 242, 1);
+    font-family: 'proxima-nova', sans-serif !important;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+.redprice {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-weight: bold;
+    font-size: 20px;
+    color: #EC1651;
     color: rgb(236, 22, 81);
 }
+
 .bluearrowright {
     background-repeat: no-repeat;
     height: 20px;
     display: inline-block;
 }
+
 .cartbin {
     background-repeat: no-repeat;
     height: 20px;
-    display: inline-block; 
-
+    display: inline-block;
 }
+
 .productsummary {
-    font-family: Proxima Nova;
+    font-family: 'proxima-nova', sans-serif !important;
     font-weight: bold;
     font-size: 20px;
     color: #000736;
     color: rgb(0, 7, 54);
     background: linear-gradient(180deg,rgba(255,255,255,0) 91%, #ff0000 60%);
+    
+}
+.movetop17 {
+    margin-top: 17px;
+}
+.movebot10 {
+    margin-bottom: 10px;
 }
 .tourname {
-    font-family: Proxima Nova;
+    font-family: 'proxima-nova', sans-serif !important;
     font-weight: bold;
     font-size: 18px;
     color: #000736;
     color: rgb(0, 7, 54);
-    display:block;
-    padding-left:20px;
+    display: block;
+    padding-left: 20px;
     padding-top: 33px;
 }
 
 .tournamediv {
-    text-align:left;
+    text-align: left;
 }
 
 .tourscart {
@@ -1174,26 +1446,30 @@ input[type='radio'] {
     display: inline-block;
     margin-top: -10px;
 }
+
 .tourscartblue {
     background-repeat: no-repeat;
     height: 20px;
-    display: inline-block; 
+    display: inline-block;
 }
 
 
 .cartheader {
     background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-    margin-top: 20px;
+    margin-top: 100px;
 }
+
 .bluecartheader {
     background: rgba(10, 191, 242, 1);
 }
+
 .tourslbl {
-    font-family: Proxima Nova;
+    font-family: 'proxima-nova', sans-serif !important;
     font-size: 40px;
     color: #FFFFFF;
     color: rgb(255, 255, 255);
 }
+
 .breadcrumb {
     display: inline-flex !important;
     text-align: center !important;
@@ -1217,119 +1493,153 @@ input[type='radio'] {
     content: "" !important;
 }
 
-
-.basketcart {
-    /* background-image: url(svg/fakos.svg); */
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 35px;
-    margin-right: 2px;
-    display: inline-block;
-    width: 50px;
-    height: 80px;
-    margin-top:-20px;
-}
-
-.myclass{ 
-    font-family : Proxima Nova;
-    font-size : 49px;
-    font-weight:900;
-    color : #FFFFFF;
-    color : rgb(255, 255, 255);
-}
-.cartcalss {
-    font-family: Proxima Nova;
-    font-size: 49px;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-}
-.container1280 {
- width:1280px;
-}
-
-.container68 {
-    /*width: 45px;*/
-    width: 68px;
-}
-
-
-
 @media screen and (max-width : 990px) {
-    .container68 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 100px;
+    .horizontalrow,.greyrow { 
+        display: none!important; 
     }
-    .pricediv {
-        text-align: center!important;
+    .supplementpaddiv {
+        width: 403px!important;
+    }
+    .tourname {
+        text-align:center;
+    }
+}
 
+
+.horizontalrow {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1px;
+    height: 355px;
+    margin-left: -1px;
+    margin-top: -20px;
+}
+
+    .greyrow {
+        background-repeat: no-repeat;
+        display: block;
+        width: 100%;
     }
-    .passdescription {
-        display:none;
+
+    .basketcart {
+        /* background-image: url(svg/fakos.svg); */
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 35px;
+        margin-right: 2px;
+        display: inline-block;
+        width: 50px;
+        height: 80px;
+        margin-top: -20px;
     }
-    .productsummarydiv {
-        text-align: center !important;
+
+    .myclass {
+        font-family: 'proxima-nova', sans-serif !important;
+        font-size: 49px;
+        font-weight: 900;
+        color: #FFFFFF;
+        color: rgb(255, 255, 255);
     }
-    .cartimgdiv {
-        width:100%;
+
+    .cartcalss {
+        font-family: 'proxima-nova', sans-serif !important;
+        font-size: 49px;
+        color: #FFFFFF;
+        color: rgb(255, 255, 255);
     }
+
     .container1280 {
-        width:100%;
+        width: 1280px;
     }
-}
 
-.pricediv {
-    text-align:left;
-}
-
-.productsummarydiv {
-    text-align: right;
-}
+    .container68 {
+        /*width: 45px;*/
+        width: 68px;
+    }
 
 
-.round {
-position: relative;
-width: 30px;
-display: inline-block;
-}
 
-.round label {
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 50%;
-cursor: pointer;
-height: 21px;
-left: 0;
-position: absolute;
-top: 0;
-width: 21px;
-}
+    @media screen and (max-width : 990px) {
+        .container68 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100px;
+        }
 
-.round label:after {
-border: 2px solid #00d3a7;
-border-top: none;
-border-right: none;
-content: "";
-height: 6px;
-left: 4px;
-opacity: 0;
-position: absolute;
-top: 5px;
-transform: rotate(-45deg);
-width: 12px;
-}
+        .pricediv {
+            text-align: center !important;
+        }
 
-.round input[type="checkbox"] {
-visibility: hidden;
-}
+        .passdescription {
+            display: none;
+        }
 
-.round input[type="checkbox"]:checked + label {
-border-color: #00d3a7;
-}
+        .productsummarydiv {
+            text-align: center !important;
+        }
 
-.round input[type="checkbox"]:checked + label:after {
-    opacity: 1;
-}
+        .cartimgdiv {
+            width: 100%;
+        }
+
+        .container1280 {
+            width: 100%;
+        }
+    }
+
+    .pricediv {
+        text-align: left;
+    }
+
+    .productsummarydiv {
+        text-align: right;
+    }
+
+
+    .round {
+        position: relative;
+        width: 30px;
+        display: inline-block;
+    }
+
+        .round label {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 21px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 21px;
+        }
+
+            .round label:after {
+                border: 2px solid #00d3a7;
+                border-top: none;
+                border-right: none;
+                content: "";
+                height: 6px;
+                left: 4px;
+                opacity: 0;
+                position: absolute;
+                top: 5px;
+                transform: rotate(-45deg);
+                width: 12px;
+            }
+
+        .round input[type="checkbox"] {
+            visibility: hidden;
+        }
+
+            .round input[type="checkbox"]:checked + label {
+                border-color: #00d3a7;
+            }
+
+                .round input[type="checkbox"]:checked + label:after {
+                    opacity: 1;
+                }
+	
 	
 .svgclass { 
 	    url('images/point.svg');
@@ -1448,12 +1758,11 @@ border-color: #00d3a7;
 </div>
 
 
- 
 <div class="cartheader">
 <div class="row">  
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
 <div class="container1280">
-<nav aria-label="breadcrumb" >
+<nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item first"><a href="#">HOME</a></li>
     <li class="breadcrumb-item"><a href="#">TOURS</a></li>
@@ -1484,142 +1793,9 @@ border-color: #00d3a7;
 </center>
 </div>
 
-<div class="bluecartheader">
-    <center>
-<div class="container1280">
-<div class="row">  
-<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-            <div onclick="showhide()">                
-                <img src="images/tourscart.svg" class="tourscart">  
-                <span class="tourslbl">TOURS</span>
-                <img src="images/whitearrowdown.svg" id="whitearrowdown" class="whitearrowdown rotate"> 
-          </div>
 
-    
- 
-</div>
-</div>
-</div>
-        </center> 
-</div>
-<div id="mainframe" class="mainframe">
-<center>
-<div class="container1280 move30">
-<div class="row">  
-<div class="col-12 col-sm-12 col-xl-4 col-lg-4 ">
-    <div class="productsummarydiv">
-    <span class="productsummary ">PRODUCT SUMMARY</span>
-    <div class="row move23">
-    <div class="col-12 col-sm-12 col-xl-4 col-lg-4 "  >
-        <div class="cartimgdiv">
+<div id="cartTours"><div class="bluecartheader"><center><div class="container1280"><div class="row "><div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center"><div onclick="showhide()"><img src="images/tourscart.svg" class="tourscart"><span class="tourslbl">TOURS</span><img src="images/whitearrowdown.svg" id="whitearrowdown" class="whitearrowdown rotate"></div></div></div></div></center></div><div id="mainframe" class="mainframe" style=""><center><div class="container1280"><div class="row move20 "><div class="col-12 col-sm-12 col-xl-4 col-lg-4 "><div class="productsummarydiv"><span class="productsummary">PRODUCT SUMMARY</span><div class="row"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 movetop17"><div class="cartimgdiv"></div></div><div class="col-12 col-sm-12 col-xl-8 col-lg-8 tournamediv"><span class="tourname">Meteora &amp; Delphi Tour      </span></div></div></div></div><img src="images/horizontalgreyrow.svg" class="horizontalrow"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 " align="center"><span class="productsummary">YOUR OPTIONS</span><div class="containersinnewsearch"><div class="form-group newsearchspaces"><input class=" movetop17 form-control" id="tourDate_1" name="date" placeholder="Select date" type="text"></div></div><div class="containersinnewsearch"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><select class="customcountry" id="country" style="display: none;"><option> 10:00</option><option> 11:00</option><option> 12:00</option></select><div class="nice-select customcountry" tabindex="0"><span class="current"> 10:00</span><ul class="list"><li data-value="10:00" class="option selected"> 10:00</li><li data-value="11:00" class="option"> 11:00</li><li data-value="12:00" class="option"> 12:00</li></ul></div></div></div></div><center><div class="movetop17" style="width:330px;"><div class="row minusplusdiv newsearchspaces"><div class="col-12 col-sm-12 col-xl-6 col-lg-6 NoofTrdiv" align="center"><div class="minusplusfirst"><img src="images/passengerminus.svg" class="minusplus"><span class="NoofTr">No of Travellers </span><img src="images/passengerplus.svg" class="minusplus"></div><span class="passdescription">Age 13+</span></div><div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"><div class="container68"><div class="numbersboarder"><img src="images/passengerminus.svg" onclick="removeCounter(0,tourChnumber_1)" class="minusplus"><input type="text" id="tourChnumber_1" class="numbers" value="2"><img src="images/passengerplus.svg" onclick="addCounter(10,tourChnumber_1)" class="minusplus"></div></div><span class="passdescription">Age 4-12</span></div><script type="text/javascript">$('select').niceSelect();</script><div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"><div class="container68"><div class="numbersboarder"><center><img src="images/passengerminus.svg" onclick="removeCounter(0,tourInfnumber_1)" class="minusplus"><input type="text" id="tourInfnumber_1" class="numbers" value="2"><img src="images/passengerplus.svg" onclick="addCounter(10,tourInfnumber_1)" class="minusplus"></center></div></div><span class="passdescription">Infants</span></div></div></div></center><div class="row movetop17 movebot10"><div class="col-12 col-sm-12 col-xl-12 col-lg-12">  <span class="tourextras ">TOUR EXTRAS:</span></div></div><div class="supplementpaddiv"><div class="row movebot10"><div class="col-12 col-sm-12 col-xl-12 col-lg-12 supplementpad"> <div class="round"><input type="checkbox" id="checkbox2"><label for="checkbox2"></label></div><span class="singsupplement">Supplement  Clap   for Child (Per Person €10.00)</span></div></div><div class="row movebot10"><div class="col-12 col-sm-12 col-xl-12 col-lg-12 supplementpad"> <div class="round"><input type="checkbox" id="checkbox2"><label for="checkbox2"></label></div><span class="singsupplement">Supplement  Water Bottle   for Adult (Per Person €10.00)</span></div></div></div></div><img src="images/horizontalgreyrow.svg" class="horizontalrow"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 "><div class="pricediv"><span class="productsummary">PRICE</span><div class="row movetop17"><div class="col-12 col-sm-12 col-xl-6 col-lg-6 "><span class="redprice">475.00</span><span class="redprice">€</span></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 "><i> <img src="images/cartbin.svg" class="cartbin"></i></div></div></div></div></div></div></center></div><div class=" backgroundgrey"><center><img src="images/greyrow.svg" class="greyrow"><div class="container1280"><div class="row move20 "><div class="col-12 col-sm-12 col-xl-4 col-lg-4 "><div class="productsummarydiv"><div class="row"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 movetop17"><div class="cartimgdiv"></div></div><div class="col-12 col-sm-12 col-xl-8 col-lg-8 tournamediv"><span class="tourname">Meteora &amp; Delphi Tour      </span></div></div></div></div><img src="images/horizontalgreyrow.svg" class="horizontalrow"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 " align="center"><div class="containersinnewsearch"><div class="form-group newsearchspaces"><input class=" movetop17 form-control" id="tourDate_2" name="date" placeholder="Select date" type="text"></div></div><div class="containersinnewsearch"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><select class="customcountry" id="country" style="display: none;"><option> 10:00</option><option> 11:00</option><option> 12:00</option></select><div class="nice-select customcountry" tabindex="0"><span class="current"> 10:00</span><ul class="list"><li data-value="10:00" class="option selected"> 10:00</li><li data-value="11:00" class="option"> 11:00</li><li data-value="12:00" class="option"> 12:00</li></ul></div></div></div></div><center><div class="movetop17" style="width:330px;"><div class="row minusplusdiv newsearchspaces"><div class="col-12 col-sm-12 col-xl-6 col-lg-6 NoofTrdiv" align="center"><div class="minusplusfirst"><img src="images/passengerminus.svg" class="minusplus"><span class="NoofTr">No of Travellers </span><img src="images/passengerplus.svg" class="minusplus"></div><span class="passdescription">Age 13+</span></div><div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"><div class="container68"><div class="numbersboarder"><img src="images/passengerminus.svg" onclick="removeCounter(0,tourChnumber_2)" class="minusplus"><input type="text" id="tourChnumber_2" class="numbers" value="2"><img src="images/passengerplus.svg" onclick="addCounter(10,tourChnumber_2)" class="minusplus"></div></div><span class="passdescription">Age 4-12</span></div><script type="text/javascript">$('select').niceSelect();</script><div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"><div class="container68"><div class="numbersboarder"><center><img src="images/passengerminus.svg" onclick="removeCounter(0,tourInfnumber_2)" class="minusplus"><input type="text" id="tourInfnumber_2" class="numbers" value="2"><img src="images/passengerplus.svg" onclick="addCounter(10,tourInfnumber_2)" class="minusplus"></center></div></div><span class="passdescription">Infants</span></div></div></div></center><div class="row movetop17 movebot10"><div class="col-12 col-sm-12 col-xl-12 col-lg-12">  <span class="tourextras ">TOUR EXTRAS:</span></div></div><div class="supplementpaddiv"><div class="row movebot10"><div class="col-12 col-sm-12 col-xl-12 col-lg-12 supplementpad"> <div class="round"><input type="checkbox" id="checkbox2"><label for="checkbox2"></label></div><span class="singsupplement">Supplement  Clap   for Child (Per Person €10.00)</span></div></div><div class="row movebot10"><div class="col-12 col-sm-12 col-xl-12 col-lg-12 supplementpad"> <div class="round"><input type="checkbox" id="checkbox2"><label for="checkbox2"></label></div><span class="singsupplement">Supplement  Water Bottle   for Adult (Per Person €10.00)</span></div></div></div></div><img src="images/horizontalgreyrow.svg" class="horizontalrow"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 "><div class="pricediv"><div class="row movetop17"><div class="col-12 col-sm-12 col-xl-6 col-lg-6 "><span class="redprice">475.00</span><span class="redprice">€</span></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 "><i> <img src="images/cartbin.svg" class="cartbin"></i></div></div></div></div></div></div></center></div></div>
 
-        </div>
-    </div>
-    <div class="col-12 col-sm-12 col-xl-8 col-lg-8 tournamediv"  >
-            <span class="tourname">SANTORINI HALF DAY WINE ADVENTURE</span>
-    </div>
-    </div>
-
-    </div>
-</div>
-<div class="col-12 col-sm-12 col-xl-4 col-lg-4 " align="center">
-    <span class="productsummary ">YOUR OPTIONS</span>
-      <div class="containersinnewsearch move23">
-    <div class="form-group newsearchspaces">   
-        <input class="form-control" id="date" class="date" name="date" placeholder="Select date" type="text"/>
-    </div>
-    </div>
-    <div class="containersinnewsearch">
-      <div class="form-group newsearchspaces">  
-            <input class="form-control" id="time" class="time" name="time" placeholder="Select time" type="text"/>
-       </div>
-   </div>
-    <center>
-    <div style="width:330px;">
-    <div class="row minusplusdiv newsearchspaces">
-        <div  class=" col-12 col-sm-12 col-xl-6 col-lg-6 NoofTrdiv" align="center"> 
-            <div class="minusplusfirst">
-             
-                     <img src="images/passengerminus.svg" class="minusplus"> 
-            
-                    <span class="NoofTr">No of Travellers </span> 
-             
-                    <img src="images/passengerplus.svg" class="minusplus"> 
-            
-                </div>
-              <span class="passdescription" >Age 13+</span> 
-        </div>
-      
-        <div  class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"> 
-            <div class="container68">
-           
-                <div class="numbersboarder"> 
-             
-                    <img src="images/passengerminus.svg"  onclick="removech(0)" class="minusplus"> 
-             
-                    <input type="text"  id="chnumber" class="numbers" value="2"/>  
-            
-                    <img src="images/passengerplus.svg" onclick="addch(10)"  class="minusplus"> 
-             
-            </div>
-            </div>
-            <span class="passdescription" >Age 4-12</span>
-        </div>
-        <div  class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"> 
-            <div class="container68">
-  
-                <div class="numbersboarder"  >
-                <center>
-        
-                     <img src="images/passengerminus.svg" onclick="removeinf(0)" class="minusplus"> 
-             
-                    <input type="text"  id="infnumber" class="numbers" value="2"/>  
-               
-                    <img src="images/passengerplus.svg" onclick="addinf(10)"   class="minusplus"> 
-            
-                    </center>
-            </div>
-            </div>
-            <span class="passdescription" >Infants</span>
-        </div>
-    </div>
-    </div>
-    </center>
-  
-    <div class="row  ">
-    <div  class="col-12 col-sm-12 col-xl-12 col-lg-12"  >  
-        <span class="tourextras">TOUR EXTRAS:</span>
-    </div>
-    </div>
-    <div class="row  ">
-    <div  class="col-12 col-sm-12 col-xl-12 col-lg-12" >  
-     
-        <div class="round">
-            <input type="checkbox" id="checkbox2" />
-            <label for="checkbox2"></label>
-          </div>
-        <span class="singsupplement">Single Supplement / Tourist Class (Per Person €30)</span>
-    </div>
-    </div>
-</div>
-
-<div class="col-12 col-sm-12 col-xl-4 col-lg-4 "  >
-    <div class="pricediv"> 
-    <span class="productsummary ">PRICE</span>
-    <div class="row move23" >
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 "  >
-            <span class="redprice">35</span>
-             <span class="redprice">€</span>
-        </div>
-        <div class="col-12 col-sm-12 col-xl-6 col-lg-6 "  >
-            
-            <i><img src="images/cartbin.svg" class="cartbin"></i>   
-        </div>
-    </div>
-    </div>
-</div>
-</div>
-</div>
 <center>
 </div>
 <center>
