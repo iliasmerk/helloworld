@@ -2285,8 +2285,461 @@ width:900px;
 </div>
 </div>
 
+<div id="TopContent" class="row">
+        <div id="dnn_TopPane" class="col-md-12"><div class="DnnModule DnnModule-ExcursionInfo DnnModule-543"><a name="543"></a>
+<div class="DNNContainer_noTitle">
+	<div id="dnn_ctr543_ContentPane"><!-- Start_Module_543 --><div id="dnn_ctr543_ModuleContent" class="DNNModuleContent ModExcursionInfoC">
+	
+ 
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css">
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css">
+
+<link rel="stylesheet" href="js/style.min.css">
+<script src="js/script.min.js"></script>
+ <script src="js/nsCommonScripts.js"></script>
+<link rel="stylesheet" href="css/nice-select.css">
+ 
+<script src="js/jquery.nice-select.min.js"></script> 
+<div class="excursioninfoheader">
+<div class="row">  
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
+<div class="container1280">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item first"><a href="#">HOME</a></li>
+    <li class="breadcrumb-item"><a href="#">TOURS</a></li>
+    <li class="breadcrumb-item "><a href="#">DESTINATION</a></li>
+    <li class="breadcrumb-item active" aria-current="page">ATHENS</li>
+  </ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<img src="images/meteoradelphitour.jpg" id="dnn_ctr543_ExcursionInfo_imgTourMainPhoto" class="mainimage">
+<div class="row">
+<div id="myHeader" class="col-12 col-sm-12 col-xl-12 col-lg-12 background-grey">
+<center>
+<div class="container1280"> 
+  <nav class="nav navdesktop"> 
+  <a class="nav-link active moveright" href="#overview">OVERVIEW</a>
+  <a class="nav-link moveright" href="#fullitin">FULL ITINERARY</a>
+  <a class="nav-link moveright" href="#tourdetails">TOUR DETAILS</a> 
+  <a class="nav-link" href="#photos">PHOTOS &amp; VIDEOS</a> 
+</nav> 
+</div>  
+    </center>
+</div>
+</div>
+ 
+<center>
+    <div class="container1280">
+<div class="row">
+
+<div class="col-12 col-sm-12 col-xl-8 col-lg-8 ">
+ 
+<div class="row moveclock"> 
+        <div class="col-6 col-sm-6 col-xl-6 col-lg-6 " align="center"> 
+            <img src="images/infoclock.svg" class="infoclock"> 
+            <span class="duration">DURATION:</span>
+            <span id="dnn_ctr543_ExcursionInfo_lblDuration" class="hours">1 Day</span>          
+        </div>
+        <div class="col-6 col-sm-6 col-xl-6 col-lg-6 " align="center"> 
+            <img src="images/infopoints.svg" class="infopoints">  
+             <span class="duration">STARTING POINT:</span>
+             <span id="dnn_ctr543_ExcursionInfo_lblStartingPoint" class="hours">Delphi Square</span>
+        </div> 
+     
+</div>
+
+     
+<div id="overview" class="row"> 
+<div class="col-12 col-sm-12 col-xl-10 col-lg-10 " align="left"> 
+    <span id="dnn_ctr543_ExcursionInfo_lblTourTitle" class="infoexcursiontitle">Meteora &amp; Delphi Tour      </span>
+</div>
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 movedown10" align="center">
+    
+ <div class="container370mobile">
+    <div class="newsearchpanel"></div>
+    <div class="row newsearchheader"> 
+
+    <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="left"> 
+         <div class="row">
+             <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="right"> 
+                 <img src="images/pricetag.svg" class="seperatorinfo"> 
+             </div>
+             <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="left">  
+                  <span id="dnn_ctr543_ExcursionInfo_Label1" class="lbl_ex_Currency"></span>
+                  <span id="dnn_ctr543_ExcursionInfo_Label2" class="lbl_ex_ExcursionFromPrice"></span>         
+             </div>
+            
+
+         </div>
+         
+    </div>
+    </div>
+    <div class="row newsearchspaces">
+         <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="center"> 
+             <span class="bookfrom">BOOKING FROM</span>
+         </div>
+         <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="center"> 
+            <span class="bookfrom">ENQUIRY FORM</span>
+         </div> 
+    </div>  
+
+    <div class="containersinnewsearch">
+    <div class="form-group newsearchspaces"> <!-- Date input --> 
+        <input class="form-control date" id="mob_tourDate" name="date" placeholder="Select date" type="text" autocomplete="off">
+         
+    </div>
+    </div> 
+       <div class="containersinnewsearch">
+        <div class="form-group newsearchspaces">
+             <div class="row">
+             <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
+             <select class="customcountry" id="mob_tourTime" style="display: none;"></select><div class="nice-select customcountry" tabindex="0"><span class="current"></span><ul class="list"></ul></div>
+             </div></div>
+            </div> 
 
 
+
+
+    <center>
+        <div style="width:330px;">
+    
+            <center>
+            <div class="movetop17" style="width:330px;">
+             <div class="row minusplusdiv newsearchspaces">
+
+             <div class="col-12 col-sm-12 col-xl-6 col-lg-6 NoofTrdiv" align="center">
+             <div class="minusplusfirst">
+         
+             
+             <img src="images/passengerminus.svg" onclick="removeCounter(0,mob_adnumber)" class="minusplus"> 
+             <input type="text" id="mob_adnumber" class="numbers numbersadults" placeholder="No of Travellers" value="">  
+             <img src="images/passengerplus.svg" onclick="addCounter(10,mob_adnumber)" class="minusplus"> 
+             
+             </div>
+             <span class="passdescription">Age 13+</span>
+             </div>
+
+             <div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center">
+             <div class="container68">
+             <div class="numbersboarder">
+             <img src="images/passengerminus.svg" onclick="removeCounter(0,mob_chnumber)" class="minusplus"> 
+             <input type="text" id="mob_chnumber" class="numbers" value="0">  
+             <img src="images/passengerplus.svg" onclick="addCounter(10,mob_chnumber)" class="minusplus"> 
+             </div>
+             </div>
+             <span class="passdescription">Age 4-12</span>
+             </div>
+       
+             <div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"> 
+             <div class="container68">
+             <div class="numbersboarder">
+             <center>
+             <img src="images/passengerminus.svg" onclick="removeCounter(0,mob_infnumber)" class="minusplus"> 
+             <input type="text" id="mob_infnumber" class="numbers" value="0">  
+            <img src="images/passengerplus.svg" onclick="addCounter(10,mob_infnumber)" class="minusplus"> 
+             </center>
+             </div>
+             </div>
+             <span class="passdescription">Infants</span>
+             </div>
+
+            </div>
+             </div>
+              </center>
+            </div>
+        </center>
+    
+    <div class="row movebottom10 newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">
+         <a id="btnPriceSearchmobile" href="http://localhost/localhost_hammer/cart" class="Bookbtnmobile"><span id="dnn_ctr543_ExcursionInfo_Booknowmobile">Book Now</span></a>  
+        </div>
+       
+    </div>
+  
+</div> 
+</div>
+ </div>
+
+     
+<div id="myHeader1" class="col-12 col-sm-12 col-xl-12 col-lg-12 background-grey">
+<center> 
+  <nav class="nav navmobile"> 
+  <a class="nav-link active moveright" href="#overview">OVERVIEW</a>
+  <a class="nav-link moveright" href="#fullitin">FULL ITINERARY</a>
+  <a class="nav-link moveright" href="#tourdetails">TOUR DETAILS</a> 
+  <a class="nav-link" href="#photos">PHOTOS &amp; VIDEOS</a> 
+</nav>
+   
+    </center>
+</div> 
+   
+</div>  
+<div class="row"> 
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left"> 
+    <img src="images/seperatorinfo.svg" class="seperatorinfo">  
+</div>
+</div> 
+
+
+<div class="row"> 
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left"> 
+    <span id="dnn_ctr543_ExcursionInfo_lblTourDescription" class="insidetext">This is a test description for Meteora &amp; Delphi Tour</span>   
+</div>
+</div>
+
+
+<div class="row"> 
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left"> 
+    <img src="images/seperatorinfo.svg" class="seperatorinfo">  
+</div>
+</div>
+
+
+<div class="row"> 
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left"> 
+     <span id="fullitin" class="itinarary">FULL ITINERARY</span>
+     <div id="dnn_ctr543_ExcursionInfo_pnlItinerary">
+		<span class="insidetext itinararyDayTitle">Day 1</span><span class="insidetext itinararyDayDescr">Day 1 decription</span><span class="insidetext itinararyDayTitle">Day 2</span><span class="insidetext itinararyDayDescr">Day 2 description</span>
+	</div> 
+</div>
+</div>
+
+
+<div class="row"> 
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left"> 
+    <img src="images/seperatorinfo.svg" class="seperatorinfo">  
+</div>
+</div> 
+
+ 
+<div class="row"> 
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left"> 
+     <span id="tourdetails" class="itinarary">TOUR DETAILS</span>
+     <div id="dnn_ctr543_ExcursionInfo_pnlTourHighLights">
+		<span class="insidetext itinararyDayTitle">Highlights</span><span class="insidetext itinararyDayDescr">Highight 1</span><span class="insidetext itinararyDayDescr">Highight 2</span>
+	</div> 
+     <div id="dnn_ctr543_ExcursionInfo_pnlTourIncludes">
+		<span class="insidetext itinararyDayTitle">Includes</span><span class="insidetext itinararyDayDescr">Include 1</span><span class="insidetext itinararyDayDescr">Include 2</span><span class="insidetext itinararyDayDescr">Include 3</span>
+	</div> 
+</div>
+</div>
+ 
+<div class="row"> 
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left"> 
+    <img src="images/seperatorinfo.svg" class="seperatorinfo">  
+</div>
+</div>
+ 
+<div class="row"> 
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="left"> 
+<span id="photos" class="photosandvideos">PHOTOS &amp; VIDEOS</span>
+</div>
+</div>
+
+<div class="row"> 
+<div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="left"> 
+    <div class="photosandvideoscontainer">
+         <div class="bo-slider"><div class="bo-slide slide active">
+<img src="http://server3/Images/DemoHub/package/meteoradelphitour.jpg" alt="image">
+</div>
+<div class="bo-slide slide ">
+<video width="100%" height="500px">
+<source src="http://server3/Images/DemoHub/package/Meteora-Greece.mp4">
+</video>
+<span class="play-button">▶</span></div>
+<div class="bo-slide slide ">
+<img src="http://server3/Images/DemoHub/package/meteoradelphitour.jpg" alt="image">
+</div>
+<a class="bo-prev">❮</a>
+<a class="bo-next">❯</a>
+</div>
+<div class="bo-dots">
+<span class="bo-dot selected" data-bo-dot-index="0"></span>
+<span class="bo-dot " data-bo-dot-index="1"></span>
+<span class="bo-dot " data-bo-dot-index="2"></span>
+</div>
+    </div> 
+</div></div></div> 
+ 
+
+ <div class="col-12 col-sm-12 col-xl-4 col-lg-4 ">
+ 
+ <div class="container370">
+    <div class="newsearchpanel"></div>
+    <div class="row newsearchheader"> 
+
+    <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="left"> 
+         <div class="row">
+             <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="right"> 
+                 <img src="images/pricetag.svg" class="seperatorinfo"> 
+             </div>
+             <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="left">  
+                  <span id="dnn_ctr543_ExcursionInfo_lbl_ex_Currency" class="lbl_ex_Currency">€</span>
+                  <span id="dnn_ctr543_ExcursionInfo_lbl_ex_ExcursionFromPrice" class="lbl_ex_ExcursionFromPrice">80.00</span>         
+             </div>
+            
+
+         </div>
+         
+    </div>
+    </div>
+    <div class="row newsearchspaces">
+         <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="center"> 
+             <span class="bookfrom">BOOKING FROM</span>
+         </div>
+         <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="center"> 
+            <span class="bookfrom">ENQUIRY FORM</span>
+         </div> 
+    </div>  
+
+    <div class="containersinnewsearch">
+    <div class="form-group newsearchspaces"> <!-- Date input --> 
+        <input class="form-control date" id="tourDate" name="date" placeholder="Select date" type="text" autocomplete="off">
+        <input type="hidden" name="dnn$ctr543$ExcursionInfo$hf_tourFirstDepartureDate" id="hf_tourFirstDepartureDate" value="06/07/2020">
+        <input type="hidden" name="dnn$ctr543$ExcursionInfo$hf_tourLastDepartureDate" id="hf_tourLastDepartureDate" value="31/10/2020">
+        <input type="hidden" name="dnn$ctr543$ExcursionInfo$hf_datesForDisable" id="hf_datesForDisable" value="[]">
+    </div>
+    </div>
+   
+       <div class="containersinnewsearch">
+        <div class="form-group newsearchspaces">
+             <div class="row">
+             <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
+             <select class="customcountry" id="tourTime" style="display: none;"></select><div class="nice-select customcountry" tabindex="0"><span class="current"></span><ul class="list"></ul></div>
+             </div></div>
+            </div> 
+
+
+
+
+    <center>
+        <div style="width:330px;">
+    
+            <center>
+            <div class="movetop17" style="width:330px;">
+             <div class="row minusplusdiv newsearchspaces">
+
+             <div class="col-12 col-sm-12 col-xl-6 col-lg-6 NoofTrdiv" align="center">
+             <div class="minusplusfirst">
+         
+             
+             <img src="images/passengerminus.svg" onclick="removeCounter(0,adnumber)" class="minusplus"> 
+             <input type="text" id="adnumber" class="numbers numbersadults" placeholder="No of Travellers" value="">  
+             <img src="images/passengerplus.svg" onclick="addCounter(10,adnumber)" class="minusplus"> 
+             
+             </div>
+             <span class="passdescription">Age 13+</span>
+             </div>
+
+             <div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center">
+             <div class="container68">
+             <div class="numbersboarder">
+             <img src="images/passengerminus.svg" onclick="removeCounter(0,chnumber)" class="minusplus"> 
+             <input type="text" id="chnumber" class="numbers" value="0">  
+             <img src="images/passengerplus.svg" onclick="addCounter(10,chnumber)" class="minusplus"> 
+             </div>
+             </div>
+             <span class="passdescription">Age 4-12</span>
+             </div>
+       
+             <div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"> 
+             <div class="container68">
+             <div class="numbersboarder">
+             <center>
+             <img src="images/passengerminus.svg" onclick="removeCounter(0,infnumber)" class="minusplus"> 
+             <input type="text" id="infnumber" class="numbers" value="0">  
+            <img src="images/passengerplus.svg" onclick="addCounter(10,infnumber)" class="minusplus"> 
+             </center>
+             </div>
+             </div>
+             <span class="passdescription">Infants</span>
+             </div>
+
+            </div>
+             </div>
+              </center>
+            </div>
+        </center>
+    
+    <div class="row newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">
+         <a id="btnPriceSearch" href="http://localhost/localhost_hammer/cart" class="Bookbtn"><span id="dnn_ctr543_ExcursionInfo_lblBookNow">Book Now</span></a>  
+        </div>
+       
+    </div>
+    <div class="row newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">  
+         <img src="images/minibookseperator.svg" class="minibookseperator"> 
+        </div>
+       
+    </div>
+     <div class="row newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">  
+            <span class="makenewsearch">MAKE A NEW SEARCH</span>
+        </div> 
+    </div>
+    <div class="containersinnewsearch">
+    <div class="row newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">   
+            <input class="form-control mr-sm-2  " type="text" placeholder="Where do you want to go ?" aria-label="Search">
+        </div>
+    </div>
+    </div>
+    <div class="row newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 movedown" align="center">  
+            <input type="submit" name="dnn$ctr543$ExcursionInfo$Button1" value="Search" id="dnn_ctr543_ExcursionInfo_Button1" class="newsearchbtn moveup">  
+        </div> 
+    </div>
+</div> 
+</div>
+<div class="mobilesearch">
+         <div class="row newsearchspaces">
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">  
+                 <img src="images/minibookseperator.svg" class="minibookseperator"> 
+                </div>
+       
+         </div>
+     
+         <div class="row newsearchspaces">
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">  
+                    <span class="makenewsearch">MAKE A NEW SEARCH</span>
+                </div> 
+            </div>
+            <div class="containersinnewsearch">
+            <div class="row newsearchspaces">
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">   
+                    <input class="form-control mr-sm-2  " type="text" placeholder="Where do you want to go ?" aria-label="Search">
+                </div>
+            </div>
+            </div>
+            <div class="row newsearchspaces">
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 movedown" align="center">  
+                    <input type="submit" name="dnn$ctr543$ExcursionInfo$Button2" value="Search" id="dnn_ctr543_ExcursionInfo_Button2" class="newsearchbtn moveup">  
+                </div> 
+            </div>
+
+</div>
+</div> 
+</div> </div>
+</center>
+		
+		
+		
+		
+		
+		
+		
 
 
 
