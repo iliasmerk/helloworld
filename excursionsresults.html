@@ -1287,7 +1287,7 @@ label.lblb2c.cartb2b.topbar {
     height: 24px;
 }
 .select {
-    background: url("svg/arrowdown.svg");
+    background: url("images/arrowdown.svg");
         background-position: right;
         background-repeat: no-repeat; 
     background-size: 13px 7px;
@@ -4775,7 +4775,7 @@ margin-left: 10px;
 	width: 30%;
 	border-radius: 15px;
 	color: #0ABFF2;
-	background-image: url(svg/bluearrowdown.svg);
+	background-image: url(images/bluearrowdown.svg);
 	background-repeat: no-repeat;
 	background-position: right;
 	background-color: #ffffff;
@@ -4787,7 +4787,7 @@ margin-left: 10px;
 }
 .middleelement:after {
 	content: "";
-	background: url(svg/seperator.svg);
+	background: url(images/seperator.svg);
 	background-repeat: no-repeat;
 	width: 8px;
 	height: 160px;
@@ -4906,7 +4906,7 @@ margin-left: 10px;
 
 
 .rightarrow {
-    background-image: url(svg/rightarrow.svg);
+    background-image: url(images/rightarrow.svg);
     background-repeat: no-repeat;
     padding: 6px 9px 6px 9px;
     white-space: nowrap;
@@ -4916,7 +4916,7 @@ margin-left: 10px;
 
 
  	.imageseperator {
-		background-image: url(svg/horizontalseperator.svg);
+		background-image: url(images/horizontalseperator.svg);
 		background-repeat: no-repeat;
 		padding: 61px 47px 51px 59px;
 		white-space: nowrap;
@@ -4925,7 +4925,7 @@ margin-left: 10px;
 	} 
 
 .rightarrow {
-	background-image: url(svg/rightarrow.svg);
+	background-image: url(images/rightarrow.svg);
 	background-repeat: no-repeat;
 	padding: 6px 9px 6px 9px;
 	white-space: nowrap;
@@ -4937,7 +4937,7 @@ margin-left: 10px;
 }
 
 .rightbluearrow {
-	background-image: url(svg/rightbluearrow.svg);
+	background-image: url(images/rightbluearrow.svg);
 	background-repeat: no-repeat;
 	padding: 6px 9px 6px 9px;
 	white-space: nowrap;
@@ -4954,7 +4954,7 @@ input[type='checkbox'] {
 	-webkit-appearance: none;
 	width: 20px;
 	height: 20px;
-	background: url(svg/backcircleresults.svg);
+	background: url(images/backcircleresults.svg);
 	border-radius: 50%;
 	outline: none;
 	/*box-shadow: 0 0 5px 0px gray inset;*/
@@ -4970,7 +4970,7 @@ input[type='checkbox'] {
 	}
 
 	input[type='checkbox']:checked:before {
-		background: url(svg/tick.svg);
+		background: url(images/tick.svg);
 		background-repeat: no-repeat;
 		width: 15px;
 		height: 20px;
@@ -5273,7 +5273,7 @@ input[type='checkbox'] {
 }
 	.lbl_ESingRes_ExcursionTitle:after {
 		content: "";
-		background-image: url(svg/blackline.svg);
+		background-image: url(images/blackline.svg);
 		display: block;
 		padding: 3px 1px 1px 0px;
 		width: 100px;
@@ -5487,7 +5487,7 @@ input[type='checkbox'] {
 	}
 	.thirddiv:before {
 		content: "";
-		background: url(svg/horizontalseperator.svg);
+		background: url(images/horizontalseperator.svg);
 		background-repeat: no-repeat;
 		margin-top: 25px;
 		width: 50%;
@@ -5602,7 +5602,7 @@ input[type='checkbox'] {
 	}
 	.thirddiv:before {
 		content: "";
-		background: url(svg/horizontalseperator.svg);
+		background: url(images/horizontalseperator.svg);
 		background-repeat: no-repeat;
 		margin-top: 25px;
 		width: 50%;
@@ -6221,9 +6221,9 @@ input[type='checkbox'] {
    
     function showhide(collapseElemId, iconId) {
         if (document.getElementById(collapseElemId).style.display == 'none') {
-            document.getElementById(iconId).src = "<%= ResolveUrl("~/portals/0/css/svg/minus.svg") %>";
+            document.getElementById(iconId).src = "images/minus.svg";
         } else {
-            document.getElementById(iconId).src = "<%= ResolveUrl("~/portals/0/css/svg/plus.svg") %>";
+            document.getElementById(iconId).src =  "images/plus.svg";
         }
         $("#" + collapseElemId).toggle('hide');
     }
