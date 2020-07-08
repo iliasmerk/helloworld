@@ -6322,7 +6322,7 @@ input[type='checkbox'] {
     function excResultsSortingChanged() {
   //      alert("excResultsSortingChanged");
         // displayLoadingDiv();
-       <%-- __doPostBack('<%=ddl_ESR_cmbOrderType.ClientID %>', '');--%>
+       
         var cmbPriceSorting = $find("<%= ddl_ESR_cmbOrderType.ClientID %>");  
         var jsonExcSearchResultsSorting = JSON.stringify({ "Exc_PriceSorting": cmbPriceSorting.get_value() });
         localStorage.setItem("ExcSearchResultsSorting", jsonExcSearchResultsSorting);
