@@ -6248,9 +6248,9 @@ input[type='checkbox'] {
 
     $(document).ready(function () {
       
-        var HeaderElem = document.getElementsByClassName('div_ESR_HeaderDiv'); 
+     //   var HeaderElem = document.getElementsByClassName('div_ESR_HeaderDiv'); 
         var distanceScrolled = document.body.scrollTop; 
-        var elemRect = HeaderElem[0].getBoundingClientRect(); 
+       // var elemRect = HeaderElem[0].getBoundingClientRect(); 
         var elemViewportOffset = elemRect.top; 
         var totalHeaderOffset = distanceScrolled + elemViewportOffset;
          
@@ -6275,7 +6275,7 @@ input[type='checkbox'] {
         var inputs, index;
         var findSR_Panel, myElement, position;
         inputs = document.getElementsByTagName('input');
-        var getHotelID = $("#<%= hf_ESRRes_ExcursionIDSelbyDetails.ClientID%>").val();
+        var getHotelID = document.getElementById("hf_ESRRes_ExcursionIDSelbyDetails").val();
 
         for (index = 0; index < inputs.length; ++index) {
 
