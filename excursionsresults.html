@@ -6218,38 +6218,16 @@ input[type='checkbox'] {
 <script type="text/javascript">
     var pageIndex = 1;
     var pageCount = 100;
-    var hidden = 0;
-         $('input[name="daterange"]').daterangepicker({
-            autoUpdateInput: false,
-            locale: {
-                cancelLabel: 'Clear'
-            }
-        });
-
-        $('#filterDateRange').on('apply.daterangepicker', function (ev, picker) {
-            $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
-            handleFilterSelectionClick('filterDateRange', 'range');
-        });
-
-        $('#filterDateRange').on('cancel.daterangepicker', function (ev, picker) {
-            $(this).val('');
-            handleFilterSelectionClick('filterDateRange', 'range');
-        });       
-
-    });
    
-    function hide() {
-        
-        if (hidden === 1) {
-            hidden = 0;
-            document.getElementById("minusplus").src = "images/minus.svg"
+    function showhide(collapseElemId, iconId) {
+        if (document.getElementById(collapseElemId).style.display == 'none') {
+            document.getElementById(iconId).src = "<%= ResolveUrl("~/portals/0/css/svg/minus.svg") %>";
+        } else {
+            document.getElementById(iconId).src = "<%= ResolveUrl("~/portals/0/css/svg/plus.svg") %>";
         }
-        else {
-            hidden = 1;
-            document.getElementById("minusplus").src = "images/plus.svg"
-        } 
-        $(".collapseExample").toggle('hide');
+        $("#" + collapseElemId).toggle('hide');
     }
+
     function pageLoad(event, args) {
         var ascending = $('#<%=hf_isAscending.ClientID %>').val();
         if (ascending == "true") {
@@ -6262,6 +6240,118 @@ input[type='checkbox'] {
 
     }
 
+    $(document).ready(function () {
+      
+        var HeaderElem = document.getElementsByClassName('div_ESR_HeaderDiv'); 
+        var distanceScrolled = document.body.scrollTop; 
+        var elemRect = HeaderElem[0].getBoundingClientRect(); 
+        var elemViewportOffset = elemRect.top; 
+        var totalHeaderOffset = distanceScrolled + elemViewportOffset;
+         
+
+        $(window).scroll(function () {
+            var scrollPos = $(document).scrollTop();
+            if (scrollPos > totalHeaderOffset) { 
+                $(".div_ESR_HeaderDiv").css({ "position": "fixed", "top": "0", "width": "1048px", "margin-top": "0px" });
+            }
+            else {
+                $(".div_ESR_HeaderDiv").css({ "position": "relative", "z-index": "2", "margin-top": "0px" });
+            }
+
+        });
+
+    });
    
+
+    //added by akoukouri 31/08/2015
+    window.onload = function () {
+      //  alert("window.onload");
+        var inputs, index;
+        var findSR_Panel, myElement, position;
+        inputs = document.getElementsByTagName('input');
+        var getHotelID = $("#<%= hf_ESRRes_ExcursionIDSelbyDetails.ClientID%>").val();
+
+        for (index = 0; index < inputs.length; ++index) {
+
+            if (inputs[index].type == "hidden") {//if 
+
+                var elemID = inputs[index].id;
+                var text = $('#' + inputs[index].id).val();
+                text = $.trim(text);
+
+                if ((elemID.indexOf("hf_ESingRes_ExcursionID") != -1) && (text == getHotelID)) {
+                    findSR_Panel = $('#' + elemID).parent().parent().parent().find(".div_ExcursionID_" + text).attr("id");
+                    myElement = document.getElementById(findSR_Panel);
+                    position = getPosition(myElement);
+                    window.scroll(0, position.y);
+
+                }
+
+            } //end if type== "hidden"
+
+        } //end for
+
+
+        var jsonExcSearchResultsSorting = localStorage.getItem("ExcSearchResultsSorting");
+        
+        if (jsonExcSearchResultsSorting != null) {
+            var priceSorting = jQuery.parseJSON(jsonExcSearchResultsSorting).Exc_PriceSorting;
+            var cmbPriceSorting = $find("<%= ddl_ESR_cmbOrderType.ClientID %>"); 
+            cmbPriceSorting.trackChanges();
+            cmbPriceSorting.get_items().getItem(priceSorting).select();
+            cmbPriceSorting.updateClientState();
+            cmbPriceSorting.commitChanges();
+        }
+       
+  
+        getTourResults(true);
+    };
+
+    function getPosition(element) {
+        var xPosition = 0;
+        var yPosition = 0;
+
+        while (element) {
+            xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+            yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+            element = element.offsetParent;
+        }
+        return { x: xPosition, y: yPosition };
+    }
+    //end added 
+
+    function excResultsSortingChanged() {
+  //      alert("excResultsSortingChanged");
+        // displayLoadingDiv();
+       <%-- __doPostBack('<%=ddl_ESR_cmbOrderType.ClientID %>', '');--%>
+        var cmbPriceSorting = $find("<%= ddl_ESR_cmbOrderType.ClientID %>");  
+        var jsonExcSearchResultsSorting = JSON.stringify({ "Exc_PriceSorting": cmbPriceSorting.get_value() });
+        localStorage.setItem("ExcSearchResultsSorting", jsonExcSearchResultsSorting);
+        pageIndex = 1;     
+        $("#<%= Tours.ClientID %>").empty();
+        getTourResults(false);
+        return false;
+    }
+
+    function loadMoreTourSearchResults() {
+     //   alert("loadMoreExcursionSearchResults");
+        getTourResults(false);
+        return false;
+    }
+
+    function getSpecificCategoryTours(categoryId) {
+        var tourSearchCriteriaObj = { "Tour_CategoryCode": categoryId, "Tour_AttractionCode": -1, "Tour_DestinationCode": -1, "Tour_ActivityCode": -1, "Tour_TourCode": -1 };
+        localStorage.setItem("TourSearchCriteria", JSON.stringify(tourSearchCriteriaObj));
+        pageIndex = 1;
+        $("#<%= Tours.ClientID %>").empty();
+        getTourResults(true);
+        return false;
+    }
+   $(document).ready(function () {
+        $('select').niceSelect();
+    });
+    function test() {
+        document.getElementById("test").click();
+    }
    
 </script>
