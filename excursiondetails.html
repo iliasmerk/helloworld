@@ -12,8 +12,22 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <link rel="stylesheet" href="css/header.css"  />
 <style>
+	.nav-link {
+    display: block;
+    padding: 15px;
+}
+	.bo-slider {
+      top: 50%!important;
+}
 	
 	
+	div#dnn_TopPane {
+    padding: 0px;
+}
+	
+	.breadcrumb a {
+    color: #fff;
+}
 
 	
     
@@ -354,8 +368,8 @@ width:900px;
 
 .insidetext {
     font-family: 'proxima-nova', sans-serif !important;
-    font-size: 14px;
-    line-height: 21px;
+     font-size: 16px;
+    line-height: 23px;
     color: #595D5E;
     color: rgb(89, 93, 94);
 }
@@ -545,19 +559,19 @@ width:900px;
 .Bookbtn {
     background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
     border: none;
-    background-size: 300px 100px;
+    background-size: auto;
     font-weight: bold;
     font-size: 18px;
     color: #FFFFFF;
     color: rgb(255, 255, 255);
-    border-radius: 15px;
+    border-radius: 35px;
     text-align: center;
-    width: 258px;
-    height: 44px;
+    width: fit-content!important;
+    height: auto;
     outline: none;
-    display: block;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 40px;
 }
-
     .Bookbtn span {
         line-height: 44px;
         color:#FFFFFF;
@@ -577,6 +591,13 @@ width:900px;
     color: #000736;
     color: rgb(0, 7, 54);
     margin-bottom:18px;
+	    font-weight: 900
+}
+	
+	.makenewsearch:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    margin-right: 5px;
 }
 
 .newsearchbtn {
@@ -588,12 +609,15 @@ width:900px;
     font-size: 18px;
     color: #FFFFFF;
     color: rgb(255, 255, 255);
-    border-radius: 15px;
+    border-radius: 35px;
     text-align: center;
-    width: 211px;
-    height: 30px;
+   width: fit-content!important;
+    height: auto;
     outline: none;
+    padding: 10px 41px;
 }
+	
+
 
 .moveup {
     margin-top:18px;
