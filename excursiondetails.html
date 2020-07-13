@@ -12,6 +12,10 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <link rel="stylesheet" href="css/header.css"  />
 <style>
+	
+	.field {
+    padding: 0;
+}
 	.nav-link {
     display: block;
     padding: 15px;
@@ -793,6 +797,7 @@ width:900px;
     /*margin-right: 2px;*/
     display: inline-block;
     /*padding: 1px 8px 1px 0px;*/
+	    margin-top: -4px;
 }
 /* end*/ 
 
@@ -1051,42 +1056,44 @@ width:900px;
 
 
     <center>
-        <div style="width:330px;">
+        <div>
     
             <center>
-            <div class="movetop17" style="width:330px;">
+            <div class="movetop17" style="">
              <div class="row minusplusdiv newsearchspaces">
 
-             <div class="col-12 col-sm-12 col-xl-6 col-lg-6 NoofTrdiv" align="center">
-             <div class="minusplusfirst">
-         
-             
-             <img src="images/passengerminus.svg" onclick="removeCounter(0,mob_adnumber)" class="minusplus"> 
-             <input type="text" id="mob_adnumber" class="numbers numbersadults" placeholder="No of Travellers" value="">  
-             <img src="images/passengerplus.svg" onclick="addCounter(10,mob_adnumber)" class="minusplus"> 
-             
-             </div>
-             <span class="passdescription">Age 13+</span>
-             </div>
-
-             <div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center">
+           
+    
+      <div class="col-4 col-sm-4 col-xl-4 col-lg-4" align="center">
              <div class="container68">
              <div class="numbersboarder">
-             <img src="images/passengerminus.svg" onclick="removeCounter(0,mob_chnumber)" class="minusplus"> 
-             <input type="text" id="mob_chnumber" class="numbers" value="0">  
-             <img src="images/passengerplus.svg" onclick="addCounter(10,mob_chnumber)" class="minusplus"> 
+             <img src="images/passengerminus.svg" onclick="removeCounter(0,chnumber)" class="minusplus"> 
+             <input type="text" id="chnumber" class="numbers" value="0">  
+             <img src="images/passengerplus.svg" onclick="addCounter(10,chnumber)" class="minusplus"> 
+             </div>
+             </div>
+             <span class="passdescription">Adults, Age 13+</span>
+             </div>
+    
+
+             <div class="col-4 col-sm-4 col-xl-4 col-lg-4" align="center">
+             <div class="container68">
+             <div class="numbersboarder">
+             <img src="images/passengerminus.svg" onclick="removeCounter(0,chnumber)" class="minusplus"> 
+             <input type="text" id="chnumber" class="numbers" value="0">  
+             <img src="images/passengerplus.svg" onclick="addCounter(10,chnumber)" class="minusplus"> 
              </div>
              </div>
              <span class="passdescription">Age 4-12</span>
              </div>
        
-             <div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"> 
+             <div class="col-4 col-sm-4 col-xl-4 col-lg-4" align="center"> 
              <div class="container68">
              <div class="numbersboarder">
              <center>
-             <img src="images/passengerminus.svg" onclick="removeCounter(0,mob_infnumber)" class="minusplus"> 
-             <input type="text" id="mob_infnumber" class="numbers" value="0">  
-            <img src="images/passengerplus.svg" onclick="addCounter(10,mob_infnumber)" class="minusplus"> 
+             <img src="images/passengerminus.svg" onclick="removeCounter(0,infnumber)" class="minusplus"> 
+             <input type="text" id="infnumber" class="numbers" value="0">  
+            <img src="images/passengerplus.svg" onclick="addCounter(10,infnumber)" class="minusplus"> 
              </center>
              </div>
              </div>
@@ -1254,7 +1261,7 @@ width:900px;
        <div class="containersinnewsearch">
         <div class="form-group newsearchspaces">
              <div class="row">
-             <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
+             <div class="col-12 col-sm-12 col-xl-12 col-lg-12 fieldnew">
              <select class="customcountry" id="tourTime" style="display: none;"></select><div class="nice-select customcountry" tabindex="0"><span class="current"></span><ul class="list"></ul></div>
              </div></div>
             </div> 
