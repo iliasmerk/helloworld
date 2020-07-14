@@ -15,6 +15,10 @@
 <link rel="stylesheet" href="css/header.css"  />
 <style>
 	
+	.tagimg {
+    padding-right: 0px;
+}
+	
 	.pricesfield {
     line-height: normal;
     top: 8px;
@@ -373,7 +377,14 @@ width:900px;
     color: rgb(0, 7, 54);
 }
  
-.seperatorinfo {
+.seperatorinfo1 {
+    background-repeat: no-repeat;
+    height: 49px;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+	
+	.seperatorinfo {
     background-repeat: no-repeat;
     width: 95%;
     height: 35px;
@@ -1231,10 +1242,10 @@ width:900px;
 
     <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="left"> 
          <div class="row">
-             <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="right"> 
-                 <img src="images/pricetag.svg" class="seperatorinfo"> 
+             <div class="col-4 col-sm-4 col-xl-4 col-lg-4 tagimg" align="right"> 
+                 <img src="images/pricetag.svg" class="seperatorinfo1 seperatorinfo"> 
              </div>
-             <div class="col-6 col-sm-6 col-xl-6 col-lg-6 pricesfield" align="left">  
+             <div class="col-8 col-sm-8 col-xl-8 col-lg-8 pricesfield" align="left">  
 		   <span id="dnn_ctr543_ExcursionInfo_lbl_ex_Currency" class="lbl_ex_Currency_from">From</span>
                   <span id="dnn_ctr543_ExcursionInfo_lbl_ex_Currency" class="lbl_ex_Currency">€</span>
                   <span id="dnn_ctr543_ExcursionInfo_lbl_ex_ExcursionFromPrice" class="lbl_ex_ExcursionFromPrice">80.00</span>   
