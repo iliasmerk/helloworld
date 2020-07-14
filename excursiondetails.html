@@ -1020,17 +1020,20 @@ width:900px;
 <div class="col-12 col-sm-12 col-xl-12 col-lg-12 movedown10" align="center">
     
  <div class="container370mobile">
-    <div class="newsearchpanel"></div>
+  <div class="newsearchpanel"></div>
     <div class="row newsearchheader"> 
 
     <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="left"> 
          <div class="row">
-             <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="right"> 
-                 <img src="images/pricetag.svg" class="seperatorinfo"> 
+             <div class="col-4 col-sm-4 col-xl-4 col-lg-4 tagimg" align="right"> 
+                 <img src="images/pricetag.svg" class="seperatorinfo1"> 
              </div>
-             <div class="col-6 col-sm-6 col-xl-6 col-lg-6" align="left">  
-                  <span id="dnn_ctr543_ExcursionInfo_Label1" class="lbl_ex_Currency"></span>
-                  <span id="dnn_ctr543_ExcursionInfo_Label2" class="lbl_ex_ExcursionFromPrice"></span>         
+             <div class="col-8 col-sm-8 col-xl-8 col-lg-8 pricesfield" align="left">  
+		   <span id="dnn_ctr543_ExcursionInfo_lbl_ex_Currency" class="lbl_ex_Currency_from">From</span>
+                  <span id="dnn_ctr543_ExcursionInfo_lbl_ex_Currency" class="lbl_ex_Currency">€</span>
+                  <span id="dnn_ctr543_ExcursionInfo_lbl_ex_ExcursionFromPrice" class="lbl_ex_ExcursionFromPrice">80.00</span>   
+		<span id="dnn_ctr543_ExcursionInfo_lbl_ex_Currency" class="lbl_ex_Currency_per">Per Person</span>
+
              </div>
             
 
@@ -1049,38 +1052,28 @@ width:900px;
 
     <div class="containersinnewsearch">
     <div class="form-group newsearchspaces"> <!-- Date input --> 
-        <input class="form-control date" id="mob_tourDate" name="date" placeholder="Select date" type="text" autocomplete="off">
-         
+        <input class="form-control date" id="tourDate" name="date" placeholder="Select date" type="text" autocomplete="off">
+        <input type="hidden" name="dnn$ctr543$ExcursionInfo$hf_tourFirstDepartureDate" id="hf_tourFirstDepartureDate" value="06/07/2020">
+        <input type="hidden" name="dnn$ctr543$ExcursionInfo$hf_tourLastDepartureDate" id="hf_tourLastDepartureDate" value="31/10/2020">
+        <input type="hidden" name="dnn$ctr543$ExcursionInfo$hf_datesForDisable" id="hf_datesForDisable" value="[]">
     </div>
-    </div> 
+    </div>
+   
        <div class="containersinnewsearch">
         <div class="form-group newsearchspaces">
              <div class="row">
-             <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
-             <select class="customcountry" id="mob_tourTime" style="display: none;"></select><div class="nice-select customcountry" tabindex="0"><span class="current"></span><ul class="list"></ul></div>
+             <div class="col-12 col-sm-12 col-xl-12 col-lg-12 fieldnew">
+             <select class="customcountry" id="tourTime" style="display: none;"></select><div class="nice-select customcountry" tabindex="0"><span class="current"></span><ul class="list"></ul></div>
              </div></div>
-            </div> 
+            </div> </div> 
 
 
 
- <center>
-        <div class="formmob">
-        <div>
-
-            <center>
-            <div class="movetop17">
-            <div class="movetop17">
+<div class="">
+    <div class="movetop17">
              <div class="row minusplusdiv newsearchspaces">
 
-             <div class="col-12 col-sm-12 col-xl-6 col-lg-6 NoofTrdiv" align="center">
-             <div class="minusplusfirst">
-
-
-             <img src="images/passengerminus.svg" onclick="removeCounter(0,adnumber)" class="minusplus"> 
-             <input type="text" id="adnumber" class="numbers numbersadults" placeholder="No of Travellers" value="">  
-             <img src="images/passengerplus.svg" onclick="addCounter(10,adnumber)" class="minusplus"> 
-
-                  <div class="col-4 col-sm-4 col-xl-4 col-lg-4 numnew" align="center">
+                  <div class="col-4 col-sm-4 col-xl-4 col-lg-4 numnew " align="center">
              <div class="container68">
              <div class="numbersboarder">
              <img src="images/passengerminus.svg" onclick="removeCounter(0,chnumber)" class="minusplus"> 
@@ -1088,21 +1081,21 @@ width:900px;
              <img src="images/passengerplus.svg" onclick="addCounter(10,chnumber)" class="minusplus"> 
              </div>
              </div>
-             <span class="passdescription">Age 13+</span>
              <span class="passdescription">Adults: Age 13+</span>
              </div>
 
-             <div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center">
-                  <div class="col-4 col-sm-4 col-xl-4 col-lg-4 numnew" align="center">
+                  <div class="col-4 col-sm-4 col-xl-4 col-lg-4 numnew " align="center">
              <div class="container68">
              <div class="numbersboarder">
              <img src="images/passengerminus.svg" onclick="removeCounter(0,chnumber)" class="minusplus"> 
-
+             <input type="text" id="chnumber" class="numbers" value="0">  
+             <img src="images/passengerplus.svg" onclick="addCounter(10,chnumber)" class="minusplus"> 
+             </div>
+             </div>
              <span class="passdescription">Age 4-12</span>
              </div>
-
-             <div class="col-6 col-sm-6 col-xl-3 col-lg-3" align="center"> 
-                  <div class="col-4 col-sm-4 col-xl-4 col-lg-4 numnew" align="center">
+       
+                  <div class="col-4 col-sm-4 col-xl-4 col-lg-4 numnew " align="center">
              <div class="container68">
              <div class="numbersboarder">
              <center>
@@ -1114,22 +1107,34 @@ width:900px;
              </div>
              <span class="passdescription">Infants</span>
              </div>
+
             </div>
-             </div>
-              </div></div></div></div></div></div></div></center>
-            </div></div>
-        </center>
-       
-    
-    <div class="row movebottom10 newsearchspaces">
+             </div></div>
+        <div class="row newsearchspaces">
         <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">
-         <a id="btnPriceSearchmobile" href="http://localhost/localhost_hammer/cart" class="Bookbtnmobile"><span id="dnn_ctr543_ExcursionInfo_Booknowmobile">Book Now</span></a>  
+         <a id="btnPriceSearch" href="http://localhost/localhost_hammer/cart" class="Bookbtn"><span id="dnn_ctr543_ExcursionInfo_lblBookNow">Book Now</span></a>  
         </div>
        
+    </div><div class="row newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">  
+         <img src="images/minibookseperator.svg" class="minibookseperator"> 
+        </div>
+       
+    </div><div class="row newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">  
+            <span class="makenewsearch">MAKE A NEW SEARCH</span>
+        </div> 
+    </div><div class="containersinnewsearch">
+    <div class="row newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">   
+            <input class="form-control mr-sm-2  " type="text" placeholder="Where do you want to go ?" aria-label="Search">
+        </div>
     </div>
-  
-</div> 
-</div>
+    </div><div class="row newsearchspaces">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12 movedown" align="center">  
+            <input type="submit" name="dnn$ctr543$ExcursionInfo$Button1" value="Search" id="dnn_ctr543_ExcursionInfo_Button1" class="newsearchbtn moveup">  
+        </div> 
+    </div>
  </div>
 
      
