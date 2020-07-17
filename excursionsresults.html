@@ -14,6 +14,10 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <link rel="stylesheet" href="css/header.css"  />
 <style>
+	
+	.selectfilter {
+    padding: 0px;
+}
 	.activitiesfont {
     font-family: 'proxima-nova', sans-serif;
     font-size: 18px;
@@ -175,8 +179,10 @@
 
 	
 .filtersfill {
-	margin-left:-18px;
-	display:block;
+    margin-left: -18px;
+    display: block;
+    color: #24263d;
+    font-size: 16px;
 }
 
 .tourfounddiv {
@@ -856,31 +862,30 @@ input[type='checkbox'] {
 }
 
 	.round label {
-		background-color: #fff;
-		border: 1px solid #ccc;
-		border-radius: 50%;
-		cursor: pointer;
-		height: 21px;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 21px;
-	}
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 21px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 21px;
+}
 
 		.round label:after {
-			border: 2px solid #00d3a7;
-			border-top: none;
-			border-right: none;
-			content: "";
-			height: 6px;
-			left: 4px;
-			opacity: 0;
-			position: absolute;
-			top: 5px;
-			transform: rotate(-45deg);
-			width: 12px;
-		}
-
+    border: 2px solid #00d3a7;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 3px;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
 .round input[type="checkbox"] {
 	visibility: hidden;
 }
@@ -1431,7 +1436,7 @@ input[type='checkbox'] {
                      <img src="images/remove.svg" class="closex"> 
                     </div>  
                 </div>
-                <div id="collapseDestinations" class="collapseExample" style="display: block;"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_0" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_DestinationSelection_0','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Athens</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_1" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_DestinationSelection_1','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Meteora</span></div></div></div></div>
+                <div id="collapseDestinations" class="collapseExample" style="display: block;"> <div class="row   container350 selectfilter"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_0" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_DestinationSelection_0','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Athens</span></div></div></div> <div class="row   container350 selectfilter"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_1" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_DestinationSelection_1','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Meteora</span></div></div></div></div>
                 </div>
                 <input type="hidden" id="hf_TourFilters_destinationIds">
                 <div class="subheader">
