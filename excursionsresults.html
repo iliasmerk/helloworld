@@ -423,8 +423,10 @@ input[type='checkbox'] {
 }
 
 .searchbtndiv {
-	border: 1px solid #FFFFFF;
-	display: inline-block;
+    border: 1px solid #FFFFFF;
+    display: inline-block;
+    max-width: 200px;
+    text-align: center;
 }
 
 .searchbtndnn {
@@ -511,20 +513,19 @@ input[type='checkbox'] {
 }
 
 	.searchbtn {
-		display: inline-block;
-		    background-image: none;
-		padding-left: 10px;
-		background-repeat: no-repeat;
-		border-radius: 41px;
-		border: 0px;
-		border-top-left-radius: 0px;
-		border-bottom-left-radius: 0px;
-		white-space: nowrap;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none;
-		font-weight: 700;
-	}
-
+    display: inline-block;
+    background-image: none;
+    padding-left: 0;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 1) !important;
+    text-decoration: none;
+    font-weight: 700;
+}
 
 	.engine {
 		background: rgba(240, 240, 240, 1);
@@ -708,7 +709,8 @@ input[type='checkbox'] {
 
 	.wdywtg {
 		display: inline-block !important;
-		 width: 506px; 
+		    text-align: center;
+		 
 	}
 
 	.whiteline {
@@ -1344,9 +1346,9 @@ input[type='checkbox'] {
         </div>
 </div>
 <div class="sendbottom col-12 col-sm-12 col-xl-12 col-lg-12"> 
-   <div class="col-8 col-sm-12 col-xl-8 col-lg-8 where">
+   <div class="col-12 col-sm-12 col-xl-8 col-lg-8 where">
     <input class="form-control mr-sm-2 wdywtg" type="text" placeholder="Where do you want to go ?" aria-label="Search"> </div>
-    <div class="searchbtndiv col-4 col-sm-12 col-xl-4 col-lg-4">
+    <div class="searchbtndiv col-12 col-sm-12 col-xl-4 col-lg-4">
         <a href="" class="searchbtn"> <img src="images/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">NEW SEARCH</span></a>
     </div>
 </div>
