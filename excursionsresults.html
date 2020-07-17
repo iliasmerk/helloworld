@@ -14,6 +14,10 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <link rel="stylesheet" href="css/header.css"  />
 <style>
+	
+	.where {
+    float: left;
+}
 	.breadcrumb-item {
     color: #FFFFFF !important;
 }
@@ -428,10 +432,10 @@ input[type='checkbox'] {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 0.375rem 0.3rem;
+	padding: 4px;
 	margin-bottom: 0;
-	font-size: 0.9375rem;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: 900;
 	line-height: 1.5;
 	color: rgb(255,255,255);
 	text-align: center;
@@ -493,15 +497,16 @@ input[type='checkbox'] {
 .fakos {
 	/* background-image: url(svg/fakos.svg); */
 	background-repeat: no-repeat;
-	width: 21px;
-	height: 21px;
+	width: 18px;
+	height: 18px;
 	margin-right: 2px;
 	display: inline-block;
+	    margin-top: -4px;
 }
 
 	.searchbtn {
 		display: inline-block;
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+		    background-image: none;
 		padding-left: 10px;
 		background-repeat: no-repeat;
 		border-radius: 41px;
@@ -687,6 +692,8 @@ input[type='checkbox'] {
 
 	.sendbottom {
 		padding-bottom: 25px;
+		max-width: 673px;
+    margin-top: 13px;
 	}
 
 	.engine-header {
@@ -706,6 +713,7 @@ input[type='checkbox'] {
 		margin-right: 2px;
 		display: inline-block;
 		margin-bottom: 10px;
+		    margin-top: 10px;
 	}
 
 	#div_ESR_HeaderDiv {
@@ -1321,7 +1329,7 @@ input[type='checkbox'] {
 
 <div class="row">  
             <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                <div> <label class="fontsize"> TOURS </label> <label class="fontsize fontbold"> SEARCH </label>   <label class="fontsize"> RESULTS </label></div>
+                <div> <label class="fontsize"> TOURS <strong style="font-weight: 900">SEARCH</strong> RESULTS</label></div>
             </div>
 </div>
 <div class="row">  
@@ -1329,11 +1337,11 @@ input[type='checkbox'] {
              <img src="images/whiteline.svg" class="whiteline">
         </div>
 </div>
-<div class="sendbottom"> 
-    
-    <input class="form-control mr-sm-2 wdywtg" type="text" placeholder="Where do you want to go ?" aria-label="Search"> 
-    <div class="searchbtndiv">
-        <a href="" class="searchbtn"> <img src="images/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">New Search</span></a>
+<div class="sendbottom col-12 col-sm-12 col-xl-12 col-lg-12"> 
+   <div class="col-8 col-sm-12 col-xl-8 col-lg-8 where">
+    <input class="form-control mr-sm-2 wdywtg" type="text" placeholder="Where do you want to go ?" aria-label="Search"> </div>
+    <div class="searchbtndiv col-4 col-sm-12 col-xl-4 col-lg-4">
+        <a href="" class="searchbtn"> <img src="images/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">NEW SEARCH</span></a>
     </div>
 </div>
 </div>
@@ -1347,7 +1355,7 @@ input[type='checkbox'] {
                 <div class="row  ">
                     <div class="container350header"> 
                     <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                    <div class="excursionfilters"><img id="excfiltersimg" src="images/excsearchfilters.svg" class="excsearchfilters"> <span class="ExcursionFilterspan">Filters</span></div>
+                    <div class="excursionfilters"><img id="excfiltersimg" src="images/excsearchfilters.svg" class="excsearchfilters"> <span class="ExcursionFilterspan">FILTERS</span></div>
                     </div> 
                     </div>
                 </div>
