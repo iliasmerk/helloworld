@@ -14,6 +14,67 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <link rel="stylesheet" href="css/header.css"  />
 <style>
+	.btnplusminus {
+    display: inline-block;
+    padding: 5px;
+}
+.container350 {
+    width: 100%;
+    background-color: white;
+    margin-left: 0px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+	.titlefilter {
+    padding: 0px;
+    display: inline-block;
+    margin-top: 2px;
+}
+	.collapseExample {
+    background-color: white;
+    width: 100%;
+}
+	.subheader {
+    margin-left: 0;
+    padding: 15px;
+}
+	.subheader::after {
+    content: "";
+    background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
+    margin-bottom: 40px;
+    display: block;
+    height: 2px;
+    margin-right: 0px;
+}
+	.engine {
+    background: rgba(240, 240, 240, 1);
+    padding-top: 25px;
+}
+	.subheader {
+    margin-left: 0;
+    padding: 15px;
+}
+	.excursionfilters {
+    background: rgba(36, 38, 61, 1);
+    width: 100%;
+		margin-bottom: 20px;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+	.container350header {
+    width: 100%;
+}
+	.movedown {
+    margin-bottom: 20px;
+    padding: 0px;
+}
+	.desktopdiv {
+    display: block;
+    padding: 0px;
+}
 	.breadcrumb {
      margin-bottom: 0px;
  }
@@ -1371,19 +1432,19 @@ input[type='checkbox'] {
                     </div> 
                     </div>
                 </div>
-                <div class="subheader">
+            <div class="subheader">
                 <div class="row  container350 "> 
-                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
-                      <img id="minusplus_4" src="images/plus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 btnplusminus" align="center"> 
+                      <img id="minusplus_4" src="images/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="btn-hide"> 
                     </div> 
-                    <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
+                    <div class="col-10 col-sm-10 col-xl-10 col-lg-10 titlefilter" align="left">
                     <div><span class="activitiesfont">DESTINATIONS</span></div>
                     </div> 
-                    <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
-                     <img src="images/remove.svg" class="fakos"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 btnclose" align="center">
+                     <img src="images/remove.svg" class="closex"> 
                     </div>  
                 </div>
-                <div id="collapseDestinations" class="collapseExample" style=""> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_0" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_DestinationSelection_0','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Athens</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_1" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_DestinationSelection_1','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Meteora</span></div></div></div></div>
+                <div id="collapseDestinations" class="collapseExample" style="display: block;"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_0" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_DestinationSelection_0','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Athens</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_1" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_DestinationSelection_1','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Meteora</span></div></div></div></div>
                 </div>
                 <input type="hidden" id="hf_TourFilters_destinationIds">
                 <div class="subheader">
