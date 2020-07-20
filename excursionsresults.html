@@ -14,7 +14,14 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <link rel="stylesheet" href="css/header.css"  />
 <style>
-	
+	.lbl_ESingRes_ExcursionTitle:after {
+    content: '';
+    width: 100px;
+    border-bottom: solid 3px #24263D;
+    position: relative;
+    left: 0;
+    z-index: 1;
+}
 .imageresults {
     padding-right: 0;
     padding-left: 0;
@@ -254,8 +261,8 @@
 .careful {
 	/* background-image: url(svg/fakos.svg); */
 	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: auto;
 	margin-right: 2px;
 	display: inline-block;
 }
@@ -849,7 +856,7 @@ input[type='checkbox'] {
 	border-Bottom: 2px solid #0ABFF2 !important;
 }
 .careful2 {
-	margin-right: 7px;
+	margin-right: 3px;
 	display: inline-block;
 	margin-top: -3px;
 }
@@ -912,6 +919,10 @@ input[type='checkbox'] {
 	
 	input#test {
     display: none;
+}
+	
+	.sortdiv {
+    margin-top: 7px;
 }
 	
 	.outer-menu {
