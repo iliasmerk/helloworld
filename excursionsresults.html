@@ -14,444 +14,1411 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <link rel="stylesheet" href="css/header.css"  /> 
 <style>
-	
-	.menuoff a {
-    color: #fff;
-}
-	@media screen and (min-width: 995px){
-.outer-menu {
-    display: none;
-		}}
-	
-	
-	
-.flex-center {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-}
-* {
-  box-sizing: border-box;
-  font-weight: 300;
+#test {
+cursor:pointer;
 }
 
-.outer-menu {
-    position: relative;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    float: right;
+.titlecss {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
-.outer-menu .checkbox-toggle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    opacity: 0;
-    float: right;
+.titlelabel {
+	padding-top: 5px !important;
 }
-.outer-menu .checkbox-toggle:checked + .hamburger > div {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+
+.padding10 {
+	padding-top: 10px;
 }
-.outer-menu .checkbox-toggle:checked + .hamburger > div:before,
-.outer-menu .checkbox-toggle:checked + .hamburger > div:after {
-  top: 0;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+
+.middle-enginediv {
+	margin-top: 64px;
 }
-.outer-menu .checkbox-toggle:checked + .hamburger > div:after {
-  opacity: 0;
+.nice-select {
+	border-radius:45px!important;
 }
-.outer-menu .checkbox-toggle:checked ~ .menuoff {
-  pointer-events: auto;
-  visibility: visible;
+.lbl_ESingRes_ExcursionTitle:after {
+	content: '';
+	width: 100px;
+	border-bottom: solid 3px #24263D;
+	position: relative;
+	left: 0;
+	z-index: 1;
+}
+
+.imageresults {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.selectfilter {
+	padding: 0px !important;
+}
+
+.activitiesfont {
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	color: #24263D;
+	color: rgb(36, 38, 61);
+	margin-left: 0px;
+	font-weight: 700;
+	margin-top: 0;
+	display: block;
+}
+
+.btnclose {
+	display: inline-block;
+	padding: 5px;
+}
+.filterspanouter {
+	width: 100% !important;
+	padding-top: 3px !important;
+}
+.btnplusminus {
+	display: inline-block;
+	padding: 5px;
+}
+
+.container350 {
+	width: 100%;
+	background-color: white;
+	margin-left: 0px;
+	height: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.titlefilter {
+	padding: 0px;
+	display: inline-block;
+	margin-top: 2px;
+}
+
+.collapseExample {
+	background-color: white;
+	width: 100%;
+	padding-right: 15px;
+}
+
+.subheader {
+	margin-left: 0;
+	padding: 15px;
+}
+
+	.subheader::after {
+		content: "";
+		background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
+		margin-bottom: 0px;
+		display: block;
+		height: 2px;
+		margin-right: 0px;
+	}
+
+.engine {
+	background: rgba(240, 240, 240, 1);
+	padding-top: 25px;
+}
+
+.subheader {
+	margin-left: 0;
+	padding: 10px 15px 5px 15px;
+}
+
+.excursionfilters {
+	background: rgba(36, 38, 61, 1);
+	width: 100%;
+	margin-bottom: 20px;
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+.container350header {
+	width: 100%;
+}
+
+.movedown {
+	margin-bottom: 20px;
+	padding: 0px;
+}
+
+.desktopdiv {
+	display: block;
+	padding: 0px;
+}
+
+.breadcrumb {
+	margin-bottom: 0px;
+}
+
+
+.form-control {
+	border: 0;
+	border-radius: 0;
+}
+
+.where {
+	float: left;
+}
+
+.breadcrumb-item {
+	color: #FFFFFF !important;
+}
+
+.breadcrumb a {
+	color: #fff;
+}
+
+.filterspanouter {
+	background-color: white;
+	width: 132px;
+	height: 36px;
+	border-radius: 25px;
+	text-align: center;
+	padding-top: 6px;
+}
+ 
+
+.filtersfill {
+	margin-left: -18px;
+	display: block;
+	color: #24263d;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.tourfounddiv {
+	text-align: left;
+	padding-left: 0px !important;
+}
+
+.sortdiv {
+	text-align: right;
+}
+
+.desktopdiv {
+	display: block;
+}
+
+.mobilediv {
+	display: none;
+}
+
+.div_ESR_ddls {
+	display: none;
+}
+
+.div_Excursion::after {
+	content: "";
+	background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
+	margin-bottom: 40px;
+	display: block;
+	height: 2px;
+	padding-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.collapseExample::after {
+	/*width: 320px;*/
+}
+
+
+
+.custom-select {
+	width: 30%;
+	border-radius: 15px;
+	color: #0ABFF2;
+	background-image: url(svg/bluearrowdown.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #ffffff;
+	background-size: 10px;
+	background-position-x: 111px;
+}
+
+.middleelement {
+	display: inline-block;
+	text-align:left;
+}
+.excursionmiddlediv {
+	display:inline-block;
+}
+.seperatornew {
+	position: absolute;
+	right: 0px;
+	top: 22px;
+	width: 1px;
+}
+.middleelement:after {
+	/*display: none;
+	content: "";
+	background: url(svg/seperator.svg);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 160px;
+	display: inline-block;
+	float: right;
+	margin-top: -48px;*/
+}
+
+.careful {
+	/* background-image: url(svg/fakos.svg); */
+	background-repeat: no-repeat;
+	width: 15px;
+	height: auto;
+	margin-right: 2px;
+	display: inline-block;
+}
+
+.movedown {
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+
+.Excursionsfound {
+	color: #0ABFF2;
+}
+
+.toursfound {
+	color: #0ABFF2;
+	font-family: 'proxima-nova', sans-serif;
+}
+
+.movedown10 {
+	padding-top: 10px;
+}
+
+.imagesizediv {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.imagesize {
+	width: 100%;
+	position: relative;
+	height: 199px;
+	margin-left: 0px;
+}
+
+.topleftimagespan {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #0ABFF2;
+}
+
+.div_ESR_body {
+	display: block;
+	float: left;
+	/*width: 707px;*/ /*710px*/ /*updated by akoukouri 23/01/2018*/
+	height: auto;
+	font-family: Trebuchet MS;
+	font-family: Roboto, arial; /*added by akoukouri 23/01/2018*/
+	font-weight: 400; /*added by akoukouri 23/01/2018*/
+	margin-left: -6px; /*added by akoukouri 23/01/2018*/
+	margin-top: 28px; /*added by akoukouri 23/01/2018*/
+}
+
+.Excursions {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-left: 0px;
+	padding-bottom: 30px;
+	margin-bottom: 18px;
+}
+
+.div_ex_IMGContainer {
+	float: left;
+	/* width: 250px;*/
+	margin-bottom: 5px;
+	display: block;
+	position: relative;
+}
+
+.lbl_ex_Currency:before {
+	content: "from";
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 15px;
+	color: #24263D;
+	margin-bottom: -12px;
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+.lbl_ex_ExcursionFromPrice:after {
+	content: "per person";
+	display: block;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 15px;
+	color: #24263D;
+	font-weight: normal !important;
+	margin-top: -12px;
+	margin-bottom: 30px;
+	font-weight: 400 !important;
+}
+
+.lbl_ex_ExcursionFromlbl, .lbl_ex_ExcursionFromPrice, .lbl_ex_Currency, .lbl_ex_PerPerson {
+	z-index: 3;
+	color: red;
+	font-size: 22px;
+	color: rgb(229, 26, 74);
+	font-weight: 700; /*bold*/ /*updated by akoukouri 23/01/2018*/
+}
+
+
+
+.lbl_ex_ExcursionFromPrice {
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.rightarrow {
+	background-image: url(svg/rightarrow.svg);
+	background-repeat: no-repeat;
+	padding: 6px 9px 6px 9px;
+	white-space: nowrap;
+}
+
+
+
+
+.imageseperator {
+	background-image: url(svg/horizontalseperator.svg);
+	background-repeat: no-repeat;
+	padding: 61px 47px 51px 59px;
+	white-space: nowrap;
+	margin-top: 10px;
+	margin-left: 58px;
+}
+
+.rightarrow {
+	background-image: url(svg/rightarrow.svg);
+	background-repeat: no-repeat;
+	padding: 6px 9px 6px 9px;
+	white-space: nowrap;
+}
+
+
+.bluespan {
+	color: #0ABFF2;
+	
+}
+.timeblue {
+	position: absolute;
+	bottom: 10px;
+}
+.rightbluearrow {
+	background-image: url(svg/rightbluearrow.svg);
+	background-repeat: no-repeat;
+	padding: 7px;
+	white-space: nowrap;
+	margin-top: -3px;
+	margin-right: 5px;
+}
+
+.cbx {
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	font-family: 'proxima-nova', sans-serif;
+}
+
+input[type='checkbox'] {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	background: url(svg/backcircleresults.svg);
+	border-radius: 50%;
+	outline: none;
+	/*box-shadow: 0 0 5px 0px gray inset;*/
+}
+
+	input[type='checkbox']:before {
+		content: '';
+		display: block;
+		width: 60%;
+		height: 60%;
+		margin: 20% auto;
+		border-radius: 50%;
+	}
+
+	input[type='checkbox']:checked:before {
+		background: url(svg/tick.svg);
+		background-repeat: no-repeat;
+		width: 15px;
+		height: 20px;
+	}
+
+
+
+.activitiesfontmobdiv {
+	margin-top: -10px;
+	margin-left: -17px;
+}
+
+.activitiesfontmob {
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #24263D;
+	color: rgb(36, 38, 61);
+}
+
+.filterresults {
+	/*width: 100%;*/
+	height: 2px;
+	background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
+	margin-bottom: 20px;
+}
+
+.excursionresults {
+	/*width: 98%;*/
+	height: 2px;
+	background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
+	margin-bottom: 40px;
+}
+
+
+.breadcrumb {
+	display: inline-flex !important;
+	text-align: center !important;
+	background: none !important;
+}
+
+.breadcrumb-item:hover {
+	color: #FFFFFF !important;
+}
+
+.breadcrumb-item {
+	color: #FFFFFF !important;
+}
+
+	.breadcrumb-item::before {
+		content: ">" !important;
+		color: #FFFFFF !important;
+	}
+
+.first::before {
+	content: "" !important;
+}
+
+.searchbtndiv {
+	border: 1px solid #FFFFFF;
+	display: inline-block;
+	max-width: 200px;
+	text-align: center;
+}
+
+.searchbtndnn {
+	display: inline-block;
+}
+
+.input-group-text {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: inline-block;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 4px;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 1.5;
+	color: rgb(255,255,255);
+	text-align: center;
+	white-space: nowrap;
+	border: none;
+	background: none;
+}
+
+.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file {
+	position: relative;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 0%;
+	flex: 1 1 0%;
+	min-width: 0;
+	margin-bottom: 0;
+	height: 50px;
+	border-radius: 50px 0px 0px 50px;
+}
+
+.leftclockspan, .lblBtnLoadMore {
+	color: #FFFFFF;
+}
+
+.whitearrowdownloadmore {
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+	display: inline-block;
+}
+
+.loadmorediv {
+	width: 230px;
+	height: 70px;
+	background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+	border-radius: 25px;
+	padding-top: 23px;
+}
+
+.leftclock {
+	/*background-image: url(svg/leftclock.svg);*/
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+	display: inline-block;
+}
+
+.topleftimagespan {
+	width: 87px;
+	height: 29px;
+	padding-top: 4px;
+}
+
+.excsearchfilters {
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-right: 2px;
+	display: inline-block;
+	margin-top: -9px;
+}
+
+.fakos {
+	/* background-image: url(svg/fakos.svg); */
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 21px;
+	margin-right: 2px;
+	display: inline-block;
+	margin-top: -4px;
+}
+
+.searchbtn {
+	display: inline-block;
+	background-image: none;
+	padding-left: 0;
+	background-repeat: no-repeat;
+	border-radius: 0;
+	border: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	white-space: nowrap;
+	color: rgba(255, 255, 255, 1) !important;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+
+
+.excursionfilters {
+	background: rgba(36, 38, 61, 1);
+	/*width: 319px;*/
+	margin-bottom: 0px;
+	padding-top: 6px;
+}
+
+.ExcursionFilterspan {
+	font-family: 'proxima-nova', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	color: #FFFFFF;
+	color: rgb(255, 255, 255);
+}
+
+.div_ESR_body {
+	/*width: 100px;*/
+}
+
+.dots {
+	/*background-image: url(svg/dots.svg);*/
+	background-repeat: no-repeat;
+	/* padding: 6px 9px 6px 9px; */
+	white-space: nowrap;
+	/* margin-left: 192px; */
+	width: 34px;
+	/* height: 100%; */
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+	.dots.dots2 {
+		margin-right: -43px;
+	}
+
+.points {
+	background-image: url(svg/points.svg);
+	background-repeat: no-repeat;
+	padding: 20px 25px 20px 25px;
+	vertical-align: top;
+}
+
+.ship {
+	background-image: url(svg/ship.svg);
+	background-repeat: no-repeat;
+	padding: 20px 20px 20px 20px;
+	vertical-align: top;
+	margin-top: 2px;
+}
+
+.openlock {
+	background-image: url(svg/openlock.svg);
+	background-repeat: no-repeat;
+	padding: 20px 25px 20px 25px;
+	vertical-align: top;
+	/*margin-right: 95px;
+    margin-bottom: 120px*/
+}
+
+.toursexcursions {
+	background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+	/* width: 245px; */
+	/* height: 106px; */
+	margin-bottom: 10px;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	border: 0px;
+	padding: 21px;
+	color: rgba(255, 255, 255, 1) !important;
+	text-decoration: none;
+	/* margin-bottom: 120px; */
+	/*max-width: 350px;*/
+	display: block;
+}
+
+.privateexcursions {
+	background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+	/* width: 245px; */
+	/* height: 106px; */
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	border: 0px;
+	padding: 21px;
+	color: rgba(255, 255, 255, 1) !important;
+	text-decoration: none;
+	/* margin-bottom: 120px; */
+	/* padding-right: 52px !important; */
+	max-width: 350px;
+}
+
+.privateexcursionslbl {
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 15px !important;
+	color: #FFFFFF;
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	width: 93px;
+	word-break: normal;
+	font-weight: 900 !important;
+	margin-right: 10px;
+	text-align: left;
+	text-transform: uppercase;
+	margin-right: 25px;
+}
+
+.whitebackground {
+	background: rgba(255, 255, 255, 1);
+}
+
+.customheight {
+	height: 160px;
+}
+
+.lbl_ESingRes_ExcursionTitle {
+	padding-top: 40px;
+	font-family: 'proxima-nova', sans-serif;
+	color: #24263D;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+	.lbl_ESingRes_ExcursionTitle:after {
+		content: "";
+		background-image: url(svg/blackline.svg);
+		display: block;
+		padding: -1px 1px 1px 0px;
+		width: 100px;
+	}
+
+.beforespan {
+	padding-top: 15px;
+	font-family: 'proxima-nova', sans-serif;
+	color: #666666;
+}
+
+.movedown15 {
+	padding-top: 15px;
+}
+
+.detailsbtn {
+	padding: 2px 10px 2px 10px;
+	background-repeat: no-repeat;
+	border: 1px solid #0ABFF2;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 14px;
+	white-space: nowrap;
+	color: rgba(10, 191, 242, 1) !important;
+	text-decoration: none !important;
+	display: block;
+	width: fit-content;
+	margin-left: 8px;
+	margin-top: 78px !important;
+}
+
+.viewallbtn {
+	padding: 2px 10px 2px 10px;
+	background-repeat: no-repeat;
+	border: 1px solid white;
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 14px;
+	white-space: nowrap;
+	color: rgba(255, 255, 255, 1) !important;
+	text-decoration: none !important;
+	display: block;
+	width: fit-content;
+	margin-left: 8px;
+}
+
+
+.sendbottom {
+	padding-bottom: 25px;
+	max-width: 673px;
+	margin-top: 13px;
+}
+
+.engine-header {
+	background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
+}
+
+.wdywtg {
+	display: inline-block !important;
+	text-align: center;
+}
+
+.whiteline {
+	/* background-image: url(svg/fakos.svg); */
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 5px;
+	margin-right: 2px;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#div_ESR_HeaderDiv {
+	display: none;
+}
+
+.fontsize {
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 44px;
+	color: rgb(255, 255, 255);
+	margin-bottom: 0 !important;
+}
+
+.fontbold {
+	font-family: 'proxima-nova', sans-serif !important;
+	font-weight: 900;
+}
+
+.middle-engine {
+	background-image: url(jpeg/frontpage.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container1280header {
+	width: 1280px;
+}
+
+.container1280 {
+	width: 1280px;
+}
+
+.imageseperatorh {
+	display: none;
+}
+
+
+
+
+
+
+.excursionouter {
+	text-align: left;
+	margin-left: 0px;
+	display: inline-block;
+	float: left;
+}
+
+.excursioninner {
+	height: 160px;
+	display: inline-block;
+	width:100%;
+}
+
+.timeblue {
+	display: inline-block;
+}
+
+.nice-select {
+	float: right !important;
+	border-radius: 45px;
+}
+
+.current {
+	color: #0ABFF2 !important;
 	font-family: 'proxima-nova', sans-serif !important;
 }
-.outer-menu .checkbox-toggle:checked ~ .menuoff > div {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-duration: 0.75s;
-          transition-duration: 0.75s;
-}
-.outer-menu .checkbox-toggle:checked ~ .menuoff > div > div {
-  opacity: 1;
-  -webkit-transition: opacity 0.4s ease 0.4s;
-  transition: opacity 0.4s ease 0.4s;
-}
-.outer-menu .checkbox-toggle:hover + .hamburger {
-  box-shadow: none;
-}
-.outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
-}
-.outer-menu .hamburger {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 60px;
-  height: 60px;
-  padding: 0.5em 1em;
-  background: none;
-  border-radius: 0 0.12em 0.12em 0;
-  cursor: pointer;
-  -webkit-transition: box-shadow 0.4s ease;
-  transition: box-shadow 0.4s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-	    float: right;
-	top: 19px;
-}
-.outer-menu .hamburger > div {
-  position: relative;
-  -webkit-box-flex: 0;
-          flex: none;
-  width: 100%;
-  height: 2px;
-  background: #0abff2;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-}
-.outer-menu .hamburger > div:before,
-.outer-menu .hamburger > div:after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: inherit;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-.outer-menu .hamburger > div:after {
-  top: 10px;
-}
-.outer-menu .menuoff {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  visibility: hidden;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  outline: 1px solid transparent;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-}
-.outer-menu .menuoff > div {
-  width: 200vw;
-  height: 200vw;
-  color: #fff;
-  background: #24263D;
-  border-radius: 50%;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-box-flex: 0;
-          flex: none;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  overflow: hidden;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-}
-.outer-menu .menuoff > div > div {
-  text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
-  overflow-y: auto;
-  -webkit-box-flex: 0;
-          flex: none;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-}
-.outer-menu .menuoff > div > div > ul {
-  list-style: none;
-  padding: 0 1em;
-  margin: 0;
-  display: block;
-  max-height: 100vh;
-}
-.outer-menu .menuoff > div > div > ul > li {
-  padding: 0;
-  margin: 1em;
-  font-size: 24px;
-  display: block;
-}
-.outer-menu .menuoff > div > div > ul > li > a {
-  position: relative;
-  display: inline;
-  cursor: pointer;
-  -webkit-transition: color 0.4s ease;
-  transition: color 0.4s ease;
-}
-.outer-menu .menuoff > div > div > ul > li > a:hover {
-  color: #0abff2;
-}
-.outer-menu .menuoff > div > div > ul > li > a:hover:after {
-  width: 100%;
-}
-.outer-menu .menuoff > div > div > ul > li > a:after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  bottom: -0.15em;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #e5e5e5;
-  -webkit-transition: width 0.4s ease;
-  transition: width 0.4s ease;
+
+.nice-select:after {
+	border-right: 2px solid #0ABFF2 !important;
+	border-Bottom: 2px solid #0ABFF2 !important;
 }
 
-  
-  .menuoff {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    visibility: hidden;
-    overflow: hidden;
-    backface-visibility: hidden;
-    outline: 1px solid transparent;
-    .flex-center;
-    
-    > div {
-      width: 200vw;
-      height: 200vw;
-      color: @main-color;
-      background: @content-bg-color;
-      border-radius: 50%;
-      transition: all @anim-duration ease;
-      flex: none;
-      transform: scale(0);
-      backface-visibility: hidden;
-      overflow: hidden;
-      .flex-center;
-      
-      > div {
-        text-align: center;
-        max-width: 90vw;
-        max-height: 100vh;
-        opacity: 0;
-        transition: opacity @anim-duration ease;
-        overflow-y: auto;
-        flex: none;
-        .flex-center;
-        
-        > ul {
-          list-style: none;
-          padding: 0 1em;
-          margin: 0;
-          display: block;
-          max-height: 100vh;
-          
-          > li {
-            padding: 0;
-            margin: 1em;
-            font-size: 24px;
-            display: block;
-            
-            > a {
-              position: relative;
-              display: inline;
-              cursor: pointer;
-              transition: color @anim-duration ease;
-              
-              &:hover {
-                color: @hover-color;
-                
-                &:after {
-                  width: 100%;
-                }
-              }
-              
-              &:after {
-                content: '';
-                position: absolute;
-                z-index: 1;
-                bottom: -.15em;
-                left: 0;
-                width: 0;
-                height: @hover-line-height;
-                background: @hover-color;
-                transition: width @anim-duration ease;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}	
-    
-    
-    
-	
-	.lbl_ESingRes_ExcursionTitle:after {
-    content: '';
-    width: 100px;
-    border-bottom: solid 3px #24263D;
-    position: relative;
-    left: 0;
-    z-index: 1;
+.careful2 {
+	margin-right: 3px;
+	display: inline-block;
+	margin-top: -3px;
 }
-.imageresults {
-    padding-right: 0;
-    padding-left: 0;
+
+
+.round {
+	position: relative;
+	width: 30px;
+	display: inline-block;
+	margin-left:-11px;
 }
-	
-	.selectfilter {
-    padding: 0px!important;
-}
-	.activitiesfont {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    color: #24263D;
-    color: rgb(36, 38, 61);
-    margin-left: 0px;
-    font-weight: 700;
-    margin-top: 0;
-    display: block;
-}
-	.btnclose {
-    display: inline-block;
-    padding: 5px;
-}
-	.btnplusminus {
-    display: inline-block;
-    padding: 5px;
-}
-.container350 {
-    width: 100%;
-    background-color: white;
-    margin-left: 0px;
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-	.titlefilter {
-    padding: 0px;
-    display: inline-block;
-    margin-top: 2px;
-}
-	.collapseExample {
-    background-color: white;
-    width: 100%;
-}
-	.subheader {
-    margin-left: 0;
-    padding: 15px;
-}
-.subheader::after {
-    content: "";
-    background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
-    margin-bottom: 0px;
-    display: block;
-    height: 2px;
-    margin-right: 0px;
-}
-	.engine {
-    background: rgba(240, 240, 240, 1);
-    padding-top: 25px;
-}
-.subheader {
-    margin-left: 0;
-    padding: 10px 15px 5px 15px;
-}
-	.excursionfilters {
-    background: rgba(36, 38, 61, 1);
-    width: 100%;
-		margin-bottom: 20px;
-    padding-top: 7px;
-    padding-bottom: 6px;
-}
-	.container350header {
-    width: 100%;
-}
+
+	.round label {
+		background-color: #fff;
+		border: 2px solid #ccc;
+		border-radius: 50%;
+		cursor: pointer;
+		height: 21px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 21px;
+	}
+
+		.round label:after {
+			border: 2px solid #00d3a7;
+			border-top: none;
+			border-right: none;
+			content: "";
+			height: 6px;
+			left: 3px;
+			opacity: 0;
+			position: absolute;
+			top: 5px;
+			transform: rotate(-45deg);
+			width: 12px;
+		}
+
+	.round input[type="checkbox"] {
+		visibility: hidden;
+	}
+
+		.round input[type="checkbox"]:checked + label {
+			border-color: #00d3a7;
+		}
+
+			.round input[type="checkbox"]:checked + label:after {
+				opacity: 1;
+			}
+
+
+@media screen and (max-width: 991px) {
+	.seperatornew {
+		display:none;
+	}
+	.timeblue {
+		position: unset;
+		bottom: 0px;
+	}
+	.middleelement {
+		text-align:center;
+	}
 	.movedown {
-    margin-bottom: 20px;
-    padding: 0px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	span.filterspan {
+		font-size: 19px !important;
+		font-weight: 700;
+		color: #0abff2;
+	}
+
+	input#test {
+		display: block;
+		visibility: hidden;
+	}
+
+	.sortdiv {
+		margin-top: 7px;
+	}
+
+	.outer-menu {
+		width: 100%;
+	}
+
+	.excsearchfilters {
+		background-repeat: no-repeat;
+		width: 19px;
+		height: auto;
+		margin-right: 2px;
+		display: inline-block;
+		margin-top: -4px;
+	}
+
+	.filterspanouter {
+		background-color: white;
+		width: 100%;
+		padding: 5px;
+		border-radius: 25px;
+		text-align: center;
+	}
 }
-	.desktopdiv {
-    display: block;
-    padding: 0px;
-}
+
+
+
+@media screen and (max-width: 575px) {
+	.seperatornew {
+		display:none;
+	}
+	.timeblue {
+		position: unset;
+		bottom: 0px;
+	}
+	.middleelement {
+	text-align:center;
+	}
 	.breadcrumb {
-     margin-bottom: 0px;
- }
+		font-size: 11px;
+	}
+
+	.Bookbtnmobile {
+		margin-top: 20px !important;
+	}
+
+	.subheader::after {
+		margin-right: 0px;
+	}
+
+	.div_Excursion {
+	}
+
+	.desktopdiv {
+		display: none;
+	}
+
+	.mobilediv {
+		display: block;
+	}
+
+	.fontsize {
+		font-size: 28px !important;
+	}
+
+	.wdywtg {
+		margin-bottom: 10px !important;
+	}
+
+	.container1280header {
+		width: 100% !important;
+	}
+
+	.container1280 {
+		width: 100%;
+		/*width: 992px !important;*/
+	}
+
+	.thirddiv:before {
+		content: "";
+		background: url(svg/horizontalseperator.svg);
+		background-repeat: no-repeat;
+		margin-top: 25px;
+		width: 50%;
+		height: 8px;
+		display: inline-block;
+	}
+
+	.detailsbtn {
+		/*width: 350px;*/
+		margin-bottom: 25px;
+		margin-top: 40px !important;
+	}
+
+	.select {
+		display: none !important;
+	}
+
+	.middleelement:after {
+		display: none !important;
+	}
+
+	.viewallbtn {
+		margin-left: 0px !important;
+	}
+
+	.imagesize {
+		width: 100% !important;
+	}
+
+
+	.Excursion {
+		margin-left: 0px !important;
+		/*width: 300px !important;*/
+	}
+
+	.ExcursionFilters.NewSearch {
+		/*	width: 175px;*/
+	}
+
+	.ExcursionFilters {
+		/*width: 130px;*/
+	}
+
+	.cmbDeparture {
+		margin-left: 23px;
+	}
+
+
+	.lbl_AccomodationInfo {
+		width: 100%;
+	}
+
+	.div_AccomodationDiv {
+		display: inline-grid;
+	}
+
+	.cmbLanguage {
+		margin-left: 25px;
+	}
+
+	#li_spd_tabMenu_2, #li_spd_tabMenu_3 {
+		margin-top: 20px !important;
+	}
+
+
+	.container1280, .imagesize {
+		/*	width: 96vw !important;*/
+		background-color: #F0F0F0;
+	}
+
+	.div_Excursion::after {
+		/*width: 95vw !important;*/
+	}
+
+	.Excursions {
+		padding-left: 0px;
+	}
+
+	.detailsbtn {
+		margin-left: 0px;
+	}
+
+	.middleelement:after {
+		display: none !important;
+	}
+
+	.imageseperator {
+		width: 1px;
+		height: 174px;
+		margin-top: 13px;
+	}
+	.middle-enginediv {
+		margin-top:135px;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width:991px) {
+	.timeblue {
+		position: unset;
+		bottom: 0px;
+	}
+	.Bookbtnmobile {
+		margin-top: 20px !important;
+	}
+
+	.div_Excursion {
+	}
+
+	.desktopdiv {
+		display: none;
+	}
+
+	.mobilediv {
+		display: block;
+	}
+
+	.middle-enginediv {
+		/*	width: 97vw;*/
+		margin-top: 134px !important;
+	}
+
+	.fontsize {
+		font-size: 33px;
+	}
+
+	.wdywtg {
+		margin-bottom: 10px !important;
+		/*	width: 90% !important;*/
+	}
+
+	.container1280header {
+		/*width: 97vw !important;*/
+		width: 100%;
+	}
+
+	.container1280 {
+		width: 100%;
+		/*width: 992px !important;*/
+	}
+
+	.thirddiv:before {
+		content: "";
+		background: url(svg/horizontalseperator.svg);
+		background-repeat: no-repeat;
+		margin-top: 25px;
+		width: 50%;
+		height: 8px;
+		display: inline-block;
+	}
+
+	.detailsbtn {
+		width: 350px;
+		margin-bottom: 25px;
+		margin-top: 40px !important;
+	}
+
+	.select {
+		display: none !important;
+	}
+
+	.middleelement:after {
+		display: none !important;
+	}
+
+	.viewallbtn {
+		margin-left: 0px !important;
+	}
+
+	.imagesize {
+		width: 100% !important;
+	}
+
+
+	.Excursion {
+		margin-left: 0px !important;
+		/*width: 300px !important;*/
+
+	}
+
+	.ExcursionFilters.NewSearch {
+		width: 175px;
+	}
+
+	.ExcursionFilters {
+		width: 130px;
+	}
+
+	.cmbDeparture {
+		margin-left: 23px;
+	}
+
+
+	.lbl_AccomodationInfo {
+		width: 100%;
+	}
+
+	.div_AccomodationDiv {
+		display: inline-grid;
+	}
+
+	.cmbLanguage {
+		margin-left: 25px;
+	}
+
+	#li_spd_tabMenu_2, #li_spd_tabMenu_3 {
+		margin-top: 20px !important;
+	}
+
+
+
+
+	.div_Excursion::after {
+		/*	width: 95vw !important;*/
+	}
+
+	.Excursions {
+		padding-left: 0px;
+	}
+
+	.detailsbtn {
+		margin-left: 0px;
+	}
+
+	.middleelement:after {
+		display: none !important;
+	}
+
+	.imageseperator {
+		width: 1px;
+		height: 174px;
+		margin-top: 13px;
+	}
+
+
+	.container1280, .imagesize {
+		/*width: 97vw !important; */
+		background-color: #F0F0F0;
+	}
+
+	.div_Excursion::after {
+		/*width: 95vw !important;*/
+	}
+
+	.Excursions {
+		padding-left: 0px;
+	}
+
+	.detailsbtn {
+		margin-left: 0px;
+	}
+
+	.middleelement:after {
+		display: none !important;
+	}
+
+	.imageseperator {
+		width: 1px;
+		height: 174px;
+		margin-top: 13px;
+	}
+ 
+}
+
+.container320 {
+	width: 320px;
+}
+
+.clearfilterspan {
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 15px;
+	color: #848AA5;
+	color: rgb(132, 138, 165);
+}
+
+.movetop17 {
+	margin-top: -17px;
+}
+
+.movetop39 {
+	margin-top: -39px;
+}
+
+.Bookbtnmobile {
+	margin-top: -39px;
+	background-color: #0ABFF2;
+	border: none;
+	background-size: 300px 100px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	outline: none;
+	display: block !important;
+	margin-bottom: 10px;
+	padding-top: 8px;
+	width: 320px;
+	height: 38px;
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width:1279px) {
+	.timeblue {
+		position: absolute;
+		bottom: 10px;
+	}
+	.subheader::after {
+		margin-right: 0px;
+	}
+
+	.sortdiv {
+		padding-right: 15px !important;
+	}
+
+	.container350 {
+		/*width: 320px !important;*/
+		/*margin-left: -7px;*/
+	}
+
+	.excursionfilters {
+		margin-left: 0px;
+	}
+
+	.collapseExample {
+	/*	width: 310px !important;*/
+	}
+
+	.imagesize {
+		/*	width: 218px !important*/
+	}
+
+	.Excursions {
+		/*width: 650px !important*/
+	}
+
+	.desktopdiv {
+		display: block;
+	}
+
+	.mobilediv {
+		display: none;
+	}
+
+	.container1280header {
+		width: 100%;
+	}
+
+	.container1280 {
+		width: 100%;
+		/*width: 992px !important;*/
+	}
+
+	.excursionouter {
+		/*width: 250px !important;*/
+	}
+
+	.div_Excursion::after {
+		/*width: 654px;*/
+	}
+
+	.detailsbtn {
+		margin-left: 0px;
+		margin-top: 60px !important;
+	}
+}
+
 	
 	
-	.form-control {
-      border: 0;
-    border-radius: 0;
-   
-}
 	
-	.where {
-    float: left;
-}
-	.breadcrumb-item {
-    color: #FFFFFF !important;
-}
-	.breadcrumb a {
-    color: #fff;
-}
-	
-.filterspanouter {
-    background-color: white;
-    width: 132px;
-    height: 36px;
-    border-radius: 25px;
-    text-align: center;
-    padding-top: 6px;
-}
 .svgclass { 
 	    url('images/point.svg');
 		padding: 8px 8px 8px 8px;
@@ -506,1137 +1473,7 @@
 	/* End of footer*/
 	
 
-	
-.filtersfill {
-    margin-left: -18px;
-    display: block;
-    color: #24263d;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.tourfounddiv {
-    text-align: left;
-    padding-left: 0px!important;
-}
-
-.sortdiv {
-	text-align: right; 
-}
-.desktopdiv {
-	display:block;
-}
-.mobilediv {
-	display:none;
-}
-.div_ESR_ddls {
-	display: none;
-}
-
-.div_Excursion::after {
-    content: "";
-    background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
-    margin-bottom: 40px;
-    display: block;
-    height: 2px;
-    padding-left: 0;
-    margin-right: 0;
-    width: 100%;
-}
-.collapseExample::after {
-	
-	/*width: 320px;*/
-}
-
-
-
-.custom-select {
-	width: 30%;
-	border-radius: 15px;
-	color: #0ABFF2;
-	background-image: url(svg/bluearrowdown.svg);
-	background-repeat: no-repeat;
-	background-position: right;
-	background-color: #ffffff;
-	background-size: 10px;
-	background-position-x: 111px;
-}
-.middleelement {
-	display:inline-block;
-}
-.middleelement:after {
-	content: "";
-	background: url(images/seperator.svg);
-	background-repeat: no-repeat;
-	width: 8px;
-	height: 160px;
-	display: inline-block;
-	float: right;
-	margin-top: 20px;
-}
-
-.careful {
-	/* background-image: url(svg/fakos.svg); */
-	background-repeat: no-repeat;
-	width: 15px;
-	height: auto;
-	margin-right: 2px;
-	display: inline-block;
-}
-.movedown {
-    margin-bottom: 20px;
-    padding-left: 30px;
-}
-.Excursionsfound {
-	color: #0ABFF2;
-	
-}
-.toursfound {
-	color: #0ABFF2;
-	font-family: 'proxima-nova', sans-serif;
-}
-.movedown10 {
-	padding-top:10px;
-}
-.imagesizediv {
-	
-
-}
-.imagesize {
-    width: 100%;
-    position: relative;
-    height: 199px;
-    margin-left: 0px;
-}
-.topleftimagespan {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: #0ABFF2;
-}
-.div_ESR_body {
-	display: block;
-	float: left;
-	/*width: 707px;*/ /*710px*/ /*updated by akoukouri 23/01/2018*/
-	height: auto;
-	font-family: Trebuchet MS;
-	font-family: Roboto, arial; /*added by akoukouri 23/01/2018*/
-	font-weight: 400; /*added by akoukouri 23/01/2018*/
-	margin-left: -6px; /*added by akoukouri 23/01/2018*/
-	margin-top: 28px; /*added by akoukouri 23/01/2018*/
-}
-
-.Excursions {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: auto;
-    padding-left: 0px;
-    padding-bottom: 30px;
-    margin-bottom: 18px;
-}
-.div_ex_IMGContainer
-{
-    float:left;
-   /* width: 250px;*/
-    margin-bottom: 5px;
-    display:block;
-    position: relative;
-}
-
-.lbl_ex_Currency:before {
-    content: "from";
-    display: block;
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 15px;
-    color: #24263D;
-    margin-bottom: -12px;
-	margin-top:10px;
-	font-weight:400;
-}
-.lbl_ex_ExcursionFromPrice:after {
-	content: "per person";
-	display: block;
-	font-family: 'proxima-nova', sans-serif;
-	font-size: 15px;
-	color: #24263D;
-	font-weight: normal !important;
-	margin-top: -12px;
-	margin-bottom: 30px;
-	font-weight: 400!important;
-}
-.lbl_ex_ExcursionFromlbl, .lbl_ex_ExcursionFromPrice, .lbl_ex_Currency, .lbl_ex_PerPerson {
-    z-index: 3;
-    color: red;
-    font-size: 22px;
-    color: rgb(229, 26, 74);
-    font-weight: 700; /*bold*/ /*updated by akoukouri 23/01/2018*/
-}
-
-
-
-.lbl_ex_ExcursionFromPrice {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-}
-
-.rightarrow {
-    background-image: url(images/rightarrow.svg);
-    background-repeat: no-repeat;
-    padding: 6px 9px 6px 9px;
-    white-space: nowrap;
-}
-
-
-
-
- 	.imageseperator {
-		background-image: url(images/horizontalseperator.svg);
-		background-repeat: no-repeat;
-		padding: 61px 47px 51px 59px;
-		white-space: nowrap;
-		margin-top: 10px;
-		margin-left: 58px;
-	} 
-
-.rightarrow {
-	background-image: url(images/rightarrow.svg);
-	background-repeat: no-repeat;
-	padding: 6px 9px 6px 9px;
-	white-space: nowrap;
-}
-
-
-.bluespan {
-	color: #0ABFF2
-}
-
-.rightbluearrow {
-    background-image: url(images/rightbluearrow.svg);
-    background-repeat: no-repeat;
-    padding: 7px;
-    white-space: nowrap;
-    margin-top: -3px;
-    margin-right: 5px;
-}
-
-.cbx {
-	background-repeat: no-repeat;
-	width: 16px;
-	height: 16px;
-	font-family: 'proxima-nova', sans-serif;
-}
-
-input[type='checkbox'] {
-	-webkit-appearance: none;
-	width: 20px;
-	height: 20px;
-	background: url(images/backcircleresults.svg);
-	border-radius: 50%;
-	outline: none;
-	/*box-shadow: 0 0 5px 0px gray inset;*/
-}
-
-	input[type='checkbox']:before {
-		content: '';
-		display: block;
-		width: 60%;
-		height: 60%;
-		margin: 20% auto;
-		border-radius: 50%;
-	}
-
-	input[type='checkbox']:checked:before {
-		background: url(images/tick.svg);
-		background-repeat: no-repeat;
-		width: 15px;
-		height: 20px;
-	}
-
-
-
-.activitiesfontmobdiv {
-	margin-top: -10px;
-	margin-left: -17px;
-}
-
-.activitiesfontmob {
-	font-family: 'proxima-nova', sans-serif; 
-	font-size: 16px;
-	line-height: 26px;
-	color: #24263D;
-	color: rgb(36, 38, 61);
-}
-
-.filterresults {
-	/*width: 100%;*/
-	height: 2px;
-	background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
-	margin-bottom: 20px;
-}
-
-.excursionresults {
-	/*width: 98%;*/
-	height: 2px;
-	background: linear-gradient(180deg,#00d3a7 94%, #0ac0f2 100%);
-	margin-bottom: 40px;
-}
-
-
-.breadcrumb {
-	display: inline-flex !important;
-	text-align: center !important;
-	background: none !important;
-}
-
-.breadcrumb-item:hover {
-	color: #FFFFFF !important;
-}
-
-.breadcrumb-item {
-	color: #FFFFFF !important;
-}
-
-	.breadcrumb-item::before {
-		content: ">" !important;
-		color: #FFFFFF !important;
-	}
-
-.first::before {
-	content: "" !important;
-}
-
-.searchbtndiv {
-    border: 1px solid #FFFFFF;
-    display: inline-block;
-    max-width: 200px;
-    text-align: center;
-}
-
-.searchbtndnn {
-	display: inline-block;
-}
-
-.input-group-text {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: inline-block;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 4px;
-	margin-bottom: 0;
-	font-size: 18px;
-	font-weight: 900;
-	line-height: 1.5;
-	color: rgb(255,255,255);
-	text-align: center;
-	white-space: nowrap;
-	border: none;
-	background: none;
-}
-
-.input-group > .form-control, .input-group > .form-control-plaintext, .input-group > .custom-select, .input-group > .custom-file {
-	position: relative;
-	-webkit-box-flex: 1;
-	-ms-flex: 1 1 0%;
-	flex: 1 1 0%;
-	min-width: 0;
-	margin-bottom: 0;
-	height: 50px;
-	border-radius: 50px 0px 0px 50px;
-}
-.leftclockspan, .lblBtnLoadMore {
-	color: #FFFFFF;
-}
-.whitearrowdownloadmore {
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 7px;
-	display: inline-block;
-}
-
-.loadmorediv {
-	width: 230px;
-	height: 70px;
-	background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-	border-radius: 25px;
-	padding-top: 23px;
-}
-.leftclock {
-	/*background-image: url(svg/leftclock.svg);*/
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 7px;
-	display: inline-block;
-}
-.topleftimagespan {
- 
-	width: 87px;
-	height: 29px;
-	padding-top: 4px;
-}
-.excsearchfilters {
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-right: 2px;
-	display: inline-block;
-	margin-top:-9px;
-}
-.fakos {
-	/* background-image: url(svg/fakos.svg); */
-	background-repeat: no-repeat;
-	width: 18px;
-	height: 18px;
-	margin-right: 2px;
-	display: inline-block;
-	    margin-top: -4px;
-}
-
-	.searchbtn {
-    display: inline-block;
-    background-image: none;
-    padding-left: 0;
-    background-repeat: no-repeat;
-    border-radius: 0;
-    border: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    white-space: nowrap;
-    color: rgba(255, 255, 255, 1) !important;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-
-
-.excursionfilters {
-	background: rgba(36, 38, 61, 1);
-	/*width: 319px;*/
-	margin-bottom: 0px;
-	padding-top: 6px; 
-}
-
-	.ExcursionFilterspan {
-		font-family: 'proxima-nova', sans-serif;
-		font-weight: bold;
-		font-size: 25px;
-		color: #FFFFFF;
-		color: rgb(255, 255, 255);
-	}
-
-	.div_ESR_body {
-		/*width: 100px;*/
-	}
-
-	.dots {
-		/*background-image: url(svg/dots.svg);*/
-		background-repeat: no-repeat;
-		/* padding: 6px 9px 6px 9px; */
-		white-space: nowrap;
-		/* margin-left: 192px; */
-		width: 34px;
-		/* height: 100%; */
-		float: right;
-		margin-top: 5px;
-		margin-right: 10px;
-	}
-
-		.dots.dots2 {
-			margin-right: -43px;
-		}
-
-	.points {
-		background-image: url(svg/points.svg);
-		background-repeat: no-repeat;
-		padding: 20px 25px 20px 25px;
-		vertical-align: top;
-	}
-
-	.ship {
-		background-image: url(svg/ship.svg);
-		background-repeat: no-repeat;
-		padding: 20px 20px 20px 20px;
-		vertical-align: top;
-		margin-top: 2px;
-	}
-
-	.openlock {
-		background-image: url(svg/openlock.svg);
-		background-repeat: no-repeat;
-		padding: 20px 25px 20px 25px;
-		vertical-align: top;
-		/*margin-right: 95px;
-    margin-bottom: 120px*/
-	}
-
-	.toursexcursions {
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-		/* width: 245px; */
-		/* height: 106px; */
-		margin-bottom: 10px;
-		background-repeat: no-repeat;
-		border-radius: 10px;
-		border: 0px;
-		padding: 21px;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none;
-		/* margin-bottom: 120px; */
-		/*max-width: 350px;*/
-		display: block;
-	}
-
-	.privateexcursions {
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-		/* width: 245px; */
-		/* height: 106px; */
-		background-repeat: no-repeat;
-		border-radius: 10px;
-		border: 0px;
-		padding: 21px;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none;
-		/* margin-bottom: 120px; */
-		/* padding-right: 52px !important; */
-		max-width: 350px;
-	}
-
-	.privateexcursionslbl {
-		font-family: 'proxima-nova', sans-serif;
-		font-size: 15px !important;
-		color: #FFFFFF;
-		color: rgb(255, 255, 255);
-		font-size: 12px;
-		width: 93px;
-		word-break: normal;
-		font-weight: 900 !important;
-		margin-right: 10px;
-		text-align: left;
-		text-transform: uppercase;
-		margin-right: 25px;
-	}
-
-.whitebackground {
-	background: rgba(255, 255, 255, 1);
-
-}
-	.customheight {
-		height:160px;
-	}
-.lbl_ESingRes_ExcursionTitle {
-	padding-top: 40px;
-	font-family: 'proxima-nova', sans-serif;
-	color: #24263D;
-	font-size: 20px;
-	font-weight: 900;
-}
-	.lbl_ESingRes_ExcursionTitle:after {
-		content: "";
-		background-image: url(svg/blackline.svg);
-		display: block;
-		padding: 3px 1px 1px 0px;
-		width: 100px;
-	}
-.beforespan {
-	padding-top: 15px;
-	font-family: 'proxima-nova', sans-serif;
-	color: #666666;
-} 
-.movedown15 {
-	padding-top: 15px;
-}
-.detailsbtn {
-	padding: 2px 10px 2px 10px;
-	background-repeat: no-repeat;
-	border: 1px solid #0ABFF2;
-	font-family: 'proxima-nova', sans-serif;
-	font-size: 14px;
-	white-space: nowrap;
-	color: rgba(10, 191, 242, 1) !important;
-	text-decoration: none !important;
-	display: block;
-	width: fit-content;
-	margin-left: 8px;
-	margin-top: 78px !important;
-}
-
-	.viewallbtn {
-		padding: 2px 10px 2px 10px;
-		background-repeat: no-repeat;
-		border: 1px solid white;
-		font-family: 'proxima-nova', sans-serif;
-		font-size: 14px;
-		white-space: nowrap;
-		color: rgba(255, 255, 255, 1) !important;
-		text-decoration: none !important;
-		display: block;
-		width: fit-content;
-		margin-left: 8px;
-	}
-
-
-	.sendbottom {
-		padding-bottom: 25px;
-		max-width: 673px;
-    margin-top: 13px;
-	}
-
-	.engine-header {
-		background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
-	}
-
-	.wdywtg {
-		display: inline-block !important;
-		    text-align: center;
-		 
-	}
-
-	.whiteline {
-		/* background-image: url(svg/fakos.svg); */
-		background-repeat: no-repeat;
-		width: 150px;
-		height: 5px;
-		margin-right: 2px;
-		display: inline-block;
-		margin-bottom: 10px;
-		    margin-top: 10px;
-	}
-
-	#div_ESR_HeaderDiv {
-		display: none;
-	} 
-
-	.fontsize {
-		font-family: 'proxima-nova', sans-serif;
-		font-size: 44px;
-		color: rgb(255, 255, 255);
-		margin-bottom: 0 !important;
-	}
-
-	.fontbold {
-		font-family: 'proxima-nova', sans-serif !important;
-		font-weight: 900;
-	}
-
-.middle-engine {
-	background-image: url(jpeg/frontpage.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 	 
-}
-
-.container1280header{
-	width: 1280px;
-} 
-
-.container1280 {
-	width: 1280px;
-} 
- 
-.imageseperatorh {
-	display:none;
-}
-
-
-
-
-
-
-.excursionouter {
-    text-align: left;
-    margin-left: 0px;
-    display: inline-block;
-    float: left;
-}
-.excursioninner {
-	height: 160px;
-	display: inline-block;
-}
-.timeblue {
-	display: inline-block;
-}
-.nice-select {
-    float: right !important;
-    border-radius: 45px;
-}
-
-.current {
-	color: #0ABFF2!important;
-	font-family: 'proxima-nova', sans-serif!important;
-}
-.nice-select:after {
-	border-right: 2px solid #0ABFF2 !important;
-	border-Bottom: 2px solid #0ABFF2 !important;
-}
-.careful2 {
-	margin-right: 3px;
-	display: inline-block;
-	margin-top: -3px;
-}
-
-
-.round {
-	position: relative;
-	width: 30px;
-	display: inline-block;
-}
-
-	.round label {
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 21px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 21px;
-}
-
-		.round label:after {
-    border: 2px solid #00d3a7;
-    border-top: none;
-    border-right: none;
-    content: "";
-    height: 6px;
-    left: 3px;
-    opacity: 0;
-    position: absolute;
-    top: 5px;
-    transform: rotate(-45deg);
-    width: 12px;
-}
-.round input[type="checkbox"] {
-	visibility: hidden;
-}
-
-.round input[type="checkbox"]:checked + label {
-	border-color: #00d3a7;
-}
-
-.round input[type="checkbox"]:checked + label:after {
-	opacity: 1;
-}
-
-
-@media screen and (max-width: 991px) {
-.movedown {
-       padding-left: 15px;
-    padding-right: 15px;
-}
-	span.filterspan {
-    font-size: 19px!important;
-    font-weight: 700;
-    color: #0abff2;
-}
-	
-	input#test {
-    display: block;
-}
-	
-	.sortdiv {
-    margin-top: 7px;
-}
-	
-	.outer-menu {
-    width: 100%;
-}
-	
-	.excsearchfilters {
-    background-repeat: no-repeat;
-    width: 19px;
-    height: auto;
-    margin-right: 2px;
-    display: inline-block;
-    margin-top: -4px;
-}
-	
-	.filterspanouter {
-    background-color: white;
-    width: 100%;
-    padding: 5px;
-    border-radius: 25px;
-    text-align: center;
-}
-	
-	
-	}
-	
-	
-	
-@media screen and (max-width: 575px) {
-	.breadcrumb {
-    font-size: 11px;
-}
-	
-	.Bookbtnmobile {
-		margin-top: 20px!important;
-	}
-	.subheader::after {
-		margin-right: 0px;
-	}
-	.div_Excursion {
-		
-	}
-	.desktopdiv {
-		display: none;
-	}
-
-	.mobilediv {
-		display: block;
-	}
-
-	.fontsize {
-		font-size:28px!important;
-	}
-
-	.wdywtg {
-		margin-bottom: 10px !important;
-		
-	}
-
-	.container1280header {
-		width:100%!important;
-	}
-	.container1280 {
-		width: 100%;
-		/*width: 992px !important;*/
-	}
-	.thirddiv:before {
-		content: "";
-		background: url(svg/horizontalseperator.svg);
-		background-repeat: no-repeat;
-		margin-top: 25px;
-		width: 50%;
-		height: 8px;
-		display: inline-block;
-	}
-	.detailsbtn {
-		/*width: 350px;*/
-		margin-bottom: 25px;
-		margin-top: 40px !important;
-	}
-	.select {
-		display: none !important;
-	}
-	.middleelement:after {
-		display: none !important;
-	}
-		.viewallbtn {
-		margin-left: 0px !important;
-	}
-
-	.imagesize {
-		width: 100% !important;
-	}
-
-	  
-	.Excursion {
-		margin-left: 0px !important;
-		/*width: 300px !important;*/
-	}
-
-	.ExcursionFilters.NewSearch {
-	/*	width: 175px;*/
-	}
-
-	.ExcursionFilters {
-		/*width: 130px;*/
-	}
-
-	.cmbDeparture {
-		margin-left: 23px;
-	}
-
-
-	.lbl_AccomodationInfo {
-		width: 100%;
-	}
-
-	.div_AccomodationDiv {
-		display: inline-grid;
-	}
-
-	.cmbLanguage {
-		margin-left: 25px;
-	}
-
-	#li_spd_tabMenu_2, #li_spd_tabMenu_3 {
-		margin-top: 20px !important;
-	}
-
-
-	.container1280, .imagesize {
-	/*	width: 96vw !important;*/
-		background-color: #F0F0F0;
-	}
-
-	.div_Excursion::after {
-		/*width: 95vw !important;*/
-			
-	}
-
-	.Excursions {
-		padding-left: 0px;
-	}
-
-	.detailsbtn {
-		margin-left: 0px;
-	}
-
-	.middleelement:after {
-		display: none !important;
-	}
-
-	.imageseperator {
-		width: 1px;
-		height: 174px;
-		margin-top: 13px;
-	}
-}
-
-@media screen   and (min-width: 576px) and (max-width:991px) {
-	.Bookbtnmobile {
-		margin-top: 20px !important;
-	}
-	.div_Excursion {
-	
-	}
-	.desktopdiv {
-		display: none;
-	}
-
-	.mobilediv {
-		display: block;
-	}
-	.middle-enginediv {
-	/*	width: 97vw;*/
-	}
-	.fontsize {
-		font-size: 33px;
-	}
-	.wdywtg {
-		margin-bottom: 10px !important;
-	/*	width: 90% !important;*/
-	}
-
-	.container1280header {
-		/*width: 97vw !important;*/
-		width:100%;
-	}
-	.container1280 {
-		width: 100%;
-		/*width: 992px !important;*/
-	}
-	.thirddiv:before {
-		content: "";
-		background: url(svg/horizontalseperator.svg);
-		background-repeat: no-repeat;
-		margin-top: 25px;
-		width: 50%;
-		height: 8px;
-		display: inline-block;
-	}
-
-	.detailsbtn {
-		width: 350px;
-		margin-bottom: 25px;
-		margin-top: 40px !important;
-	}
-
-	.select {
-		display: none !important;
-	}
-
-	.middleelement:after {
-		display: none !important;
-	}
-
-	.viewallbtn {
-		margin-left: 0px !important;
-	}
-
-	.imagesize {
-		width: 100% !important;
-	}
-
-
-	.Excursion {
-		margin-left: 0px !important;
-		/*width: 300px !important;*/
-	}
-
-	.ExcursionFilters.NewSearch {
-		width: 175px;
-	}
-
-	.ExcursionFilters {
-		width: 130px;
-	}
-
-	.cmbDeparture {
-		margin-left: 23px;
-	}
-
-
-	.lbl_AccomodationInfo {
-		width: 100%;
-	}
-
-	.div_AccomodationDiv {
-		display: inline-grid;
-	}
-
-	.cmbLanguage {
-		margin-left: 25px;
-	}
-
-	#li_spd_tabMenu_2, #li_spd_tabMenu_3 {
-		margin-top: 20px !important;
-	}
-
-
- 
-
-	.div_Excursion::after {
-	/*	width: 95vw !important;*/
-	}
-
-	.Excursions {
-		padding-left: 0px;
-	}
-
-	.detailsbtn {
-		margin-left: 0px;
-	}
-
-	.middleelement:after {
-		display: none !important;
-	}
-
-	.imageseperator {
-		width: 1px;
-		height: 174px;
-		margin-top: 13px;
-	}
-
-
-	.container1280, .imagesize {
-		/*width: 97vw !important; */
-		background-color: #F0F0F0;
-	}
-
-	.div_Excursion::after {
-		/*width: 95vw !important;*/
-	 
-	}
-
-	.Excursions {
-		padding-left: 0px;
-	}
-
-	.detailsbtn {
-		margin-left: 0px;
-	}
-
-	.middleelement:after {
-		display: none !important;
-	}
-
-	.imageseperator {
-		width: 1px;
-		height: 174px;
-		margin-top: 13px;
-	}
-}
-.container320 {
-	width:320px;
-}
-.clearfilterspan {
-	font-family: 'proxima-nova', sans-serif;
-	font-size: 15px;
-	color: #848AA5;
-	color: rgb(132, 138, 165);
-}
-.movetop17 {
-	margin-top: -17px;
-}
-.movetop39 {
-	margin-top: -39px;
-}
-
-.Bookbtnmobile {
-	margin-top: -39px;
-	background-color: #0ABFF2;
-	border: none;
-	background-size: 300px 100px;
-	font-weight: bold;
-	font-size: 18px;
-	color: #FFFFFF;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	outline: none;
-	display: block !important;
-	margin-bottom: 10px;
-	padding-top: 8px;
-	width: 320px;
-	height: 38px;
-}
-
- 
-	@media screen and (min-width: 992px) and (max-width:1279px) {
-	.subheader::after {
-		margin-right:0px;
-	}
-	.sortdiv {
-		padding-right: 15px !important;
-	}
-	.container350 {
-		/*width: 320px !important;*/
-		margin-left: -7px;
-	}
-	.excursionfilters {
-		margin-left:0px;
-	}
-	 
-	.collapseExample {
-		 width: 310px!important; 
-	}
-	.imagesize {
-	/*	width: 218px !important*/
-	}
-	.Excursions {
-		/*width: 650px !important*/
-	}
-	.desktopdiv {
-	display: block;
-	}
-
-	.mobilediv {
-		display: none;
-	}
-	.container1280header {
-		width: 100%;
-	}
-	.container1280 {
-		width: 100%;
-		/*width: 992px !important;*/
-	}
-	.excursionouter {
-		/*width: 250px !important;*/
-	}
-	.div_Excursion::after {
-		/*width: 654px;*/
-	}
-	.detailsbtn {
-		margin-left: 0px;
-		margin-top: 60px !important;
-	}
-}	
 </style>
 
 
@@ -1745,41 +1582,32 @@ input[type='checkbox'] {
 </div>
 
 	
-	
-<div class="middle-enginediv"> 
+	<div class="middle-enginediv"> 
 <center> 
 
 <div class="engine-header">
 <div class="container1280header">
 
-<div class="row">  
-<div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item first"><a href="#">HOME</a></li>
-    <li class="breadcrumb-item"><a href="#">TOURS</a></li>
-    <li class="breadcrumb-item "><a href="#">DESTINATION</a></li>
-    <li class="breadcrumb-item active" aria-current="page">ATHENS</li>
-  </ol>
-</nav>
-</div>
-</div>
+
 
 <div class="row">  
-            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                <div> <label class="fontsize"> TOURS <strong style="font-weight: 900">SEARCH</strong> RESULTS</label></div>
+            <div class="col-12 col-sm-12 col-xl-12 col-lg-12 padding10" align="center">
+                <div> <label class="fontsize"> TOURS </label> <label class="fontsize fontbold"> SEARCH </label>   <label class="fontsize"> RESULTS </label></div>
             </div>
 </div>
 <div class="row">  
         <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-             <img src="images/whiteline.svg" class="whiteline">
+             <img src="/localhost_hammer/portals/0/css/svg/whiteline.svg" class="whiteline">
         </div>
 </div>
+
 <div class="sendbottom col-12 col-sm-12 col-xl-12 col-lg-12"> 
-   <div class="col-12 col-sm-12 col-xl-8 col-lg-8 where">
-    <input class="form-control mr-sm-2 wdywtg" type="text" placeholder="Where do you want to go ?" aria-label="Search"> </div>
+    <div class="col-12 col-sm-12 col-xl-8 col-lg-8 where">
+    <input id="tourSearch" class="form-control mr-sm-2 wdywtg ui-autocomplete-input" type="text" placeholder="Destination, Activity, Attraction, Tour" aria-label="Search" autocomplete="off">
+    <input id="tourSearchValue" type="hidden">  
+    </div>
     <div class="searchbtndiv col-12 col-sm-12 col-xl-4 col-lg-4">
-        <a href="" class="searchbtn"> <img src="images/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">NEW SEARCH</span></a>
+        <a id="btnSearchTours" href="" class="searchbtn"> <img src="/localhost_hammer/portals/0/css/svg/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">NEW SEARCH</span></a>
     </div>
 </div>
 </div>
@@ -1793,56 +1621,125 @@ input[type='checkbox'] {
                 <div class="row  ">
                     <div class="container350header"> 
                     <div class="col-12 col-sm-12 col-xl-12 col-lg-12 " align="center">
-                    <div class="excursionfilters"><img id="excfiltersimg" src="images/excsearchfilters.svg" class="excsearchfilters"> <span class="ExcursionFilterspan">FILTERS</span></div>
+                    <div class="excursionfilters"><img id="excfiltersimg" src="/localhost_hammer/portals/0/css/svg/excsearchfilters.svg" class="excsearchfilters"> <span class="ExcursionFilterspan">Filters</span></div>
                     </div> 
                     </div>
                 </div>
-          <div class="subheader">
+                <div class="subheader">
                 <div class="row  container350 "> 
-                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 btnplusminus" align="center"> 
-                      <img id="minusplus_4" src="images/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="btn-hide"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlefilter" align="center"> 
+                      <img id="minusplus_4" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
                     </div> 
-                    <div class="col-10 col-sm-10 col-xl-10 col-lg-10 titlefilter" align="left">
+                    <div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left">
                     <div><span class="activitiesfont">DESTINATIONS</span></div>
                     </div> 
-                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 btnclose" align="center">
-                     <img src="images/remove.svg" class="closex"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 " align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" onclick="clearFilter('cbx_DestinationSelection')" class="fakos"> 
                     </div>  
                 </div>
-                <div id="collapseDestinations" class="collapseExample" style="display: block;"> <div class="row   container350 selectfilter"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_0" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_DestinationSelection_0','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Athens</span></div></div></div> <div class="row   container350 selectfilter"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_1" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_DestinationSelection_1','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Meteora</span></div></div></div></div>
+                <div id="collapseDestinations" class="collapseExample"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_0" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_DestinationSelection_0','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Meteora</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_1" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_DestinationSelection_1','cbx_DestinationSelection');" checked=""><label for="cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Athens</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_2" class="  cbx_DestinationSelection" value="1000000004" onclick="handleFilterSelectionClick('cbx_DestinationSelection_2','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_2"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Santorini</span></div></div></div></div>
                 </div>
-                <input type="hidden" id="hf_TourFilters_destinationIds">
-              <div class="subheader">
-                <div class="row  container350 "> 
-                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 btnplusminus" align="center"> 
-                      <img id="minusplus_4" src="images/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="btn-hide"> 
+                <input type="hidden" id="hf_TourFilters_destinationIds" value="1000000001">
+                <div class="subheader">
+                <div class="row    container350"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlefilter" align="center"> 
+                      <img id="minusplus_1" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseActivities','minusplus_1')" class="fakos btn-hide"> 
                     </div> 
-                    <div class="col-10 col-sm-10 col-xl-10 col-lg-10 titlefilter" align="left">
-                    <div><span class="activitiesfont">DESTINATIONS</span></div>
+                    <div class="col-10 col-sm-10 col-xl-10 col-lg-10" align="left">
+                    <div><span class="activitiesfont">ACTIVITIES</span></div>
                     </div> 
-                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 btnclose" align="center">
-                     <img src="images/remove.svg" class="closex"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 " align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" onclick="clearFilter('cbx_ActivitySelection')" class="fakos"> 
                     </div>  
                 </div>
-                <div id="collapseDestinations" class="collapseExample" style="display: block;"> <div class="row   container350 selectfilter"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_0" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_DestinationSelection_0','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Athens</span></div></div></div> <div class="row   container350 selectfilter"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_DestinationSelection_1" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_DestinationSelection_1','cbx_DestinationSelection');"><label for="cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Meteora</span></div></div></div></div>
+                <div id="collapseActivities" class="collapseExample"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_ActivitySelection_0" class="  cbx_ActivitySelection" value="1000000003" onclick="handleFilterSelectionClick('cbx_ActivitySelection_0','cbx_ActivitySelection');"><label for="cbx_ActivitySelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Hiking in Meteora</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_ActivitySelection_1" class="  cbx_ActivitySelection" value="1000000004" onclick="handleFilterSelectionClick('cbx_ActivitySelection_1','cbx_ActivitySelection');"><label for="cbx_ActivitySelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Temple of Apollo</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_ActivitySelection_2" class="  cbx_ActivitySelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_ActivitySelection_2','cbx_ActivitySelection');"><label for="cbx_ActivitySelection_2"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Picnic in the Diomedes Botanical Gardens</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_ActivitySelection_3" class="  cbx_ActivitySelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_ActivitySelection_3','cbx_ActivitySelection');"><label for="cbx_ActivitySelection_3"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Tango in the Streets</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_ActivitySelection_4" class="  cbx_ActivitySelection" value="1000000007" onclick="handleFilterSelectionClick('cbx_ActivitySelection_4','cbx_ActivitySelection');"><label for="cbx_ActivitySelection_4"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Hike From Fira to Oia</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_ActivitySelection_5" class="  cbx_ActivitySelection" value="1000000006" onclick="handleFilterSelectionClick('cbx_ActivitySelection_5','cbx_ActivitySelection');"><label for="cbx_ActivitySelection_5"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Wine tasting</span></div></div></div></div>
                 </div>
                 <input type="hidden" id="hf_TourFilters_activityIds">
-               
+                <div class="subheader">
+                <div class="row    container350"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlefilter" align="center"> 
+                      <img id="minusplus_2" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseAttractions','minusplus_2')" class="fakos btn-hide"> 
+                    </div> 
+                    <div class="col-10 col-sm-10 col-xl-10 col-lg-10" align="left">
+                    <div><span class="activitiesfont">ATTRACTIONS</span></div>
+                    </div> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1" align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" onclick="clearFilter('cbx_AttractionSelection')" class="fakos"> 
+                    </div>  
+                </div>
+                <div id="collapseAttractions" class="collapseExample"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_AttractionSelection_0" class="  cbx_AttractionSelection" value="1000000006" onclick="handleFilterSelectionClick('cbx_AttractionSelection_0','cbx_AttractionSelection');"><label for="cbx_AttractionSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Delphi Archaeological Museum</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_AttractionSelection_1" class="  cbx_AttractionSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_AttractionSelection_1','cbx_AttractionSelection');"><label for="cbx_AttractionSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Meteora</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_AttractionSelection_2" class="  cbx_AttractionSelection" value="1000000001" onclick="handleFilterSelectionClick('cbx_AttractionSelection_2','cbx_AttractionSelection');"><label for="cbx_AttractionSelection_2"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Acropolis</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_AttractionSelection_3" class="  cbx_AttractionSelection" value="1000000004" onclick="handleFilterSelectionClick('cbx_AttractionSelection_3','cbx_AttractionSelection');"><label for="cbx_AttractionSelection_3"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Santorini Volcano</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_AttractionSelection_4" class="  cbx_AttractionSelection" value="1000000005" onclick="handleFilterSelectionClick('cbx_AttractionSelection_4','cbx_AttractionSelection');"><label for="cbx_AttractionSelection_4"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Sunset in Oia</span></div></div></div></div>
+                </div>
+                <input type="hidden" id="hf_TourFilters_attractionIds">
+                <div class="subheader">
+                <div class="row    container350"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlefilter" align="center"> 
+                      <img id="minusplus_3" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseLanguages','minusplus_3')" class="fakos btn-hide"> 
+                    </div> 
+                    <div class="col-10 col-sm-10 col-xl-10 col-lg-10" align="left">
+                    <div><span class="activitiesfont">TOUR GUIDE</span></div>
+                    </div> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 " align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" onclick="clearFilter('cbx_LanguageSelection')" class="fakos"> 
+                    </div>  
+                </div>
+                <div id="collapseLanguages" class="collapseExample"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_LanguageSelection_0" class="  cbx_LanguageSelection" value="1000000002" onclick="handleFilterSelectionClick('cbx_LanguageSelection_0','cbx_LanguageSelection');"><label for="cbx_LanguageSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">English</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_LanguageSelection_1" class="  cbx_LanguageSelection" value="1000000003" onclick="handleFilterSelectionClick('cbx_LanguageSelection_1','cbx_LanguageSelection');"><label for="cbx_LanguageSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Swedish</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_LanguageSelection_2" class="  cbx_LanguageSelection" value="1000000007" onclick="handleFilterSelectionClick('cbx_LanguageSelection_2','cbx_LanguageSelection');"><label for="cbx_LanguageSelection_2"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">French</span></div></div></div></div>
+                </div>
+                <input type="hidden" id="hf_TourFilters_languageIds">
+                <div class="subheader">
+                <div class="row    container350"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlefilter" align="center"> 
+                      <img id="minusplus_6" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseCategories','minusplus_6')" class="fakos btn-hide"> 
+                    </div> 
+                    <div class="col-10 col-sm-10 col-xl-10 col-lg-10" align="left">
+                    <div><span class="activitiesfont">CATEGORIES</span></div>
+                    </div> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1" align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" onclick="clearFilter('cbx_CategorySelection')" class="fakos"> 
+                    </div>  
+                </div>
+                <div id="collapseCategories" class="collapseExample"> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_CategorySelection_0" class="  cbx_CategorySelection" value="1000000006" onclick="handleFilterSelectionClick('cbx_CategorySelection_0','cbx_CategorySelection');"><label for="cbx_CategorySelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Sightseeing Tours</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="cbx_CategorySelection_1" class="  cbx_CategorySelection" value="1000000003" onclick="handleFilterSelectionClick('cbx_CategorySelection_1','cbx_CategorySelection');"><label for="cbx_CategorySelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div><span class="filtersfill">Private Tours</span></div></div></div></div>
+                </div>
+                <input type="hidden" id="hf_TourFilters_categoryIds">
+                <div class="subheader">
+                <div class="row    container350"> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlefilter" align="center"> 
+                      <img id="minusplus_5" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseDateRange','minusplus_5')" class="fakos btn-hide"> 
+                    </div> 
+                    <div class="col-10 col-sm-10 col-xl-10 col-lg-10" align="left">
+                    <div><span class="activitiesfont">DATES</span></div>
+                    </div> 
+                    <div class="col-1 col-sm-1 col-xl-1 col-lg-1" align="center">
+                     <img src="/localhost_hammer/portals/0/css/svg/remove.svg" onclick="clearFilter('range')" class="fakos"> 
+                    </div>  
+                </div>
+                <div id="collapseDateRange" class="collapseExample">                                 
+                    <div class="row   container350">
+                        <div class="col-1 col-sm-1 col-xl-1 col-lg-1" align="center">
+                        </div>  
+                        <div class="col-11 col-sm-11 col-xl-11 col-lg-11" align="left">
+                           <input id="filterDateRange" type="text" name="daterange" class="range"> 
+                        </div>                    
+                       
+                    </div>
+                </div>  
+                </div>
+                <input type="hidden" id="hf_TourFilters_DateRange">
+                <input id="hf_tourFilters" type="hidden" value="{&quot;activityIds&quot;:&quot;&quot;,&quot;attractionIds&quot;:&quot;&quot;,&quot;languageIds&quot;:&quot;&quot;,&quot;destinationIds&quot;:&quot;1000000001&quot;,&quot;categoryIds&quot;:&quot;&quot;,&quot;dateRange&quot;:&quot;&quot;}">
 </div>
 <div class="col-12 col-sm-12 col-xl-8 col-lg-8 movedown">
    <div class="row">
        <div class="col-6 col-sm-6 col-xl-6 col-lg-6 movedown tourfounddiv">
               <div class="desktopdiv">    
-                  <img src="images/!.svg" class="careful">
-                  <span id="lblToursFoundNum" class="Excursionsfound">3</span>            
+                  <img src="/localhost_hammer/portals/0/css/svg/!.svg" class="careful">
+                  <span id="lblToursFoundNum" class="Excursionsfound">1</span>            
                   <span class="toursfound">TOURS FOUND</span>
               </div>
             <div class="mobilediv">
                  
-                <div class="outer-menu">
-                 <input class="checkbox-toggle" id="test" type="checkbox">
+                <div class="outer-menu" onclick="test()" style="cursor:pointer;">
+                  <input class="checkbox-toggle" id="test" type="checkbox">
                   <div class="filterspanouter">
-                    <img id="excsearchfiltersblue" src="images/excsearchfiltersblue.svg" class="excsearchfilters">
+                    <img id="excsearchfiltersblue" src="/localhost_hammer/portals/0/css/svg/excsearchfiltersblue.svg" class="excsearchfilters">
                     <span class="filterspan">Filters</span>
                   </div>
                   <div class="menuoff">
@@ -1853,8 +1750,8 @@ input[type='checkbox'] {
 
                              
                                 <div class="container320">  <div class="row">
-                                <div class="col-6 col-sm-6 col-xl-6 col-lg-6 " onclick="test()" style="cursor:pointer;" align="left">
-                                    <img src="images/xforfilters.svg" onclick="test()" class="fakos">  
+                                <div class="col-6 col-sm-6 col-xl-6 col-lg-6 " align="left">
+                                    <img src="/localhost_hammer/portals/0/css/svg/xforfilters.svg" onclick="test()" class="fakos">  
                                     <span class="ExcursionFilterspan">Filters</span> 
                                 </div> 
                                  <div class="col-6 col-sm-6 col-xl-6 col-lg-6 " align="right">
@@ -1867,14 +1764,14 @@ input[type='checkbox'] {
                           </li>
                                 <li class="subheader">
                                 <div class="row  movetop17  container350"> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
-                                  <img id="minusplus_4" src="images/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center"> 
+                                  <img id="minusplus_4" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
                                 </div> 
-                                <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
-                                <div><span style="font-weight:900" class="activitiesfont">DESTINATIONS</span></div>
+                                <div class="col-10 col-sm-10 col-xl-10 col-lg-10 titlelabel " align="left">
+                                <div><span style="font-weight:900" class=" activitiesfont">DESTINATIONS</span></div>
                                 </div> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
-                                 <img src="images/remove.svg" class="fakos"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center">
+                                 <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
                                 </div>  
                                 </div>
                                 <div id="mob_collapseDestinations" class="collapseExample" style=""> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="mob_cbx_DestinationSelection_0" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('mob_cbx_DestinationSelection_0', 'cbx_DestinationSelection');"><label for="mob_cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div class="activitiesfontmobdiv"><span class="activitiesfontmob">Athens</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" id="mob_cbx_DestinationSelection_1" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('mob_cbx_DestinationSelection_1', 'mob_cbx_DestinationSelection');"><label for="mob_cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div class="activitiesfontmobdiv"><span class="activitiesfontmob">Meteora</span></div></div></div></div>
@@ -1882,15 +1779,15 @@ input[type='checkbox'] {
                                
                                 <li class="subheader">
                                 <div class="row  movetop17  container350"> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
-                                    <img id="act_minusplus_4" src="images/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center"> 
+                                    <img id="act_minusplus_4" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
                                 </div> 
-                                <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
-                                <div><span style="font-weight:900" class="activitiesfont">ACTIVITIES</span></div>
+                                <div class="col-10 col-sm-10 col-xl-10 col-lg-10 titlelabel" align="left">
+                                <div><span style="font-weight:900" class=" activitiesfont">ACTIVITIES</span></div>
 
                                 </div> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
-                                    <img src="images/remove.svg" class="fakos"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center">
+                                    <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
                                 </div>  
                                 </div>
                                 <div id="mob_collapseActivities" class="collapseExample" style=""> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('mob_cbx_DestinationSelection_0', 'cbx_DestinationSelection');"><label for="mob_cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div class="activitiesfontmobdiv"><span class="activitiesfontmob">Tango in the Streets</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('mob_cbx_DestinationSelection_1', 'mob_cbx_DestinationSelection');"><label for="mob_cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div class="activitiesfontmobdiv"><span class="activitiesfontmob">Picnic in the Diomedes Botanical Gardens</span></div></div></div><div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('mob_cbx_DestinationSelection_1', 'mob_cbx_DestinationSelection');"><label for="mob_cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div class="activitiesfontmobdiv"><span class="activitiesfontmob">Hiking in Meteora</span></div></div></div><div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('mob_cbx_DestinationSelection_1', 'mob_cbx_DestinationSelection');"><label for="mob_cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div class="activitiesfontmobdiv"><span class="activitiesfontmob">Temple of Apollo</span></div></div></div></div>
@@ -1898,15 +1795,15 @@ input[type='checkbox'] {
 
                                 <li class="subheader">
                                 <div class="row  movetop17  container350"> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
-                                    <img id="att_minusplus_4" src="images/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center"> 
+                                    <img id="att_minusplus_4" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
                                 </div> 
-                                <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
-                                <div><span style="font-weight:900" class="activitiesfont">ATTRACTIONS</span></div>
+                                <div class="col-10 col-sm-10 col-xl-10 col-lg-10 titlelabel" align="left">
+                                <div><span style="font-weight:900" class="activitiesfont ">ATTRACTIONS</span></div>
 
                                 </div> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
-                                    <img src="images/remove.svg" class="fakos"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center">
+                                    <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
                                 </div>  
                                 </div>
                                 <div id="mob_collapseAttractions" class="collapseExample" style=""> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" class="  cbx_DestinationSelection" value="1000000001" onclick="handleFilterSelectionClick('mob_cbx_DestinationSelection_0', 'cbx_DestinationSelection');"><label for="mob_cbx_DestinationSelection_0"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div class="activitiesfontmobdiv"><span class="activitiesfontmob">Acropolis</span></div></div></div> <div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('mob_cbx_DestinationSelection_1', 'mob_cbx_DestinationSelection');"><label for="mob_cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div class="activitiesfontmobdiv"><span class="activitiesfontmob">Delphi Archaeological Museum</span></div></div></div><div class="row   container350"><div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"><div class="round"><input type="checkbox" class="  cbx_DestinationSelection" value="1000000002" onclick="handleFilterSelectionClick('mob_cbx_DestinationSelection_1', 'mob_cbx_DestinationSelection');"><label for="mob_cbx_DestinationSelection_1"></label></div></div><div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left"><div class="activitiesfontmobdiv"><span class="activitiesfontmob">Meteora</span></div></div></div></div>
@@ -1914,15 +1811,15 @@ input[type='checkbox'] {
 
                                 <li class="subheader">
                                 <div class="row  movetop17  container350"> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
-                                    <img id="atg_minusplus_4" src="images/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center"> 
+                                    <img id="atg_minusplus_4" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
                                 </div> 
-                                <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
-                                <div><span style="font-weight:900" class="activitiesfont">TOUR GUIDE</span></div>
+                                <div class="col-10 col-sm-10 col-xl-10 col-lg-10 titlelabel" align="left">
+                                <div><span style="font-weight:900" class="activitiesfont ">TOUR GUIDE</span></div>
 
                                 </div> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
-                                    <img src="images/remove.svg" class="fakos"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center">
+                                    <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
                                 </div>  
                                 </div>
                                 <div id="mob_collapseTOUR GUIDE" class="collapseExample" style="">  </div>
@@ -1930,21 +1827,21 @@ input[type='checkbox'] {
 
                                  <li class="subheader">
                                 <div class="row  movetop17  container350"> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center"> 
-                                    <img id="cat_minusplus_4" src="images/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center"> 
+                                    <img id="cat_minusplus_4" src="/localhost_hammer/portals/0/css/svg/minus.svg" onclick="showhide('collapseDestinations','minusplus_4')" class="fakos btn-hide"> 
                                 </div> 
-                                <div class="col-8 col-sm-8 col-xl-8 col-lg-8 " align="left">
-                                <div><span style="font-weight:900" class="activitiesfont">CATEGORIES</span></div>
+                                <div class="col-10 col-sm-10 col-xl-10 col-lg-10 titlelabel" align="left">
+                                <div><span style="font-weight:900" class="activitiesfont ">CATEGORIES</span></div>
 
                                 </div> 
-                                <div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">
-                                    <img src="images/remove.svg" class="fakos"> 
+                                <div class="col-1 col-sm-1 col-xl-1 col-lg-1 titlecss" align="center">
+                                    <img src="/localhost_hammer/portals/0/css/svg/remove.svg" class="fakos"> 
                                 </div>  
                                 </div>
                                 <div id="mob_collapseCATEGORIES" class="collapseExample" style="">  </div>
                                 </li>
 
-                                <li><a id="btnPriceSearchmobile" onclick="test()" class="Bookbtnmobile"><img src="images/rightminiarrow.svg" class="fakos"><span id="dnn_ctr538_ExcursionSearchResults_Span1">Done</span></a> </li>
+                                <li><a id="btnPriceSearchmobile" onclick="test()" class="Bookbtnmobile"><img src="/localhost_hammer/portals/0/css/svg/rightminiarrow.svg" class="fakos"><span id="dnn_ctr573_ExcursionSearchResults_Span1">Done</span></a> </li>
                        
                         </ul>
                       </div>
@@ -1956,33 +1853,30 @@ input[type='checkbox'] {
         </div>
         <div class="col-6 col-sm-6 col-xl-6 col-lg-6 movedown sortdiv">
             <div class="desktopdiv">
-                <select id="order" style="display: none;">
-                  <option>Sort by Price</option> 
-                </select><div class="nice-select" tabindex="0"><span class="current">Sort by Price</span><ul class="list"><li data-value="Sort by Price" class="option selected">Sort by Price</li></ul></div>
+                <select id="cmbOrderType" onchange="tourResultsSortingChanged()" style="display: none;">
+                  <option id="dnn_ctr573_ExcursionSearchResults_optionPriceAsc" value="PriceAsc">Sort by Price Asc</option> 
+                  <option id="dnn_ctr573_ExcursionSearchResults_optionPriceDesc" value="PriceDesc">Sort by Price Desc</option> 
+                  <option id="dnn_ctr573_ExcursionSearchResults_optionDurationAsc" value="DurationAsc">Sort by Duration Asc</option>
+                  <option id="dnn_ctr573_ExcursionSearchResults_optionDurationDesc" value="DurationDesc">Sort by Duration Desc</option>
+                </select><div class="nice-select" tabindex="0"><span class="current">Sort by Price Asc</span><ul class="list"><li data-value="PriceAsc" class="option selected">Sort by Price Asc</li><li data-value="PriceDesc" class="option">Sort by Price Desc</li><li data-value="DurationAsc" class="option">Sort by Duration Asc</li><li data-value="DurationDesc" class="option">Sort by Duration Desc</li></ul></div>
             </div>
             <div class="mobilediv">
-             <img src="images/!.svg" class="careful">
+             <img src="/localhost_hammer/portals/0/css/svg/!.svg" class="careful">
                   <span id="mob_lblToursFoundNum" class="Excursionsfound"></span>            
                   <span class="toursfound">TOURS FOUND</span>
             </div>
 
         </div>
-            <div id="dnn_ctr538_ExcursionSearchResults_Tours" class="Excursions">
-
-	<div class="div_Excursion" id="div_Excursion_0"><input id="hf_ESingRes_ExcursionID_0" type="hidden" value="1000003915"><div class="row"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 imageresults"><div class="imagesizediv"><img class="imagesize" src="images/"><div class="topleftimagespan"><img src="images/leftclock.svg" class="leftclock"><span class="leftclockspan">5 Hours</span></div></div></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 middleelement whitebackground"><div class="excursionouter"><div class="excursioninner"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12 movedown10"><span id="lbl_ESingRes_ExcursionTitle_0" class="lbl_ESingRes_ExcursionTitle ColorB">Acropolis Tour      </span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span class="beforespan"></span></div></div></div><div class="row"><div class="timeblue col-12 col-sm-12 col-xl-12 col-lg-12"><img src="images/!.svg" class="careful careful2"><span class="bluespan">In English </span></div></div></div></div><div class="col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground thirddiv"><span id="lbl_ex_Currency_0" class="lbl_ex_Currency">€</span><span id="lbl_ex_ExcursionFromPrice_0" class="lbl_ex_ExcursionFromPrice">20</span><img class="imageseperatorh" src="images/horizontalseperator.svg"> <a href="http://localhost/localhost_hammer/excursioninfo?TourID=1000003915" id="a_ESingRes_Details_0" class="detailsbtn"><img src="" class="rightbluearrow">Details</a></div></div></div>
-		    
-		    <div class="div_Excursion" id="div_Excursion_0"><input id="hf_ESingRes_ExcursionID_0" type="hidden" value="1000003915"><div class="row"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 imageresults"><div class="imagesizediv"><img class="imagesize" src="images/"><div class="topleftimagespan"><img src="images/leftclock.svg" class="leftclock"><span class="leftclockspan">5 Hours</span></div></div></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 middleelement whitebackground"><div class="excursionouter"><div class="excursioninner"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12 movedown10"><span id="lbl_ESingRes_ExcursionTitle_0" class="lbl_ESingRes_ExcursionTitle ColorB">Acropolis Tour      </span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span class="beforespan"></span></div></div></div><div class="row"><div class="timeblue col-12 col-sm-12 col-xl-12 col-lg-12"><img src="images/!.svg" class="careful careful2"><span class="bluespan">In English </span></div></div></div></div><div class="col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground thirddiv"><span id="lbl_ex_Currency_0" class="lbl_ex_Currency">€</span><span id="lbl_ex_ExcursionFromPrice_0" class="lbl_ex_ExcursionFromPrice">20</span><img class="imageseperatorh" src="images/horizontalseperator.svg"> <a href="http://localhost/localhost_hammer/excursioninfo?TourID=1000003915" id="a_ESingRes_Details_0" class="detailsbtn"><img src="" class="rightbluearrow">Details</a></div></div></div>
-		    
-		    <div class="div_Excursion" id="div_Excursion_0"><input id="hf_ESingRes_ExcursionID_0" type="hidden" value="1000003915"><div class="row"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 imageresults"><div class="imagesizediv"><img class="imagesize" src="images/"><div class="topleftimagespan"><img src="images/leftclock.svg" class="leftclock"><span class="leftclockspan">5 Hours</span></div></div></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 middleelement whitebackground"><div class="excursionouter"><div class="excursioninner"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12 movedown10"><span id="lbl_ESingRes_ExcursionTitle_0" class="lbl_ESingRes_ExcursionTitle ColorB">Acropolis Tour      </span></div></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span class="beforespan"></span></div></div></div><div class="row"><div class="timeblue col-12 col-sm-12 col-xl-12 col-lg-12"><img src="images/!.svg" class="careful careful2"><span class="bluespan">In English </span></div></div></div></div><div class="col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground thirddiv"><span id="lbl_ex_Currency_0" class="lbl_ex_Currency">€</span><span id="lbl_ex_ExcursionFromPrice_0" class="lbl_ex_ExcursionFromPrice">20</span><img class="imageseperatorh" src="images/horizontalseperator.svg"> <a href="http://localhost/localhost_hammer/excursioninfo?TourID=1000003915" id="a_ESingRes_Details_0" class="detailsbtn"><img src="" class="rightbluearrow">Details</a></div></div></div>
-	   
-	   </div>               
-    <input type="hidden" name="dnn$ctr538$ExcursionSearchResults$hf_ESRRes_ExcursionIDSelbyDetails" id="dnn_ctr538_ExcursionSearchResults_hf_ESRRes_ExcursionIDSelbyDetails">
+            <div id="dnn_ctr573_ExcursionSearchResults_Tours" class="Excursions"><div class="div_Excursion" id="div_Excursion_0"><input id="hf_ESingRes_ExcursionID_0" type="hidden" value="1000003876"><div class="row"><div class="col-12 col-sm-12 col-xl-4 col-lg-4 imagesizediv"><div class="imagesizediv"><img class="imagesize" src=""><div class="topleftimagespan"><img src="http://localhost/localhost_hammer/portals/0/css/svg/leftclock.svg" class="leftclock"><span class="leftclockspan">1 Day</span></div></div></div><div class="col-12 col-sm-12 col-xl-6 col-lg-6 middleelement whitebackground"><div class="excursionmiddlediv"><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12 movedown10"><span id="lbl_ESingRes_ExcursionTitle_0" class="lbl_ESingRes_ExcursionTitle ColorB">Athens By Night      </span></div><div class="row"><div class="col-12 col-sm-12 col-xl-12 col-lg-12"><span class="beforespan"></span></div></div></div><div class="row"><div class="timeblue col-12 col-sm-12 col-xl-12 col-lg-12"><img src="/localhost_hammer/portals/0/css/svg/!.svg" class="careful careful2"><span class="bluespan">In English,French </span></div></div></div><img src="/localhost_hammer/portals/0/css/svg/seperator.svg" class="seperatornew"></div><div class="col-12 col-sm-12 col-xl-2 col-lg-2 whitebackground thirddiv"><span id="lbl_ex_Currency_0" class="lbl_ex_Currency">€</span><span id="lbl_ex_ExcursionFromPrice_0" class="lbl_ex_ExcursionFromPrice">35</span><img class="imageseperatorh" src="/localhost_hammer/portals/0/css/svg/horizontalseperator.svg"> <a href="http://localhost/localhost_hammer/excursioninfo?TourID=1000003876" id="a_ESingRes_Details_0" class="detailsbtn"><img src="" class="rightbluearrow">Details</a></div></div></div></div>               
+    <input type="hidden" name="dnn$ctr573$ExcursionSearchResults$hf_ESRRes_ExcursionIDSelbyDetails" id="dnn_ctr573_ExcursionSearchResults_hf_ESRRes_ExcursionIDSelbyDetails">
        
     <a id="btn_UpdateTourSearchResults" style="display:none;" onclick="btn_UpdateTourSearchResults_click()"></a>
     <div class="ButtonGeneralLeftDiv">
         <div class="ButtonOuterDiv"> 
+                 <img id="loader" alt="" src="/localhost_hammer/images/nsImages/loading.gif" style="display: none;" width="50" height="50">
           </div>
     </div>
+
    </div>
 </div>
 </div> 
@@ -2003,21 +1897,11 @@ input[type='checkbox'] {
 </div></div></center>
  
  
-                    <div id="dnn_ctr538_ExcursionSearchResults_div_ESR_ddls" class="div_ESR_ddls">
-		
-                        <div class="PriceSort silverGradientStyle radiusThreeStyle">
-                               <select name="dnn$ctr538$ExcursionSearchResults$ddl_ESR_cmbOrderType" onchange="javascript:setTimeout('__doPostBack(\'dnn$ctr538$ExcursionSearchResults$ddl_ESR_cmbOrderType\',\'\')', 0)" id="dnn_ctr538_ExcursionSearchResults_ddl_ESR_cmbOrderType" onclientselectedindexchanged="excResultsSortingChanged" emptymessage="1" enablevirtualscrolling="true" allowcustomtext="false" style="height: 100px; width: 140px; display: none;">
-
-		</select><div class="nice-select" tabindex="0"><span class="current"></span><ul class="list"></ul></div> 
-                            <input type="hidden" name="dnn$ctr538$ExcursionSearchResults$hf_isAscending" id="dnn_ctr538_ExcursionSearchResults_hf_isAscending">
-                        </div>
-                    
-                    
-	</div>         
+                         
  
- 
+  <input type="hidden" name="dnn$ctr573$ExcursionSearchResults$hf_isAscending" id="dnn_ctr573_ExcursionSearchResults_hf_isAscending">
 <a id="btn_UpdateTourFilters" style="display:none;">
-</a></div>	
+</a></div>
 
 	
 
@@ -2056,20 +1940,25 @@ input[type='checkbox'] {
 </div>
 </center>
 </div>
+
 <script type="text/javascript">
     var pageIndex = 1;
     var pageCount = 100;
-   
+
+    function testid() {
+        alert('mpika');
+    }
+
     function showhide(collapseElemId, iconId) {
         if (document.getElementById(collapseElemId).style.display == 'none') {
-            document.getElementById(iconId).src = "images/minus.svg";
+            document.getElementById(iconId).src = "<%= ResolveUrl("~/portals/0/css/svg/minus.svg") %>";
         } else {
-            document.getElementById(iconId).src =  "images/plus.svg";
+            document.getElementById(iconId).src = "<%= ResolveUrl("~/portals/0/css/svg/plus.svg") %>";
         }
         $("#" + collapseElemId).toggle('hide');
     }
 
-    function pageLoad(event, args) {
+    <%--function pageLoad(event, args) {
         var ascending = $('#<%=hf_isAscending.ClientID %>').val();
         if (ascending == "true") {
             $('.PriceSort').find("img").css({
@@ -2079,13 +1968,13 @@ input[type='checkbox'] {
             });
         }
 
-    }
+    }--%>
 
     $(document).ready(function () {
       
-     //   var HeaderElem = document.getElementsByClassName('div_ESR_HeaderDiv'); 
+        var HeaderElem = document.getElementsByClassName('div_ESR_HeaderDiv'); 
         var distanceScrolled = document.body.scrollTop; 
-       // var elemRect = HeaderElem[0].getBoundingClientRect(); 
+        var elemRect = HeaderElem[0].getBoundingClientRect(); 
         var elemViewportOffset = elemRect.top; 
         var totalHeaderOffset = distanceScrolled + elemViewportOffset;
          
@@ -2110,7 +1999,7 @@ input[type='checkbox'] {
         var inputs, index;
         var findSR_Panel, myElement, position;
         inputs = document.getElementsByTagName('input');
-        var getHotelID = document.getElementById("hf_ESRRes_ExcursionIDSelbyDetails").val();
+        var getHotelID = $("#<%= hf_ESRRes_ExcursionIDSelbyDetails.ClientID%>").val();
 
         for (index = 0; index < inputs.length; ++index) {
 
@@ -2133,18 +2022,15 @@ input[type='checkbox'] {
         } //end for
 
 
-        var jsonExcSearchResultsSorting = localStorage.getItem("ExcSearchResultsSorting");
+        var jsonTourSearchResultsSorting = localStorage.getItem("TourSearchResultsSorting");
         
-        if (jsonExcSearchResultsSorting != null) {
-            var priceSorting = jQuery.parseJSON(jsonExcSearchResultsSorting).Exc_PriceSorting;
-            var cmbPriceSorting = $find("<%= ddl_ESR_cmbOrderType.ClientID %>"); 
-            cmbPriceSorting.trackChanges();
-            cmbPriceSorting.get_items().getItem(priceSorting).select();
-            cmbPriceSorting.updateClientState();
-            cmbPriceSorting.commitChanges();
+        if (jsonTourSearchResultsSorting != null) {
+            var selectedSorting = jQuery.parseJSON(jsonTourSearchResultsSorting).Tour_Sorting;
+
+            $('#cmbOrderType').val(selectedSorting);
+            $('#cmbOrderType').niceSelect('update');
         }
        
-  
         getTourResults(true);
     };
 
@@ -2161,13 +2047,13 @@ input[type='checkbox'] {
     }
     //end added 
 
-    function excResultsSortingChanged() {
-  //      alert("excResultsSortingChanged");
-        // displayLoadingDiv();
+    function tourResultsSortingChanged() { 
        
-        var cmbPriceSorting = $find("<%= ddl_ESR_cmbOrderType.ClientID %>");  
-        var jsonExcSearchResultsSorting = JSON.stringify({ "Exc_PriceSorting": cmbPriceSorting.get_value() });
-        localStorage.setItem("ExcSearchResultsSorting", jsonExcSearchResultsSorting);
+        // displayLoadingDiv();
+       <%-- __doPostBack('<%=ddl_ESR_cmbOrderType.ClientID %>', '');--%>
+        var cmbSorting = document.getElementById("cmbOrderType");  
+        var jsonTourSearchResultsSorting = JSON.stringify({ "Tour_Sorting": cmbSorting.options[cmbSorting.selectedIndex].value });
+        localStorage.setItem("TourSearchResultsSorting", jsonTourSearchResultsSorting);
         pageIndex = 1;     
         $("#<%= Tours.ClientID %>").empty();
         getTourResults(false);
@@ -2188,11 +2074,519 @@ input[type='checkbox'] {
         getTourResults(true);
         return false;
     }
-   $(document).ready(function () {
+
+    function getTourResults(isNewSearch) {
+       
+        var cmbSorting = document.getElementById("cmbOrderType"); 
+        var jsonTourSearchResultsSorting = JSON.stringify({ "Tour_Sorting": cmbSorting.value });
+        
+        if (pageIndex == 2 || pageIndex <= pageCount) {
+          
+            if (isNewSearch) { $("#loader").show(); } 
+
+            var jsonTourFilters = $('#hf_tourFilters').val();
+        //   alert(jsonExcFilters);
+               <%-- '<%= Session("ExcursionResultsSelectedFilters") %>';--%>
+          
+            var jsonTourSearchCriteria = localStorage.getItem("TourSearchCriteria");
+
+         //   var data = { p_jsonExcSearchCriteria: jsonExcSearchCriteria, p_jsonExcFilters: jsonExcFilters, p_jsonExcResultsSorting: jsonExcSearchResultsSorting, p_pageIndex: pageIndex, p_pageSize: 9 };
+
+            var data = { p_pageIndex: pageIndex, p_pageSize: 9, p_jsonTourSearchCriteria: jsonTourSearchCriteria, p_jsonTourFilters: jsonTourFilters, p_jsonTourResultsSorting: jsonTourSearchResultsSorting, p_jsonIsNewSearch:isNewSearch };
+           
+            //    console.log(data);
+           //    alert(data); 
+            $.ajax({
+                type: "GET",
+                url: '<%= ResolveUrl("~/DesktopModules/Custom/AutoCompleteService.svc/GetTourResults")%>',
+                data: data,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {                  
+                    $('.btn_LoadMoreTourSearchResults').remove();
+                    $("#<%= Tours.ClientID %>").append(response[1]);                
+                    document.getElementById('lblToursFoundNum').innerHTML = response[0];
+                    $("#loader").hide();
+                    $("#btn_UpdateTourFilters").click();                                    
+                },
+                failure: function (response) {
+                    alert("failure");
+                    alert(response.d);
+                },
+                error: function (response) {
+                    alert("error");
+                    alert(response.d);
+                }
+            });
+        }
+        pageIndex++;
+    }
+
+    function btn_UpdateTourSearchResults_click() {
+     //   alert("btn_UpdateExcursionSearchResults_click()");
+       
+        pageIndex = 1; 
+        $("#<%= Tours.ClientID %>").empty();
+        getTourResults(false);
+        return false;
+    }
+
+    function handleFilterSelectionClick(inputId, inputClass) {
+
+        var filterInputs = document.getElementsByClassName(inputClass);
+        var selectedInputValues = '';
+       
+        for (var i = 0; i < filterInputs.length; i++) {
+            if (filterInputs[i].checked === true) {     
+                if (selectedInputValues == '') {
+                    selectedInputValues = filterInputs[i].value;
+                } else {
+                    selectedInputValues = selectedInputValues+','+ filterInputs[i].value;
+                }              
+            }
+        }
+
+        if ((inputId.indexOf("cbx_ActivitySelection_") >= 0) && (inputClass.indexOf("cbx_ActivitySelection")>=0) ){
+         
+            $('#hf_TourFilters_activityIds').val(selectedInputValues);  
+        }
+
+        if ((inputId.indexOf("cbx_AttractionSelection_") >= 0) && (inputClass.indexOf("cbx_AttractionSelection") >= 0)) {
+
+            $('#hf_TourFilters_attractionIds').val(selectedInputValues);
+        }
+
+        if ((inputId.indexOf("cbx_LanguageSelection_") >= 0) && (inputClass.indexOf("cbx_LanguageSelection") >= 0)) {
+
+            $('#hf_TourFilters_languageIds').val(selectedInputValues);
+        }
+
+        if ((inputId.indexOf("cbx_DestinationSelection_") >= 0) && (inputClass.indexOf("cbx_DestinationSelection") >= 0)) {
+
+            $('#hf_TourFilters_destinationIds').val(selectedInputValues);
+        }
+
+        if ((inputId.indexOf("cbx_CategorySelection_") >= 0) && (inputClass.indexOf("cbx_CategorySelection") >= 0)) {
+
+            $('#hf_TourFilters_categoryIds').val(selectedInputValues);
+        }
+
+        if ((inputId.indexOf("filterDateRange") >= 0) && (inputClass.indexOf("range") >= 0)) {
+            $('#hf_TourFilters_DateRange').val($("#filterDateRange").val());
+        }
+        
+        var excursionFiltersObj = { "activityIds": $('#hf_TourFilters_activityIds').val(), "attractionIds": $('#hf_TourFilters_attractionIds').val(), "languageIds": $('#hf_TourFilters_languageIds').val(), "destinationIds": $('#hf_TourFilters_destinationIds').val(), "categoryIds": $('#hf_TourFilters_categoryIds').val(), "dateRange": $('#hf_TourFilters_DateRange').val()};
+        $('#hf_tourFilters').val(JSON.stringify(excursionFiltersObj));
+
+        $('#btn_UpdateTourSearchResults').click();
+        return false;
+    }
+
+    function paintFilterSelectionRow(inputId, inputClass,key,value,ischecked,paintLine) {
+        var selectionRow = ' <div class="row   container350">';
+        selectionRow = selectionRow + '<div class="col-2 col-sm-2 col-xl-2 col-lg-2 " align="center">';
+     //   selectionRow = selectionRow + '<input id="' + inputId + '"  type="checkbox" class="  ' + inputClass + '" value="' + key + '" onclick="handleFilterSelectionClick(\'' + inputId + '\',\'' + inputClass + '\');" ';
+        selectionRow = selectionRow + '<div class="round"><input type="checkbox"   id="' + inputId + '"  class="  ' + inputClass + '" value="' + key  + '"onclick="handleFilterSelectionClick(\'' + inputId + '\',\'' + inputClass + '\');"';
+        if (ischecked) {
+            selectionRow = selectionRow + ' checked />';
+        } else {
+            selectionRow = selectionRow + ' />';
+        }
+        selectionRow = selectionRow + '<label for="' + inputId + '"></label></div >'
+        
+        selectionRow = selectionRow + '</div>';
+        selectionRow = selectionRow + '<div class="col-10 col-sm-10 col-xl-10 col-lg-10 " align="left">';
+        selectionRow = selectionRow + '<div ><span class="filtersfill" >' + value + '</span></div>';
+        selectionRow = selectionRow + '</div >';
+        //if (paintLine == true) {
+        //    selectionRow = selectionRow ;
+        //}
+        selectionRow = selectionRow + '</div >';
+
+        return (selectionRow);
+    }
+
+    function clearFilter(inputClassName) {
+       
+        var filterInputs = document.getElementsByClassName(inputClassName);
+        var selectedInputValues = '';
+
+        $("." + inputClassName).each(function () {
+            if ($(this).attr('type') == 'checkbox') {
+                $(this).prop("checked", false);
+            } else if (inputClassName.indexOf("range") >= 0) {
+                $('#filterDateRange').val('');
+            }         
+            
+        });
+
+        for (var i = 0; i < filterInputs.length; i++) {
+            if (filterInputs[i].checked === true) {
+                if (selectedInputValues == '') {
+                    selectedInputValues = filterInputs[i].value;
+                } else {
+                    selectedInputValues = selectedInputValues + ',' + filterInputs[i].value;
+                }
+            }
+        }
+
+        if (inputClassName.indexOf("cbx_ActivitySelection") >= 0) {
+
+            $('#hf_TourFilters_activityIds').val(selectedInputValues);
+        }
+
+        if (inputClassName.indexOf("cbx_AttractionSelection") >= 0) {
+
+            $('#hf_TourFilters_attractionIds').val(selectedInputValues);
+        }
+
+        if (inputClassName.indexOf("cbx_LanguageSelection") >= 0) {
+
+            $('#hf_TourFilters_languageIds').val(selectedInputValues);
+        }
+
+        if (inputClassName.indexOf("cbx_DestinationSelection") >= 0) {
+
+            $('#hf_TourFilters_destinationIds').val(selectedInputValues);
+        }
+
+        if (inputClassName.indexOf("cbx_CategorySelection") >= 0) {
+
+            $('#hf_TourFilters_categoryIds').val(selectedInputValues);
+        }
+
+        if (inputClassName.indexOf("range") >= 0) {
+            $('#hf_TourFilters_DateRange').val($("#filterDateRange").val());
+        }
+
+        var excursionFiltersObj = { "activityIds": $('#hf_TourFilters_activityIds').val(), "attractionIds": $('#hf_TourFilters_attractionIds').val(), "languageIds": $('#hf_TourFilters_languageIds').val(), "destinationIds": $('#hf_TourFilters_destinationIds').val(), "categoryIds": $('#hf_TourFilters_categoryIds').val(), "dateRange": $('#hf_TourFilters_DateRange').val() };
+        $('#hf_tourFilters').val(JSON.stringify(excursionFiltersObj));
+
+        $('#btn_UpdateTourSearchResults').click();
+        return false;
+    }
+    //function applyFilters() {
+    //    var excursionFiltersObj = { "activityIds": $('#hf_ExcursionFilters_activityIds').val(), "language": -1 };
+    //    $('#hf_excFilters').val(JSON.stringify(excursionFiltersObj));
+
+    //    //alert($('#hf_excFilters').val());
+    //    $('#btn_UpdateExcursionSearchResults').click();
+    //    return false;
+    //}
+
+    $(function () {
+        $('#btn_UpdateTourFilters').click(function () {
+           
+            $.ajax({
+                type: "GET",
+                url: '<%= ResolveUrl("~/DesktopModules/Custom/AutoCompleteService.svc/GetTourFilterActivities")%>',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                 //   alert("success");
+                    var cnt = 0;
+                    var rowhtml = '';  
+                    var selectedActivityIds = $('#hf_TourFilters_activityIds').val();
+                
+                    $.each(jQuery.parseJSON(response), function (i, activity) {
+                        var activityId = activity.Key;
+                        var activityName = activity.Value;                      
+                        var checked = false;
+                        
+                   //     alert(activityId);
+                        if (selectedActivityIds.split(",").includes(activityId)) {
+                            checked = true;                       
+                        }
+
+                        if (cnt == jQuery.parseJSON(response).length - 1) {
+                            rowhtml = rowhtml + paintFilterSelectionRow("cbx_ActivitySelection_" + cnt, "cbx_ActivitySelection", activityId, activityName, checked, true);
+                        } else {
+                            rowhtml = rowhtml + paintFilterSelectionRow("cbx_ActivitySelection_" + cnt, "cbx_ActivitySelection", activityId, activityName, checked, false);
+                        }                                        
+                        cnt += 1;
+                    });
+                    document.getElementById("collapseActivities").innerHTML = "";
+                    $("#collapseActivities").append(rowhtml);
+                },
+                failure: function (response) {
+                    alert("failure");
+                    alert(response.d);
+                },
+                error: function (response) {
+                    alert("error");
+                    alert(response.d);
+                }
+            });
+
+            $.ajax({
+                type: "GET",
+                url: '<%= ResolveUrl("~/DesktopModules/Custom/AutoCompleteService.svc/GetTourFilterAttractions")%>',
+                  contentType: "application/json; charset=utf-8",
+                  dataType: "json",
+                  success: function (response) {                   
+                      var cnt = 0;
+                      var rowhtml = '';
+                      var selectedAttractionIds = $('#hf_TourFilters_attractionIds').val();
+
+                      $.each(jQuery.parseJSON(response), function (i, attraction) {
+                          var attractionId = attraction.Key;
+                          var attractionName = attraction.Value;
+                          var checked = false;
+
+                          if (selectedAttractionIds.split(",").includes(attractionId)) {
+                              checked = true;
+                          }
+
+                          if (cnt == jQuery.parseJSON(response).length - 1) {
+                              rowhtml = rowhtml + paintFilterSelectionRow("cbx_AttractionSelection_" + cnt, "cbx_AttractionSelection", attractionId, attractionName, checked, true);
+                          } else {
+                              rowhtml = rowhtml + paintFilterSelectionRow("cbx_AttractionSelection_" + cnt, "cbx_AttractionSelection", attractionId, attractionName, checked, false);
+                          }
+                          cnt += 1;
+                      });
+                      document.getElementById("collapseAttractions").innerHTML = "";
+                      $("#collapseAttractions").append(rowhtml);
+                  },
+                  failure: function (response) {
+                      alert("failure");
+                      alert(response.d);
+                  },
+                  error: function (response) {
+                      alert("error");
+                      alert(response.d);
+                  }
+              });
+
+            $.ajax({
+                type: "GET",
+                url: '<%= ResolveUrl("~/DesktopModules/Custom/AutoCompleteService.svc/GetTourFilterLanguages")%>',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    var cnt = 0;
+                    var rowhtml = '';
+                    var selectedLanguageIds = $('#hf_TourFilters_languageIds').val();
+
+                    $.each(jQuery.parseJSON(response), function (i, language) {
+                        var languageId = language.Key;
+                        var languageName = language.Value;
+                        var checked = false;
+
+                        if (selectedLanguageIds.split(",").includes(languageId)) {
+                            checked = true;
+                        }
+
+                        if (cnt == jQuery.parseJSON(response).length - 1) {
+                            rowhtml = rowhtml + paintFilterSelectionRow("cbx_LanguageSelection_" + cnt, "cbx_LanguageSelection", languageId, languageName, checked, true);
+                        } else {
+                            rowhtml = rowhtml + paintFilterSelectionRow("cbx_LanguageSelection_" + cnt, "cbx_LanguageSelection", languageId, languageName, checked, false);
+                        }
+                        cnt += 1;
+                    });
+                    document.getElementById("collapseLanguages").innerHTML = "";
+                    $("#collapseLanguages").append(rowhtml);
+                },
+                failure: function (response) {
+                    alert("failure");
+                    alert(response.d);
+                },
+                error: function (response) {
+                    alert("error");
+                    alert(response.d);
+                }
+            });
+            
+            $.ajax({
+                type: "GET",
+                url: '<%= ResolveUrl("~/DesktopModules/Custom/AutoCompleteService.svc/GetTourFilterDestinations")%>',
+                 contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                 success: function (response) {
+                     var cnt = 0;
+                     var rowhtml = '';
+                     var selectedDestinationIds = $('#hf_TourFilters_destinationIds').val();
+
+                     $.each(jQuery.parseJSON(response), function (i, destination) {
+                         var destinationId = destination.Key;
+                         var destinationName = destination.Value;
+                         var checked = false;
+
+                         if (selectedDestinationIds.split(",").includes(destinationId)) {
+                             checked = true;
+                         }
+
+                         if (cnt == jQuery.parseJSON(response).length - 1) {
+                             rowhtml = rowhtml + paintFilterSelectionRow("cbx_DestinationSelection_" + cnt, "cbx_DestinationSelection", destinationId, destinationName, checked, true);
+                         } else {
+                             rowhtml = rowhtml + paintFilterSelectionRow("cbx_DestinationSelection_" + cnt, "cbx_DestinationSelection", destinationId, destinationName, checked, false);
+                         }
+                         cnt += 1;
+                     });
+                     document.getElementById("collapseDestinations").innerHTML = "";
+                     $("#collapseDestinations").append(rowhtml);
+                 },
+                 failure: function (response) {
+                     alert("failure");
+                     alert(response.d);
+                 },
+                 error: function (response) {
+                     alert("error");
+                     alert(response.d);
+                 }
+             });
+
+            $.ajax({
+                type: "GET",
+                url: '<%= ResolveUrl("~/DesktopModules/Custom/AutoCompleteService.svc/GetTourFilterCategories")%>',
+                 contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                 success: function (response) {
+                     var cnt = 0;
+                     var rowhtml = '';
+                     var selectedCategoryIds = $('#hf_TourFilters_categoryIds').val();
+
+                     $.each(jQuery.parseJSON(response), function (i, category) {
+                         var categoryId = category.Key;
+                         var categoryName = category.Value;
+                         var checked = false;
+
+                         if (selectedCategoryIds.split(",").includes(categoryId)) {
+                             checked = true;
+                         }
+
+                         if (cnt == jQuery.parseJSON(response).length - 1) {
+                             rowhtml = rowhtml + paintFilterSelectionRow("cbx_CategorySelection_" + cnt, "cbx_CategorySelection", categoryId, categoryName, checked, true);
+                         } else {
+                             rowhtml = rowhtml + paintFilterSelectionRow("cbx_CategorySelection_" + cnt, "cbx_CategorySelection", categoryId, categoryName, checked, false);
+                         }
+                         cnt += 1;
+                     });
+                     document.getElementById("collapseCategories").innerHTML = "";
+                     $("#collapseCategories").append(rowhtml);
+                 },
+                 failure: function (response) {
+                     alert("failure");
+                     alert(response.d);
+                 },
+                 error: function (response) {
+                     alert("error");
+                     alert(response.d);
+                 }
+             });
+        });
+
+        $('input[name="daterange"]').daterangepicker({
+            autoUpdateInput: false,
+            locale: {
+                cancelLabel: 'Clear'
+            }
+        });
+
+        $('#filterDateRange').on('apply.daterangepicker', function (ev, picker) {
+            $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+            handleFilterSelectionClick('filterDateRange', 'range');
+        });
+
+        $('#filterDateRange').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+            handleFilterSelectionClick('filterDateRange', 'range');
+        });       
+
+    });
+    $(document).ready(function () {
         $('select').niceSelect();
     });
     function test() {
         document.getElementById("test").click();
     }
-   
+
+
+    $(function () {
+        $.widget("custom.catcomplete", $.ui.autocomplete, {
+            _create: function () {
+                this._super();
+                this.widget().menu("option", "items", "> :not(.ui-autocomplete-category)");
+            },
+            _renderMenu: function (ul, items) {
+                var that = this,
+                    currentCategory = "";
+                $.each(items, function (index, item) {
+                    var li;
+                    if (item.category != currentCategory) {
+                        ul.append("<li class='ui-autocomplete-category'>" + item.category + "</li>");
+                        currentCategory = item.category;
+                    }
+                    li = that._renderItemData(ul, item);
+                    if (item.category) {
+                        li.attr("aria-label", item.category + " : " + item.label);
+                    }
+                });
+            }
+        });
+
+        $("#tourSearch").catcomplete({
+            delay: 0,
+            source: function (request, response) {
+                var data = { p_TourSearchInput: request.term };
+                $.ajax({
+                    type: "GET",
+                    url: '<%= ResolveUrl("~/DesktopModules/Custom/AutoCompleteService.svc/GetTourSearchAutocomplete") %>',
+                    data: data,
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'JSON',
+                    processdata: true,
+                    success: function (xhr) {
+                        var obj = $.parseJSON(xhr);
+                        response($.map(obj, function (item) {
+                            //   alert(item.Key);
+                            return {
+                                label: item.Value,
+                                id: item.Key,
+                                category: item.Key.split("~")[0]
+                            };
+                        }));
+                    },
+                    error: function (xhr) {
+                        alert('Error: ' + xhr);
+                    }
+                });
+            },
+            select: function (event, ui) {
+                $("#tourSearchValue").val(ui.item.id);
+            },
+            change: function (event, ui) {
+                if (!ui.item) {
+                    $("#tourSearchValue").val('');
+                    $("#tourSearch").val('');
+                }
+            },
+            open: function () {
+                $("ul.ui-menu").width($(this).innerWidth());
+            }
+        });
+
+         $('#btnSearchTours').click(function () {
+             var searchValue = $("#tourSearchValue").val();
+             var selectedAttraction = -1;
+             var selectedDestination = -1;
+             var selectedActivity = -1;
+             var selectedTour = -1;
+             //displayWaitDivExc();
+
+             if (searchValue.indexOf("attractions") >= 0) {
+                 selectedAttraction = searchValue.split("~")[1];
+             } else if (searchValue.indexOf("destinations") >= 0) {
+                 selectedDestination = searchValue.split("~")[1];
+             } else if (searchValue.indexOf("activities") >= 0) {
+                 selectedActivity = searchValue.split("~")[1];
+             } else if (searchValue.indexOf("tours") >= 0) {
+                 selectedTour = searchValue.split("~")[1];
+             }
+             var tourSearchCriteriaObj = { "Tour_CategoryCode": -1, "Tour_AttractionCode": selectedAttraction, "Tour_DestinationCode": selectedDestination, "Tour_ActivityCode": selectedActivity, "Tour_TourCode": selectedTour };
+             localStorage.setItem("TourSearchCriteria", JSON.stringify(tourSearchCriteriaObj));
+         });
+
+     });
 </script>
+
+
