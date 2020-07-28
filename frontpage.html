@@ -1403,13 +1403,28 @@ margin-left: 10px;
 }
 	
 	/*endheader*/
-input#dnn_ctr440_ExcursionSearch_exc_search {
-    color: red;
+
+.mobbuttondiv {
+    display:none!important;
 }
+
+.mobbutton {
+    background-color: transparent !important;
+    border: none;
+    display: inline-block;
+    color: rgb(255, 255, 255, 1);
+    padding-right: 20px;
+    font-weight: 700;
+}
+
+    input#dnn_ctr440_ExcursionSearch_exc_search {
+        color: red;
+    }
 
 .dots.dots2 {
     margin-right: -43px;
 }
+
 #basic-addon2 {
     background-color: transparent !important;
     border: none;
@@ -1419,7 +1434,7 @@ input#dnn_ctr440_ExcursionSearch_exc_search {
     padding-right: 20px;
     font-weight: 700;
 }
-    
+
 body {
     /*overflow-y: hidden;*/
     overflow-x: hidden;
@@ -1428,15 +1443,13 @@ body {
 
 .container1280 {
     max-width: 1280px !important;
-    padding-top: 119px;
+    /* padding-top: 119px;*/
+    padding-top: 244px;
 }
 
 @media (min-width: 1200px) {
     .privateexcursionsdiv {
-        
     }
-
-  
 }
 
 
@@ -1457,12 +1470,12 @@ body {
 }
 
 .fakos {
-    /* background-image: url(svg/fakos.svg); */
+    /* background-image: url(images/fakos.svg); */
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
     margin-right: 2px;
-    display:inline-block;
+    display: inline-block;
 }
 
 .privateexcursions {
@@ -1477,7 +1490,6 @@ body {
     text-decoration: none;
     /* margin-bottom: 120px; */
     /* padding-right: 52px !important; */
-    
 }
 
 .toursexcursions {
@@ -1491,12 +1503,11 @@ body {
     color: rgba(255, 255, 255, 1) !important;
     text-decoration: none;
     /* margin-bottom: 120px; */
-   
     right: 10px;
 }
 
 .dots {
-    /*background-image: url(svg/dots.svg);*/
+    /*background-image: url(images/dots.svg);*/
     background-repeat: no-repeat;
     /* padding: 6px 9px 6px 9px; */
     white-space: nowrap;
@@ -1571,8 +1582,8 @@ body {
 .searchengine {
     background: #FFFFFF;
     background: rgba(255, 255, 255, 0.5);
-    width: 819px; 
-    border-radius: 39px;
+    width: 819px;
+    border-radius: 10px;
     padding: 10px 10px;
 }
 
@@ -1592,7 +1603,6 @@ body {
 }
 
 .viewallbtn {
-   
     padding: 2px 10px 2px 10px;
     background-repeat: no-repeat;
     border: 1px solid white;
@@ -1610,7 +1620,7 @@ body {
     background-image: linear-gradient(90deg, #00d3a7 0%, #0ac0f2 100%);
     padding-left: 10px;
     background-repeat: no-repeat;
-    border-radius: 41px;
+    border-radius: 10px;
     border: 0px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1651,15 +1661,35 @@ body {
     margin-bottom: 0 !important;
 }
 
-
-
+@media(max-width: 320px) {
+    .searchengine {
+        width:300px!important;
+    }
+    .viewallbtnmob {
+       /* margin-left: -5px !important;*/
+    }
+}
 @media (max-width: 575px) {
+    .mobbuttondiv {
+        padding-top: 15px;
+        height: 50px;
+        border-radius: 10px !important;
+        margin-top: 10px;
+        display: block !important;
+    }
+
+    .desktopmod {
+        display: none;
+    }
+
+    .input-group > .form-control {
+        border-radius: 10px 10px 10px 10px !important;
+    }
+
     .privateexcursionsdiv {
-        
     }
 
     .toursexcursionsdiv {
-       
     }
 
     .viewallbtn {
@@ -1668,15 +1698,18 @@ body {
     }
 
     .toursexcursions {
-            width: 100%;
-    margin-bottom: 10px;
-    height: auto;
+        /* width: 100%;*/
+        width: 320px;
+        margin-bottom: 10px;
+        height: auto;
     }
 
     .privateexcursions {
-     width: 100%;
-    margin-bottom: 10px;
-    height: auto;
+        /* width: 100%;*/
+        width: 320px;
+        margin-bottom: 10px;
+        height: auto;
+       /* margin-left:8px!important;*/
     }
 
     .points {
@@ -1745,8 +1778,24 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
+    .fontsize {
+        font-size:40px;
+    }
+    .mobbuttondiv {
+        padding-top: 15px;
+        height: 50px;
+        border-radius: 10px !important;
+        margin-top: 10px;
+        display: block !important;
+    }
+    .desktopmod {
+        display:none;
+    }
+    .input-group > .form-control {
+        border-radius: 10px 10px 10px 10px!important;
+    }
 
-    .privateexcursionsdiv {
+    /*.privateexcursionsdiv {
         padding-right: 0px;
     }
 
@@ -1757,18 +1806,18 @@ body {
     .viewallbtn {
         display: inline-block;
         vertical-align: text-bottom;
-    }
+    }*/
 
-    .privateexcursions {
+    /*.privateexcursions {
         width: 365px;
-        margin-bottom: 10px;
-        height: 76px;
-    }
+        margin-bottom: 10px;*/
+      /*  height: 76px;*/
+    /*}
 
-    .privateexcursions {
-        width: 280px;
-        margin-bottom: 10px;
-        height: 76px;
+    .privateexcursions {*/
+        /* width: 280px;*/
+        /*margin-bottom: 10px;
+      height: 113px;
         padding-right: 0px !important;
         margin-right: 30px;
     }
@@ -1776,7 +1825,72 @@ body {
     .toursexcursions {
         width: 365px;
         margin-bottom: 10px;
-        height: 76px;
+       height: 113px;
+    }*/
+
+
+    /*.toursexcursions {*/
+        /* width: 100%;*/
+        /*width: 320px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .privateexcursions {*/
+        /* width: 100%;*/
+        /*width: 320px;
+        margin-bottom: 10px;
+        height: auto;*/
+        /* margin-left:8px!important;*/
+    /*}
+
+    .points {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .openlock {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }
+
+    .privateexcursionslbl {
+        font-size: 12px !important;
+        width: 86px;
+        word-break: normal;
+    }
+
+    .ship {
+        padding: 20px 15px 20px 15px;
+        vertical-align: text-bottom;
+    }*/
+    .banners {
+        justify-content: center;
+    } 
+    .privateexcursionsdiv {
+    }
+
+    .toursexcursionsdiv {
+    }
+
+    .viewallbtn {
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+
+    .toursexcursions {
+        /* width: 100%;*/
+        width: 320px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .privateexcursions {
+        /* width: 100%;*/
+        width: 320px;
+        margin-bottom: 10px;
+        height: auto;
+        /* margin-left:8px!important;*/
     }
 
     .points {
@@ -1799,7 +1913,6 @@ body {
         padding: 20px 15px 20px 15px;
         vertical-align: text-bottom;
     }
-
     .searchengine {
         /*height: 115px;*/
         width: 340px;
@@ -1819,13 +1932,13 @@ body {
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
     }*/
-    
+
     fontsize {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
     .secondfontsize {
-        font-size: 15px;
+        font-size: 15px!important;
     }
 }
 
@@ -1870,7 +1983,7 @@ body {
     height: 74px;
     border-radius: 16px;
 }*/
-        .viewall {
+.viewall {
     font-family: 'proxima-nova', sans-serif;
     font-size: 15px;
     color: #FFFFFF;
@@ -1880,7 +1993,6 @@ body {
     border: 1px;
     border-color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
-	
 }
 
 .viewalltours {
@@ -1889,20 +2001,26 @@ body {
     color: #FFFFFF;
     color: rgb(255, 255, 255);
     margin-top: 10px;
-    margin-bottom: 27px;
-   width: 100%;
+    margin-bottom: 10px;
+    width: 100%;
     white-space: nowrap;
+
     /*margin-bottom: 10px;*/
 }
-
-.viewalldiv {
-    border: 1px solid #ccc;
-}
+    .viewalltours:hover {
+        text-decoration: none !important;
+        color: #FFFFFF;
+        color: rgb(255, 255, 255);
+    }
+    .viewalldiv {
+        border: 1px solid #ccc;
+    }
 
 
 input#dnn_ctr440_ExcursionSearch_exc_search {
     color: #24263d;
 }
+
 .input-group-text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1930,7 +2048,7 @@ input#dnn_ctr440_ExcursionSearch_exc_search {
     min-width: 0;
     margin-bottom: 0;
     height: 50px;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 
@@ -1942,7 +2060,7 @@ input#dnn_ctr440_ExcursionSearch_exc_search {
 }
 
 .toursexcursionsdiv {
-        max-width: 100%;
+    max-width: 100%;
     display: block;
 }
 
@@ -1951,15 +2069,25 @@ input#dnn_ctr440_ExcursionSearch_exc_search {
         /* padding-left: 425px; */
     }
 }
+
 .privateexcursionsdiv {
-        max-width: 100%;
+    max-width: 100%;
     display: block;
 }
 
-	/*End of main*/
+/*End of main*/
 	
 	
-	.svgclass { 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+.svgclass { 
 	    url('images/point.svg');
 		padding: 8px 8px 8px 8px;
 		background-repeat: no-repeat; 
@@ -2010,108 +2138,7 @@ input#dnn_ctr440_ExcursionSearch_exc_search {
 }
 	.footer1280{
 	max-width:1280px;}
-	/* End of footer*/
-	
-	
-
-@media screen and (max-width: 995px) {
-
-    .topmenu {
-        display: none;
-    }
-    .line {
-      width: 30px;
-    height: 3px;
-    background: #0abff2;
-    margin: 5px;
-    border-radius: 3px;
-    }
-
-    nav {
-        position: relative;
-    }
-
-    .hamburger {
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-    }
-
-    .nav-links {
-        position: fixed;
-        background: #5b78c7;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
-
-        .nav-links.open {
-            clip-path: circle(1000px at 90% -10%);
-            -webkit-clip-path: circle(1000px at 90% -10%);
-            pointer-events: all;
-        }
-
-    .landing {
-        flex-direction: column;
-    }
-
-    .nav-links li {
-        opacity: 0;
-    }
-
-        .nav-links li a {
-            font-size: 25px;
-        }
-
-        .nav-links li:nth-child(1) {
-            transition: all 0.5s ease 0.2s;
-        }
-
-        .nav-links li:nth-child(2) {
-            transition: all 0.5s ease 0.4s;
-        }
-
-        .nav-links li:nth-child(3) {
-            transition: all 0.5s ease 0.6s;
-        }
-
-    li.fade {
-        opacity: 1;
-    }
-}
-
-nav {
-    height: 5vh;
-    
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  width: 50%;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.bmenu {
-    display:none;
-}	
-	
+	/* End of footer*/	
 </style>
 
 <center>
@@ -2218,8 +2245,7 @@ nav {
 </div>
 </div>
 
- 
-<div class="middle-enginediv">
+ <div class="middle-enginediv">
 <div class="middle-engine">
     <center>
     <div class="middle-enginediv">
@@ -2232,29 +2258,34 @@ nav {
        
         <div class="row">  
                 <div class="col-12 col-sm-12 col-xl-12 col-lg-12  " align="center">
-                    <label class="secondfontsize"> Find great tours around the planet </label>
+                    <label class="secondfontsize"> Find great tours around Sporades &amp; Chalkidiki </label>
                 </div>
         </div>
        
         <div class="row">  
-        <div class="col-12 col-sm-12 col-xl-12 col-lg-12  " align="center">
+        <div class="col-12 col-sm-12 col-xl-12 col-lg-12   " align="center">
        
             <div class=" searchengine  ">
             <div class="input-group mb-3">
-               <input id="tourSearch" type="text" class="form-control" placeholder="Where you want to go ?" aria-describedby="basic-addon2">
+               <input id="tourSearch" type="text" class="form-control ui-autocomplete-input" placeholder="Destination, Activity, Attraction, Tour" aria-describedby="basic-addon2" autocomplete="off">
                <input id="tourSearchValue" type="hidden">   
-                <div class="input-group-append">
-                  <a id="btnSearchTours" href="" class="searchbtn"> <img src="images/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">Search</span></a>
+                <div class="input-group-append desktopmod">
+                  <a id="btnSearchTours" href="http://localhost/localhost_hammer/excursionresults" class="searchbtn"> <img src="images/fakos.svg" class="fakos"> <span class="input-group-text searchbtndnn" id="basic-addon2">Search</span></a>
                 </div>
-            </div>
+                </div>
+                <div class="mobbuttondiv searchbtn"> 
+                    <a id="mob_btnSearchTours" href="http://localhost/localhost_hammer/excursionresults"> <img src="images/fakos.svg" class="fakos"> <span class="mobbutton" id="basic-addon2mob">Search</span></a></div>
+                <div>
+
             </div>
 
         </div>
         </div>
-        <div> 
+        </div> 
         <div class="row">  
-                <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">
-                    <label class="secondfontsize viewalltours fontbold"><img src="" class="bluearrow"> View all tours</label>
+                <div class="col-12 col-sm-12 col-xl-12 col-lg-12 movetop10f" align="center">
+                   
+                    <div class="viewalltours"> <a id="viewAllToursbtn" href="http://localhost/localhost_hammer/excursionresults" class="secondfontsize viewalltours fontbold"><img src="" class="bluearrow">View all tours</a></div>
                 </div>
         </div>
 
@@ -2262,17 +2293,17 @@ nav {
                 <div class="col-12 col-sm-12 col-xl-6 col-lg-6 toursexcursionsdiv" align="center">
                   <div class="toursexcursions"> 
                         <div class="row">
-                            <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
+                            <div class="col-4 col-sm-4 col-xl-2 col-lg-2">
                                  <img style="display:inline-block" src="" class="points">
                             </div>
                             <div class="col-4 col-sm-4 col-xl-6 col-lg-6">
                                  <label style="display:inline-block" class="privateexcursionslbl"> Tours &amp; Excursions </label>  
                             </div>
-                             <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
+                             <div class="col-4 col-sm-4 col-xl-2 col-lg-2">
                                  <img style="display:inline-block" src="" class="ship">
                             </div>
-                             <div class="col-2 col-sm-2 col-xl-12 col-lg-12" align="center">
-                                 <a href="" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
+                             <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">
+                                 <a id="categoryViewbtn_1" href="http://localhost/localhost_hammer/excursionresults" class="viewallbtn viewallbtnmob"><img src="" class="rightarrow"> View All </a>
                             </div>
                               <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
                                  <img src="images/dots.svg" class="dots">
@@ -2283,14 +2314,14 @@ nav {
                 <div class="col-12 col-sm-12 col-xl-6 col-lg-6 privateexcursionsdiv" align="center">
                     <div class="privateexcursions"> 
                         <div class="row">
-                            <div class="col-2 col-sm-2 col-xl-2 col-lg-2">
+                            <div class="col-4 col-sm-4 col-xl-2 col-lg-2">
                                     <img style="display:inline-block" src="" class="openlock">
                             </div>
                             <div class="col-4 col-sm-4 col-xl-6 col-lg-6">
                                 <label style="display:inline-block" class="privateexcursionslbl"> PRIVATE EXCURSIONS </label>   
                             </div>
-                             <div class="col-2 col-sm-2 col-xl-12 col-lg-12" align="center">
-                                <a href="" style="margin-left: 43px;" class="viewallbtn"><img src="" class="rightarrow"> View All </a>
+                             <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="center">
+                                <a id="categoryViewbtn_2" href="http://localhost/localhost_hammer/excursionresults" class="viewallbtn"><img src="" class="rightarrow"> View All </a>                            
                             </div>
                              <div class="col-12 col-sm-12 col-xl-12 col-lg-12" align="right">
                                 <img src="images/dots.svg" class="dots">
@@ -2303,9 +2334,8 @@ nav {
      
       </div>
     </div>
-    </div>
-    </center>
-</div>
+    </center></div>
+    
 </div>
 
 
