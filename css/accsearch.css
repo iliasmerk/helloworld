@@ -79,8 +79,7 @@ body {
     margin-right: 25px;
 }
 
-.fakos {
-    /* background-image: url(svg/fakos.svg); */
+.fakos {  
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
@@ -116,8 +115,7 @@ body {
     right: 10px;
 }
 
-.dots {
-    /*background-image: url(svg/dots.svg);*/
+.dots { 
     background-repeat: no-repeat;
     /* padding: 6px 9px 6px 9px; */
     white-space: nowrap;
@@ -130,28 +128,28 @@ body {
 }
 
 .bluearrow {
-    background-image: url(svg/bluearrow.svg);
+    background-image: url(../images/bluearrow.svg);
     background-repeat: no-repeat;
     padding: 6px 9px 6px 9px;
     white-space: nowrap;
 }
 
 .rightarrow {
-    background-image: url(svg/rightarrow.svg);
+    background-image: url(../images/rightarrow.svg);
     background-repeat: no-repeat;
     padding: 6px 9px 6px 9px;
     white-space: nowrap;
 }
 
 .points {
-    background-image: url(svg/points.svg);
+    background-image: url(../images/points.svg);
     background-repeat: no-repeat;
     padding: 20px 25px 20px 25px;
     vertical-align: top;
 }
 
 .ship {
-    background-image: url(svg/ship.svg);
+    background-image: url(../images/ship.svg);
     background-repeat: no-repeat;
     padding: 20px 20px 20px 20px;
     vertical-align: top;
@@ -159,7 +157,7 @@ body {
 }
 
 .openlock {
-    background-image: url(svg/openlock.svg);
+    background-image: url(../images/openlock.svg);
     background-repeat: no-repeat;
     padding: 20px 25px 20px 25px;
     vertical-align: top;
@@ -1089,7 +1087,7 @@ form {
     color: rgba(10, 191, 242, 1) !important;
 }
     .tourimgdiv:hover .tourimg {
-        background-image: url(svg/tourblue.svg);
+        background-image: url(../images/tourblue.svg);
         padding: 10px 10px 10px 10px;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -1105,7 +1103,7 @@ form {
     color: rgba(10, 191, 242, 1) !important;
 }
     .hotelimgdiv:hover .hotelimg {
-        background-image: url(svg/hotelblue.svg);
+        background-image: url(../images/hotelblue.svg);
         padding: 10px 10px 10px 10px;
         background-repeat: no-repeat;
         border-radius: 5px;
@@ -1613,7 +1611,7 @@ ul#menu li {
         font-size: 25px;
         font-weight: 900;
         content: "";
-        background-image: url(svg/updown.svg);
+        background-image: url(../images/updown.svg);
         position: absolute;
         display: inline-block;
         top: 17px;
